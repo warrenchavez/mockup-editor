@@ -1,0 +1,122 @@
+.btn-icon {
+  padding: 8px;
+  line-height: 0px;
+  font-size: 6px !important; }
+
+.bgc-red {
+  background-color: #e32139; }
+
+.bgc-transparent {
+  background-color: none; }
+
+.bgc-light {
+  background-color: #eee; }
+
+.bgc-lightGray {
+  background-color: #dedede; }
+
+.bgc-gray {
+  background-color: #aaa; }
+
+.bgc-dark {
+  background-color: #343434; }
+
+.bgc-darker {
+  background-color: #242424; }
+
+.fc-red {
+  color: #e32139; }
+
+.fc-white {
+  color: #ffffff; }
+
+.fc-light {
+  color: #eee; }
+
+.fc-lightGray {
+  color: #dedede; }
+
+.fc-gray {
+  color: #aaa; }
+
+.fc-dark {
+  color: #343434; }
+
+.fc-darker {
+  color: #242424; }
+
+.flex {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2; }
+
+header .main-menu .uk-navbar-nav > li > a {
+  height: 45px; }
+
+header .uk-grid-divider > :not(.uk-first-column)::before {
+  border-left: solid 1.5px #aaa; }
+
+.con-starting-point-tab > li.uk-active:after {
+  content: " ";
+  display: block;
+  height: 40px;
+  width: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  text-shadow: none;
+  background-color: #343434;
+  position: relative;
+  margin: auto auto 100px auto;
+  z-index: -1; }
+
+.con-starting-point-tab > li.uk-active a {
+  color: #e32139;
+  border-color: #e32139; }
+
+.con-news-letter {
+  border: solid 1px white; }
+
+.con-news-letter .form-input {
+  color: #eee;
+  background-color: #343434;
+  border: none; }
+  .con-news-letter .form-input:focus {
+    background-color: #343434; }
+
+.con-news-letter .form-input-left-icon {
+  padding: 9px;
+  display: inline-block;
+  margin-right: -5px;
+  border-right: solid 1px white; }
+
+.con-news-letter .form-input-btn-right {
+  line-height: 0;
+  color: #343434;
+  padding: 1px 0 1px 30px;
+  margin-left: -4px;
+  border: solid 1px #eee; }
+  .con-news-letter .form-input-btn-right:hover {
+    background-color: #eee; }
+
+.con-news-letter .form-input-btn-right-icon {
+  padding: 9px;
+  margin-left: 30px;
+  border-left: solid 1px; }
+
+.con-load-design .uk-input:focus {
+  color: #eee;
+  border-color: #eee; }
+.con-load-design .uk-input::-webkit-input-placeholder {
+  color: #eee; }
+.con-load-design .uk-input:-ms-input-placeholder {
+  color: #eee; }
+.con-load-design .uk-input::-ms-input-placeholder {
+  color: #eee; }
+.con-load-design .uk-input::placeholder {
+  color: #eee; }
+
+.con-load-design .uk-input.bgc-red:focus {
+  background-color: #e32139; }
+
+.con-load-design .uk-input.bgc-dark:focus {
+  background-color: #343434; }
