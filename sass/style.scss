@@ -16,22 +16,22 @@ header .uk-grid-divider > :not(.uk-first-column) {
   }
 }
 
-.con-starting-point-tab > li.uk-active {
-  &:after {
-    content: " ";
-    display: block;
-    height: 40px;
-    width: 40px;
-    transform: rotate(45deg);
-    text-shadow: none;
-    background-color: $color-dark;
-    position: relative;
-    margin: auto auto 100px auto;
-    z-index: -1;
-  }
-}
+//.con-starting-point-tab > li.uk-active {
+//  &:after {
+//    content: " ";
+//    display: block;
+//    height: 40px;
+//    width: 40px;
+//    transform: rotate(45deg);
+//    text-shadow: none;
+//    background-color: $color-dark;
+//    position: relative;
+//    margin: auto auto 100px auto;
+//    z-index: -1;
+//  }
+//}
 
-.con-starting-point-tab > li.uk-active a {
+.con-tab > li.uk-active a {
   color: $color-red;
   border-color: $color-red;
 }
@@ -120,4 +120,30 @@ header .uk-grid-divider > :not(.uk-first-column) {
   &:focus {
     background-color: $color-dark;
   }
+}
+
+.con-card-item > div > div {
+  border: 1px solid $color-lightGray;
+  background-color: $color-white;
+}
+
+.psuedo-before-remove {
+  &:before {
+    display: none;
+  }
+}
+
+.con-customizer {
+  width: 580px;
+}
+
+.asdd {
+  height: 100%;
+  overflow-y: scroll; }
+
+.palette {
+  height: 35px;
+  width: 35px;
+  display: block;
+  border: 1px solid $color-lightGray;
 }
