@@ -180,6 +180,8 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 
 .con-tab > li.uk-active a { color: #e32139 !important; border-color: #e32139 !important; }
 
+.con-tab > li.uk-active div > img { background-color: #eee !important; }
+
 .con-news-letter { border: solid 1px white; }
 
 .con-news-letter .form-input { color: #eee !important; background-color: #343434 !important; border: none; }
@@ -250,7 +252,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 
 .con-preview-pane .wizard > .content > .body { position: static; max-height: 700px; }
 
-.con-preview-pane .wizard > .content img { max-width: 70%; }
+.con-preview-pane .wizard > .content img { max-width: 75%; }
 
 .con-preview-pane .wizard.vertical > .steps { width: 20%; }
 

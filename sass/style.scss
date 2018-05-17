@@ -36,6 +36,10 @@ header .uk-grid-divider > :not(.uk-first-column) {
   border-color: $color-red;
 }
 
+.con-tab > li.uk-active div > img {
+  background-color: $color-light;
+}
+
 
 .con-news-letter {
   border: solid 1px white;
@@ -319,7 +323,7 @@ header .uk-grid-divider > :not(.uk-first-column) {
 }
 
 .con-preview-pane .wizard > .content img{
-  max-width: 70%;
+  max-width: 75%;
 }
 
 .con-preview-pane .wizard.vertical > .steps
