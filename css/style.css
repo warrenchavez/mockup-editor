@@ -86,6 +86,64 @@
 
 .bgc-brown { background-color: #2b1500 !important; }
 
+.bgc-r-cp-2-black2 { background-color: #050505 !important; }
+
+.bgc-r-cp-2-darkblue { background-color: #0d162e !important; }
+
+.bgc-r-cp-2-cornblue { background-color: #28619d !important; }
+
+.bgc-r-cp-2-rosered { background-color: #aa302e !important; }
+
+.bgc-r-cp-2-1 { background-color: #1f4d2c !important; }
+
+.bgc-r-cp-2-2 { background-color: #4c191b !important; }
+
+.bgc-r-cp-2-3 { background-color: #8a3927 !important; }
+
+.bgc-r-cp-2-4 { background-color: #43286a !important; }
+
+.bgc-r-cp-2-5 { background-color: #bebec0 !important; }
+
+.bgc-r-cp-2-6 { background-color: #5e5f61 !important; }
+
+.bgc-r-cp-2-7 { background-color: #d65d36 !important; }
+
+.bgc-r-cp-2-8 { background-color: #316d3e !important; }
+
+.bgc-r-cp-2-9 { background-color: #f8c957 !important; }
+
+.bgc-r-cp-2-10 { background-color: #893724 !important; }
+
+.bgc-r-cp-2-lightblue { background-color: #88bee4 !important; }
+
+.bgc-r-cp-2-11 { background-color: #f3ddaa !important; }
+
+.bgc-r-cp-2-12 { background-color: #d47999 !important; }
+
+.bgc-r-cp-2-13 { background-color: #ec5686 !important; }
+
+.bgc-r-cp-2-14 { background-color: #f19136 !important; }
+
+.bgc-r-cp-2-15 { background-color: #f9f855 !important; }
+
+.bgc-r-cp-2-16 { background-color: #d6fb51 !important; }
+
+.bgc-r-cp-2-17 { background-color: #357177 !important; }
+
+.bgc-r-cp-2-18 { background-color: #291704 !important; }
+
+.bgc-r-cp-2-19 { background-color: #f7f2db !important; }
+
+.bgc-r-cp-2-20 { background-color: #392618 !important; }
+
+.bgc-r-cp-2-21 { background-color: #191f13 !important; }
+
+.bgc-r-cp-2-22 { background-color: #1e1d0a !important; }
+
+.bgc-r-cp-2-23 { background-color: #b2b1ad !important; }
+
+.bgc-r-cp-2-24 { background-color: #645a39 !important; }
+
 .fc-red { color: #e32139 !important; }
 
 .fc-white { color: #ffffff !important; }
@@ -148,7 +206,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 
 .psuedo-before-remove:before { display: none; }
 
-.con-steps { width: 500px; }
+.con-steps { min-width: 500px; }
 
 .asdd { height: 100%; overflow-y: scroll; }
 
@@ -160,7 +218,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 
 .con-steps .wizard > .steps .current a, .con-steps .wizard > .steps .current a:hover, .con-steps .wizard > .steps .current a:active { background: #e32139 !important; color: #ffffff !important; cursor: default; }
 
-.wizard.vertical > .steps { width: auto; }
+.con-steps .wizard.vertical > .steps { width: auto; }
 
 .con-steps .wizard.vertical > .content { margin: 0; width: 90%; }
 
@@ -184,8 +242,20 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 
 .con-preview-pane .wizard > .steps a span.number, .con-preview-pane .wizard > .steps a:hover span.number, .con-preview-pane .wizard > .steps a:active span.number { display: none; }
 
-.con-preview-pane .wizard > .steps a, .con-preview-pane .wizard > .steps a:hover, .con-preview-pane .wizard > .steps a:active { background-color: #ffffff !important; border-radius: 0px; padding: 6px 10px; border: 0.3px solid #dedede !important; }
+.con-preview-pane .wizard > .steps a, .con-preview-pane .wizard > .steps a:hover, .con-preview-pane .wizard > .steps a:active { background-color: #ffffff !important; border-radius: 0px; border-radius: 0px; padding: 6px 10px; border: 0.3px solid #dedede !important; }
 
 .con-preview-pane .wizard > .steps .current a, .con-preview-pane .wizard > .steps .current a:hover, .con-preview-pane .wizard > .steps .current a:active { border-color: #e32139 !important; cursor: default; }
 
-.con-preview-pane .wizard > .content { background: #ffffff !important; }
+.con-preview-pane .wizard > .content { background: transparent; width: 75%; }
+
+.con-preview-pane .wizard > .content > .body { position: static; max-height: 700px; }
+
+.con-preview-pane .wizard > .content img { max-width: 70%; }
+
+.con-preview-pane .wizard.vertical > .steps { width: 20%; }
+
+.con-preview-pane .wizard.vertical > .steps > ul { width: 90px; }
+
+.width-full { width: 100%; }
+
+.con-preview-pane .wizard.vertical > .actions { display: none; }

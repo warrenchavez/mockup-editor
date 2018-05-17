@@ -134,7 +134,7 @@ header .uk-grid-divider > :not(.uk-first-column) {
 }
 
 .con-steps {
-  width: 500px;
+  min-width: 500px;
 }
 
 .asdd {
@@ -182,7 +182,7 @@ header .uk-grid-divider > :not(.uk-first-column) {
   cursor: default;
 }
 
-.wizard.vertical > .steps
+.con-steps .wizard.vertical > .steps
 {
   width: auto;
 }
@@ -291,6 +291,7 @@ header .uk-grid-divider > :not(.uk-first-column) {
 .con-preview-pane .wizard > .steps a:active {
   background-color: $color-white;
   border-radius: 0px;
+  border-radius: 0px;
   padding: 6px 10px;
   border: .3px solid $color-lightGray;
   //margin: ;
@@ -305,5 +306,36 @@ header .uk-grid-divider > :not(.uk-first-column) {
 }
 
 .con-preview-pane .wizard > .content {
-  background: $color-white;
+  background: $color-transparent;
+  //width: 100%;
+  width:75%;
+  //width: 400px;
+}
+
+.con-preview-pane .wizard > .content > .body{
+  position: static;
+  max-height: 700px;
+
+}
+
+.con-preview-pane .wizard > .content img{
+  max-width: 70%;
+}
+
+.con-preview-pane .wizard.vertical > .steps
+{
+  width: 20%;
+}
+
+.con-preview-pane .wizard.vertical > .steps > ul
+{
+  width: 90px;
+}
+.width-full {
+  width: 100%;
+}
+
+
+.con-preview-pane .wizard.vertical > .actions {
+  display: none;
 }
