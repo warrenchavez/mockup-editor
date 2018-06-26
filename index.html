@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Richardson</title>
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
@@ -16,6 +17,7 @@
 </head>
 <body>
 
+<!--Header-->
 <header>
     <!--Header-->
     <div class="uk-container uk-container-large">
@@ -36,9 +38,21 @@
             <div class="uk-navbar-right">
 
                 <ul class="uk-navbar-nav">
-                    <li class=""><a href="#"><span class="uk-margin-small-right" uk-icon="search"></span>Search</a></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="mail"></span>Contact Us</a></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="lock"></span>Login</a></li>
+                    <li class="">
+                        <a href="#"><span class="uk-margin-small-right" uk-icon="search"></span>
+                            <span class="uk-visible@s">Search</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="uk-margin-small-right" uk-icon="mail"></span>
+                            <span class="uk-visible@s">Contact&nbsp;Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="uk-margin-small-right" uk-icon="lock"></span>
+                            <span class="uk-visible@s">Login</span>
+                        </a>
+                    </li>
                 </ul>
 
             </div>
@@ -47,7 +61,7 @@
     </div>
 
     <!--Main menu-->
-    <div class="bgc-lightGray">
+    <div class="bgc-lightGray uk-visible@m">
         <div class="uk-container uk-container-large">
             <nav class="uk-navbar-container uk-navbar-transparent main-menu" uk-navbar>
                 <div class="uk-navbar-center">
@@ -66,10 +80,18 @@
     </div>
 </header>
 
-<section>
+<section class="uk-section">
     <div class=" uk-container uk-container-large">
-        <div class="uk-grid-collapse uk-flex-center uk-grid-match-height" uk-grid>
-            <div class="uk-width-1-3">
+        <div class="uk-grid-collapse uk-flex-center uk-flex-middle uk-grid-match-height" uk-grid>
+            <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-2@m">
+                <div class="">
+                    <div class="uk-cover-container">
+                        <canvas width="2698" height="1500"></canvas>
+                        <img src="./img/img-banner.png" alt="" uk-cover>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-2@m uk-flex-first@s">
                 <div class="uk-card uk-card-body uk-flex-middle" uk-grid>
                     <div>
                         <h1 class="uk-heading uk-text-uppercase uk-text-bold">R-Customizer</h1>
@@ -79,26 +101,14 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-2-3">
-                <div class="uk-card uk-card-body">
-                    <div class="uk-flex-center" uk-grid>
-                        <div class="uk-width-3-4">
-                            <div class="uk-cover-container">
-                                <canvas width="2698" height="1500"></canvas>
-                                <img src="./img/img-banner.png" alt="" uk-cover>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
 <section>
-    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-        <div>
-            <div class="uk-card uk-card-default uk-card-body bgc-red">
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-grid-match-height" uk-grid>
+        <div class="uk-padding bgc-red uk-grid-collapse uk-flex uk-flex-middle uk-flex-center" uk-grid>
+            <div>
                 <h2 class="uk-h2 fc-white uk-text-uppercase uk-text-bold">Design by Model #</h2>
                 <form>
                     <div class="uk-inline con-load-design">
@@ -108,8 +118,8 @@
                 </form>
             </div>
         </div>
-        <div>
-            <div class="uk-card uk-card-default uk-card-body bgc-dark">
+        <div class="uk-padding bgc-dark uk-grid-collapse uk-flex uk-flex-middle uk-flex-center" uk-grid>
+            <div>
                 <h2 class="uk-h2 fc-white uk-text-uppercase uk-text-bold">Load a previous design</h2>
                 <form>
                     <div class="uk-inline con-load-design">
@@ -123,46 +133,59 @@
 </section>
 
 <section>
-    <h3 class="uk-h2 uk-margin-large-top uk-text-uppercase uk-text-bold uk-text-center">Select a starting point below</h3>
-    <ul class="uk-child-width-expand uk-container uk-flex uk-align-center uk-tab-bottom con-tab" uk-tab>
-        <li class="uk-margin-bottom">
-            <a href="#" class="uk-text-bold">PTS Signature</a>
-            <div class="uk-cover-container uk-height-medium uk-margin-small-top">
-                <img src="./img/Untitled-1.svg" class="uk-padding-large" alt="" uk-cover>
-            </div>
-            <ul class="uk-list uk-list-bullet uk-margin-top">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
-                <li>orem ipsum dolor sit amet</li>
-                <li>orem ipsum dolor sit amet</li>
-            </ul>
-        </li>
-        <li class="uk-margin-bottom">
-            <a href="#" class="uk-text-bold">PTS Pro Select</a>
-            <div class="uk-cover-container uk-height-medium uk-margin-small-top">
-                <img src="./img/Untitled-1.svg" class="uk-padding-large" alt="" uk-cover>
-            </div>
-            <ul class="uk-list uk-list-bullet uk-margin-top">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
-                <li>orem ipsum dolor sit amet</li>
-                <li>orem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
-            </ul>
-        </li>
-        <li class="uk-margin-bottom">
-            <a href="#" class="uk-text-bold">PTS Select</a>
-            <div class="uk-cover-container uk-height-medium uk-margin-small-top">
-                <img src="./img/Untitled-1.svg" class="uk-padding-large" alt="" uk-cover>
-            </div>
-            <ul class="uk-list uk-list-bullet uk-margin-top">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
-                <li>orem ipsum dolor sit amet</li>
-                <li>orem ipsum dolor sit amet</li>
-            </ul>
-        </li>
-    </ul>
-    <ul class="uk-switcher bgc-light con-starting-point-tab-content">
-        <li class="uk-container">
+    <div class="uk-container">
+        <h3 class="uk-h2 uk-margin-large-top uk-text-uppercase uk-text-bold uk-text-center">Select a starting point below</h3>
+        <ul class="uk-subnav uk-grid-small uk-match-grid" uk-switcher="connect: .switcher-container" uk-grid>
+            <li class="uk-width-1-3 uk-padding uk-padding-remove-top uk-padding-remove-horizontal">
+                <div class="uk-text-center">
+                    <a href="#" class="uk-button uk-button-text uk-text-bold">PTS Signature</a>
+                </div>
 
+                <div class="uk-cover-container">
+                    <canvas width="380" height="429"></canvas>
+                    <img src="./img/Untitled-1.svg" alt="" uk-cover>
+                </div>
+                <ul class="uk-list uk-list-bullet uk-padding-small uk-padding-remove-vertical">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+            </li>
+            <li class="uk-width-1-3 uk-padding uk-padding-remove-top uk-padding-remove-horizontal">
+                <div class="uk-text-center">
+                    <a href="#" class="uk-button uk-button-text uk-text-bold">PTS Pro Select</a>
+                </div>
+
+                <div class="uk-cover-container">
+                    <canvas width="380" height="429"></canvas>
+                    <img src="./img/Untitled-1.svg" alt="" uk-cover>
+                </div>
+                <ul class="uk-list uk-list-bullet uk-padding-small uk-padding-remove-vertical">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>orem ipsum dolor sit amet</li>
+                    <li>orem ipsum dolor sit amet</li>
+                </ul>
+            </li>
+            <li class="uk-width-1-3 uk-padding uk-padding-remove-top uk-padding-remove-horizontal">
+                <div class="uk-text-center">
+                    <a href="#" class="uk-button uk-button-text uk-text-bold">PTS Select</a>
+                </div>
+
+                <div class="uk-cover-container">
+                    <canvas width="380" height="429"></canvas>
+                    <img src="./img/Untitled-1.svg" alt="" uk-cover>
+                </div>
+                <ul class="uk-list uk-list-bullet uk-padding-small uk-padding-remove-vertical">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <ul class="uk-switcher switcher-container bgc-light">
+        <li class="uk-container">
             <h3 class="uk-h2 uk-margin-large-top uk-text-uppercase uk-text-bold uk-text-center">Select a uniform type</h3>
 
             <div class="uk-grid-medium uk-child-width-expand@s uk-text-center uk-margin-large-bottom" uk-grid>
@@ -195,7 +218,6 @@
             </div>
         </li>
         <li class="uk-container">
-
             <h3 class="uk-h2 uk-margin-large-top uk-text-uppercase uk-text-bold uk-text-center">Select a uniform type again</h3>
 
             <div class="uk-grid-medium uk-child-width-expand@s uk-text-center uk-margin-large-bottom" uk-grid>
@@ -228,8 +250,7 @@
             </div>
         </li>
         <li class="uk-container">
-
-            <h3 class="uk-h2 uk-margin-large-top uk-text-uppercase uk-text-bold uk-text-center">Select a uniform type</h3>
+            <h3 class="uk-h2 uk-margin-large-top uk-text-uppercase uk-text-bold uk-text-center">Select a uniform type again please</h3>
 
             <div class="uk-grid-medium uk-child-width-expand@s uk-text-center uk-margin-large-bottom" uk-grid>
                 <div>
@@ -263,84 +284,65 @@
     </ul>
 </section>
 
-<footer>
-    <div class="uk-padding bgc-dark">
+<!--Footer-->
+<footer class="bgc-dark">
+    <div class="uk-padding uk-padding-remove-horizontal">
         <div class="uk-container uk-container-large">
-            <div class="uk-flex-middle" uk-grid>
-                <div class="uk-width-1-1 uk-width-1-2@m ">
-
-                    <div class=" uk-grid-medium uk-flex-middle" uk-grid>
-                        <div class="uk-width-auto">
-                            <img class="uk-comment-avatar" src="./img/Program_Badge.png" width="143" height="83" alt="">
+            <div class="uk-grid-small uk-flex uk-flex-middle" uk-grid>
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <div class="uk-grid-small uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                        <div class="uk-width-1-1 uk-width-1-4@s uk-width-auto@m">
+                            <img class="uk-comment-avatar uk-align-center" src="./img/Program_Badge.png" width="143" height="83" alt="">
                         </div>
-                        <div class="uk-width-expand">
-                            <h3 class="uk-heading uk-margin-remove fc-red uk-text-bold">Stay connected with us.</h3>
-                            <p class="uk-margin-remove fc-lightGray">Signup for our newsletter to stay up to date on new releases, product changes, and innovation from Richardson.</p>
+                        <div class="uk-width-1-1 uk-width-expand@s">
+                            <h3 class="uk-heading uk-margin-remove fc-red uk-text-bold uk-text-center uk-text-left@s">Stay connected with us.</h3>
+                            <p class="uk-margin-remove fc-lightGray uk-text-center uk-text-left@s">Signup for our newsletter to stay up to date on new releases, product changes, and innovation from Richardson.</p>
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-1-1 uk-width-1-2@m ">
-                    <form>
-                            <div class="uk-margin">
-
-                            <div class="uk-inline uk-align-right con-news-letter">
-                                <span uk-icon="icon: mail" class="fc-light form-input-left-icon"></span>
-                                <input class="uk-input uk-form-width-medium form-input" type="text" placeholder="Enter your email address">
-                                <button class="uk-button form-input-btn-right uk-text-bold">Join
-                                    <span class="form-input-btn-right-icon border-left" uk-icon="arrow-right"></span>
-                                </button>
-                            </div>
-
-                            </div>
-
+                <div class="uk-width-1-1 uk-width-1-2@m">
+                    <form class="uk-text-center uk-text-right@m">
+                        <div class="uk-inline con-news-letter">
+                            <span uk-icon="icon: mail" class="fc-light form-input-left-icon"></span>
+                            <input class="uk-input uk-form-width-medium form-input" type="text" placeholder="Enter your email address">
+                            <button class="uk-button form-input-btn-right uk-text-bold">Join
+                                <span class="form-input-btn-right-icon border-left" uk-icon="arrow-right"></span>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bgc-darker">
+    <div class="bgc-darker uk-padding-small uk-padding-remove-horizontal">
         <div class="uk-container uk-container-large">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-
-                <div class="uk-navbar-left">
-
-                    <ul class="uk-navbar-nav">
+            <div class="uk-grid-small uk-flex uk-flex-middle" uk-grid>
+                <div class="uk-width-1-1 uk-width-expand@s ">
+                    <ul class="uk-subnav uk-flex-center uk-flex-left@s" uk-margin>
                         <li><a href="#">Legal Information</a></li>
                         <li><a href="#">Return Policy</a></li>
                         <li><a href="#">Corporate Responsibility</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Term & Conditions</a></li>
                     </ul>
-
                 </div>
-
-                <div class="uk-navbar-right">
-
-                    <ul class="uk-iconnav">
-                        <li>
-                            <a href="#" class="uk-button uk-button-default btn-icon uk-button-small">
-                                <span uk-icon="icon: facebook" class=""></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="uk-button uk-button-default btn-icon uk-button-small">
-                                <span uk-icon="icon: instagram" class=""></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="uk-button uk-button-default btn-icon uk-button-small">
-                                <span uk-icon="icon: linkedin" class=""></span>
-                            </a>
-                        </li>
-                    </ul>
-
+                <div class="uk-width-1-1 uk-width-auto@s ">
+                    <div class="uk-grid-small uk-flex uk-flex-center" uk-grid>
+                        <div>
+                            <a href="" class="uk-icon-button" uk-icon="facebook"></a>
+                        </div>
+                        <div>
+                            <a href="" class="uk-icon-button" uk-icon="instagram"></a>
+                        </div>
+                        <div>
+                            <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                        </div>
+                    </div>
                 </div>
-
-            </nav>
+            </div>
         </div>
     </div>
 </footer>
-
 
 </body>
 </html>
