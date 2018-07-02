@@ -25,4 +25,11 @@ jQuery(function($) {
             finish: 'Next&nbsp;<span class="right"></span>'
         }
     });
+
+
+
+
+    $('.toggle-palette').click(function() {
+        $(this).toggleClass();
+    });
 });

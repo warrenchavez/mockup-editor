@@ -265,3 +265,5 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 .con-preview-pane .wizard.vertical > .actions { display: none; }
 
 .thumbnail-small { width: 44px; padding: 5px 8px; }
+
+.sshow { display: block !important; }
