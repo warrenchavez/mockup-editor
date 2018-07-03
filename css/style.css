@@ -214,8 +214,6 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 
 .asdd { height: 100%; overflow-y: scroll; }
 
-.palette { height: 35px; width: 35px; display: block; border: 1px solid #dedede !important; }
-
 .con-steps .wizard > .content { background: #ffffff !important; display: block; margin: 0.5em; min-height: 35em; overflow: hidden; position: relative; width: auto; border-radius: 0px; }
 
 .con-steps .wizard > .steps a, .con-steps .wizard > .steps a:hover, .con-steps .wizard > .steps a:active { background-color: #eee !important; color: #343434 !important; border-radius: 0px; padding: 8px 16px; font-size: 12px; border: 0.3px solid #dedede !important; margin: 0; font-weight: bold; }
@@ -266,4 +264,8 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 
 .thumbnail-small { width: 44px; padding: 5px 8px; }
 
-.sshow { display: block !important; }
+.box-palette { margin: 8px 8px auto auto; }
+
+.palette { height: 35px; width: 35px; display: block; border: 1px solid #aaa !important; }
+
+.palette-toggle-show { display: block !important; }

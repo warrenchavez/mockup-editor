@@ -28,8 +28,8 @@ jQuery(function($) {
 
 
 
-
-    $('.toggle-palette').click(function() {
-        $(this).toggleClass();
+    $('.box-palette').find('.palette-toggle').hide();
+    $('.box-palette').click(function() {
+        $(this).find('.palette-toggle').toggleClass('palette-toggle-show');
     });
 });

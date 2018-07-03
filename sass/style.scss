@@ -1,6 +1,7 @@
 @import "button" ;
 @import "_variables";
 @import "colors";
+@import "palette";
 .flex {
   flex: 2;
 }
@@ -149,13 +150,6 @@ header .uk-grid-divider > :not(.uk-first-column) {
 .asdd {
   height: 100%;
   overflow-y: scroll; }
-
-.palette {
-  height: 35px;
-  width: 35px;
-  display: block;
-  border: 1px solid $color-lightGray;
-}
 
 .con-steps .wizard > .content
 {
@@ -354,6 +348,18 @@ header .uk-grid-divider > :not(.uk-first-column) {
   padding: 5px 8px;
 }
 
-.sshow {
+.box-palette {
+  //cursor: pointer;
+  margin: 8px 8px auto auto;
+}
+
+.palette {
+  height: 35px;
+  width: 35px;
+  display: block;
+  border: 1px solid $color-gray;
+}
+
+.palette-toggle-show {
   display: block !important;
 }
