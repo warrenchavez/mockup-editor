@@ -172,7 +172,11 @@
 
 .bdr-darker { border-color: #242424 !important; }
 
-.flex { -webkit-box-flex: 2; -ms-flex: 2; flex: 2; }
+.padding-tiny-vertical { padding-top: 7px; padding-bottom: 7px; }
+
+.bdr-remove-right { border-right: none !important; }
+
+.bdr-thin { border: .5px solid; }
 
 .bdrr-none { border-radius: 0; }
 

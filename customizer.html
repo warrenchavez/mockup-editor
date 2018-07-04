@@ -113,7 +113,7 @@
     </div>
 </div>
 
-<section>
+<section class="uk-section">
     <div class="uk-container uk-container-large">
         <div class="uk-grid-collapse" uk-grid>
 
@@ -182,9 +182,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div class="uk-width-1-1">-->
-                        <!--<div class="uk-card uk-card-default uk-card-body">Item 3</div>-->
-                    <!--</div>-->
                 </div>
 
 
@@ -254,11 +251,19 @@
             </div>
             <div class="uk-width-1-1 uk-width-1-2@m uk-width-1-3@l">
                 <div class="uk-padding-small bgc-light">
-
-                    <a href="#" class="uk-button uk-button-small ">Select new style</a>
+                    <div class=" uk-text-right">
+                        <a href="#" class="uk-button uk-button-small">Select new style</a>
+                    </div>
                     <h5 class="uk-text-uppercase uk-text-bold uk-margin-remove">Pts 20</h5>
-                    <h4 class="uk-text-uppercase uk-text-bold uk-margin-remove"><i>Pts Pro select 3000-8</i></h4>
-                    <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-remove" href="#">Sublimated</h6>
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-expand">
+                            <h4 class="uk-text-uppercase uk-text-bold uk-margin-remove uk-text-truncate"><i>Pts Pro select 3000-8</i></h4>
+                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-remove fc-red">Sublimated</h6>
+                        </div>
+                        <div class="uk-width-auto">
+                            <a href="#" class="uk-button uk-button-default uk-text-bold bgc-red fc-light"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Change fabric</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="uk-grid-collapse" uk-grid>
                     <div class="uk-width-1-1 uk-width-auto@s">
@@ -323,7 +328,7 @@
                     </div>
                     <div class="uk-width-1-1 uk-width-expand@s">
                         <ul class="uk-switcher con-customizer">
-                            <li class="">
+                            <li>
                                 <ul class="uk-list uk-height-max-large uk-overflow-auto uk-padding-small">
                                     <li>
                                         <a href="#" class="uk-link-reset">
@@ -418,10 +423,47 @@
                                         </a>
                                     </li>
                                 </ul>
+
+                                <!--<div class="uk-padding-small bgc-light">-->
+
+                                    <!--<div class=" uk-grid-collapse uk-text-center" uk-grid>-->
+                                        <!--<a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">-->
+                                            <!--<div class="uk-grid-collapse" uk-grid>-->
+                                                <!--<div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">-->
+                                                    <!--<span class="fc-red" uk-icon="icon: arrow-left"></span>-->
+                                                <!--</div>-->
+                                                <!--<div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>-->
+                                            <!--</div>-->
+                                        <!--</a>-->
+                                        <!--<a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">-->
+                                            <!--<div class="uk-grid-collapse" uk-grid>-->
+                                                <!--<div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>-->
+                                                <!--<div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">-->
+                                                    <!--<span class="fc-red" uk-icon="icon: arrow-right"></span>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</a>-->
+                                        <!--<div class="uk-width-1-1">-->
+                                            <!--<a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1">Finish / View &nbsp;Summary</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="uk-grid-small uk-text-bold fc-red" uk-grid>-->
+                                        <!--<div class="uk-width-expand">-->
+                                            <!--<label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>-->
+                                        <!--</div>-->
+                                        <!--<div class="uk-width-auto">-->
+                                            <!--<a href="#" class=" fc-red">User Login</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <hr class="bgc-darker uk-margin-remove">
                                 <div>
+                                    <a href="#" uk-switcher-item="previous">Previous</a>
                                     <a href="#" uk-switcher-item="next">Next</a>
                                 </div>
                             </li>
+
                             <li>
                                 <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
@@ -986,11 +1028,48 @@
                                         <a class="uk-button uk-button-default uk-button-small uk-margin-top" href="#"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit pattern color</a>
                                     </li>
                                 </ul>
+
+
+                                <!--<div class="uk-padding-small bgc-light">-->
+
+                                    <!--<div class=" uk-grid-collapse uk-text-center" uk-grid>-->
+                                        <!--<a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">-->
+                                            <!--<div class="uk-grid-collapse" uk-grid>-->
+                                                <!--<div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">-->
+                                                    <!--<span class="fc-red" uk-icon="icon: arrow-left"></span>-->
+                                                <!--</div>-->
+                                                <!--<div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>-->
+                                            <!--</div>-->
+                                        <!--</a>-->
+                                        <!--<a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">-->
+                                            <!--<div class="uk-grid-collapse" uk-grid>-->
+                                                <!--<div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>-->
+                                                <!--<div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">-->
+                                                    <!--<span class="fc-red" uk-icon="icon: arrow-right"></span>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</a>-->
+                                        <!--<div class="uk-width-1-1">-->
+                                            <!--<a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1">Finish / View &nbsp;Summary</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="uk-grid-small uk-text-bold fc-red" uk-grid>-->
+                                        <!--<div class="uk-width-expand">-->
+                                            <!--<label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>-->
+                                        <!--</div>-->
+                                        <!--<div class="uk-width-auto">-->
+                                            <!--<a href="#" class=" fc-red">User Login</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <hr class="bgc-darker uk-margin-remove">
                                 <div>
                                     <a href="#" uk-switcher-item="previous">Previous</a>
                                     <a href="#" uk-switcher-item="next">Next</a>
                                 </div>
                             </li>
+
                             <li>
                                 <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
@@ -1560,7 +1639,8 @@
                                     <a href="#" uk-switcher-item="next">Next</a>
                                 </div>
                             </li>
-                            <li class="">
+
+                            <li>
                                 <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker"><i>Neck Piping</i></h5>
@@ -1719,13 +1799,39 @@
                                     <a href="#" uk-switcher-item="next">Next</a>
                                 </div>
                             </li>
+
                             <li>
-                                asd5
+                                asdasdasdasd55555
+                                <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
+                                    <li>
+                                        <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker"><i>Decoration Letters</i></h5>
+                                        <div class="uk-grid-small uk-grid-match uk-text-center" uk-grid>
+                                            <div class="uk-width-auto uk-width-1-2@s uk-width-auto@m uk-width-1-2@xl">
+                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default"><span class="uk-margin-small-right" uk-icon="icon: plus-circle"></span>Add all application</a>
+                                            </div>
+                                            <div class="uk-width-auto uk-width-1-2@s uk-width-auto@m uk-width-1-2@xl">
+                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default"><span class="uk-margin-small-right" uk-icon="icon: search"></span>View all application</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 uk-margin class="uk-margin-remove-vertical uk-text-bold fc-darker"><i><span class=" uk-text-uppercase">Team name</span> (front view) #1</i></h5>
+                                        <div class="uk-grid-small uk-grid-match uk-text-center" uk-grid>
+                                            <div class="uk-width-1-2 ">
+                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">View</a>
+                                            </div>
+                                            <div class="uk-width-1-2 ">
+                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Hide</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <div>
                                     <a href="#" uk-switcher-item="previous">Previous</a>
                                     <a href="#" uk-switcher-item="next">Next</a>
                                 </div>
                             </li>
+
                             <li>
                                 asd6
                                 <div>
@@ -1766,9 +1872,6 @@
     <div class="uk-container uk-container-large">
 
         <div class="uk-grid-collapse uk-flex uk-text-center" uk-grid>
-            <!--<div class="uk-width-auto@m">-->
-                <!--<div class="uk-card uk-card-default uk-card-body">Auto</div>-->
-            <!--</div>-->
             <div class="uk-width-expand@m">
                 <div class="">
                     <div class="con-preview-pane">
