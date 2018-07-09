@@ -273,3 +273,9 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 .palette { height: 35px; width: 35px; display: block; border: 1px solid #aaa !important; }
 
 .palette-toggle-show { display: block !important; }
+
+.slider .rs-path-color { background-color: #aaa !important; }
+
+.slider .rs-handle { background-color: #242424 !important; }
+
+.rs-tooltip { margin-top: -15.5px; margin-left: -17.2657px; }

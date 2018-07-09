@@ -373,3 +373,15 @@ header .uk-grid-divider > :not(.uk-first-column) {
 .palette-toggle-show {
   display: block !important;
 }
+
+.slider .rs-path-color  {
+  background-color: $color-gray;
+}
+.slider .rs-handle  {
+  background-color: $color-darker;
+}
+
+.rs-tooltip {
+  margin-top: -15.5px;
+  margin-left: -17.2657px;
+}

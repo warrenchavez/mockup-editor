@@ -32,4 +32,10 @@ jQuery(function($) {
     $('.box-palette').click(function() {
         $(this).find('.palette-toggle').toggleClass('palette-toggle-show');
     });
+
+    $(".slider").roundSlider({
+        radius: 70,
+        width: 8,
+        handleSize: "+14",
+    });
 });
