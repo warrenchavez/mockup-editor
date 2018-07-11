@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/jquery.steps.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.css" />
+    <link rel="stylesheet" href="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jqueryui.min.css" />
+    <link rel="stylesheet" href="https://rawgit.com/simeydotme/jQuery-ui-Slider-Pips/master/dist/jquery-ui-slider-pips.css" />
     <link rel="stylesheet" href="css/style.css">
 
     <!-- JS -->
@@ -19,6 +21,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://rawgit.com/simeydotme/jQuery-ui-Slider-Pips/master/src/js/jquery-ui-slider-pips.js"></script>
     <script src="js/main.js"></script>
 
 </head>
@@ -115,6 +119,7 @@
 
 
 <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open</a>
+
 
 <section class="uk-section">
     <div class="uk-container uk-container-large">
@@ -1824,7 +1829,7 @@
                                                 </a>
                                             </div>
                                             <div class="uk-width-expand ">
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Full Block</a>
+                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-bold fc-dark">Full Block</a>
                                             </div>
                                             <div class="uk-width-auto ">
                                                 <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">
@@ -1834,7 +1839,17 @@
                                         </div>
 
                                         <div class="uk-padding-small uk-padding-remove-vertical">
-                                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom"><span class="uk-margin-small-right" uk-icon="icon: refresh"></span>Rotate</h6>
+                                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom"><span class="uk-margin-small-right" uk-icon="icon: expand"></span>Font Size</h6>
+                                            <div class="uk-padding uk-padding-remove-vertical">
+                                                <div class="slider-range  range-small-large"></div>
+                                            </div>
+                                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-bottom"><span class="uk-margin-small-right" uk-icon="icon: move"></span>Position</h6>
+                                            <div class="uk-padding uk-padding-remove-vertical">
+                                                <div class="slider-range range-left-right"></div>
+                                                <div class="slider-range range-up-down uk-margin-medium-top"></div>
+                                            </div>
+
+                                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-bottom"><span class="uk-margin-small-right" uk-icon="icon: refresh"></span>Rotate</h6>
                                             <div class="uk-flex-center" uk-grid>
                                                 <div class="">
                                                     <div class="slider"></div>
@@ -2272,6 +2287,30 @@
                                                     </div>
                                                 </li>
                                             </ul>
+                                        </div>
+
+                                        <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom">Choose Layout</h6>
+                                        <div class="uk-grid-collapse uk-grid-match uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-2@m uk-text-center" uk-grid>
+                                            <div>
+                                                <a class="uk-inline bdr-thin bdr-gray box-palette">
+                                                    <div class="">
+                                                        <img src="./img/font-layout-plain.png" uk-img>
+                                                    </div>
+                                                    <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
+                                                        <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a class="uk-inline bdr-thin bdr-gray box-palette">
+                                                    <div class="">
+                                                        <img src="./img/font-layout-arc.png" uk-img>
+                                                    </div>
+                                                    <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
+                                                        <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>

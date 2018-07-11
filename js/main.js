@@ -35,7 +35,38 @@ jQuery(function($) {
 
     $(".slider").roundSlider({
         radius: 70,
-        width: 8,
+        width: 12,
         handleSize: "+14",
     });
+
+    $(".slider-range")
+        .slider({
+            min: -100,
+            max: 100
+        })
+
+        .slider("float", {
+
+            handle: true,
+            pips: false,
+            labels: false,
+            prefix: "",
+            suffix: ""
+
+        });
+
+    $(".slider-range.range-small-large")
+        .slider("pips", {
+            labels: {first:"Small", last:"Large"},
+        });
+
+    $(".slider-range.range-left-right")
+        .slider("pips", {
+            labels: {first:"Left", last:"Right"},
+        });
+
+    $(".slider-range.range-up-down")
+        .slider("pips", {
+            labels: {first:"Down", last:"Up"},
+        });
 });
