@@ -31,6 +31,8 @@ jQuery(function($) {
     $('.box-palette').find('.palette-toggle').hide();
     $('.box-palette').click(function() {
         $(this).find('.palette-toggle').toggleClass('palette-toggle-show');
+        $(this).find('h6').toggleClass('bgc-dark');
+        $(this).find('h6').toggleClass('bgc-red');
     });
 
     $(".slider").roundSlider({

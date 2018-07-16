@@ -212,63 +212,11 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 
 .con-card-item > div > div { border: 1px solid #dedede !important; background-color: #ffffff !important; }
 
-.psuedo-before-remove:before { display: none; }
-
-.con-steps { min-width: 500px; }
-
-.asdd { height: 100%; overflow-y: scroll; }
-
-.con-steps .wizard > .content { background: #ffffff !important; display: block; margin: 0.5em; min-height: 35em; overflow: hidden; position: relative; width: auto; border-radius: 0px; }
-
-.con-steps .wizard > .steps a, .con-steps .wizard > .steps a:hover, .con-steps .wizard > .steps a:active { background-color: #eee !important; color: #343434 !important; border-radius: 0px; padding: 8px 16px; font-size: 12px; border: 0.3px solid #dedede !important; margin: 0; font-weight: bold; }
-
-.con-steps .wizard > .steps .current a, .con-steps .wizard > .steps .current a:hover, .con-steps .wizard > .steps .current a:active { background: #e32139 !important; color: #ffffff !important; cursor: default; }
-
-.con-steps .wizard.vertical > .steps { width: auto; }
-
-.con-steps .wizard.vertical > .content { margin: 0; width: 90%; }
-
-.con-steps .wizard.vertical > .actions { height: auto; width: 80%; margin: 0 .5%; padding: 5% 5% 0 5%; background-color: #eee !important; display: block; }
-
-.con-steps .wizard > .actions > ul { display: block; float: none; width: 100%; text-align: center; }
-
-.con-steps .wizard.vertical > .actions > ul > li { margin: 0; width: 50%; }
-
-.con-steps .wizard > .actions a, .con-steps .wizard > .actions a:hover, .con-steps .wizard > .actions a:active { border: 0.2px solid #343434 !important; background-color: #eee !important; color: #343434 !important; display: block; padding: 10px 16px; border-radius: 0px; position: relative; text-transform: uppercase; font-weight: bold; }
-
-.con-steps .wizard > .actions a span { content: ''; top: 0; position: absolute; height: 100%; width: 20%; background-size: 45%; }
-
 .con-steps .wizard > .actions a span.left { left: 0; border-right: 1px solid #353535; background: url(https://richardsonsports.com/customizer/images/css/arrow-l.png) no-repeat center center; }
 
 .con-steps .wizard > .actions a span.right { right: 0; border-left: 1px solid #353535; background: url(https://richardsonsports.com/customizer/images/css/arrow-r.png) no-repeat center center; }
 
-.con-steps .wizard > .actions .disabled a, .con-steps .wizard > .actions .disabled a:hover, .con-steps .wizard > .actions .disabled a:active { background: #eee; color: #aaa; }
-
-.acts { float: right; height: auto; width: 80%; margin: 0 .5%; padding: 0 5% 5% 5%; background-color: #eee !important; display: block; }
-
-.con-preview-pane .wizard > .steps a span.number, .con-preview-pane .wizard > .steps a:hover span.number, .con-preview-pane .wizard > .steps a:active span.number { display: none; }
-
-.con-preview-pane .wizard > .steps a, .con-preview-pane .wizard > .steps a:hover, .con-preview-pane .wizard > .steps a:active { background-color: #ffffff !important; border-radius: 0px; border-radius: 0px; padding: 6px 10px; border: 0.3px solid #dedede !important; }
-
-.con-preview-pane .wizard > .steps .current a, .con-preview-pane .wizard > .steps .current a:hover, .con-preview-pane .wizard > .steps .current a:active { border-color: #e32139 !important; cursor: default; }
-
-.con-preview-pane .wizard > .content { background: transparent; width: 75%; }
-
-.con-preview-pane .wizard > .content > .body { position: static; max-height: 700px; }
-
-.con-preview-pane .wizard > .content img { max-width: 75%; }
-
-.con-preview-pane .wizard.vertical > .steps { width: 20%; }
-
-.con-preview-pane .wizard.vertical > .steps > ul { width: 90px; }
-
-.width-full { width: 100%; }
-
-.con-preview-pane .wizard.vertical > .actions { display: none; }
-
 .thumbnail-small { width: 44px; padding: 5px 8px; }
-
-.box-palette { margin: 8px 8px auto auto; }
 
 .palette { height: 35px; width: 35px; display: block; border: 1px solid #aaa !important; }
 
