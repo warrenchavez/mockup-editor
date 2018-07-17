@@ -72,3 +72,15 @@ jQuery(function($) {
             labels: {first:"Down", last:"Up"},
         });
 });
+
+// fonts
+// fontsize
+// font case
+// itilize
+// Icons
+//
+//
+// header
+
+// active button tab
+// news letter

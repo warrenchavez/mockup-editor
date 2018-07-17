@@ -184,7 +184,15 @@ header .main-menu .uk-navbar-nav > li > a { height: 45px; }
 
 header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.5px #aaa; }
 
-.con-tab > li.uk-active a { color: #e32139 !important; border-color: #e32139 !important; }
+.bottom-arrow > div.uk-active:after, .bottom-arrow > li.uk-active:after { content: " "; display: block; height: 18px; width: 18px; -webkit-transform: rotate(45deg); transform: rotate(45deg); text-shadow: none; position: relative; margin: 20px auto -9px auto; z-index: -1; }
+
+.bottom-arrow.bac-light > li.uk-active:after, .bottom-arrow.bac-light > div.uk-active:after { background-color: #eee !important; }
+
+.uk-active > a { color: #e32139 !important; }
+
+.top-line > div a, .top-line > li a { border-top: 3px solid transparent; }
+
+.top-line.tl-red > .uk-active a { border-color: #e32139 !important; }
 
 .con-tab > li.uk-active div > img { background-color: #eee !important; }
 

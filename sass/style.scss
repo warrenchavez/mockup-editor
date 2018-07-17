@@ -32,23 +32,45 @@ header .uk-grid-divider > :not(.uk-first-column) {
   }
 }
 
-//.con-starting-point-tab > li.uk-active {
-//  &:after {
-//    content: " ";
-//    display: block;
-//    height: 40px;
-//    width: 40px;
-//    transform: rotate(45deg);
-//    text-shadow: none;
-//    background-color: $color-dark;
-//    position: relative;
-//    margin: auto auto 100px auto;
-//    z-index: -1;
-//  }
-//}
 
-.con-tab > li.uk-active a {
+.bottom-arrow > div.uk-active,
+.bottom-arrow > li.uk-active {
+  &:after {
+    content: " ";
+    display: block;
+    height: 18px;
+    width: 18px;
+    transform: rotate(45deg);
+    text-shadow: none;
+
+
+    //position: absolute !important;
+    //top: 50% !important;
+    //left: 50% !important;
+    //transform: translate(-50%, -50%) !important;
+    position: relative;
+    margin: 20px auto -9px auto;
+    z-index: -1;
+  }
+}
+
+.bottom-arrow.bac-light > li.uk-active,
+.bottom-arrow.bac-light > div.uk-active {
+  &:after {
+    background-color: $color-light;
+  }
+}
+
+.uk-active > a {
   color: $color-red;
+}
+
+.top-line > div a,
+.top-line > li a {
+  border-top: 3px solid transparent;
+}
+
+.top-line.tl-red > .uk-active a {
   border-color: $color-red;
 }
 
@@ -195,3 +217,5 @@ header .uk-grid-divider > :not(.uk-first-column) {
 
 .ui-slider-pip.ui-slider-pip-selected .ui-slider-label {
   color: $color-darker; }
+
+
