@@ -218,4 +218,12 @@ header .uk-grid-divider > :not(.uk-first-column) {
 .ui-slider-pip.ui-slider-pip-selected .ui-slider-label {
   color: $color-darker; }
 
+.left-nav {
+  background-color: #1f4d2c;
+  margin-left: -36px;
+}
 
+
+.uk-grid-small.tiny-padding-left > * {
+  padding-left: 8px;
+}
