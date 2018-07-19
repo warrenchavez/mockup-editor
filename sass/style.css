@@ -316,8 +316,9 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   color: #eeeeee !important;
   background-color: #343434 !important;
   border: none; }
-  .con-news-letter .form-input:focus {
-    background-color: #343434 !important; }
+
+.con-news-letter .form-input:focus {
+  background-color: #343434 !important; }
 
 .con-news-letter .form-input-left-icon {
   padding: 9px;
@@ -331,8 +332,9 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   padding: 1px 0 1px 30px;
   margin-left: -4px;
   border: solid 1px #eeeeee !important; }
-  .con-news-letter .form-input-btn-right:hover {
-    background-color: #eeeeee !important; }
+
+.con-news-letter .form-input-btn-right:hover {
+  background-color: #eeeeee !important; }
 
 .con-news-letter .form-input-btn-right-icon {
   padding: 9px;
@@ -342,6 +344,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .con-load-design .uk-input:focus {
   color: #eeeeee !important;
   border-color: #eeeeee !important; }
+
 .con-load-design .uk-input::placeholder {
   color: #eeeeee !important; }
 
@@ -414,8 +417,13 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   color: #242424 !important; }
 
 .left-nav {
-  background-color: #1f4d2c;
   margin-left: -36px; }
 
-.uk-grid-small.tiny-padding-left > * {
-  padding-left: 8px; }
+.uk-grid-small.grid-tiny {
+  margin-left: -6px; }
+
+.uk-grid-small.grid-tiny > * {
+  padding-left: 6px; }
+
+.uk-grid-small.grid-tiny > .uk-grid-margin {
+  margin-top: 6px; }
