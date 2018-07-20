@@ -10,16 +10,16 @@
   background-color: transparent; }
 
 .bgc-white {
-  background-color: white !important; }
+  background-color: #ffffff !important; }
 
 .bgc-light {
-  background-color: #eeeeee !important; }
+  background-color: #eee !important; }
 
 .bgc-lightGray {
   background-color: #dedede !important; }
 
 .bgc-gray {
-  background-color: #aaaaaa !important; }
+  background-color: #aaa !important; }
 
 .bgc-dark {
   background-color: #343434 !important; }
@@ -28,7 +28,7 @@
   background-color: #242424 !important; }
 
 .bgc-brickred {
-  background-color: #ad0000 !important; }
+  background-color: #AD0000 !important; }
 
 .bgc-cardinal {
   background-color: #9c0000 !important; }
@@ -52,7 +52,7 @@
   background-color: #b84d00 !important; }
 
 .bgc-tennorange {
-  background-color: darkorange !important; }
+  background-color: #ff8c00 !important; }
 
 .bgc-gold {
   background-color: #ffba00 !important; }
@@ -223,16 +223,16 @@
   color: #e32139 !important; }
 
 .fc-white {
-  color: white !important; }
+  color: #ffffff !important; }
 
 .fc-light {
-  color: #eeeeee !important; }
+  color: #eee !important; }
 
 .fc-lightGray {
   color: #dedede !important; }
 
 .fc-gray {
-  color: #aaaaaa !important; }
+  color: #aaa !important; }
 
 .fc-dark {
   color: #343434 !important; }
@@ -244,22 +244,27 @@
   border-color: #e32139 !important; }
 
 .bdr-white {
-  border-color: white !important; }
+  border-color: #ffffff !important; }
 
 .bdr-light {
-  border-color: #eeeeee !important; }
+  border-color: #eee !important; }
 
 .bdr-lightGray {
   border-color: #dedede !important; }
 
 .bdr-gray {
-  border-color: #aaaaaa !important; }
+  border-color: #aaa !important; }
 
 .bdr-dark {
   border-color: #343434 !important; }
 
 .bdr-darker {
   border-color: #242424 !important; }
+
+.btn-icon {
+  padding: 8px;
+  line-height: 0px;
+  font-size: 6px !important; }
 
 .padding-tiny-vertical {
   padding-top: 7px;
@@ -296,8 +301,12 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .bottom-arrow.bac-light > div.uk-active:after {
   background-color: #eeeeee !important; }
 
-.uk-active > a {
+.active-fc-red .uk-active a {
   color: #e32139 !important; }
+
+.active-bgc-red .uk-active a {
+  color: #eee !important;
+  background-color: #e32139 !important; }
 
 .top-line > div a,
 .top-line > li a {

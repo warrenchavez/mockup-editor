@@ -43,8 +43,12 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .bottom-arrow.bac-light > div.uk-active:after {
   background-color: #eeeeee !important; }
 
-.uk-active > a {
+.active-fc-red .uk-active  a {
   color: #e32139 !important; }
+
+.active-bgc-red .uk-active  a {
+  color: $color-light;
+  background-color: #e32139 !important; }
 
 .top-line > div a,
 .top-line > li a {
