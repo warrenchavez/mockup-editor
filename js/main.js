@@ -28,11 +28,23 @@ jQuery(function($) {
 
 
 
-    $('.box-palette').find('.palette-toggle').hide();
-    $('.box-palette').click(function() {
-        $(this).find('.palette-toggle').toggleClass('palette-toggle-show');
-        $(this).find('h6').toggleClass('bgc-dark');
-        $(this).find('h6').toggleClass('bgc-red');
+    // $('.con-palettes .box-palette').find('.palette-toggle').hide();
+    // $('.con-palettes .box-palette').click(function() {
+    //     $(this).closest('.con-palettes').find('.palette-toggle').removeClass('palette-toggle-show');
+    //     $(this).find('.palette-toggle').addClass('palette-toggle-show');
+    //     // $(this).find('h6').addClass('bgc-dark');
+    //     // $(this).find('h6').addClass('bgc-red');
+    // });
+
+
+
+    $('.con-select .btn-selection-choice').find('.choice-icon').hide();
+    $('.con-select .btn-selection-choice').click(function() {
+        $(this).closest('.con-select').find('.choice-icon').removeClass('selected');
+        $(this).find('.choice-icon').addClass('selected');
+        // $(this).find('h6').addClass('bgc-red');
+        // $(this).find('h6').addClass('bgc-dark');
+        $(this).closest('.con-select').find('.choice-icon').removeClass('selected');
     });
 
     $(".slider").roundSlider({

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Dancing+Script|Oswald");
 .btn-icon {
   padding: 8px;
   line-height: 0px;
@@ -285,8 +286,7 @@ header .main-menu .uk-navbar-nav > li > a {
 header .uk-grid-divider > :not(.uk-first-column)::before {
   border-left: solid 1.5px #aaa; }
 
-.bottom-arrow > div.uk-active:after,
-.bottom-arrow > li.uk-active:after {
+.bottom-arrow > *.uk-active:after {
   content: " ";
   display: block;
   height: 18px;
@@ -297,9 +297,18 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   margin: 20px auto -9px auto;
   z-index: -1; }
 
-.bottom-arrow.bac-light > li.uk-active:after,
-.bottom-arrow.bac-light > div.uk-active:after {
+.bottom-arrow.arrow-outward > li.uk-active:after {
+  transform: rotate(45deg);
+  text-shadow: none;
+  position: relative;
+  margin: -9px auto auto auto;
+  z-index: -1; }
+
+.bac-light > *.uk-active:after {
   background-color: #eeeeee !important; }
+
+.bac-dark > *.uk-active:after {
+  background-color: #343434 !important; }
 
 .active-fc-red .uk-active a {
   color: #e32139 !important; }
@@ -307,6 +316,16 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .active-bgc-red .uk-active a {
   color: #eeeeee !important;
   background-color: #e32139 !important; }
+
+.active-bdr-red .uk-active a {
+  border-color: #e32139 !important; }
+
+.active-bgc-dark .uk-active a {
+  color: #eeeeee !important;
+  background-color: #343434 !important; }
+
+.active-bdr-dark .uk-active a {
+  border-color: #343434 !important; }
 
 .top-line > div a,
 .top-line > li a {
@@ -381,13 +400,24 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   width: 44px;
   padding: 5px 8px; }
 
+.box-palette {
+  padding: 0px !important;
+  border: 0px;
+  border-radius: 0px; }
+
 .palette {
   height: 35px;
   width: 35px;
   display: block;
   border: 1px solid #aaaaaa !important; }
 
+.selected {
+  display: block !important; }
+
 .palette-toggle-show {
+  display: block !important; }
+
+.toggle-icon-show {
   display: block !important; }
 
 .slider .rs-path-color {
@@ -425,9 +455,6 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .ui-slider-pip.ui-slider-pip-selected .ui-slider-label {
   color: #242424 !important; }
 
-.left-nav {
-  margin-left: -36px; }
-
 .uk-grid-small.grid-tiny {
   margin-left: -6px; }
 
@@ -436,3 +463,13 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 
 .uk-grid-small.grid-tiny > .uk-grid-margin {
   margin-top: 6px; }
+
+@media screen and (min-width: 640px) {
+  .left-nav {
+    max-width: 36px; }
+
+  .zxc {
+    max-width: 80px; }
+
+  .wer {
+    margin-left: 36px; } }
