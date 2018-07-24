@@ -38,13 +38,39 @@ jQuery(function($) {
 
 
 
-    $('.con-select .btn-selection-choice').find('.choice-icon').hide();
-    $('.con-select .btn-selection-choice').click(function() {
+    $('.con-select.con-palettes .btn-selection-choice').find('.choice-icon').hide();
+    $('.con-select.con-palettes .btn-selection-choice').click(function() {
         $(this).closest('.con-select').find('.choice-icon').removeClass('selected');
         $(this).find('.choice-icon').addClass('selected');
         // $(this).find('h6').addClass('bgc-red');
         // $(this).find('h6').addClass('bgc-dark');
-        $(this).closest('.con-select').find('.choice-icon').removeClass('selected');
+    });
+
+    $('.con-select.con-palettes .btn-selection-choice.palette-color').click(function() {
+        $(this).closest('li').find('a').hide();
+        $(this).closest('li').find('a.modal-edit-palette-color').show();
+    });
+
+    $('.con-select.con-palettes .btn-selection-choice.palette-pattern').click(function() {
+        $(this).closest('li').find('a').hide();
+        $(this).closest('li').find('a.modal-edit-palette-pattern').show();
+    });
+
+
+    $('.con-select.con-palettes .btn-selection-choice.palette-color .choice-icon').each(function(){
+        if ($(this).hasClass('selected')) {
+            $(this).closest('li').find('a').hide();
+            $(this).closest('li').find('a.modal-edit-palette-color').show()
+        }
+        else
+            $(this).closest('li').find('a').hide();
+            $(this).closest('li').find('a.modal-edit-palette-pattern').show();
+    });
+
+
+    $('.con-select .btn-selection-choice').click(function() {
+        $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
+        $(this).addClass('uk-active');
     });
 
     $(".slider").roundSlider({

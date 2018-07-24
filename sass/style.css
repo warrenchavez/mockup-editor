@@ -327,6 +327,11 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .active-bdr-dark .uk-active a {
   border-color: #343434 !important; }
 
+.con-select.active-bgc-dark .uk-active {
+  color: #eeeeee !important;
+  background-color: #343434 !important;
+  border-color: #343434 !important; }
+
 .top-line > div a,
 .top-line > li a {
   border-top: 3px solid transparent; }
