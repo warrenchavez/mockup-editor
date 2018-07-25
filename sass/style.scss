@@ -71,7 +71,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   margin: 20px auto -9px auto;
   z-index: -1; }
 
-.bottom-arrow.arrow-outward > li.uk-active:after {
+.bottom-arrow.arrow-outward > *.uk-active:after {
   transform: rotate(45deg);
   text-shadow: none;
   position: relative;

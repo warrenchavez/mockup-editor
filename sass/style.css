@@ -262,6 +262,60 @@
 .bdr-darker {
   border-color: #242424 !important; }
 
+.palette-camo {
+  background-image: url("../img/palettes/palette-camo.png"); }
+
+.palette-check {
+  background-image: url("../img/palettes/palette-check.png"); }
+
+.palette-diamonds {
+  background-image: url("../img/palettes/palette-diamonds.png"); }
+
+.palette-digital-camo {
+  background-image: url("../img/palettes/palette-digital-camo.png"); }
+
+.palette-distressed {
+  background-image: url("../img/palettes/palette-distressed.png"); }
+
+.palette-fiber {
+  background-image: url("../img/palettes/palette-fiber.png"); }
+
+.palette-lockdown {
+  background-image: url("../img/palettes/palette-lockdown.png"); }
+
+.palette-pixel-fade-body {
+  background-image: url("../img/palettes/palette-pixel-fade-body.png"); }
+
+.palette-pixel-fade-sleeve {
+  background-image: url("../img/palettes/palette-pixel-fade-sleeve.png"); }
+
+.palette-quake {
+  background-image: url("../img/palettes/palette-quake.png"); }
+
+.palette-score {
+  background-image: url("../img/palettes/palette-score.png"); }
+
+.palette-thick-stripe {
+  background-image: url("../img/palettes/palette-thick-stripe.png"); }
+
+.palette-thin-stripes {
+  background-image: url("../img/palettes/palette-thin-stripes.png"); }
+
+.palette-trips-arrow {
+  background-image: url("../img/palettes/palette-trips-arrow.png"); }
+
+.palette-upper-stripes {
+  background-image: url("../img/palettes/palette-upper-stripes.png"); }
+
+.palette-upper-stripes-body {
+  background-image: url("../img/palettes/palette-upper-stripes-body.png"); }
+
+.palette-wave-stripe {
+  background-image: url("../img/palettes/palette-wave-stripe.png"); }
+
+.palette-wave-stripes {
+  background-image: url("../img/palettes/palette-wave-stripes.png"); }
+
 .btn-icon {
   padding: 8px;
   line-height: 0px;
@@ -297,7 +351,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   margin: 20px auto -9px auto;
   z-index: -1; }
 
-.bottom-arrow.arrow-outward > li.uk-active:after {
+.bottom-arrow.arrow-outward > *.uk-active:after {
   transform: rotate(45deg);
   text-shadow: none;
   position: relative;

@@ -26,18 +26,7 @@ jQuery(function($) {
         }
     });
 
-
-
-    // $('.con-palettes .box-palette').find('.palette-toggle').hide();
-    // $('.con-palettes .box-palette').click(function() {
-    //     $(this).closest('.con-palettes').find('.palette-toggle').removeClass('palette-toggle-show');
-    //     $(this).find('.palette-toggle').addClass('palette-toggle-show');
-    //     // $(this).find('h6').addClass('bgc-dark');
-    //     // $(this).find('h6').addClass('bgc-red');
-    // });
-
-
-
+    // PALETTE SELECTION
     $('.con-select.con-palettes .btn-selection-choice').find('.choice-icon').hide();
     $('.con-select.con-palettes .btn-selection-choice').click(function() {
         $(this).closest('.con-select').find('.choice-icon').removeClass('selected');
@@ -67,10 +56,22 @@ jQuery(function($) {
             $(this).closest('li').find('a.modal-edit-palette-pattern').show();
     });
 
-
     $('.con-select .btn-selection-choice').click(function() {
         $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
         $(this).addClass('uk-active');
+        if ($(this).hasClass('btn-choose-numbers-colors-none')) {
+            $(this).closest('li').find('.con-choose-numbers-colors').hide();
+        }
+        else
+            $(this).closest('li').find('.con-choose-numbers-colors').show();
+    });
+
+    $('.con-select .btn-selection-choice.btn-choose-numbers-colors-none').each(function(){
+        if ($(this).hasClass('uk-active')) {
+            $(this).closest('li').find('.con-choose-numbers-colors').hide();
+        }
+        else
+            $(this).closest('li').find('.con-choose-numbers-colors').show();
     });
 
     $(".slider").roundSlider({
