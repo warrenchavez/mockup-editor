@@ -243,6 +243,10 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
     margin-top: 6px;
 }
 
+.hidden {
+display: none;
+}
+
 //@media screen and (max-width: 640px) {
 //  .left-nav a {
 //    width: 100%;
