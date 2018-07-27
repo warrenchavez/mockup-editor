@@ -31,8 +31,9 @@ jQuery(function($) {
     $('.con-select.con-palettes .btn-selection-choice').click(function() {
         $(this).closest('.con-select').find('.choice-icon').removeClass('selected');
         $(this).find('.choice-icon').addClass('selected');
-        // $(this).find('h6').addClass('bgc-red');
-        // $(this).find('h6').addClass('bgc-dark');
+        $(this).closest('.con-select').find('h6').removeClass('bgc-red');
+        $(this).find('h6').removeClass('bgc-dark');
+        $(this).find('h6').addClass('bgc-red');
     });
 
     $('.con-select.con-palettes .btn-selection-choice.palette-color').click(function() {
