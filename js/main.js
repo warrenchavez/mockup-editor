@@ -31,7 +31,7 @@ jQuery(function($) {
     $('.con-select.con-palettes .btn-selection-choice').click(function() {
         $(this).closest('.con-select').find('.choice-icon').removeClass('selected');
         $(this).find('.choice-icon').addClass('selected');
-        $(this).closest('.con-select').find('h6').removeClass('bgc-red');
+        $(this).closest('.con-select').find('h6').removeClass('bgc-red').addClass('bgc-dark');
         $(this).find('h6').removeClass('bgc-dark');
         $(this).find('h6').addClass('bgc-red');
     });
@@ -109,6 +109,20 @@ jQuery(function($) {
             $(this).closest('li').find('.con-add-application').hide();
             $(this).closest('.con-select.con-toggle').find('.btn-selection-choice').removeClass('bgc-dark').removeClass('fc-light').addClass('bdr-light');
         }
+    });
+
+
+
+
+    $('.btn-bt-0').click(function() {
+        $(this).closest('div').removeClass('uk-active');
+        $('.left-nav div div').removeClass('uk-active');
+        $('.left-nav div div').first().addClass('uk-active');
+    });
+
+
+    $('.btn-archive').click(function() {
+        $(this).closest('.mascot-item').remove();
     });
 
 

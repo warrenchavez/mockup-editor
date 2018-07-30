@@ -247,6 +247,22 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 display: none;
 }
 
+.con-legend .box {
+  width: 12px;
+  height: 12px;
+}
+
+#modal-all-application ul li {
+  &:hover {
+    background-color: $color-red;
+    color: $color-light;
+  }
+  &:focus {
+    background-color: $color-red;
+    color: $color-light;
+  }
+}
+
 //@media screen and (max-width: 640px) {
 //  .left-nav a {
 //    width: 100%;

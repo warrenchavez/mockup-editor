@@ -199,18 +199,20 @@
                             <h4 class="uk-text-uppercase uk-text-bold uk-margin-remove uk-text-truncate">Pts Pro select 3000-8</h4>
                             <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-remove fc-red">Sublimated</h6>
                         </div>
-                        <div class="uk-width-auto">
-                            <a href="#" class="uk-button uk-button-small padding-tiny-vertical uk-text-bold bgc-red fc-light uk-text-uppercase bdr-thin bdr-darker">
-                                <span class="" uk-icon="icon: pencil"></span>
-                                <span class="uk-visible@s uk-margin-small-left">Change fabric</span>
-                            </a>
+                        <div class="" uk-switcher="connect: .bt-0" uk-grid>
+                            <div class="">
+                                <a href="" class="uk-button uk-button-small padding-tiny-vertical uk-text-bold bgc-red fc-light uk-text-uppercase bdr-thin bdr-dark btn-bt-0">
+                                    <span class="" uk-icon="icon: pencil"></span>
+                                    <span class="uk-visible@s uk-margin-small-left">Change fabric</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="uk-grid-collapse" uk-grid>
                     <div class="uk-width-1-1 uk-width-auto@s left-nav">
                         <div class="uk-flex-center uk-grid-collapse uk-child-width-auto uk-text-right@m active-bgc-red active-bdr-red uk-text-bold" uk-switcher="connect: .con-customizer" uk-grid>
-                            <div class="">
+                            <div class="uk-active">
                                 <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset">1</a>
                             </div>
                             <div class="">
@@ -237,106 +239,126 @@
                         </div>
                     </div>
                     <div class="uk-width-1-1 uk-width-expand@s">
-                        <ul class="uk-switcher con-customizer">
+                        <ul class="uk-switcher con-customizer bt-0">
                             <li>
-                                <ul class="uk-list uk-height-max-large uk-overflow-auto uk-padding-small">
-                                    <li>
-                                        <a href="#" class="uk-link-reset">
-                                            <div class="uk-grid-small uk-flex uk-text-left" uk-grid>
-                                                <div class="uk-width-auto uk-width-1-4@m">
-                                                    <div class="uk-cover-container">
-                                                        <canvas width="130" height="130"></canvas>
-                                                        <img src="./img/fabric-texture.png" uk-cover>
+                                <div class=" uk-height-max-large uk-overflow-auto">
+                                    <ul class="uk-list uk-margin-remove-vertical uk-padding-small con-select con-palettes">
+                                    <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker">Fabric</h5>
+                                    <h6 uk-margin class="uk-margin-remove-vertical uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose base fabric</h6>
+                                        <li>
+                                            <div class="box-palette uk-link-reset btn-selection-choice">
+                                                <div class="uk-grid-small uk-flex uk-text-left" uk-grid>
+                                                    <div class="uk-width-1-4">
+                                                        <div class="uk-inline">
+                                                            <div class="bgc-white padding-tiny-vertical">
+                                                                <img src="./img/fabric-texture.jpg" uk-img>
+                                                            </div>
+                                                            <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                                <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <div class="">
-                                                        <p class="uk-text-bold uk-text-uppercase uk-margin-remove fc-dark">Etx
-                                                        </p>
-                                                        <ul class="uk-list uk-padding-remove">
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="uk-link-reset">
-                                            <div class="uk-grid-small uk-flex uk-text-left" uk-grid>
-                                                <div class="uk-width-auto uk-width-1-4@m">
-                                                    <div class="uk-cover-container">
-                                                        <canvas width="130" height="130"></canvas>
-                                                        <img src="./img/fabric-texture.png" uk-cover>
-                                                    </div>
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <div class="">
-                                                        <p class="uk-text-bold uk-text-uppercase uk-margin-remove fc-dark">Etx
-                                                        </p>
-                                                        <ul class="uk-list uk-padding-remove">
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                        </ul>
+                                                    <div class="uk-width-3-4">
+                                                        <div class="">
+                                                            <p class="uk-text-bold uk-text-uppercase uk-margin-remove fc-dark">Etx
+                                                            </p>
+                                                            <ul class="uk-list uk-padding-remove">
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="uk-link-reset">
-                                            <div class="uk-grid-small uk-flex uk-text-left" uk-grid>
-                                                <div class="uk-width-auto uk-width-1-4@m">
-                                                    <div class="uk-cover-container">
-                                                        <canvas width="130" height="130"></canvas>
-                                                        <img src="./img/fabric-texture.png" uk-cover>
+                                        </li>
+                                        <li>
+                                            <div class="box-palette uk-link-reset btn-selection-choice">
+                                                <div class="uk-grid-small uk-flex uk-text-left" uk-grid>
+                                                    <div class="uk-width-1-4">
+                                                        <div class="uk-inline">
+                                                            <div class="bgc-white padding-tiny-vertical">
+                                                                <img src="./img/fabric-texture.jpg" uk-img>
+                                                            </div>
+                                                            <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                                <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <div class="">
-                                                        <p class="uk-text-bold uk-text-uppercase uk-margin-remove fc-dark">Etx
-                                                        </p>
-                                                        <ul class="uk-list uk-padding-remove">
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="uk-link-reset">
-                                            <div class="uk-grid-small uk-flex uk-text-left" uk-grid>
-                                                <div class="uk-width-auto uk-width-1-4@m">
-                                                    <div class="uk-cover-container">
-                                                        <canvas width="130" height="130"></canvas>
-                                                        <img src="./img/fabric-texture.png" uk-cover>
-                                                    </div>
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <div class="">
-                                                        <p class="uk-text-bold uk-text-uppercase uk-margin-remove fc-dark">Etx
-                                                        </p>
-                                                        <ul class="uk-list uk-padding-remove">
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                            <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
-                                                        </ul>
+                                                    <div class="uk-width-3-4">
+                                                        <div class="">
+                                                            <p class="uk-text-bold uk-text-uppercase uk-margin-remove fc-dark">Etx
+                                                            </p>
+                                                            <ul class="uk-list uk-padding-remove">
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </li>
-                                </ul>
+                                        </li>
+                                        <li>
+                                            <div class="box-palette uk-link-reset btn-selection-choice">
+                                                <div class="uk-grid-small uk-flex uk-text-left" uk-grid>
+                                                    <div class="uk-width-1-4">
+                                                        <div class="uk-inline">
+                                                            <div class="bgc-white padding-tiny-vertical">
+                                                                <img src="./img/fabric-texture.jpg" uk-img>
+                                                            </div>
+                                                            <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                                <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-3-4">
+                                                        <div class="">
+                                                            <p class="uk-text-bold uk-text-uppercase uk-margin-remove fc-dark">Etx
+                                                            </p>
+                                                            <ul class="uk-list uk-padding-remove">
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box-palette uk-link-reset btn-selection-choice">
+                                                <div class="uk-grid-small uk-flex uk-text-left" uk-grid>
+                                                    <div class="uk-width-1-4">
+                                                        <div class="uk-inline">
+                                                            <div class="bgc-white padding-tiny-vertical">
+                                                                <img src="./img/fabric-texture.jpg" uk-img>
+                                                            </div>
+                                                            <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                                <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-3-4">
+                                                        <div class="">
+                                                            <p class="uk-text-bold uk-text-uppercase uk-margin-remove fc-dark">Etx
+                                                            </p>
+                                                            <ul class="uk-list uk-padding-remove">
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                                <li class="uk-text-small"> - Lorem ipsum dolor amet, asdasd consectetur.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="uk-padding-small bgc-light">
 
                                     <div class=" uk-grid-collapse uk-text-center" uk-grid>
-                                        <a href="#" uk-switcher-item="0" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                        <a class="uk-link-reset uk-width-1-2 ">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
                                                     <span class="fc-red" uk-icon="icon: arrow-left"></span>
@@ -344,7 +366,7 @@
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
                                             </div>
                                         </a>
-                                        <a href="#" uk-switcher-item="1" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                        <a href="#" uk-switcher-item="next" class="uk-link-reset uk-width-1-2 ">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
@@ -358,8 +380,8 @@
                                     </div>
 
                                     <div class="uk-grid-small uk-text-bold fc-red" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
                                         </div>
                                         <div class="uk-width-auto">
                                             <a href="#" class=" fc-red">User Login</a>
@@ -1397,7 +1419,7 @@
                                 </ul>
                                 <div class="uk-padding-small bgc-light">
                                     <div class=" uk-grid-collapse uk-text-center" uk-grid>
-                                        <a href="#" uk-switcher-item="0" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                        <a href="#"class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
                                                     <span class="fc-red" uk-icon="icon: arrow-left"></span>
@@ -1405,7 +1427,7 @@
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
                                             </div>
                                         </a>
-                                        <a href="#" uk-switcher-item="2" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                        <a href="#"class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
@@ -1419,8 +1441,8 @@
                                     </div>
 
                                     <div class="uk-grid-small uk-text-bold fc-red" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
                                         </div>
                                         <div class="uk-width-auto">
                                             <a href="#" class=" fc-red">User Login</a>
@@ -2458,7 +2480,7 @@
                                 </ul>
                                 <div class="uk-padding-small bgc-light">
                                     <div class=" uk-grid-collapse uk-text-center" uk-grid>
-                                        <a href="#" uk-switcher-item="1" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
                                                     <span class="fc-red" uk-icon="icon: arrow-left"></span>
@@ -2466,7 +2488,7 @@
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
                                             </div>
                                         </a>
-                                        <a href="#" uk-switcher-item="3" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
@@ -2480,8 +2502,8 @@
                                     </div>
 
                                     <div class="uk-grid-small uk-text-bold fc-red" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
                                         </div>
                                         <div class="uk-width-auto">
                                             <a href="#" class=" fc-red">User Login</a>
@@ -2523,7 +2545,7 @@
                                                     <button href="#" class="uk-button uk-button-small uk-button-default btn-selection-choice">3</button>
                                                 </div>
                                             </div>
-                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-color" href="#modal-edit-palette-color" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit color</a>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize " href="#modal-edit-piping-color" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit color</a>
                                         </div>
                                     </li>
                                     <li>
@@ -2556,7 +2578,7 @@
                                                     <button href="#" class="uk-button uk-button-small uk-button-default btn-selection-choice">3</button>
                                                 </div>
                                             </div>
-                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-color" href="#modal-edit-palette-color" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit color</a>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize " href="#modal-edit-piping-color" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit color</a>
                                         </div>
                                     </li>
                                     <li>
@@ -2589,7 +2611,7 @@
                                                     <button href="#" class="uk-button uk-button-small uk-button-default btn-selection-choice">3</button>
                                                 </div>
                                             </div>
-                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-color" href="#modal-edit-palette-color" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit color</a>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize " href="#modal-edit-piping-color" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit color</a>
                                         </div>
                                     </li>
                                     <li>
@@ -2622,7 +2644,7 @@
                                                     <button href="#" class="uk-button uk-button-small uk-button-default btn-selection-choice">3</button>
                                                 </div>
                                             </div>
-                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-color" href="#modal-edit-palette-color" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit color</a>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize " href="#modal-edit-piping-color" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit color</a>
                                         </div>
                                     </li>
                                     <li>
@@ -2655,13 +2677,13 @@
                                                     <button href="#" class="uk-button uk-button-small uk-button-default btn-selection-choice">3</button>
                                                 </div>
                                             </div>
-                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-color" href="#modal-edit-palette-color" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit color</a>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize " href="#modal-edit-piping-color" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: pencil"></span>Edit color</a>
                                         </div>
                                     </li>
                                 </ul>
                                 <div class="uk-padding-small bgc-light">
                                     <div class=" uk-grid-collapse uk-text-center" uk-grid>
-                                        <a href="#" uk-switcher-item="2" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
                                                     <span class="fc-red" uk-icon="icon: arrow-left"></span>
@@ -2669,7 +2691,7 @@
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
                                             </div>
                                         </a>
-                                        <a href="#" uk-switcher-item="4" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
@@ -2683,8 +2705,8 @@
                                     </div>
 
                                     <div class="uk-grid-small uk-text-bold fc-red" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
                                         </div>
                                         <div class="uk-width-auto">
                                             <a href="#" class=" fc-red">User Login</a>
@@ -3698,7 +3720,7 @@
                                 </ul>
                                 <div class="uk-padding-small bgc-light">
                                     <div class=" uk-grid-collapse uk-text-center" uk-grid>
-                                        <a href="#" uk-switcher-item="3" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
                                                     <span class="fc-red" uk-icon="icon: arrow-left"></span>
@@ -3706,7 +3728,7 @@
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
                                             </div>
                                         </a>
-                                        <a href="#" uk-switcher-item="5" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-expand uk-padding -small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
@@ -3720,8 +3742,8 @@
                                     </div>
 
                                     <div class="uk-grid-small uk-text-bold fc-red" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
                                         </div>
                                         <div class="uk-width-auto">
                                             <a href="#" class=" fc-red">User Login</a>
@@ -4687,7 +4709,7 @@
                                 </ul>
                                 <div class="uk-padding-small bgc-light">
                                     <div class=" uk-grid-collapse uk-text-center" uk-grid>
-                                        <a href="#" uk-switcher-item="3" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
                                                     <span class="fc-red" uk-icon="icon: arrow-left"></span>
@@ -4695,7 +4717,7 @@
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
                                             </div>
                                         </a>
-                                        <a href="#" uk-switcher-item="5" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-expand uk-padding -small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
@@ -4709,8 +4731,8 @@
                                     </div>
 
                                     <div class="uk-grid-small uk-text-bold fc-red" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
                                         </div>
                                         <div class="uk-width-auto">
                                             <a href="#" class=" fc-red">User Login</a>
@@ -4786,11 +4808,11 @@
                                         <div class="uk-grid-small" uk-grid>
                                             <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-2@l uk-width-1-3@xl uk-text-center">
                                                 <div class="bdr-thin bdr-gray">
-                                                    <a  href="#modal-select-mascot" uk-toggle>
+                                                    <a  href="#" >
                                                         <img src="./img/bear.png" uk-img>
                                                     </a>
                                                 </div>
-                                                <a  href="#modal-select-mascot" uk-toggle class="uk-link-reset">Indian</a>
+                                                <a  href="#" class="uk-link-reset">Indian</a>
                                                 <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-secondary uk-margin-small-top uk-text-capitalize">Flip</a>
                                             </div>
                                             <div class="uk-width-1-2 uk-width-2-3@s uk-width-1-2@l uk-width-2-3@xl">
@@ -4834,7 +4856,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold fc-darker"><span class=" uk-text-uppercase">Custom Mascot</span> (back view) #6</h5>
+                                        <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold fc-darker"><span class=" uk-text-uppercase">Stock Mascot</span> (back view) #6</h5>
                                         <div class="uk-grid-small" uk-grid>
                                             <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-2@l uk-width-1-3@xl uk-text-center">
                                                 <div class="bdr-thin bdr-gray">
@@ -5248,7 +5270,7 @@
                                 </ul>
                                 <div class="uk-padding-small bgc-light">
                                     <div class=" uk-grid-collapse uk-text-center" uk-grid>
-                                        <a href="#" uk-switcher-item="3" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
                                                     <span class="fc-red" uk-icon="icon: arrow-left"></span>
@@ -5256,7 +5278,7 @@
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
                                             </div>
                                         </a>
-                                        <a href="#" uk-switcher-item="5" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-expand uk-padding -small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
@@ -5270,8 +5292,8 @@
                                     </div>
 
                                     <div class="uk-grid-small uk-text-bold fc-red" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
                                         </div>
                                         <div class="uk-width-auto">
                                             <a href="#" class=" fc-red">User Login</a>
@@ -5281,548 +5303,56 @@
                                 <hr class="bdr-darker uk-margin-remove">
                             </li>
 
-                            <li>8
-                                <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
-                                    <!--<li>-->
-                                        <!--<h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker">Decoration</h5>-->
-                                        <!--<h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-dark">Choose location</h6>-->
-                                        <!--<div class="uk-grid-small grid-tiny uk-grid-match uk-text-center" uk-grid>-->
-                                            <!--<div class="uk-width-1-2">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Front Body</a>-->
-                                            <!--</div>-->
-                                            <!--<div class="uk-width-1-2">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Back Body</a>-->
-                                            <!--</div>-->
-                                            <!--<div class="uk-width-1-2">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Left Sleeve</a>-->
-                                            <!--</div>-->
-                                            <!--<div class="uk-width-1-2">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Right Sleeve</a>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-dark">Choose Perspective</h6>-->
-                                        <!--<div class="uk-grid-small grid-tiny uk-grid-match uk-text-center" uk-grid>-->
-                                            <!--<div class="uk-width-1-4">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Front</a>-->
-                                            <!--</div>-->
-                                            <!--<div class="uk-width-1-4">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Back</a>-->
-                                            <!--</div>-->
-                                            <!--<div class="uk-width-1-4">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Left</a>-->
-                                            <!--</div>-->
-                                            <!--<div class="uk-width-1-4">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Right</a>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<h6 uk-margin class="uk-margin-top uk-margin-small-bottom uk-text-bold fc-darker uk-text-uppercase">Choose application type</h6>-->
-                                        <!--<div class="uk-grid-small grid-tiny uk-grid-match uk-text-center uk-margin-small-bottom" uk-grid>-->
-                                            <!--<div class="uk-width-1-2 ">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Select Mascot</a>-->
-                                            <!--</div>-->
-                                            <!--<div class="uk-width-1-2 ">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Custom Logo</a>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<div class="uk-grid-small grid-tiny uk-grid-match uk-text-center uk-margin-top" uk-grid>-->
-                                            <!--<div class="uk-width-auto uk-width-1-2@s uk-width-auto@m uk-width-1-2@xl">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default"><span class="uk-margin-small-right" uk-icon="icon: plus-circle"></span>Add application</a>-->
-                                            <!--</div>-->
-                                            <!--<div class="uk-width-auto uk-width-1-2@s uk-width-auto@m uk-width-1-2@xl">-->
-                                                <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default"><span class="uk-margin-small-right" uk-icon="icon: search"></span>View all application</a>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</li>-->
-                                    <li>
-                                        <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold fc-darker"><span class=" uk-text-uppercase">Custom Logoue</span> (front view) #5</h5>
-                                        <div class="uk-grid-small" uk-grid>
-                                            <div class="uk-width-1-3 uk-width-1-4@s uk-width-1-3@m uk-text-center">
-                                                <div class="bdr-thin bdr-gray">
-                                                    <img src="http://customizer.prolook.com/images/sidebar/single_outline_with_shadow.png" uk-img>
-                                                </div>
-                                                <a href="#" class="uk-link-reset">Indian</a>
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-secondary uk-margin-small-top">Flip</a>
-                                            </div>
-                                            <div class="uk-width-2-3 uk-width-3-4@s uk-width-2-3@m">
-                                                <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-top uk-margin-remove-bottom">Custom Logo</h6>
-                                                <div>
-                                                    <a href="#" class="uk-link-reset">View Art Details</a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="uk-link-reset">View Print Ready File</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center uk-margin-top" uk-grid>
-                                            <div class="uk-width-auto uk-width-1-2@s uk-width-auto@m uk-width-expand@xl">
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Edit Custom Logo</a>
-                                            </div>
-                                            <div class="uk-width-auto uk-width-1-2@s uk-width-auto@m uk-width-auto@xl">
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Select&nbsp;from&nbsp;existing&nbsp;designs</a>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">View</a>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Hide</a>
-                                            </div>
-                                        </div>
+                            <li>
+                                <div class="uk-padding-small uk-margin-remove">
 
-                                        <div class="uk-padding-small uk-padding-remove-vertical">
-                                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom"><span class="uk-margin-small-right" uk-icon="icon: expand"></span>Font Size</h6>
-                                            <div class="uk-padding uk-padding-remove-vertical">
-                                                <div class="slider-range  range-small-large"></div>
-                                            </div>
-                                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-bottom"><span class="uk-margin-small-right" uk-icon="icon: move"></span>Logo Size</h6>
-                                            <div class="uk-padding uk-padding-remove-vertical">
-                                                <div class="slider-range range-left-right"></div>
-                                                <div class="slider-range range-up-down uk-margin-medium-top"></div>
-                                            </div>
+                                    <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker">Richardson Logo</h5>
+                                    <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-dark">Choose location</h6>
+                                    <ul class="uk-grid-small grid-tiny uk-margin-bottom bac-dark active-bgc-dark active-bdr-dark" uk-switcher="connect: .brand-location" uk-grid>
+                                        <li class="uk-width-expand ">
+                                            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Right Chest</a>
+                                        </li>
+                                        <li class="uk-width-expand uk-active">
+                                            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Left Sleeve</a>
+                                        </li>
+                                        <li class="uk-width-expand ">
+                                            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Back Neck</a>
+                                        </li>
+                                    </ul>
 
-                                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-bottom"><span class="uk-margin-small-right" uk-icon="icon: refresh"></span>Rotate</h6>
-                                            <div class="uk-flex-center" uk-grid>
-                                                <div class="">
-                                                    <div class="slider"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold fc-darker"><span class=" uk-text-uppercase">Custom Loga</span> (front view) #5</h5>
-                                        <div class="uk-grid-small" uk-grid>
-                                            <div class="uk-width-1-3 uk-width-1-4@s uk-width-1-3@m uk-text-center">
-                                                <div class="bdr-thin bdr-gray">
-                                                    <img src="http://customizer.prolook.com/images/sidebar/single_outline_with_shadow.png" uk-img>
-                                                </div>
-                                                <a href="#" class="uk-link-reset">Indian</a>
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-secondary uk-margin-small-top">Flip</a>
-                                            </div>
-                                            <div class="uk-width-2-3 uk-width-3-4@s uk-width-2-3@m">
-                                                <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-top uk-margin-remove-bottom">Custom Logo</h6>
-                                                <div>
-                                                    <a href="#" class="uk-link-reset">View Art Details</a>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="uk-link-reset">View Print Ready File</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center uk-margin-top" uk-grid>
-                                            <div class="uk-width-auto uk-width-1-2@s uk-width-auto@m uk-width-expand@xl">
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Edit Custom Logo</a>
-                                            </div>
-                                            <div class="uk-width-auto uk-width-1-2@s uk-width-auto@m uk-width-auto@xl">
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Select&nbsp;from&nbsp;existing&nbsp;designs</a>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">View</a>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Hide</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="uk-padding-small uk-padding-remove-vertical">
-                                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom"><span class="uk-margin-small-right" uk-icon="icon: expand"></span>Font Size</h6>
-                                            <div class="uk-padding uk-padding-remove-vertical">
-                                                <div class="slider-range  range-small-large"></div>
-                                            </div>
-                                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-bottom"><span class="uk-margin-small-right" uk-icon="icon: move"></span>Logo Size</h6>
-                                            <div class="uk-padding uk-padding-remove-vertical">
-                                                <div class="slider-range range-left-right"></div>
-                                                <div class="slider-range range-up-down uk-margin-medium-top"></div>
-                                            </div>
-
-                                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-bottom"><span class="uk-margin-small-right" uk-icon="icon: refresh"></span>Rotate</h6>
-                                            <div class="uk-flex-center" uk-grid>
-                                                <div class="">
-                                                    <div class="slider"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom">Choose stock mascot color</h6>
-                                        <div>
-                                            <ul class="uk-subnav uk-grid-collapse uk-text-center uk-padding-remove uk-child-width-expand bottom-arrow arrow-outward bac-dark active-bgc-dark active-bdr-dark " uk-switcher uk-grid>
-                                                <li class="uk-padding-remove"><a href="#" class="uk-width-1-1 padding-tiny-vertical uk-button-default">Main&nbsp;Color</a></li>
-                                                <li class="uk-padding-remove"><a href="#" class="uk-width-1-1 padding-tiny-vertical uk-button-default">Outline&nbsp;Color</a></li>
-                                            </ul>
-                                            <ul class="uk-switcher uk-margin uk-padding-remove">
-                                                <li>
-                                                    <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-camo.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-check.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-diamonds.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-digital-camo.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-distressed.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-fiber.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-lockdown.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-pixel-fade-body.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-pixel-fade-sleeve.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-quake.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-score.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-thick-stripe.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-thin-stripes.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-trips-arrow.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-upper-stripes.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-upper-stripes-body.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-wave-stripe.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-wave-stripes.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
+                                    <ul class="uk-switcher brand-location">
+                                        <li>
+                                            <div class="uk-grid-small uk-grid-match uk-flex-center" uk-grid>
+                                                <div class="uk-width-1-1 uk-width-2-3@s">
+                                                    <div class="bdr-thin bdr-gray">
+                                                        <img src="http://customizer.prolook.com/images/sidebar/outlined.png" uk-img>
                                                     </div>
-                                                </li>
-                                                <li>
-                                                    <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-camo.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-check.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-diamonds.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-digital-camo.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-distressed.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-fiber.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-lockdown.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-pixel-fade-body.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-pixel-fade-sleeve.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-quake.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-score.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-thick-stripe.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-thin-stripes.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-trips-arrow.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-upper-stripes.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-upper-stripes-body.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-wave-stripe.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div>
-                                                            <a class="uk-inline box-palette">
-                                                                <div class="palette">
-                                                                    <img src="./img/palettes/palette-wave-stripes.png" width="50" height="50" uk-img>
-                                                                </div>
-                                                                <div class="uk-overlay-primary uk-position-cover palette-toggle bdr-lightGray">
-                                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center"></span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-grid-small uk-grid-match uk-flex-center" uk-grid>
+                                                <div class="uk-width-1-1 uk-width-2-3@s">
+                                                    <div class="bdr-thin bdr-gray">
+                                                        <img src="./img/richardson-branding.jpg" uk-img>
                                                     </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-grid-small uk-grid-match uk-flex-center" uk-grid>
+                                                <div class="uk-width-1-1 uk-width-2-3@s">
+                                                    <div class="bdr-thin bdr-gray">
+                                                        <img src="http://customizer.prolook.com/images/sidebar/drop_shadow.png" uk-img>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="uk-padding-small bgc-light">
                                     <div class=" uk-grid-collapse uk-text-center" uk-grid>
-                                        <a href="#" uk-switcher-item="3" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
                                                     <span class="fc-red" uk-icon="icon: arrow-left"></span>
@@ -5830,7 +5360,7 @@
                                                 <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
                                             </div>
                                         </a>
-                                        <a href="#" uk-switcher-item="5" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                        <a class="uk-link-reset uk-width-1-2">
                                             <div class="uk-grid-collapse" uk-grid>
                                                 <div class="uk-width-expand uk-padding -small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
                                                 <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
@@ -5844,8 +5374,8 @@
                                     </div>
 
                                     <div class="uk-grid-small uk-text-bold fc-red" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
                                         </div>
                                         <div class="uk-width-auto">
                                             <a href="#" class=" fc-red">User Login</a>
@@ -5854,88 +5384,6 @@
                                 </div>
                                 <hr class="bdr-darker uk-margin-remove">
                             </li>
-
-                            <!--<li>-->
-                                <!--<div class="uk-padding-small uk-margin-remove">-->
-
-                                    <!--<h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker">Richardson Logo</h5>-->
-                                    <!--<h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-dark">Choose location</h6>-->
-                                    <!--<ul class="uk-grid-small grid-tiny uk-margin-bottom bac-dark active-bgc-dark active-bdr-dark" uk-switcher="connect: .brand-location" uk-grid>-->
-                                        <!--<li class="uk-width-expand ">-->
-                                            <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Right Chest</a>-->
-                                        <!--</li>-->
-                                        <!--<li class="uk-width-expand uk-active">-->
-                                            <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Left Sleeve</a>-->
-                                        <!--</li>-->
-                                        <!--<li class="uk-width-expand ">-->
-                                            <!--<a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">Back Neck</a>-->
-                                        <!--</li>-->
-                                    <!--</ul>-->
-
-                                    <!--<ul class="uk-switcher brand-location">-->
-                                        <!--<li>-->
-                                            <!--<div class="uk-grid-small uk-grid-match uk-flex-center" uk-grid>-->
-                                                <!--<div class="uk-width-1-1 uk-width-2-3@s">-->
-                                                    <!--<div class="bdr-thin bdr-gray">-->
-                                                        <!--<img src="http://customizer.prolook.com/images/sidebar/outlined.png" uk-img>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</div>-->
-                                        <!--</li>-->
-                                        <!--<li>-->
-                                            <!--<div class="uk-grid-small uk-grid-match uk-flex-center" uk-grid>-->
-                                                <!--<div class="uk-width-1-1 uk-width-2-3@s">-->
-                                                    <!--<div class="bdr-thin bdr-gray">-->
-                                                        <!--<img src="./img/richardson-branding.jpg" uk-img>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</div>-->
-                                        <!--</li>-->
-                                        <!--<li>-->
-                                            <!--<div class="uk-grid-small uk-grid-match uk-flex-center" uk-grid>-->
-                                                <!--<div class="uk-width-1-1 uk-width-2-3@s">-->
-                                                    <!--<div class="bdr-thin bdr-gray">-->
-                                                        <!--<img src="http://customizer.prolook.com/images/sidebar/drop_shadow.png" uk-img>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</div>-->
-                                        <!--</li>-->
-                                    <!--</ul>-->
-                                <!--</div>-->
-                                <!--<div class="uk-padding-small bgc-light">-->
-                                    <!--<div class=" uk-grid-collapse uk-text-center" uk-grid>-->
-                                        <!--<a href="#" uk-switcher-item="3" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">-->
-                                            <!--<div class="uk-grid-collapse" uk-grid>-->
-                                                <!--<div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">-->
-                                                    <!--<span class="fc-red" uk-icon="icon: arrow-left"></span>-->
-                                                <!--</div>-->
-                                                <!--<div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>-->
-                                            <!--</div>-->
-                                        <!--</a>-->
-                                        <!--<a href="#" uk-switcher-item="5" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">-->
-                                            <!--<div class="uk-grid-collapse" uk-grid>-->
-                                                <!--<div class="uk-width-expand uk-padding -small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>-->
-                                                <!--<div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">-->
-                                                    <!--<span class="fc-red" uk-icon="icon: arrow-right"></span>-->
-                                                <!--</div>-->
-                                            <!--</div>-->
-                                        <!--</a>-->
-                                        <!--<div class="uk-width-1-1">-->
-                                            <!--<a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1">Finish / View &nbsp;Summary</a>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-
-                                    <!--<div class="uk-grid-small uk-text-bold fc-red" uk-grid>-->
-                                        <!--<div class="uk-width-expand">-->
-                                            <!--<label class=""><input class="uk-checkbox" type="checkbox"> = Incomplete Step</label>-->
-                                        <!--</div>-->
-                                        <!--<div class="uk-width-auto">-->
-                                            <!--<a href="#" class=" fc-red">User Login</a>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <!--<hr class="bdr-darker uk-margin-remove">-->
-                            <!--</li>-->
                         </ul>
                     </div>
                 </div>
@@ -5965,7 +5413,8 @@
                         <div class="uk-inline con-news-letter">
                             <span uk-icon="icon: mail" class="fc-light form-input-left-icon"></span>
                             <input class="uk-input uk-form-width-medium form-input" type="text" placeholder="Enter your email address">
-                            <button class="uk-button form-input-btn-right uk-text-bold">Join
+                            <button class="uk-button form-input-btn-right uk-text-bold">
+                                <span class="uk-visible@m">Join</span>
                                 <span class="form-input-btn-right-icon border-left" uk-icon="arrow-right"></span>
                             </button>
                         </div>
@@ -5979,11 +5428,11 @@
             <div class="uk-grid-small uk-flex uk-flex-middle" uk-grid>
                 <div class="uk-width-1-1 uk-width-expand@s ">
                     <ul class="uk-subnav uk-flex-center uk-flex-left@s" uk-margin>
-                        <li><a href="#">Legal Information</a></li>
-                        <li><a href="#">Return Policy</a></li>
-                        <li><a href="#">Corporate Responsibility</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Term & Conditions</a></li>
+                        <li><a href="#" class="uk-text-capitalize">Legal Information</a></li>
+                        <li><a href="#" class="uk-text-capitalize">Return Policy</a></li>
+                        <li><a href="#" class="uk-text-capitalize">Corporate Responsibility</a></li>
+                        <li><a href="#" class="uk-text-capitalize">Privacy Policy</a></li>
+                        <li><a href="#" class="uk-text-capitalize">Term & Conditions</a></li>
                     </ul>
                 </div>
                 <div class="uk-width-1-1 uk-width-auto@s ">
@@ -6005,9 +5454,216 @@
 </footer>
 
 <!--Modal-->
-<div id="modal-edit-palette-color" class="uk-flex-top" uk-modal>
+<div id="modal-edit-piping-color" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
         <h6 class="uk-padding-small bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin-bottom">Piping Color</h6>
+        <div class="uk-grid-medium uk-flex-center" uk-grid>
+            <div class="uk-width-auto uk-width-1-3@m">
+                <div class="bdr-thin bdr-gray">
+                    <img src="./img/sample-piping.jpg" alt="" width="250" height="250" uk-img>
+                </div>
+                <h6 class="uk-margin-remove uk-text-bold uk-text-center uk-text-uppercase">Yoke Piping</h6>
+            </div>
+            <div class="uk-width-1-1 uk-width-2-3@m uk-text-center">
+
+                <div>
+                    <ul class="uk-subnav uk-grid-collapse uk-text-center uk-padding-remove uk-child-width-expand bottom-arrow arrow-outward bac-dark active-bgc-dark active-bdr-dark" uk-switcher uk-grid>
+                        <li class="uk-padding-remove"><a class="uk-width-1-1 padding-tiny-vertical uk-button-default fc-dark uk-text-capitalize">Color 1</a></li>
+                    </ul>
+                    <ul class="uk-switcher uk-margin uk-padding-remove">
+                        <li>
+                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center con-select con-palettes" uk-grid>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-r-cp-2-black2">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-r-cp-2-lightblue">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-charcoalgray">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-maroon">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-r-cp-2-8">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover selected choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-gold">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-grey">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-silvergray">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-r-cp-2-1">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-r-cp-2-2">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-r-cp-2-darkblue ">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-orange">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-purple">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-cardinal">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-r-cp-2-cornblue">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-seminol">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-r-cp-2-9">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-white">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                        <div class="palette bgc-neonpink">
+                                        </div>
+                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                            <span uk-icon="icon: check; ratio: 1.3" class="uk-text-bold uk-position-center"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="uk-grid-small uk-grid-match uk-text-center" uk-grid>
+                    <div class="uk-width-1-2 uk-width-1-2@s">
+                        <button class="uk-button uk-button-default uk-button-small uk-width-1-1" type="button">Done</button>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-2@s">
+                        <button class="uk-button uk-button-default uk-button-small uk-width-1-1 uk-modal-close" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-edit-palette-color" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <h6 class="uk-padding-small bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin-bottom">Palette Color</h6>
         <div class="uk-grid-medium uk-flex-center" uk-grid>
             <div class="uk-width-auto uk-width-1-3@m">
                 <div class="bdr-thin bdr-gray">
@@ -6996,132 +6652,168 @@
 
                         <div class="uk-margin-top uk-padding-small bdr-thin bdr-gray bgc-light uk-height-max-medium uk-overflow-auto">
                             <div class="uk-grid-small uk-grid-match uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-14@m con-select con-palettes" uk-grid>
-                                <a class="box-palette uk-link-reset btn-selection-choice">
-                                    <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
-                                    <div class="uk-inline">
-                                        <div class="bgc-white padding-tiny-vertical">
-                                            <img src="./img/bear.png" uk-img>
-                                        </div>
-                                        <div class="uk-position-cover choice-icon bdr-lightGray">
-                                            <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
-                                        </div>
-                                        <div class="uk-position-bottom-right uk-margin-small-right">
+                                <div class="mascot-item">
+                                    <div class="bgc-white uk-text-right">
+                                        <a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+                                            <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
+                                            <div class="uk-inline">
+                                                <div class=" padding-tiny-vertical">
+                                                    <img src="./img/bear.png" uk-img>
+                                                </div>
+                                                <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="uk-margin-small-right uk-link-reset btn-archive">
                                             <span uk-icon="icon: album; ratio: .7"></span>
-                                        </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="box-palette uk-link-reset btn-selection-choice">
-                                    <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
-                                    <div class="uk-inline">
-                                        <div class="bgc-white padding-tiny-vertical">
-                                            <img src="./img/bear.png" uk-img>
-                                        </div>
-                                        <div class="uk-position-cover choice-icon bdr-lightGray">
-                                            <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
-                                        </div>
-                                        <div class="uk-position-bottom-right uk-margin-small-right">
+                                </div>
+                                <div class="mascot-item">
+                                    <div class="bgc-white uk-text-right">
+                                        <a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+                                            <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
+                                            <div class="uk-inline">
+                                                <div class=" padding-tiny-vertical">
+                                                    <img src="./img/bear.png" uk-img>
+                                                </div>
+                                                <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="uk-margin-small-right uk-link-reset btn-archive">
                                             <span uk-icon="icon: album; ratio: .7"></span>
-                                        </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="box-palette uk-link-reset btn-selection-choice">
-                                    <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
-                                    <div class="uk-inline">
-                                        <div class="bgc-white padding-tiny-vertical">
-                                            <img src="./img/bear.png" uk-img>
-                                        </div>
-                                        <div class="uk-position-cover choice-icon bdr-lightGray">
-                                            <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
-                                        </div>
-                                        <div class="uk-position-bottom-right uk-margin-small-right">
+                                </div>
+                                <div class="mascot-item">
+                                    <div class="bgc-white uk-text-right">
+                                        <a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+                                            <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
+                                            <div class="uk-inline">
+                                                <div class=" padding-tiny-vertical">
+                                                    <img src="./img/bear.png" uk-img>
+                                                </div>
+                                                <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="uk-margin-small-right uk-link-reset btn-archive">
                                             <span uk-icon="icon: album; ratio: .7"></span>
-                                        </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="box-palette uk-link-reset btn-selection-choice">
-                                    <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
-                                    <div class="uk-inline">
-                                        <div class="bgc-white padding-tiny-vertical">
-                                            <img src="./img/bear.png" uk-img>
-                                        </div>
-                                        <div class="uk-position-cover choice-icon bdr-lightGray">
-                                            <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
-                                        </div>
-                                        <div class="uk-position-bottom-right uk-margin-small-right">
+                                </div>
+                                <div class="mascot-item">
+                                    <div class="bgc-white uk-text-right">
+                                        <a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+                                            <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
+                                            <div class="uk-inline">
+                                                <div class=" padding-tiny-vertical">
+                                                    <img src="./img/bear.png" uk-img>
+                                                </div>
+                                                <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="uk-margin-small-right uk-link-reset btn-archive">
                                             <span uk-icon="icon: album; ratio: .7"></span>
-                                        </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="box-palette uk-link-reset btn-selection-choice">
-                                    <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
-                                    <div class="uk-inline">
-                                        <div class="bgc-white padding-tiny-vertical">
-                                            <img src="./img/bear.png" uk-img>
-                                        </div>
-                                        <div class="uk-position-cover choice-icon bdr-lightGray">
-                                            <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
-                                        </div>
-                                        <div class="uk-position-bottom-right uk-margin-small-right">
+                                </div>
+                                <div class="mascot-item">
+                                    <div class="bgc-white uk-text-right">
+                                        <a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+                                            <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
+                                            <div class="uk-inline">
+                                                <div class=" padding-tiny-vertical">
+                                                    <img src="./img/bear.png" uk-img>
+                                                </div>
+                                                <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="uk-margin-small-right uk-link-reset btn-archive">
                                             <span uk-icon="icon: album; ratio: .7"></span>
-                                        </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="box-palette uk-link-reset btn-selection-choice">
-                                    <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
-                                    <div class="uk-inline">
-                                        <div class="bgc-white padding-tiny-vertical">
-                                            <img src="./img/bear.png" uk-img>
-                                        </div>
-                                        <div class="uk-position-cover choice-icon bdr-lightGray">
-                                            <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
-                                        </div>
-                                        <div class="uk-position-bottom-right uk-margin-small-right">
+                                </div>
+                                <div class="mascot-item">
+                                    <div class="bgc-white uk-text-right">
+                                        <a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+                                            <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
+                                            <div class="uk-inline">
+                                                <div class=" padding-tiny-vertical">
+                                                    <img src="./img/bear.png" uk-img>
+                                                </div>
+                                                <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="uk-margin-small-right uk-link-reset btn-archive">
                                             <span uk-icon="icon: album; ratio: .7"></span>
-                                        </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="box-palette uk-link-reset btn-selection-choice">
-                                    <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
-                                    <div class="uk-inline">
-                                        <div class="bgc-white padding-tiny-vertical">
-                                            <img src="./img/bear.png" uk-img>
-                                        </div>
-                                        <div class="uk-position-cover choice-icon bdr-lightGray">
-                                            <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
-                                        </div>
-                                        <div class="uk-position-bottom-right uk-margin-small-right">
+                                </div>
+                                <div class="mascot-item">
+                                    <div class="bgc-white uk-text-right">
+                                        <a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+                                            <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
+                                            <div class="uk-inline">
+                                                <div class=" padding-tiny-vertical">
+                                                    <img src="./img/bear.png" uk-img>
+                                                </div>
+                                                <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="uk-margin-small-right uk-link-reset btn-archive">
                                             <span uk-icon="icon: album; ratio: .7"></span>
-                                        </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="box-palette uk-link-reset btn-selection-choice">
-                                    <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
-                                    <div class="uk-inline">
-                                        <div class="bgc-white padding-tiny-vertical">
-                                            <img src="./img/bear.png" uk-img>
-                                        </div>
-                                        <div class="uk-position-cover choice-icon bdr-lightGray">
-                                            <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
-                                        </div>
-                                        <div class="uk-position-bottom-right uk-margin-small-right">
+                                </div>
+                                <div class="mascot-item">
+                                    <div class="bgc-white uk-text-right">
+                                        <a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+                                            <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
+                                            <div class="uk-inline">
+                                                <div class=" padding-tiny-vertical">
+                                                    <img src="./img/bear.png" uk-img>
+                                                </div>
+                                                <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="uk-margin-small-right uk-link-reset btn-archive">
                                             <span uk-icon="icon: album; ratio: .7"></span>
-                                        </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="box-palette uk-link-reset btn-selection-choice">
-                                    <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
-                                    <div class="uk-inline">
-                                        <div class="bgc-white padding-tiny-vertical">
-                                            <img src="./img/bear.png" uk-img>
-                                        </div>
-                                        <div class="uk-position-cover choice-icon bdr-lightGray">
-                                            <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
-                                        </div>
-                                        <div class="uk-position-bottom-right uk-margin-small-right">
+                                </div>
+                                <div class="mascot-item">
+                                    <div class="bgc-white uk-text-right">
+                                        <a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+                                            <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">Bear</h6>
+                                            <div class="uk-inline">
+                                                <div class=" padding-tiny-vertical">
+                                                    <img src="./img/bear.png" uk-img>
+                                                </div>
+                                                <div class="uk-position-cover choice-icon bdr-lightGray">
+                                                    <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="uk-margin-small-right uk-link-reset btn-archive">
                                             <span uk-icon="icon: album; ratio: .7"></span>
-                                        </div>
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -7132,32 +6824,22 @@
         </ul>
     </div>
 </div>
-<!--<div id="modal-close-outside" uk-modal>-->
-    <!--<div class="uk-modal-dialog uk-modal-body">-->
-        <!--<button class="uk-modal-close-outside" type="button" uk-close></button>-->
-        <!--<h2 class="uk-modal-title">Outside</h2>-->
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-    <!--</div>-->
-<!--</div>-->
-
 <div id="modal-all-application" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical">
-        <!--<div class="bgc-darker uk-padding-small">-->
-            <h4 class="bgc-darker fc-light uk-padding-small uk-text-capitalize uk-text-center uk-text-uppercase uk-margin-remove">All Application</h4>
-        <!--</div>-->
+        <h4 class="bgc-darker fc-light uk-padding-small uk-text-capitalize uk-text-center uk-text-uppercase uk-margin-remove">All Application</h4>
         <div class="uk-padding-small">
-            <ul class="uk-grid-collapse uk-child-width-1-1" uk-sortable="handle: .item-sort" uk-grid>
-                <li>
-                    <div class="item-sort uk-padding-small">#2 Front Number</div>
+            <ul class="uk-grid-collapse uk-child-width-1-1 uk-list uk-list-striped" uk-sortable="handle: .item-sort" uk-grid>
+                <li class="uk-drag">
+                    <div class="item-sort">#2 Front Number</div>
                 </li>
-                <li>
-                    <div class="item-sort uk-padding-small">#3 Front Number</div>
+                <li class="uk-drag">
+                    <div class="item-sort">#3 Front Number</div>
                 </li>
-                <li>
-                    <div class="item-sort uk-padding-small bgc-red fc-light">#4 Back Number</div>
+                <li class="uk-drag">
+                    <div class="item-sort">#4 Back Number</div>
                 </li>
-                <li>
-                    <div class="item-sort uk-padding-small">#5 Back Number</div>
+                <li class="uk-drag">
+                    <div class="item-sort">#5 Back Number</div>
                 </li>
             </ul>
         </div>
