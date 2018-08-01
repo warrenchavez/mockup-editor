@@ -1,0 +1,116 @@
+
+
+
+    // $('.con-select .btn-selection-choice').click(function() {
+    //     $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
+    //     $(this).addClass('uk-active');
+    //     if ($(this).hasClass('btn-choose-numbers-colors-none')) {
+    //         $(this).closest('li').find('.con-choose-numbers-colors').hide();
+    //     }
+    //     else
+    //         $(this).closest('li').find('.con-choose-numbers-colors').show();
+    // });
+    //
+    // $('.con-select .btn-selection-choice.btn-choose-numbers-colors-none').each(function(){
+    //     if ($(this).hasClass('uk-active')) {
+    //         $(this).closest('li').find('.con-choose-numbers-colors').hide();
+    //     }
+    //     else
+    //         $(this).closest('li').find('.con-choose-numbers-colors').show();
+    // });
+
+
+    // $('.con-select.con-toggle .btn-selection-choice.toggle-show').click(function(){
+    //     if ($(this).hasClass('uk-active')) {
+    //         $(this).closest('li').find('.con-choose-numbers-colors').show();
+    //     }
+    //     else
+    //         $(this).closest('li').find('.con-choose-numbers-colors').hide();
+    // });
+
+
+    // $('.con-toggle .btn-selection-choice.toggle-hide').click(function(){
+    //     if ($(this).hasClass('uk-active')) {
+    //         $(this).closest('li').find('.con-choose-numbers-colors').hide();
+    //     }
+    //     else
+    //         $(this).closest('li').find('.con-choose-numbers-colors').show();
+    // });
+
+    // $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
+    //     if ($(this).hasClass('uk-active')) {
+    //         $(this).closest('li').find('.con-choose-numbers-colors').hide();
+    //     }
+    //     else
+    //         $(this).closest('li').find('.con-choose-numbers-colors').show();
+    // });
+
+
+
+
+
+    // $('.con-select.con-toggle .btn-selection-choice.toggle-show').click(function(){
+    //     if ($(this).hasClass('uk-active')) {
+    //         $(this).closest('li').find('.con-input-object-text').show();
+    //     }
+    //     else
+    //         $(this).closest('li').find('.con-input-object-text').hide();
+    // });
+    //
+    //
+    // $('.con-select.con-toggle .btn-selection-choice.toggle-hide').click(function(){
+    //     if ($(this).hasClass('uk-active')) {
+    //         $(this).closest('li').find('.con-input-object-text').hide();
+    //     }
+    //     else
+    //         $(this).closest('li').find('.con-input-object-text').show();
+    // });
+    //
+    // $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
+    //     if ($(this).hasClass('uk-active')) {
+    //         $(this).closest('li').find('.con-input-object-text').hide();
+    //     }
+    //     else
+    //         $(this).closest('li').find('.con-input-object-text').show();
+    // });
+
+
+
+    ------------------
+    $('.con-select.con-toggle .btn-selection-choice').click(function() {
+            $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
+            $(this).addClass('uk-active');
+            if ($(this).hasClass('toggle-hide')) {
+                $(this).closest('li').find('.con-choose-numbers-colors').hide();
+            }
+            else
+                $(this).closest('li').find('.con-choose-numbers-colors').show();
+        });
+
+        $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
+            if ($(this).hasClass('uk-active')) {
+                $(this).closest('li').find('.con-choose-numbers-colors').hide();
+            }
+            else
+                $(this).closest('li').find('.con-choose-numbers-colors').show();
+        });
+
+
+
+        $('.con-select.con-toggle .btn-selection-choice').click(function() {
+            $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
+            $(this).addClass('uk-active');
+            if ($(this).hasClass('toggle-hide')) {
+                $(this).closest('li').find('.con-input-object').hide();
+            }
+            else
+                $(this).closest('li').find('.con-input-object').show();
+        });
+
+        $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
+            if ($(this).hasClass('uk-active')) {
+                $(this).closest('li').find('.con-input-object').hide();
+            }
+            else
+                $(this).closest('li').find('.con-input-object').show();
+        });

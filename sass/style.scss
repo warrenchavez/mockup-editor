@@ -3,391 +3,213 @@
 @import "colors";
 @import "palette";
 
-.padding-tiny-vertical {
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
 
-.bdr-remove-right {
-  border-right: none !important;
-}
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Dancing+Script|Oswald');
 
-.bdr-thin {
-  border: .5px solid;
-}
-
-
-.bdrr-none {
-  border-radius: 0;
-}
-
-
-header .main-menu .uk-navbar-nav>li>a {
-  height: 45px;
-}
-
-header .uk-grid-divider > :not(.uk-first-column) {
-  &::before {
-   border-left: solid 1.5px #aaa;
-  }
-}
-
-//.con-starting-point-tab > li.uk-active {
-//  &:after {
-//    content: " ";
-//    display: block;
-//    height: 40px;
-//    width: 40px;
-//    transform: rotate(45deg);
-//    text-shadow: none;
-//    background-color: $color-dark;
-//    position: relative;
-//    margin: auto auto 100px auto;
-//    z-index: -1;
-//  }
+//@font-face {
+//  font-family: 'Abrade Book';
+//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.svg#Abrade-Book') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'Abrade Medium';
+//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.svg#Abrade-Medium') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'Abrade Ultra';
+//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.svg#Abrade-Ultra') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'Abrade Ultra Italic';
+//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.svg#Abrade-UltraItalic') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
 //}
 
-.con-tab > li.uk-active a {
-  color: $color-red;
-  border-color: $color-red;
-}
 
-.con-tab > li.uk-active div > img {
-  background-color: $color-light;
-}
+.btn-icon {
+  padding: 8px;
+  line-height: 0px;
+  font-size: 6px !important; }
+
+.padding-tiny-vertical {
+  padding-top: 7px;
+  padding-bottom: 7px; }
+
+.bdr-remove-right {
+  border-right: none !important; }
+
+.bdr-thin {
+  border: .5px solid; }
+
+.bdrr-none {
+  border-radius: 0; }
+
+header .main-menu .uk-navbar-nav > li > a {
+  height: 45px; }
+
+header .uk-grid-divider > :not(.uk-first-column)::before {
+  border-left: solid 1.5px #aaa; }
 
 
-.con-news-letter {
-  border: solid 1px white;
-}
+.bottom-arrow > *.uk-active:after {
+  content: " ";
+  display: block;
+  height: 18px;
+  width: 18px;
+  transform: rotate(45deg);
+  text-shadow: none;
+  position: relative;
+  margin: 20px auto -9px auto;
+  z-index: -1; }
 
-.con-news-letter .form-input {
+.bottom-arrow.arrow-outward > *.uk-active:after {
+  transform: rotate(45deg);
+  text-shadow: none;
+  position: relative;
+  margin: -9px auto auto auto;
+  z-index: -1; }
+
+.bac-light > *.uk-active:after {
+  background-color: #eeeeee !important; }
+
+
+.bac-dark > *.uk-active:after {
+  background-color: #343434 !important; }
+
+.active-fc-red .uk-active a {
+  color: $color-red; }
+
+.active-bgc-red .uk-active a {
+  color: $color-light;
+  background-color: $color-red; }
+
+.active-bdr-red .uk-active a {
+  border-color: $color-red; }
+
+.active-bgc-dark .uk-active a {
+  color: $color-light;
+  background-color: $color-dark; }
+
+.active-bdr-dark .uk-active a {
+  border-color: $color-dark; }
+
+.con-select.active-bgc-dark .uk-active {
   color: $color-light;
   background-color: $color-dark;
-  border: none;
-  &:focus {
-    background-color: $color-dark;
-  }
-}
+  border-color: $color-dark; }
+
+.top-line > div a,
+.top-line > li a {
+  border-top: 3px solid transparent; }
+
+.top-line.tl-red > .uk-active a {
+  border-color: $color-red; }
+
+.con-tab > li.uk-active div > img {
+  background-color: #eeeeee !important; }
+
+.con-news-letter {
+  border: solid 1px white; }
+
+.con-news-letter .form-input {
+  color: #eeeeee !important;
+  background-color: #343434 !important;
+  border: none; }
+  .con-news-letter .form-input:focus {
+    background-color: #343434 !important; }
 
 .con-news-letter .form-input-left-icon {
   padding: 9px;
   display: inline-block;
   margin-right: -5px;
-  border-right: solid 1px white;
-}
+  border-right: solid 1px white; }
 
 .con-news-letter .form-input-btn-right {
   line-height: 0;
-  color: $color-dark;
+  color: #343434 !important;
   padding: 1px 0 1px 30px;
   margin-left: -4px;
-  border: solid 1px $color-light;
-  &:hover {
-    //color: $color-darker;
-    background-color: $color-light;
-  }
-}
+  border: solid 1px #eeeeee !important; }
+  .con-news-letter .form-input-btn-right:hover {
+    background-color: #eeeeee !important; }
 
 .con-news-letter .form-input-btn-right-icon {
   padding: 9px;
   margin-left: 30px;
-  border-left: solid 1px;
-}
+  border-left: solid 1px; }
 
+.con-load-design .uk-input:focus {
+  color: #eeeeee !important;
+  border-color: #eeeeee !important; }
+.con-load-design .uk-input::placeholder {
+  color: #eeeeee !important; }
 
-//.ewan {
-//  width: 100%;
-//  height: 200px;
-//  margin: 0;
-//  padding: 0;
-//  text-align: center;
-//&:after {
-//  display: inline-block;
-//  height: 100%;
-//  content: " ";
-//  text-shadow: none;
-//  background-color: $color-dark;
-//  width: 50%;
-//}
-//  &:before {
-//    display: inline-block;
-//    height: 100%;
-//    content: " ";
-//    text-shadow: none;
-//    background-color: $color-red;
-//    width: 50%;
-//  }
-//}
+.con-load-design .uk-input.bgc-red:focus {
+  background-color: #e32139 !important; }
 
-.con-load-design .uk-input {
-  &:focus {
-    color: $color-light;
-    border-color: $color-light;
-  }
-  &::placeholder {
-    color: $color-light;
-  }
-}
-
-.con-load-design .uk-input.bgc-red {
-  &:focus {
-    background-color: $color-red;
-  }
-}
-
-.con-load-design .uk-input.bgc-dark {
-  &:focus {
-    background-color: $color-dark;
-  }
-}
+.con-load-design .uk-input.bgc-dark:focus {
+  background-color: #343434 !important; }
 
 .con-card-item > div > div {
-  border: 1px solid $color-lightGray;
-  background-color: $color-white;
-}
+  border: 1px solid #dedede !important;
+  background-color: white !important; }
 
-.psuedo-before-remove {
-  &:before {
-    display: none;
-  }
-}
-
-.con-steps {
-  min-width: 500px;
-}
-
-.asdd {
-  height: 100%;
-  overflow-y: scroll; }
-
-.con-steps .wizard > .content
-{
-  background: $color-white;
-  display: block;
-  margin: 0.5em;
-  min-height: 35em;
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  border-radius: 0px;
-}
-
-.con-steps .wizard > .steps a,
-.con-steps .wizard > .steps a:hover,
-.con-steps .wizard > .steps a:active {
-  background-color: $color-light;
-  color: $color-dark;
-  border-radius: 0px;
-  padding: 8px 16px;
-  font-size: 12px;
-  border: .3px solid $color-lightGray;
-  margin: 0;
-  font-weight: bold;
-}
-
-.con-steps .wizard > .steps .current a,
-.con-steps .wizard > .steps .current a:hover,
-.con-steps .wizard > .steps .current a:active
-{
-  background: $color-red;
-  color: $color-white;
-  cursor: default;
-}
-
-.con-steps .wizard.vertical > .steps
-{
-  width: auto;
-}
-
-.con-steps .wizard.vertical > .content
-{
-  margin: 0;
-  width: 90%;
-}
-
-.con-steps .wizard.vertical > .actions
-{
-  height: auto;
-  width: 80%;
-  margin: 0 .5%;
-  padding: 5% 5% 0 5%;
-  background-color: $color-light;
-  display: block;
-}
-
-.con-steps .wizard > .actions > ul
-{
-  display: block;
-  float: none;
-  width: 100%;
-  text-align: center;
-}
-
-.con-steps .wizard.vertical > .actions > ul > li
-{
-  margin: 0;
-  width: 50%;
-}
-.con-steps .wizard > .actions a,
-.con-steps .wizard > .actions a:hover,
-.con-steps .wizard > .actions a:active
-{
-  border: .2px solid $color-dark;
-  background-color: $color-light;
-  color: $color-dark;
-  display: block;
-  padding: 10px 16px;
-  border-radius: 0px;
-  position: relative;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.con-steps .wizard > .actions a span
-{
-  content: '';
-  top: 0;
-  position: absolute;
-  height: 100%;
-  width: 20%;
-  background-size: 45%;
-}
-
-.con-steps .wizard > .actions a span.left
-{
+.con-steps .wizard > .actions a span.left {
   left: 0;
   border-right: 1px solid #353535;
-  background: url(https://richardsonsports.com/customizer/images/css/arrow-l.png) no-repeat center center;
-}
+  background: url(https://richardsonsports.com/customizer/images/css/arrow-l.png) no-repeat center center; }
 
-.con-steps .wizard > .actions a span.right
-{
+.con-steps .wizard > .actions a span.right {
   right: 0;
   border-left: 1px solid #353535;
-  background: url(https://richardsonsports.com/customizer/images/css/arrow-r.png) no-repeat center center;
-}
-
-.con-steps .wizard > .actions .disabled a,
-.con-steps .wizard > .actions .disabled a:hover,
-.con-steps .wizard > .actions .disabled a:active
-{
-  background: #eee;
-  color: #aaa;
-}
-
-
-
-.acts
-{
-  float: right;
-  height: auto;
-  width: 80%;
-  margin: 0 .5%;
-  padding: 0 5% 5% 5%;
-  background-color: $color-light;
-  display: block;
-}
-
-
-
-
-
-.con-preview-pane .wizard > .steps a span.number,
-.con-preview-pane .wizard > .steps a:hover span.number,
-.con-preview-pane .wizard > .steps a:active span.number {
-  display: none;
-}
-
-.con-preview-pane .wizard > .steps a,
-.con-preview-pane .wizard > .steps a:hover,
-.con-preview-pane .wizard > .steps a:active {
-  background-color: $color-white;
-  border-radius: 0px;
-  border-radius: 0px;
-  padding: 6px 10px;
-  border: .3px solid $color-lightGray;
-  //margin: ;
-}
-
-.con-preview-pane .wizard > .steps .current a,
-.con-preview-pane .wizard > .steps .current a:hover,
-.con-preview-pane .wizard > .steps .current a:active
-{
-  border-color: $color-red;
-  cursor: default;
-}
-
-.con-preview-pane .wizard > .content {
-  background: $color-transparent;
-  //width: 100%;
-  width:75%;
-  //width: 400px;
-}
-
-.con-preview-pane .wizard > .content > .body{
-  position: static;
-  max-height: 700px;
-
-}
-
-.con-preview-pane .wizard > .content img{
-  max-width: 75%;
-}
-
-.con-preview-pane .wizard.vertical > .steps
-{
-  width: 20%;
-}
-
-.con-preview-pane .wizard.vertical > .steps > ul
-{
-  width: 90px;
-}
-.width-full {
-  width: 100%;
-}
-
-
-.con-preview-pane .wizard.vertical > .actions {
-  display: none;
-}
+  background: url(https://richardsonsports.com/customizer/images/css/arrow-r.png) no-repeat center center; }
 
 .thumbnail-small {
   width: 44px;
-  padding: 5px 8px;
-}
+  padding: 5px 8px; }
 
 .box-palette {
-  //cursor: pointer;
-  margin: 8px 8px auto auto;
+  padding: 0px !important;
+  border: 0px;
+  border-radius: 0px;
 }
-
 .palette {
   height: 35px;
   width: 35px;
   display: block;
-  border: 1px solid $color-gray;
+  border: 1px solid #aaaaaa !important;
 }
+
+.selected {
+  display: block !important; }
 
 .palette-toggle-show {
-  display: block !important;
-}
+  display: block !important; }
 
-.slider .rs-path-color  {
-  background-color: $color-gray;
-}
-.slider .rs-handle  {
-  background-color: $color-dark;
-}
+.toggle-icon-show {
+  display: block !important; }
+
+.slider .rs-path-color {
+  background-color: #aaaaaa !important; }
+
+.slider .rs-handle {
+  background-color: #343434 !important; }
 
 .rs-tooltip {
   margin: 0 !important;
   position: absolute !important;
   top: 50% !important;
   left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-}
+  transform: translate(-50%, -50%) !important; }
 
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
@@ -398,18 +220,80 @@ header .uk-grid-divider > :not(.uk-first-column) {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-  background: $color-dark;
-  border-color: transparent;
-}
+  background: #343434 !important;
+  border-color: transparent; }
 
 .ui-slider {
-  background: $color-gray;
-}
+  background: #aaaaaa !important; }
 
 .ui-slider-label {
   font-size: 12px;
-  color: $color-dark;
-}
+  color: #343434 !important; }
 
 .ui-slider-pip.ui-slider-pip-selected .ui-slider-label {
-  color: $color-darker; }
+  color: #242424 !important; }
+
+.uk-grid-small.grid-tiny {
+  margin-left: -6px; }
+
+.uk-grid-small.grid-tiny > * {
+  padding-left: 6px; }
+
+.uk-grid-small.grid-tiny>.uk-grid-margin {
+    margin-top: 6px;
+}
+
+.hidden {
+display: none;
+}
+
+.con-legend .box {
+  width: 12px;
+  height: 12px;
+}
+
+#modal-all-application ul li {
+  &:hover {
+    background-color: $color-red;
+    color: $color-light;
+  }
+  &:focus {
+    background-color: $color-red;
+    color: $color-light;
+  }
+}
+
+//@media screen and (max-width: 640px) {
+//  .left-nav a {
+//    width: 100%;
+//  }
+//}
+
+@media screen and (min-width: 640px) {
+
+  .left-nav {
+    //margin-left: -36px;
+    max-width: 36px;
+  }
+
+  .zxc {
+    max-width: 80px;
+  }
+
+  .wer {
+    margin-left: 36px;
+  }
+}
+
+
+//San-serif - FREE
+//Verdana - FREE
+//Archivo Black - FREE (Google fonts)
+//Dancing Script - FREE (Google fonts)
+//Oswald - FREE (Google fonts)
+//
+//Abrade Brook
+//Abrade Medium
+//Abrade Ultra
+//Abrade Ultra Italic
+
