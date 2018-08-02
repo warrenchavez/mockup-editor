@@ -26,35 +26,24 @@ jQuery(function($) {
         }
     });
 
-    // PALETTE SELECTION
-    $('.con-select.con-palettes .btn-selection-choice').find('.choice-icon').hide();
+
+
+    // CHOOSE-PALETTE
     $('.con-select.con-palettes .btn-selection-choice').click(function() {
-        $(this).closest('.con-select').find('.choice-icon').removeClass('selected');
-        $(this).find('.choice-icon').addClass('selected');
-        $(this).closest('.con-select').find('h6').removeClass('bgc-red').addClass('bgc-dark');
-        $(this).find('h6').removeClass('bgc-dark');
-        $(this).find('h6').addClass('bgc-red');
-    });
-
-    $('.con-select.con-palettes .btn-selection-choice.palette-color').click(function() {
-        $(this).closest('li').find('a').hide();
-        $(this).closest('li').find('a.modal-edit-palette-color').show();
-    });
-
-    $('.con-select.con-palettes .btn-selection-choice.palette-pattern').click(function() {
-        $(this).closest('li').find('a').hide();
-        $(this).closest('li').find('a.modal-edit-palette-pattern').show();
-    });
-
-
-    $('.con-select.con-palettes .btn-selection-choice.palette-color .choice-icon').each(function(){
-        if ($(this).hasClass('selected')) {
-            $(this).closest('li').find('a').hide();
-            $(this).closest('li').find('a.modal-edit-palette-color').show()
+            $(this).addClass('uk-active');
+        if ($(this).hasClass('palette-pattern')) {
+            $(this).closest('li').find('.modal-edit-palette-pattern').show();
         }
         else
-            $(this).closest('li').find('a').hide();
-            $(this).closest('li').find('a.modal-edit-palette-pattern').show();
+            $(this).closest('li').find('.modal-edit-palette-pattern').hide();
+    });
+
+    $('.con-select.con-palettes .btn-selection-choice.uk-active').each(function(){
+        if ($(this).hasClass('palette-pattern')) {
+            $(this).closest('li').find('.modal-edit-palette-pattern').show();
+        }
+        else
+            $(this).closest('li').find('.modal-edit-palette-pattern').hide();
     });
 
     // SINGLE SELECTION

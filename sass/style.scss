@@ -189,14 +189,15 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   border: 1px solid #aaaaaa !important;
 }
 
-.selected {
+.choice-icon {
+  display: none !important; }
+
+.con-palettes .btn-selection-choice.uk-active .choice-icon {
   display: block !important; }
 
-.palette-toggle-show {
-  display: block !important; }
-
-.toggle-icon-show {
-  display: block !important; }
+.con-mascot-act-arch .btn-selection-choice.uk-active h6 {
+  background-color: $color-red;
+}
 
 .slider .rs-path-color {
   background-color: #aaaaaa !important; }
@@ -252,15 +253,14 @@ display: none;
   height: 12px;
 }
 
-#modal-all-application ul li {
-  &:hover {
-    background-color: $color-red;
-    color: $color-light;
-  }
-  &:focus {
-    background-color: $color-red;
-    color: $color-light;
-  }
+
+#modal-all-application .uk-list > li:nth-child(n+2) {
+  margin-top: 0;
+  padding: 0;
+}
+
+.icon {
+  font-size: 18px;
 }
 
 //@media screen and (max-width: 640px) {
