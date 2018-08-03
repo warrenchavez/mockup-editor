@@ -216,28 +216,36 @@
                     <div class="uk-width-1-1 uk-width-auto@s left-nav">
                         <div class="uk-flex-center uk-grid-collapse uk-child-width-auto uk-text-right@m active-bgc-red active-bdr-red uk-text-bold" uk-switcher="connect: .con-customizer" uk-grid>
                             <div class="uk-active">
-                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset">1</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Fabric; pos: top">1</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Fabric; pos: left">1</a>
                             </div>
                             <div class="">
-                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset">2</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Base Color; pos: top">2</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Base Color; pos: left">2</a>
                             </div>
                             <div class="">
-                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset">3</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Inserts; pos: top">3</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Inserts; pos: left">3</a>
                             </div>
                             <div class="">
-                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset">4</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Pipings; pos: top">4</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Pipings; pos: left">4</a>
                             </div>
                             <div class="">
-                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset">5</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Decoration Letters; pos: top">5</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Decoration Letters; pos: left">5</a>
                             </div>
                             <div class="">
-                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset">6</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Decoration Numbers; pos: top">6</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Decoration Numbers; pos: left">6</a>
                             </div>
                             <div class="">
-                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset">7</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Decorations; pos: top">7</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Decorations; pos: left">7</a>
                             </div>
                             <div class="">
-                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset">8</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Richardson Logo; pos: top">8</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Richardson Logo; pos: left">8</a>
                             </div>
                         </div>
                     </div>
@@ -5519,209 +5527,21 @@
 <!--End Footer-->
 
 <!--Modals-->
-<div id="modal-edit-piping-color" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-        <h6 class="uk-padding-small bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin-bottom">Piping Color</h6>
-        <div class="uk-grid-medium uk-flex-center" uk-grid>
-            <div class="uk-width-auto uk-width-1-3@m">
-                <div class="bdr-thin bdr-gray">
-                    <img src="./img/sample-piping.jpg" alt="" width="250" height="250" uk-img>
-                </div>
-                <h6 class="uk-margin-remove uk-text-bold uk-text-center uk-text-uppercase">Yoke Piping</h6>
+<div id="modal-confirmation" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center">
+        <div class="uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <span class="uk-text-warning uk-text-lead" uk-icon="icon: warning; ratio: 8"></span>
+            <h2 class="uk-text-bold uk-margin-small uk-margin-remove-horizontal">Are you sure?</h2>
+            <p class=" uk-margin-remove-top">Are you sure that you want to delete this application?</p>
+        </div>
+
+        <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+            <div class="uk-width-auto">
+                <a href="#modal-all-application" class="uk-button uk-button-default uk-padding-small-horizontal uk-width-1-1 uk-text-capitalize" uk-toggle>Cancel</a>
             </div>
-            <div class="uk-width-1-1 uk-width-2-3@m uk-text-center">
-
-                <div>
-                    <ul class="uk-subnav uk-grid-collapse uk-text-center uk-padding-remove uk-child-width-expand bottom-arrow arrow-outward bac-dark active-bgc-dark active-bdr-dark" uk-switcher uk-grid>
-                        <li class="uk-padding-remove"><a class="uk-width-1-1 padding-tiny-vertical uk-button-default fc-dark uk-text-capitalize">Color 1</a></li>
-                    </ul>
-                    <ul class="uk-switcher uk-margin uk-padding-remove">
-                        <li>
-                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center con-select con-palettes" uk-grid>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-r-cp-2-black2">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-r-cp-2-lightblue">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-charcoalgray">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-maroon">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-r-cp-2-8">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover selected choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-gold">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-grey">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-silvergray">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-r-cp-2-1">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-r-cp-2-2">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-r-cp-2-darkblue ">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-orange">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-purple">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-cardinal">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-r-cp-2-cornblue">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-seminol">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-r-cp-2-9">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-white">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                        <div class="palette bgc-neonpink">
-                                        </div>
-                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="uk-grid-small uk-grid-match uk-text-center" uk-grid>
-                    <div class="uk-width-1-2 uk-width-1-2@s">
-                        <button class="uk-button uk-button-default uk-button-small uk-width-1-1" type="button">Done</button>
-                    </div>
-                    <div class="uk-width-1-2 uk-width-1-2@s">
-                        <button class="uk-button uk-button-default uk-button-small uk-width-1-1 uk-modal-close" type="button">Cancel</button>
-                    </div>
-                </div>
+            <div class="uk-width-auto">
+                <a href="#modal-all-application" class="uk-button uk-button-secondary uk-padding-small-horizontal uk-width-1-1 uk-text-capitalize" uk-toggle>Yes, Delete it!</a>
             </div>
         </div>
     </div>
@@ -6683,8 +6503,7 @@
                     <div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-2@l">
                             <h4 class="uk-text-bold uk-text-center uk-text-uppercase uk-margin-remove">Bear</h4>
                             <p class="uk-text-center uk-margin-remove-top">
-                                <a href="#" class="uk-button uk-button-text uk-text-capitalize">Fullsize</a>
-                                <a href="#" class="uk-button uk-button-text uk-text-capitalize">Preview</a>
+                                <a href="#" class="uk-button uk-button-text uk-text-capitalize">Fullsize Preview</a>
                             </p>
                             <div class="uk-grid-collapse uk-flex-center" uk-grid>
                                 <div class="uk-width-1-1 uk-width-2-3@s uk-text-center">
@@ -7062,35 +6881,56 @@
 </div>
 <div id="modal-all-application" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical">
-        <h4 class="bgc-darker fc-light uk-padding-small uk-text-capitalize uk-text-center uk-text-uppercase uk-margin-remove">All Application</h4>
+        <h4 class="bgc-light fc-dark uk-padding-small uk-text-capitalize uk-text-center uk-text-uppercase uk-margin-remove">All Application</h4>
         <div class="uk-padding-small">
-
-            <div class="uk-grid-collapse uk-grid-match uk-child-width-1-1 uk-text-center con-select active-bgc-dark" uk-grid>
-                <div class="">
-                    <a class="uk-button uk-button-small uk-width-1-1 uk-button-default btn-selection-choice toggle-hide uk-active">None</a>
-                </div>
-                <div class="">
-                    <a class="uk-button uk-button-small uk-width-1-1 uk-button-default btn-selection-choice">1/8</a>
-                </div>
-                <div class="">
-                    <a class="uk-button uk-button-small uk-width-1-1 uk-button-default btn-selection-choice">1/4</a>
-                </div>
-                <div class="">
-                    <a class="uk-button uk-button-small uk-width-1-1 uk-button-default btn-selection-choice">1/2</a>
-                </div>
-            </div>
-            <ul class="uk-list uk-list-divider con-select active-bgc-red" uk-sortable="handle: .item-sort" >
-                <li class="uk-drag item-sort uk-active">
-                    <a class="uk-button uk-width-1-1">#2 Front Number</a>
+            <ul class="uk-list uk-list-divider con-select active-bgc-red uk-margin-remove" uk-sortable="handle: .item-sort" >
+                <li class="item-sort">
+                    <div class=" uk-grid-collapse btn-selection-choice uk-padding-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand uk-grid-collapse uk-margin-small-right uk-drag" uk-grid>
+                            <a class="uk-link-reset uk-width-1-1 uk-text-truncate">#2 Letters - Player Name</a>
+                        </div>
+                        <div class="uk-width-auto">
+                            <a href="#modal-confirmation" class="uk-link-reset uk-width-1-1" uk-toggle>
+                                <span class="icon-delete"></span>
+                            </a>
+                        </div>
+                    </div>
                 </li>
-                <li class="uk-drag item-sort">
-                    <a class="uk-button uk-width-1-1">#3 Front Number</a>
+                <li class="item-sort">
+                    <div class=" uk-grid-collapse btn-selection-choice uk-padding-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand uk-grid-collapse uk-margin-small-right uk-drag" uk-grid>
+                            <a class="uk-link-reset uk-width-1-1 uk-text-truncate">#3 Front Numbers</a>
+                        </div>
+                        <div class="uk-width-auto">
+                            <a href="#modal-confirmation" class="uk-link-reset uk-width-1-1" uk-toggle>
+                                <span class="icon-delete"></span>
+                            </a>
+                        </div>
+                    </div>
                 </li>
-                <li class="uk-drag item-sort">
-                    <a class="uk-button uk-width-1-1">#4 Back Number</a>
+                <li class="item-sort">
+                    <div class=" uk-grid-collapse btn-selection-choice uk-padding-small uk-flex-middle uk-active" uk-grid>
+                        <div class="uk-width-expand uk-grid-collapse uk-margin-small-right uk-drag" uk-grid>
+                            <a class="uk-link-reset uk-width-1-1 uk-text-truncate">#1 Letters - Team Name</a>
+                        </div>
+                        <div class="uk-width-auto">
+                            <a href="#modal-confirmation" class="uk-link-reset uk-width-1-1" uk-toggle>
+                                <span class="icon-delete"></span>
+                            </a>
+                        </div>
+                    </div>
                 </li>
-                <li class="uk-drag item-sort">
-                    <a class="uk-button uk-width-1-1">#5 Back Number</a>
+                <li class="item-sort">
+                    <div class=" uk-grid-collapse btn-selection-choice uk-padding-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand uk-grid-collapse uk-margin-small-right uk-drag" uk-grid>
+                            <a class="uk-link-reset uk-width-1-1 uk-text-truncate">#5 Custom Logo - Bear</a>
+                        </div>
+                        <div class="uk-width-auto">
+                            <a href="#modal-confirmation" class="uk-link-reset uk-width-1-1" uk-toggle>
+                                <span class="icon-delete"></span>
+                            </a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -7098,10 +6938,10 @@
         <div class="uk-padding-small">
             <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center" uk-grid>
                 <div class="uk-width-2-3 uk-width-1-2@s">
-                    <button class="uk-button-default padding-tiny-vertical uk-width-1-1 uk-text-capitalize" type="button">Show location markers</button>
+                    <button class="uk-button uk-button-default uk-padding-remove-horizontal uk-width-1-1 uk-text-capitalize" type="button">Show location markers</button>
                 </div>
                 <div class="uk-width-1-3 uk-width-1-2@s">
-                    <button class="uk-button-default padding-tiny-vertical uk-width-1-1 uk-text-capitalize uk-modal-close" type="button">Close</button>
+                    <button class="uk-button uk-button-default uk-padding-remove-horizontal uk-width-1-1 uk-text-capitalize uk-modal-close" type="button">Close</button>
                 </div>
             </div>
         </div>

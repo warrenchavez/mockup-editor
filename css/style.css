@@ -4,14 +4,14 @@
   line-height: 0px;
   font-size: 6px !important; }
 
+.bgc-white {
+  background-color: #ffffff !important; }
+
 .bgc-red {
   background-color: #e32139 !important; }
 
 .bgc-transparent {
   background-color: transparent; }
-
-.bgc-white {
-  background-color: #ffffff !important; }
 
 .bgc-light {
   background-color: #eee !important; }
@@ -385,6 +385,11 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   color: #eee !important;
   background-color: #343434 !important;
   border-color: #343434 !important; }
+
+.con-select.active-bgc-red .uk-active {
+  color: #eee !important;
+  background-color: #e32139 !important;
+  border-color: #e32139 !important; }
 
 .top-line > div a,
 .top-line > li a {

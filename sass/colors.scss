@@ -1,12 +1,13 @@
+@import "_variables";
 
+.bgc-white{
+  background-color: $color-white;
+}
 .bgc-red {
   background-color: $color-red;
 }
 .bgc-transparent {
   background-color: $color-transparent;
-}
-.bgc-white{
-  background-color: $color-white;
 }
 .bgc-light {
   background-color: $color-light;

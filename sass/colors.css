@@ -1,5 +1,5 @@
 .bgc-white {
-  background-color: #ffffff !important; }
+  background-color: white !important; }
 
 .bgc-red {
   background-color: #e32139 !important; }
@@ -8,13 +8,13 @@
   background-color: transparent; }
 
 .bgc-light {
-  background-color: #eee !important; }
+  background-color: #eeeeee !important; }
 
 .bgc-lightGray {
   background-color: #dedede !important; }
 
 .bgc-gray {
-  background-color: #aaa !important; }
+  background-color: #aaaaaa !important; }
 
 .bgc-dark {
   background-color: #343434 !important; }
@@ -23,7 +23,7 @@
   background-color: #242424 !important; }
 
 .bgc-brickred {
-  background-color: #AD0000 !important; }
+  background-color: #ad0000 !important; }
 
 .bgc-cardinal {
   background-color: #9c0000 !important; }
@@ -47,7 +47,7 @@
   background-color: #b84d00 !important; }
 
 .bgc-tennorange {
-  background-color: #ff8c00 !important; }
+  background-color: darkorange !important; }
 
 .bgc-gold {
   background-color: #ffba00 !important; }
@@ -218,16 +218,16 @@
   color: #e32139 !important; }
 
 .fc-white {
-  color: #ffffff !important; }
+  color: white !important; }
 
 .fc-light {
-  color: #eee !important; }
+  color: #eeeeee !important; }
 
 .fc-lightGray {
   color: #dedede !important; }
 
 .fc-gray {
-  color: #aaa !important !important; }
+  color: #aaaaaa !important !important; }
 
 .fc-dark {
   color: #343434 !important; }
@@ -239,21 +239,19 @@
   border-color: #e32139 !important; }
 
 .bdr-white {
-  border-color: #ffffff !important; }
+  border-color: white !important; }
 
 .bdr-light {
-  border-color: #eee !important; }
+  border-color: #eeeeee !important; }
 
 .bdr-lightGray {
   border-color: #dedede !important; }
 
 .bdr-gray {
-  border-color: #aaa !important; }
+  border-color: #aaaaaa !important; }
 
 .bdr-dark {
   border-color: #343434 !important; }
 
 .bdr-darker {
   border-color: #242424 !important; }
-
-/*# sourceMappingURL=colors.css.map */

@@ -107,6 +107,11 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   background-color: $color-dark;
   border-color: $color-dark; }
 
+.con-select.active-bgc-red .uk-active {
+  color: $color-light;
+  background-color: $color-red;
+  border-color: $color-red; }
+
 .top-line > div a,
 .top-line > li a {
   border-top: 3px solid transparent; }
