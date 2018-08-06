@@ -316,6 +316,42 @@
 .palette-wave-stripes {
   background-image: url("../img/palettes/palette-wave-stripes.png"); }
 
+.palette-gradient-1 {
+  background-image: url("../img/palettes/palette-gradient-1.png"); }
+
+.palette-gradient-2 {
+  background-image: url("../img/palettes/palette-gradient-2.png"); }
+
+.palette-gradient-3 {
+  background-image: url("../img/palettes/palette-gradient-3.png"); }
+
+.palette-gradient-4 {
+  background-image: url("../img/palettes/palette-gradient-4.png"); }
+
+.palette-gradient-5 {
+  background-image: url("../img/palettes/palette-gradient-5.png"); }
+
+.palette-gradient-6 {
+  background-image: url("../img/palettes/palette-gradient-6.png"); }
+
+.palette-gradient-7 {
+  background-image: url("../img/palettes/palette-gradient-7.png"); }
+
+.palette-gradient-8 {
+  background-image: url("../img/palettes/palette-gradient-8.png"); }
+
+.palette-gradient-9 {
+  background-image: url("../img/palettes/palette-gradient-9.png"); }
+
+.palette-gradient-10 {
+  background-image: url("../img/palettes/palette-gradient-10.png"); }
+
+.palette-gradient-11 {
+  background-image: url("../img/palettes/palette-gradient-11.png"); }
+
+.palette-gradient-12 {
+  background-image: url("../img/palettes/palette-gradient-12.png"); }
+
 .btn-icon {
   padding: 8px;
   line-height: 0px;
@@ -324,6 +360,9 @@
 .padding-tiny-vertical {
   padding-top: 7px;
   padding-bottom: 7px; }
+
+.bdr-remove {
+  border: none !important; }
 
 .bdr-remove-right {
   border-right: none !important; }
@@ -411,27 +450,6 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 
 .con-news-letter .form-input:focus {
   background-color: #343434 !important; }
-
-.con-news-letter .form-input-left-icon {
-  padding: 9px;
-  display: inline-block;
-  margin-right: -5px;
-  border-right: solid 1px white; }
-
-.con-news-letter .form-input-btn-right {
-  line-height: 0;
-  color: #343434 !important;
-  padding: 1px 0 1px 30px;
-  margin-left: -4px;
-  border: solid 1px #eeeeee !important; }
-
-.con-news-letter .form-input-btn-right:hover {
-  background-color: #eeeeee !important; }
-
-.con-news-letter .form-input-btn-right-icon {
-  padding: 9px;
-  margin-left: 30px;
-  border-left: solid 1px; }
 
 .con-load-design .uk-input:focus {
   color: #eeeeee !important;
@@ -541,6 +559,32 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 
 .icon {
   font-size: 18px; }
+
+.uk-tooltip {
+  font-weight: bolder;
+  padding: 16px 8px;
+  border-radius: 0px;
+  line-height: 0px;
+  display: block !important;
+  background-color: #343434 !important;
+  text-transform: uppercase; }
+  .uk-tooltip:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%) !important;
+    clear: both;
+    border: 0px; }
+
+.uk-tooltip.uk-tooltip-left-center:after {
+  margin-right: -14.9px !important;
+  top: 50% !important;
+  right: 0;
+  border-bottom: 16px solid transparent;
+  border-top: 16px solid transparent;
+  border-left: 10px solid #343434 !important; }
 
 @media screen and (min-width: 640px) {
   .left-nav {

@@ -44,6 +44,9 @@
   padding-top: 7px;
   padding-bottom: 7px; }
 
+.bdr-remove {
+  border: none !important; }
+
 .bdr-remove-right {
   border-right: none !important; }
 
@@ -132,25 +135,25 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   .con-news-letter .form-input:focus {
     background-color: #343434 !important; }
 
-.con-news-letter .form-input-left-icon {
-  padding: 9px;
-  display: inline-block;
-  margin-right: -5px;
-  border-right: solid 1px white; }
-
-.con-news-letter .form-input-btn-right {
-  line-height: 0;
-  color: #343434 !important;
-  padding: 1px 0 1px 30px;
-  margin-left: -4px;
-  border: solid 1px #eeeeee !important; }
-  .con-news-letter .form-input-btn-right:hover {
-    background-color: #eeeeee !important; }
-
-.con-news-letter .form-input-btn-right-icon {
-  padding: 9px;
-  margin-left: 30px;
-  border-left: solid 1px; }
+//.con-news-letter .form-input-left-icon {
+//  padding: 9px;
+//  display: inline-block;
+//  margin-right: -5px;
+//  border-right: solid 1px white; }
+//
+//.con-news-letter .form-input-btn-right {
+//  line-height: 0;
+//  color: #343434 !important;
+//  padding: 1px 0 1px 30px;
+//  margin-left: -4px;
+//  border: solid 1px #eeeeee !important; }
+//  .con-news-letter .form-input-btn-right:hover {
+//    background-color: #eeeeee !important; }
+//
+//.con-news-letter .form-input-btn-right-icon {
+//  padding: 9px;
+//  margin-left: 30px;
+//  border-left: solid 1px; }
 
 .con-load-design .uk-input:focus {
   color: #eeeeee !important;
@@ -266,6 +269,39 @@ display: none;
 
 .icon {
   font-size: 18px;
+}
+
+.uk-tooltip {
+  font-weight: bolder;
+  padding: 16px 8px;
+  border-radius: 0px;
+  line-height: 0px;
+  display: block !important;
+  background-color: $color-dark;
+  text-transform: uppercase;
+
+
+ &:after {
+   content: " ";
+   width: 0;
+   height: 0;
+   display: block;
+   position: absolute;
+   transform: translate(-50%, -50%) !important;
+   clear: both;
+   border: 0px;
+ }
+}
+
+.uk-tooltip.uk-tooltip-left-center {
+ &:after {
+   margin-right: -14.9px !important;
+   top: 50% !important;
+   right: 0;
+   border-bottom: 16px solid transparent;
+   border-top: 16px solid transparent;
+   border-left: 10px solid $color-dark;
+ }
 }
 
 //@media screen and (max-width: 640px) {
