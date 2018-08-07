@@ -352,6 +352,42 @@
 .palette-gradient-12 {
   background-image: url("../img/palettes/palette-gradient-12.png"); }
 
+@font-face {
+  font-family: "Abrade-Black";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Black.otf") format("opentype"); }
+@font-face {
+  font-family: "Abrade-Book";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Book.otf") format("opentype"); }
+@font-face {
+  font-family: "Abrade-Heavy";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Heavy.otf") format("opentype"); }
+@font-face {
+  font-family: "Abrade-Medium";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "Abrade-Ultra";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Ultra.otf") format("opentype"); }
+@font-face {
+  font-family: "Abrade-Ultra-Italic";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Ultra-Italic.otf") format("opentype"); }
+.abrade-black {
+  font-family: Abrade-Black; }
+
+.abrade-book {
+  font-family: Abrade-Book; }
+
+.abrade-heavy {
+  font-family: Abrade-Heavy; }
+
+.abrade-medium {
+  font-family: Abrade-Medium; }
+
+.abrade-ultra {
+  font-family: Abrade-Ultra; }
+
+.abrade-ultra-italic {
+  font-family: Abrade-Ultra-Italic; }
+
 .btn-icon {
   padding: 8px;
   line-height: 0px;

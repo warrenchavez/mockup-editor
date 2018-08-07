@@ -2,37 +2,30 @@
 @import "_variables";
 @import "colors";
 @import "palette";
+@import "font-style";
 
 
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black|Dancing+Script|Oswald');
 
-//@font-face {
-//  font-family: 'Abrade Book';
-//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.svg#Abrade-Book') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
-//
-//@font-face {
-//  font-family: 'Abrade Medium';
-//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.svg#Abrade-Medium') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
-//
-//@font-face {
-//  font-family: 'Abrade Ultra';
-//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.svg#Abrade-Ultra') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
-//
-//@font-face {
-//  font-family: 'Abrade Ultra Italic';
-//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.svg#Abrade-UltraItalic') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
+.abrade-black {
+  font-family: Abrade-Black;
+}
+.abrade-book {
+  font-family: Abrade-Book;
+}
+.abrade-heavy {
+  font-family: Abrade-Heavy;
+}
+.abrade-medium {
+  font-family: Abrade-Medium;
+}
+.abrade-ultra {
+  font-family: Abrade-Ultra;
+}
+.abrade-ultra-italic {
+  font-family: Abrade-Ultra-Italic;
+}
+
 
 
 .btn-icon {
