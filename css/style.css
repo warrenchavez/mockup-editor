@@ -352,6 +352,45 @@
 .palette-gradient-12 {
   background-image: url("../img/palettes/palette-gradient-12.png"); }
 
+@font-face {
+  font-family: "Abrade-Black";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Black.otf") format("opentype"); }
+@font-face {
+  font-family: "Abrade-Book";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Book.otf") format("opentype"); }
+@font-face {
+  font-family: "Abrade-Heavy";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Heavy.otf") format("opentype"); }
+@font-face {
+  font-family: "Abrade-Medium";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "Abrade-Ultra";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Ultra.otf") format("opentype"); }
+@font-face {
+  font-family: "Abrade-Ultra-Italic";
+  src: url("../fonts/Jason-Vandenberg-Abrade-Ultra-Italic.otf") format("opentype"); }
+.abrade-black {
+  font-family: Abrade-Black; }
+
+.abrade-book {
+  font-family: Abrade-Book; }
+
+.abrade-heavy {
+  font-family: Abrade-Heavy; }
+
+.abrade-medium {
+  font-family: Abrade-Medium; }
+
+.abrade-ultra {
+  font-family: Abrade-Ultra; }
+
+.abrade-ultra-italic {
+  font-family: Abrade-Ultra-Italic; }
+
+body {
+  font-family: Abrade-Book; }
+
 .btn-icon {
   padding: 8px;
   line-height: 0px;
@@ -585,6 +624,38 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   border-bottom: 16px solid transparent;
   border-top: 16px solid transparent;
   border-left: 10px solid #343434 !important; }
+
+.line-divider > :nth-child(n+3):not(.uk-first-column)::before {
+  content: "";
+  height: 100%;
+  margin-left: 0;
+  border-left: 1px solid #343434 !important;
+  position: absolute; }
+
+nav.main-menu ul li.sd {
+  position: relative; }
+
+nav.main-menu ul li.sd:before, nav.main-menu ul li.sd:after {
+  content: " ";
+  display: block;
+  height: 24px;
+  width: 24px;
+  top: 4px;
+  right: 0px;
+  transform: rotate(69deg);
+  -webkit-transform: rotate(69deg);
+  -ms-transform: rotate(69deg);
+  position: absolute;
+  border-top: 0.5px solid #343434 !important;
+  background-color: transparent; }
+
+nav.main-menu ul li.sd:after {
+  border-top: none !important;
+  border-right: 0.5px solid #343434 !important;
+  transform: rotate(23deg);
+  top: auto;
+  bottom: 4px;
+  background-color: transparent; }
 
 @media screen and (min-width: 640px) {
   .left-nav {

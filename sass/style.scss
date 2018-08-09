@@ -2,37 +2,33 @@
 @import "_variables";
 @import "colors";
 @import "palette";
+@import "font-style";
 
 
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black|Dancing+Script|Oswald');
 
-//@font-face {
-//  font-family: 'Abrade Book';
-//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Book/Abrade-Book.svg#Abrade-Book') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
-//
-//@font-face {
-//  font-family: 'Abrade Medium';
-//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Medium/Abrade-Medium.svg#Abrade-Medium') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
-//
-//@font-face {
-//  font-family: 'Abrade Ultra';
-//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/Ultra/Abrade-Ultra.svg#Abrade-Ultra') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
-//
-//@font-face {
-//  font-family: 'Abrade Ultra Italic';
-//  src: url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.eot?#iefix') format('embedded-opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.otf') format('opentype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.woff') format('woff'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.ttf') format('truetype'), url('https://richardsonsports.com/skin/frontend/rwd/rcap/fonts/Abrade/UltraItalic/Abrade-UltraItalic.svg#Abrade-UltraItalic') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
+.abrade-black {
+  font-family: Abrade-Black;
+}
+.abrade-book {
+  font-family: Abrade-Book;
+}
+.abrade-heavy {
+  font-family: Abrade-Heavy;
+}
+.abrade-medium {
+  font-family: Abrade-Medium;
+}
+.abrade-ultra {
+  font-family: Abrade-Ultra;
+}
+.abrade-ultra-italic {
+  font-family: Abrade-Ultra-Italic;
+}
+
+body {
+  font-family: Abrade-Book;
+}
 
 
 .btn-icon {
@@ -303,6 +299,80 @@ display: none;
    border-left: 10px solid $color-dark;
  }
 }
+
+.line-divider>:nth-child(n+3):not(.uk-first-column)::before {
+  content: "";
+  height: 100%;
+  margin-left: 0;
+  border-left: 1px solid $color-dark;
+  position: absolute;
+}
+
+//nav.main-menu ul li .sd:before, nav.main-menu ul li .sd:after {
+//  position: absolute;
+//  top: 5px;
+//  right: -9px;
+//  content: "";
+//  display: block;
+//  width: 33px;
+//  height: 33px;
+//  border-top: 2px solid #bababa;
+//  transform: rotate(66deg);
+//  -webkit-transform: rotate(66deg);
+//  -ms-transform: rotate(66deg);
+//  z-index: 1;
+//}
+
+nav.main-menu ul li.sd {
+  position: relative;
+}
+nav.main-menu ul li.sd:before, nav.main-menu ul li.sd:after {
+  content: " ";
+  display: block;
+  height: 24px;
+  width: 24px;
+  top: 4px;
+  right: 0px;
+    transform: rotate(69deg);
+    -webkit-transform: rotate(69deg);
+    -ms-transform: rotate(69deg);
+  position: absolute;
+  //margin: auto;
+  border-top: .5px solid $color-dark;
+  //z-index: -1;
+  background-color: $color-transparent;
+}
+
+nav.main-menu ul li.sd:after {
+  border-top: none!important;
+  border-right: .5px solid $color-dark;
+  transform: rotate(23deg);
+  top: auto;
+  bottom: 4px;
+  background-color: $color-transparent;
+  //margin-bottom: -10px;
+  //-webkit-transform: rotate(23deg);
+  //-ms-transform: rotate(23deg);
+}
+
+
+//.bottom-arrow > *.uk-active:after {
+//  content: " ";
+//  display: block;
+//  height: 18px;
+//  width: 18px;
+//  transform: rotate(45deg);
+//  text-shadow: none;
+//  position: relative;
+//  margin: 20px auto -9px auto;
+//  z-index: -1; }
+//
+//.bottom-arrow.arrow-outward > *.uk-active:after {
+//  transform: rotate(45deg);
+//  text-shadow: none;
+//  position: relative;
+//  margin: -9px auto auto auto;
+//  z-index: -1; }
 
 //@media screen and (max-width: 640px) {
 //  .left-nav a {
