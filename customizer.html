@@ -39,7 +39,7 @@
 
                 <ul class="uk-navbar-nav">
                     <li class="uk-active">
-                        <a href="#">
+                        <a href="#" class="uk-padding-remove">
                             <img class="" src="./img/richardsonlogo.png" width="200" height="80" alt="">
                         </a>
                     </li>
@@ -51,17 +51,20 @@
 
                 <ul class="uk-navbar-nav">
                     <li class="">
-                        <a href="#"><span class="uk-margin-small-right icon icon-search"></span>
-                            <span class="uk-visible@s">Search</span>
+                        <a href="#">
+                            <span class="uk-margin-small-right icon icon-search"></span>
+                            <span class="uk-visible@s fc-dark">Search</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#"><span class="uk-margin-small-right icon icon-mail"></span>
-                            <span class="uk-visible@s">Contact&nbsp;Us</span>
+                        <a href="#">
+                            <span class="uk-margin-small-right icon icon-mail"></span>
+                            <span class="uk-visible@s fc-dark">Contact&nbsp;Us</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#"><span class="uk-margin-small-right icon icon-lock"></span>
+                        <a href="#" class="fc-red">
+                            <span class="uk-margin-small-right icon icon-lock"></span>
                             <span class="uk-visible@s">Login</span>
                         </a>
                     </li>
@@ -76,22 +79,18 @@
     <div class="bgc-lightGray uk-visible@m">
         <div class="uk-container uk-container-large">
             <nav class="uk-navbar-container uk-navbar-transparent main-menu" uk-navbar>
-                <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav uk-grid-collapse line-divider uk-width-1-1 con-select active-fc-red" uk-grid>
+                    <li class="uk-text-bold sd uk-margin-auto"><a href="#" class=" uk-text-center uk-padding-remove-horizontal btn-selection-choice abrade-black">Uniforms:</a></li>
+                    <li class="uk-text-bold bgc-light uk-width-expand"><a href="#" class=" uk-text-center uk-padding-remove-horizontal btn-selection-choice oswald-regular">New releases</a></li>
+                    <li class="uk-text-bold bgc-light uk-width-expand"><a href="#" class=" uk-text-center uk-padding-remove-horizontal btn-selection-choice oswald-regular">Product categories</a></li>
+                    <li class="uk-text-bold bgc-light uk-width-expand"><a href="#" class=" uk-text-center uk-padding-remove-horizontal btn-selection-choice oswald-regular">Markets</a></li>
+                    <li class="uk-text-bold bgc-light uk-width-expand"><a href="#" class=" uk-text-center uk-padding-remove-horizontal btn-selection-choice oswald-regular">Styles</a></li>
 
-                    <ul class="uk-navbar-nav uk-grid-collapse line-divider" uk-grid>
-                        <li class="uk-text-bold sd"><a href="#" class="uk-padding-small">Uniforms</a></li>
-                        <li class="uk-text-bold bgc-light"><a href="#" class="uk-padding-small">New releases</a></li>
-                        <li class="uk-text-bold bgc-light"><a href="#" class="uk-padding-small">Product categories</a></li>
-                        <li class="uk-text-bold bgc-light"><a href="#" class="uk-padding-small">Markets</a></li>
-                        <li class="uk-text-bold bgc-light"><a href="#" class="uk-padding-small">Styles</a></li>
-
-                        <li class="uk-text-bold"><a href="#" class="uk-padding-small">Decoration</a></li>
-                        <li class="uk-text-bold"><a href="#" class="uk-padding-small">Customize</a></li>
-                        <li class="uk-text-bold"><a href="#" class="uk-padding-small">Catalog</a></li>
-                        <li class="uk-text-bold"><a href="#" class="uk-padding-small">About</a></li>
-                    </ul>
-
-                </div>
+                    <li class="uk-text-bold uk-width-expand"><a href="#" class=" uk-text-center uk-padding-remove-horizontal btn-selection-choice abrade-black">Decoration</a></li>
+                    <li class="uk-text-bold uk-width-expand"><a href="index.html" class=" uk-text-center uk-padding-remove-horizontal btn-selection-choice abrade-black">Customize</a></li>
+                    <li class="uk-text-bold uk-width-expand"><a href="#" class=" uk-text-center uk-padding-remove-horizontal btn-selection-choice abrade-black">Catalog</a></li>
+                    <li class="uk-text-bold uk-width-expand"><a href="#" class=" uk-text-center uk-padding-remove-horizontal btn-selection-choice abrade-black">About</a></li>
+                </ul>
             </nav>
         </div>
     </div>
@@ -756,6 +755,11 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
@@ -868,11 +872,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                            <div class=" uk-flex uk-flex-middle">
-                                                <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
-                                            </div>
-                                        </a>
                                     </li>
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Sleeve Color</h5>
@@ -1217,6 +1216,11 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
@@ -1329,11 +1333,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                            <div class=" uk-flex uk-flex-middle">
-                                                <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
-                                            </div>
-                                        </a>
                                     </li>
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Back Body Color</h5>
@@ -1678,6 +1677,11 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
@@ -1790,11 +1794,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                            <div class=" uk-flex uk-flex-middle">
-                                                <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
-                                            </div>
-                                        </a>
                                     </li>
                                 </ul>
                                 <div class="uk-padding-small bgc-light">
@@ -2179,6 +2178,11 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
@@ -2291,11 +2295,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                            <div class=" uk-flex uk-flex-middle">
-                                                <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
-                                            </div>
-                                        </a>
                                     </li>
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Insert Color 1</h5>
@@ -2640,6 +2639,11 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
@@ -2752,11 +2756,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                            <div class=" uk-flex uk-flex-middle">
-                                                <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
-                                            </div>
-                                        </a>
                                     </li>
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Insert Color 2</h5>
@@ -3101,6 +3100,11 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
@@ -3213,11 +3217,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                            <div class=" uk-flex uk-flex-middle">
-                                                <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
-                                            </div>
-                                        </a>
                                     </li>
                                 </ul>
                                 <div class="uk-padding-small bgc-light">
@@ -7202,7 +7201,8 @@
 </div>
 <div id="modal-select-mascot" class="uk-modal-container" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <h6 class="uk-padding-small bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin-bottom">Decoration Custom Logo</h6>
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h6 class="uk-padding-small bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin uk-margin-remove-horizontal">Decoration Custom Logo</h6>
         <ul class="uk-subnav uk-subnav-pill uk-flex-center active-bgc-dark" uk-switcher>
             <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize">Select from existing design</a></li>
             <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize">Create a custom logo</a></li>
