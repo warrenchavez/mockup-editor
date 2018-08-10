@@ -44,14 +44,14 @@
 }
 .icon-fb:before {
   content: "\e906";
-  color: #d1d1d1;
+  /*color: #d1d1d1;*/
 }
 .icon-font-size:before {
   content: "\e907";
 }
 .icon-ig:before {
   content: "\e908";
-  color: #d1d1d1;
+  /*color: #d1d1d1;*/
 }
 .icon-left-arrow:before {
   content: "\e909";
