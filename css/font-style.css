@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 @font-face {
   font-family: "Abrade-Black";
   src: url("../fonts/Jason-Vandenberg-Abrade-Black.otf") format("opentype"); }
@@ -16,8 +17,5 @@
 @font-face {
   font-family: "Abrade-Ultra-Italic";
   src: url("../fonts/Jason-Vandenberg-Abrade-Ultra-Italic.otf") format("opentype"); }
-@font-face {
-  font-family: "Oswald-regular";
-  src: url("../fonts/Oswald-regular.ttf") format("truetype"); }
 
 /*# sourceMappingURL=font-style.css.map */

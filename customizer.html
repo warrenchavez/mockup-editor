@@ -24,6 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://rawgit.com/simeydotme/jQuery-ui-Slider-Pips/master/src/js/jquery-ui-slider-pips.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
     <script src="js/main.js"></script>
 
 </head>
@@ -255,9 +256,9 @@
                     </div>
                     <!-- End Number Navigation -->
                     <div class="uk-width-1-1 uk-width-expand@s">
-                        <ul class="uk-switcher con-customizer bt-0">
+                        <ul id="m-con-steps" class="uk-switcher con-customizer bt-0">
                             <!-- Fabric Selection: Step 1 -->
-                            <li>
+                            <li id="m-fabric-selection">
                                 <div class=" uk-height-max-large uk-overflow-auto">
                                     <ul class="uk-list uk-margin-remove-vertical uk-padding-small con-select con-palettes">
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Fabric</h5>
@@ -410,7 +411,7 @@
                             <!-- End Fabric Selection: Step 1 -->
 
                             <!-- Base Color Selection Step 2 -->
-                            <li>
+                            <li id="m-base-color-selection">
                                 <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Base Color</h5>
@@ -1833,7 +1834,7 @@
                             <!-- End Base Color Selection Step 2 -->
 
                             <!-- Sleeve Inserts: Step 3 -->
-                            <li>
+                            <li id="m-sleeve-inserts">
                                 <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Sleeve Inserts</h5>
@@ -3256,7 +3257,7 @@
                             <!-- End Sleeve Inserts: Step 3 -->
 
                             <!-- Pipings: Step 4 -->
-                            <li>
+                            <li id="m-pipings">
                                 <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Neck Piping</h5>
@@ -3481,7 +3482,7 @@
                             <!-- End Pipings: Step 4 -->
 
                             <!-- Step 5: Decorations / Letters -->
-                            <li>
+                            <li id="m-decorations-letters">
                                 <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Decoration Letters</h5>
@@ -4520,7 +4521,7 @@
                             <!-- End Step 5: Decorations / Letters -->
 
                             <!-- Step 6: Decorations / Numbers -->
-                            <li>
+                            <li id="m-decorations-numbers">
                                 <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Decoration Numbers</h5>
@@ -5511,7 +5512,7 @@
                             <!-- End Step 6: Decorations / Numbers -->
 
                             <!-- Step 7: Decoration / Mascots -->
-                            <li>
+                            <li id="m-decorations-mascots">
                                 <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Decoration</h5>
@@ -6072,7 +6073,7 @@
                             <!-- End Step 7: Decoration / Mascots -->
 
                             <!-- Step 8: Richardson Logo -->
-                            <li>
+                            <li id="m-richardson-logo">
                                 <div class="uk-padding-small uk-margin-remove">
 
                                     <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Richardson Logo</h5>
