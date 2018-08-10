@@ -3,7 +3,7 @@
 @import "colors";
 @import "palette";
 @import "font-style";
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+//@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 .abrade-black {
   font-family: Abrade-Black !important;
@@ -24,7 +24,7 @@
   font-family: Abrade-Ultra-Italic !important;
 }
 .oswald-regular {
-  font-family: 'Oswald', san-serif !important;
+  font-family: Oswald-regular, san-serif !important;
 }
 
 body {
