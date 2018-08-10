@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Dancing+Script|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 .btn-icon {
   padding: 8px;
   line-height: 0px;
@@ -376,10 +376,6 @@
   font-family: "Abrade-Ultra-Italic";
   src: url("../fonts/Jason-Vandenberg-Abrade-Ultra-Italic.otf") format("opentype"); }
 
-@font-face {
-  font-family: "Oswald-regular";
-  src: url("../fonts/Oswald-regular.ttf") format("truetype"); }
-
 .abrade-black {
   font-family: Abrade-Black !important; }
 
@@ -399,7 +395,7 @@
   font-family: Abrade-Ultra-Italic !important; }
 
 .oswald-regular {
-  font-family: Oswald-regular, san-serif !important; }
+  font-family: 'Oswald', san-serif !important; }
 
 body {
   font-family: Abrade-Book; }
