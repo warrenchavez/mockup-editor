@@ -168,8 +168,8 @@
                         </div>
                     </div>
 
-                    <div class="uk-width-1-1 zxc uk-flex-center uk-flex-first@s">
-                        <div class="uk-grid-small grid-tiny uk-flex-center active-bdr-red uk-margin-bottom" uk-switcher="connect: .con-preview" uk-grid>
+                    <div class="uk-width-1-1 con-preview-pane-thumb-nav uk-flex-center uk-flex-first@s">
+                        <div id="preview-pane-thumb-nav" class="uk-grid-small grid-tiny uk-flex-center active-bdr-red uk-margin-bottom" uk-switcher="connect: .con-preview" uk-grid>
                             <div class="uk-width-auto uk-width-1-1@s uk-width-auto@m uk-width-1-1@l">
                                 <a href="" class="thumbnail-small bdrr-none uk-link-reset bdr-thin bdr-gray" uk-icon=" ratio: 2">
                                     <img src="https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png" alt="" width="380" height="629" uk-img>
@@ -7667,5 +7667,23 @@
         </div>
     </div>
 </div>
+
+<!-- Base Color Selection -->
+<script type="text/mustache" id="m-richardson-base-color-selection">
+
+        @{{#color_set}}
+        <div>
+            <button class="uk-inline box-palette btn-selection-choice palette-color">
+                <div class="palette bgc-r-cp-2-@{{color}}">
+                </div>
+                <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                    <span class="icon icon-check uk-position-center"></span>
+                </div>
+            </button>
+        </div>
+        @{{/color_set}}
+
+
+    </script>
 </body>
 </html>
