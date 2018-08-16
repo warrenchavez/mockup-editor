@@ -5,22 +5,22 @@
   font-size: 6px !important; }
 
 .bgc-white {
-  background-color: #ffffff !important; }
+  background-color: white !important; }
 
 .bgc-red {
   background-color: #e32139 !important; }
 
 .bgc-transparent {
-  background-color: transparent; }
+  background-color: transparent !important; }
 
 .bgc-light {
-  background-color: #eee !important; }
+  background-color: #eeeeee !important; }
 
 .bgc-lightGray {
   background-color: #dedede !important; }
 
 .bgc-gray {
-  background-color: #aaa !important; }
+  background-color: #aaaaaa !important; }
 
 .bgc-dark {
   background-color: #343434 !important; }
@@ -29,7 +29,7 @@
   background-color: #242424 !important; }
 
 .bgc-brickred {
-  background-color: #AD0000 !important; }
+  background-color: #ad0000 !important; }
 
 .bgc-cardinal {
   background-color: #9c0000 !important; }
@@ -53,7 +53,7 @@
   background-color: #b84d00 !important; }
 
 .bgc-tennorange {
-  background-color: #ff8c00 !important; }
+  background-color: darkorange !important; }
 
 .bgc-gold {
   background-color: #ffba00 !important; }
@@ -224,16 +224,16 @@
   color: #e32139 !important; }
 
 .fc-white {
-  color: #ffffff !important; }
+  color: white !important; }
 
 .fc-light {
-  color: #eee !important; }
+  color: #eeeeee !important; }
 
 .fc-lightGray {
   color: #dedede !important; }
 
 .fc-gray {
-  color: #aaa !important !important; }
+  color: #aaaaaa !important !important; }
 
 .fc-dark {
   color: #343434 !important; }
@@ -245,16 +245,16 @@
   border-color: #e32139 !important; }
 
 .bdr-white {
-  border-color: #ffffff !important; }
+  border-color: white !important; }
 
 .bdr-light {
-  border-color: #eee !important; }
+  border-color: #eeeeee !important; }
 
 .bdr-lightGray {
   border-color: #dedede !important; }
 
 .bdr-gray {
-  border-color: #aaa !important; }
+  border-color: #aaaaaa !important; }
 
 .bdr-dark {
   border-color: #343434 !important; }
@@ -355,21 +355,27 @@
 @font-face {
   font-family: "Abrade-Black";
   src: url("../fonts/Jason-Vandenberg-Abrade-Black.otf") format("opentype"); }
+
 @font-face {
   font-family: "Abrade-Book";
   src: url("../fonts/Jason-Vandenberg-Abrade-Book.otf") format("opentype"); }
+
 @font-face {
   font-family: "Abrade-Heavy";
   src: url("../fonts/Jason-Vandenberg-Abrade-Heavy.otf") format("opentype"); }
+
 @font-face {
   font-family: "Abrade-Medium";
   src: url("../fonts/Jason-Vandenberg-Abrade-Medium.otf") format("opentype"); }
+
 @font-face {
   font-family: "Abrade-Ultra";
   src: url("../fonts/Jason-Vandenberg-Abrade-Ultra.otf") format("opentype"); }
+
 @font-face {
   font-family: "Abrade-Ultra-Italic";
   src: url("../fonts/Jason-Vandenberg-Abrade-Ultra-Italic.otf") format("opentype"); }
+
 .abrade-black {
   font-family: Abrade-Black !important; }
 
@@ -412,6 +418,9 @@ body {
 .bdr-thin {
   border: .5px solid; }
 
+.bdr-reg {
+  border: 1px solid; }
+
 .bdrr-none {
   border-radius: 0; }
 
@@ -449,32 +458,32 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   color: #e32139 !important !important; }
 
 .active-bgc-red .uk-active a {
-  color: #eee !important;
+  color: #eeeeee !important;
   background-color: #e32139 !important; }
 
 .active-bdr-red .uk-active a {
   border-color: #e32139 !important; }
 
 .active-bgc-dark .uk-active a {
-  color: #eee !important;
+  color: #eeeeee !important;
   background-color: #343434 !important; }
 
 .active-bdr-dark .uk-active a {
   border-color: #343434 !important; }
 
 .con-select.active-bgc-dark .uk-active {
-  color: #eee !important;
+  color: #eeeeee !important;
   background-color: #343434 !important;
   border-color: #343434 !important; }
 
 .con-select.active-bgc-red .uk-active {
-  color: #eee !important;
+  color: #eeeeee !important;
   background-color: #e32139 !important;
   border-color: #e32139 !important; }
 
 .top-line > div a,
 .top-line > li a {
-  border-top: 3px solid transparent; }
+  border-top: 4px solid transparent; }
 
 .top-line.tl-red > .uk-active a {
   border-color: #e32139 !important; }
@@ -507,8 +516,8 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   background-color: #343434 !important; }
 
 .con-card-item > div > div {
-  border: 1px solid #dedede !important;
-  background-color: white !important; }
+  border: 1px solid #dedede;
+  background-color: white; }
 
 .con-steps .wizard > .actions a span.left {
   left: 0;
@@ -632,7 +641,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   content: "";
   height: 100%;
   margin-left: 0;
-  border-left: 1px solid #aaa !important;
+  border-left: 1px solid #aaaaaa !important;
   position: absolute; }
 
 .line-divider > :nth-child(2):not(.uk-first-column) {
@@ -661,13 +670,16 @@ nav.main-menu ul li.sd {
     -webkit-transform: rotate(66deg);
     -ms-transform: rotate(66deg);
     position: absolute;
-    border-top: 1px solid #aaa !important;
+    border-top: 1px solid #aaaaaa !important;
     background-color: #dedede !important; }
   nav.main-menu ul li.sd:after {
     transform: rotate(111deg);
     top: auto;
     bottom: 11px;
     background-color: #dedede !important; }
+
+.hov-red:hover {
+  background-color: #e32139 !important; }
 
 @media screen and (min-width: 640px) {
   .left-nav {
@@ -678,5 +690,3 @@ nav.main-menu ul li.sd {
 
   .wer {
     margin-left: 36px; } }
-
-/*# sourceMappingURL=style.css.map */

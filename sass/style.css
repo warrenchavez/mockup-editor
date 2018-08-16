@@ -11,7 +11,7 @@
   background-color: #e32139 !important; }
 
 .bgc-transparent {
-  background-color: transparent; }
+  background-color: transparent !important; }
 
 .bgc-light {
   background-color: #eeeeee !important; }
@@ -418,6 +418,9 @@ body {
 .bdr-thin {
   border: .5px solid; }
 
+.bdr-reg {
+  border: 1px solid; }
+
 .bdrr-none {
   border-radius: 0; }
 
@@ -480,7 +483,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 
 .top-line > div a,
 .top-line > li a {
-  border-top: 3px solid transparent; }
+  border-top: 4px solid transparent; }
 
 .top-line.tl-red > .uk-active a {
   border-color: #e32139 !important; }
@@ -513,8 +516,8 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   background-color: #343434 !important; }
 
 .con-card-item > div > div {
-  border: 1px solid #dedede !important;
-  background-color: white !important; }
+  border: 1px solid #dedede;
+  background-color: white; }
 
 .con-steps .wizard > .actions a span.left {
   left: 0;
@@ -674,6 +677,9 @@ nav.main-menu ul li.sd {
     top: auto;
     bottom: 11px;
     background-color: #dedede !important; }
+
+.hov-red:hover {
+  background-color: #e32139 !important; }
 
 @media screen and (min-width: 640px) {
   .left-nav {
