@@ -1,91 +1,61 @@
-.palette-camo {
-  background-image: url("../img/palettes/palette-camo.png"); }
+/*
+Error: Undefined variable: "$color-r-cp-2-black2".
+        on line 2 of C:\xampp\htdocs\mockup-editor\components\sass\palette.scss
 
-.palette-check {
-  background-image: url("../img/palettes/palette-check.png"); }
+1: .palette-c-black {
+2:   background-color: $color-r-cp-2-black2;
+3: }
+4: 
+5: .palette-c-lightBlue {
+6:   background-color: $color-r-cp-2-lightblue;
+7: }
 
-.palette-diamonds {
-  background-image: url("../img/palettes/palette-diamonds.png"); }
-
-.palette-digital-camo {
-  background-image: url("../img/palettes/palette-digital-camo.png"); }
-
-.palette-distressed {
-  background-image: url("../img/palettes/palette-distressed.png"); }
-
-.palette-fiber {
-  background-image: url("../img/palettes/palette-fiber.png"); }
-
-.palette-lockdown {
-  background-image: url("../img/palettes/palette-lockdown.png"); }
-
-.palette-pixel-fade-body {
-  background-image: url("../img/palettes/palette-pixel-fade-body.png"); }
-
-.palette-pixel-fade-sleeve {
-  background-image: url("../img/palettes/palette-pixel-fade-sleeve.png"); }
-
-.palette-quake {
-  background-image: url("../img/palettes/palette-quake.png"); }
-
-.palette-score {
-  background-image: url("../img/palettes/palette-score.png"); }
-
-.palette-thick-stripe {
-  background-image: url("../img/palettes/palette-thick-stripe.png"); }
-
-.palette-thin-stripes {
-  background-image: url("../img/palettes/palette-thin-stripes.png"); }
-
-.palette-trips-arrow {
-  background-image: url("../img/palettes/palette-trips-arrow.png"); }
-
-.palette-upper-stripes {
-  background-image: url("../img/palettes/palette-upper-stripes.png"); }
-
-.palette-upper-stripes-body {
-  background-image: url("../img/palettes/palette-upper-stripes-body.png"); }
-
-.palette-wave-stripe {
-  background-image: url("../img/palettes/palette-wave-stripe.png"); }
-
-.palette-wave-stripes {
-  background-image: url("../img/palettes/palette-wave-stripes.png"); }
-
-.palette-gradient-1 {
-  background-image: url("../img/palettes/palette-gradient-1.png"); }
-
-.palette-gradient-2 {
-  background-image: url("../img/palettes/palette-gradient-2.png"); }
-
-.palette-gradient-3 {
-  background-image: url("../img/palettes/palette-gradient-3.png"); }
-
-.palette-gradient-4 {
-  background-image: url("../img/palettes/palette-gradient-4.png"); }
-
-.palette-gradient-5 {
-  background-image: url("../img/palettes/palette-gradient-5.png"); }
-
-.palette-gradient-6 {
-  background-image: url("../img/palettes/palette-gradient-6.png"); }
-
-.palette-gradient-7 {
-  background-image: url("../img/palettes/palette-gradient-7.png"); }
-
-.palette-gradient-8 {
-  background-image: url("../img/palettes/palette-gradient-8.png"); }
-
-.palette-gradient-9 {
-  background-image: url("../img/palettes/palette-gradient-9.png"); }
-
-.palette-gradient-10 {
-  background-image: url("../img/palettes/palette-gradient-10.png"); }
-
-.palette-gradient-11 {
-  background-image: url("../img/palettes/palette-gradient-11.png"); }
-
-.palette-gradient-12 {
-  background-image: url("../img/palettes/palette-gradient-12.png"); }
-
-/*# sourceMappingURL=palette.css.map */
+Backtrace:
+C:\xampp\htdocs\mockup-editor\components\sass\palette.scss:2
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$color-r-cp-2-black2\".\A         on line 2 of C:\xampp\htdocs\mockup-editor\components\sass\palette.scss\A \A 1: .palette-c-black {\A 2:   background-color: $color-r-cp-2-black2;\A 3: }\A 4: \A 5: .palette-c-lightBlue {\A 6:   background-color: $color-r-cp-2-lightblue;\A 7: }"; }
