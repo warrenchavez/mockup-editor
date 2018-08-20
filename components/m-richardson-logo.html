@@ -14,32 +14,22 @@
     </li>
 </ul>
 
-<ul class="uk-switcher brand-location">
-    <li>
-        <div class="uk-grid-small uk-flex-center" uk-grid>
-            <div class="uk-width-1-1 uk-width-2-3@s">
-                <div class="bdr-reg bdr-gray">
-                    <img src="./img/branding-right-chest.jpg" uk-img>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="uk-grid-small uk-flex-center" uk-grid>
-            <div class="uk-width-1-1 uk-width-2-3@s">
-                <div class="bdr-reg bdr-gray">
-                    <img src="./img/branding-left-sleeve.jpg" uk-img>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="uk-grid-small uk-flex-center" uk-grid>
-            <div class="uk-width-1-1 uk-width-2-3@s">
-                <div class="bdr-reg bdr-gray">
-                    <img src="./img/branding-back.jpg" uk-img>
-                </div>
-            </div>
-        </div>
-    </li>
+<ul id="m-preview-logo" class="uk-switcher brand-location">
+
 </ul>
+
+
+
+<script type='mustache/x-tmpl' id='preview-logo'>
+{{#previewLogo}}
+<li>
+<div class="uk-grid-small uk-flex-center" uk-grid>
+<div class="uk-width-1-1 uk-width-2-3@s">
+<div class="bdr-reg bdr-gray">
+<img src="{{logo}}" uk-img>
+</div>
+</div>
+</div>
+</li>
+{{/previewLogo}}
+</script>

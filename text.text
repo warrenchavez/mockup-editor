@@ -1,112 +1,92 @@
+jQuery(function($) {
 
+    function preview (){
 
+        var data =
+            {previewLinks: [
+                    {links: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png'},
+                    {links: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/ff11e98804c31eace338c140fc3b4e2f.png'},
+                    {links: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/decdfb5513247463255f68634de2bcfb.png'},
+                    {links: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/801f4aaa30cc9cb9f960d7c04ece745c.png'}
+                ]};
 
-    // $('.con-select .btn-selection-choice').click(function() {
-    //     $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
-    //     $(this).addClass('uk-active');
-    //     if ($(this).hasClass('btn-choose-numbers-colors-none')) {
-    //         $(this).closest('li').find('.con-choose-numbers-colors').hide();
-    //     }
-    //     else
-    //         $(this).closest('li').find('.con-choose-numbers-colors').show();
-    // });
-    //
-    // $('.con-select .btn-selection-choice.btn-choose-numbers-colors-none').each(function(){
-    //     if ($(this).hasClass('uk-active')) {
-    //         $(this).closest('li').find('.con-choose-numbers-colors').hide();
-    //     }
-    //     else
-    //         $(this).closest('li').find('.con-choose-numbers-colors').show();
-    // });
+        var template = $('#preview-pane-thumb-nav').html();
+        var markup = Mustache.render(template, data);
+        $('#m-preview-pane-thumb-nav').html(markup);
 
+        var template = $('#preview').html();
+        var markup = Mustache.render(template, data);
+        $('#m-preview').html(markup);
+        // $('.con-select .btn-selection-choice').click(function () {
+        //     $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
+        //     $(this).addClass('uk-active');
+        // });
+    };
 
-    // $('.con-select.con-toggle .btn-selection-choice.toggle-show').click(function(){
-    //     if ($(this).hasClass('uk-active')) {
-    //         $(this).closest('li').find('.con-choose-numbers-colors').show();
-    //     }
-    //     else
-    //         $(this).closest('li').find('.con-choose-numbers-colors').hide();
-    // });
-
-
-    // $('.con-toggle .btn-selection-choice.toggle-hide').click(function(){
-    //     if ($(this).hasClass('uk-active')) {
-    //         $(this).closest('li').find('.con-choose-numbers-colors').hide();
-    //     }
-    //     else
-    //         $(this).closest('li').find('.con-choose-numbers-colors').show();
-    // });
-
-    // $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
-    //     if ($(this).hasClass('uk-active')) {
-    //         $(this).closest('li').find('.con-choose-numbers-colors').hide();
-    //     }
-    //     else
-    //         $(this).closest('li').find('.con-choose-numbers-colors').show();
-    // });
-
-
-
-
-
-    // $('.con-select.con-toggle .btn-selection-choice.toggle-show').click(function(){
-    //     if ($(this).hasClass('uk-active')) {
-    //         $(this).closest('li').find('.con-input-object-text').show();
-    //     }
-    //     else
-    //         $(this).closest('li').find('.con-input-object-text').hide();
-    // });
-    //
-    //
-    // $('.con-select.con-toggle .btn-selection-choice.toggle-hide').click(function(){
-    //     if ($(this).hasClass('uk-active')) {
-    //         $(this).closest('li').find('.con-input-object-text').hide();
-    //     }
-    //     else
-    //         $(this).closest('li').find('.con-input-object-text').show();
-    // });
-    //
-    // $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
-    //     if ($(this).hasClass('uk-active')) {
-    //         $(this).closest('li').find('.con-input-object-text').hide();
-    //     }
-    //     else
-    //         $(this).closest('li').find('.con-input-object-text').show();
-    // });
-
-
-
-    ------------------
-    $('.con-select.con-toggle .btn-selection-choice').click(function() {
+    function singleSelect (){
+        $('.con-select .btn-selection-choice').click(function () {
             $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
             $(this).addClass('uk-active');
-            if ($(this).hasClass('toggle-hide')) {
-                $(this).closest('li').find('.con-choose-numbers-colors').hide();
+        });
+    };
+
+    function toggleBtnEditPattenColor (){
+
+        $('.con-select.con-palettes .btn-selection-choice').click(function() {
+            $(this).addClass('uk-active');
+            if ($(this).hasClass('palette-pattern')) {
+                $(this).closest('.con-select.con-palettes ').find('.modal-edit-palette-pattern').show();
             }
             else
-                $(this).closest('li').find('.con-choose-numbers-colors').show();
+                $(this).closest('.con-select.con-palettes ').find('.modal-edit-palette-pattern').hide();
         });
-
-        $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
-            if ($(this).hasClass('uk-active')) {
-                $(this).closest('li').find('.con-choose-numbers-colors').hide();
+        $('.con-select.con-palettes .btn-selection-choice.uk-active').each(function(){
+            if ($(this).hasClass('palette-pattern')) {
+                $(this).closest('.con-select.con-palettes ').find('.modal-edit-palette-pattern').show();
             }
             else
-                $(this).closest('li').find('.con-choose-numbers-colors').show();
+                $(this).closest('.con-select.con-palettes ').find('.modal-edit-palette-pattern').hide();
         });
+    };
 
-
-
+    function toggleConChooseNumbersColors () {
         $('.con-select.con-toggle .btn-selection-choice').click(function() {
-            $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
-            $(this).addClass('uk-active');
+            if ($(this).hasClass('toggle-hide')) {
+                $(this).closest('li').find('.con-choose-numbers-colors').hide();
+            }
+            else
+                $(this).closest('li').find('.con-choose-numbers-colors').show();
+        });
+        $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
+            if ($(this).hasClass('uk-active')) {
+                $(this).closest('li').find('.con-choose-numbers-colors').hide();
+            }
+            else
+                $(this).closest('li').find('.con-choose-numbers-colors').show();
+        });
+    };
+
+    function toggleConAddApplication (){
+        $('.con-select.con-toggle .btn-selection-choice').click(function() {
+            if ($(this).hasClass('toggle-show')) {
+                $(this).toggleClass('bgc-dark').toggleClass('fc-light');
+                $(this).closest('li').find('.con-add-application').toggle();
+            }
+            else if ($(this).hasClass('toggle-hide')) {
+                $(this).closest('li').find('.con-add-application').hide();
+                $(this).closest('.con-select.con-toggle').find('.btn-selection-choice').removeClass('bgc-dark').removeClass('fc-light').addClass('bdr-light');
+            }
+        });
+    };
+
+    function toggleConInputObject (){
+        $('.con-select.con-toggle .btn-selection-choice').click(function() {
             if ($(this).hasClass('toggle-hide')) {
                 $(this).closest('li').find('.con-input-object').hide();
             }
             else
                 $(this).closest('li').find('.con-input-object').show();
         });
-
         $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
             if ($(this).hasClass('uk-active')) {
                 $(this).closest('li').find('.con-input-object').hide();
@@ -114,3 +94,958 @@
             else
                 $(this).closest('li').find('.con-input-object').show();
         });
+    };
+
+    function sliders (){
+        $('.btn-archive').click(function() {
+            $(this).closest('.mascot-item').remove();
+        });
+
+        $(".slider").roundSlider({
+            radius: 70,
+            width: 12,
+            handleSize: "+14",
+        });
+
+        $(".slider-range")
+            .slider({
+                min: -100,
+                max: 100
+            })
+
+            .slider("float", {
+
+                handle: true,
+                pips: false,
+                labels: false,
+                prefix: "",
+                suffix: ""
+
+            });
+
+        $(".slider-range.range-small-large")
+            .slider("pips", {
+                labels: {first:"Small", last:"Large"},
+            });
+
+        $(".slider-range.range-left-right")
+            .slider("pips", {
+                labels: {first:"Left", last:"Right"},
+            });
+
+        $(".slider-range.range-up-down")
+            .slider("pips", {
+                labels: {first:"Down", last:"Up"},
+            });
+    };
+
+    function paletteColor (){
+        var data =
+            {
+                paletteColor:[
+                    {color:'black'},
+                    {color:'lightBlue'},
+                    {color:'charcoalGray'},
+                    {color:'maroon'},
+                    {color:'green'},
+                    {color:'gold'},
+                    {color:'grey'},
+                    {color:'silverGray'},
+                    {color:'green-2'},
+                    {color:'maroonBrown'},
+                    {color:'darkBlue'},
+                    {color:'orange'},
+                    {color:'purple'},
+                    {color:'cardinal'},
+                    {color:'cornBlue'},
+                    {color:'seminol'},
+                    {color:'creamYellow'},
+                    {color:'white'},
+                    {color:'neonPink'}
+                ]
+            };
+
+        var template = '' +
+            '{{#paletteColor}}\n' +
+            '<div>\n' +
+            '<button class="uk-inline box-palette btn-selection-choice palette-color">\n' +
+            '<div class="palette palette-c-{{color}}"></div>\n' +
+            '<div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">\n' +
+            '<span class="icon icon-check uk-text-bold uk-position-center"></span>\n' +
+            '</div>\n' +
+            '</button>\n' +
+            '</div>\n' +
+            '{{/paletteColor}}';
+        var markup = Mustache.render(template, data);
+        $('.m-palette-color').html(markup);
+    };
+
+    function palettePattern (){
+        var data =
+            {
+                palettePattern: [
+                    {pattern: 'camo'},
+                    {pattern: 'check'},
+                    {pattern: 'diamonds'},
+                    {pattern: 'digital-camo'},
+                    {pattern: 'distresser'},
+                    {pattern: 'fiber'},
+                    {pattern: 'lockdown'},
+                    {pattern: 'pixel-fade-body'},
+                    {pattern: 'pixel-fade-sleeve'},
+                    {pattern: 'quake'},
+                    {pattern: 'score'},
+                    {pattern: 'thick-stripe'},
+                    {pattern: 'thin-stripes'},
+                    {pattern: 'trips-arrow'},
+                    {pattern: 'upper-stripes'},
+                    {pattern: 'upper-stripes-body'},
+                    {pattern: 'wave-stripe'},
+                    {pattern: 'wave-stripes'},
+                    {pattern: 'gradient-2'}
+                ]
+            };
+
+        var template = '' +
+            '{{#palettePattern}}\n' +
+            '<div>\n' +
+            '<button class="uk-inline box-palette btn-selection-choice palette-pattern">\n' +
+            '<div class="palette palette-{{pattern}}"></div>\n' +
+            '<div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">\n' +
+            '<span class="icon icon-check uk-text-bold uk-position-center"></span>\n' +
+            '</div>\n' +
+            '</button>\n' +
+            '</div>\n' +
+            '{{/palettePattern}}';
+        var markup = Mustache.render(template, data);
+        $('.m-palette-pattern').html(markup);
+    };
+
+    function pipings (){
+        var data =
+            {
+                Titles: [
+                    {titleName: 'Neck Piping'},
+                    {titleName: 'Yoke Piping'},
+                    {titleName: 'Set-In Piping'},
+                    {titleName: 'Sleeve Piping 1" Up'},
+                    {titleName: 'End of Sleeve Piping'}
+                ]
+            };
+
+        var template = $('#pipings').html();
+        var markup = Mustache.render(template, data);
+        $('#m-pipings-list').html(markup);
+    };
+
+    function accents (){
+        var data =
+            {
+                accents: [
+                    {accent: 'http://customizer.prolook.com/images/sidebar/no-accent.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/outlined.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/single_outline_with_shadow.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/drop_shadow.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/no-accent.png'}
+                ]
+            };
+
+        var template = ''+
+            '{{#accents}}\n' +
+            '<div>\n' +
+            '<button class="uk-inline bgc-transparent box-palette btn-selection-choice">\n' +
+            '<div class=" bdr-thin bdr-gray">\n' +
+            '<img src="{{accent}}" uk-img>\n' +
+            '</div>\n' +
+            '<div class="uk-position-cover choice-icon bdr-lightGray">\n' +
+            '<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>\n' +
+            '</div>\n' +
+            '</button>\n' +
+            '</div>\n' +
+            '{{/accents}}'
+        var markup = Mustache.render(template, data);
+        $('.m-accents').html(markup);
+    };
+
+    function layouts (){
+        var data =
+            {
+                layouts: [
+                    {layout: './img/font-layout-plain.png'},
+                    {layout: './img/font-layout-arc.png'}
+                ]
+            };
+
+        var template = ''+
+            '{{#layouts}}\n' +
+            '<div>\n' +
+            '<button class="uk-inline bgc-transparent box-palette btn-selection-choice">\n' +
+            '<div class=" bdr-thin bdr-gray">\n' +
+            '<img src="{{layout}}" uk-img>\n' +
+            '</div>\n' +
+            '<div class="uk-position-cover choice-icon selected bdr-lightGray">\n' +
+            '<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>\n' +
+            '</div>\n' +
+            '</button>\n' +
+            '</div>\n' +
+            '{{/layouts}}'
+        var markup = Mustache.render(template, data);
+        $('.m-layouts').html(markup);
+    };
+
+    $('.btn-bt-0').click(function() {
+        $(this).closest('div').removeClass('uk-active');
+        $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
+    });
+
+
+
+
+    $( "#con-preview-pane" ).load( "preview-pane.html"  ,function() {
+        preview();
+    });
+    $( "#m-fabric-selection" ).load( "m-fabric-selection.html" ,function() {
+        singleSelect();
+    });
+
+    $( "#m-base-color-selection" ).load( "m-base-color-selection.html",function(){
+        singleSelect();
+        palettePattern();
+        paletteColor();
+        toggleBtnEditPattenColor();
+    });
+
+    $( "#m-sleeve-inserts" ).load( "m-sleeve-inserts.html",function(){
+        palettePattern();
+        paletteColor();
+        singleSelect();
+        toggleBtnEditPattenColor();
+    });
+
+    $( "#m-pipings" ).load( "m-pipings.html",function(){
+        singleSelect();
+        pipings();
+        toggleConChooseNumbersColors();
+    });
+
+    $( "#m-decorations-letters" ).load( "m-decorations-letters.html",function(){
+        singleSelect();
+        toggleConInputObject();
+        toggleConAddApplication();
+        sliders();
+        accents();
+        paletteColor();
+        layouts();
+    });
+
+    $( "#m-decorations-numbers" ).load( "m-decorations-numbers.html",function(){
+        singleSelect();
+        toggleConInputObject();
+        toggleConAddApplication();
+        sliders();
+        accents();
+        paletteColor();
+    });
+
+    $( "#m-decorations-mascots" ).load( "m-decorations-mascots.html",function(){
+        singleSelect();
+        toggleConAddApplication();
+        sliders();
+        paletteColor();
+    });
+
+    $( "#m-richardson-logo" ).load( "m-richardson-logo.html" );
+
+
+    // EDIT PATTERN COLOR BUTTON
+
+    // $('.con-select.con-palettes .btn-selection-choice').click(function() {
+    // $('#m-con-steps').on('click','.btn-selection-choice',function(e) {
+    //         $(this).addClass('uk-active');
+    //     if ($(this).hasClass('palette-pattern')) {
+    //         $(this).closest('.con-select.con-palettes').find('.modal-edit-palette-pattern').show();
+    //     }
+    //     else
+    //         $(this).closest('.con-select.con-palettes').find('.modal-edit-palette-pattern').hide();
+    // });
+    // $('.con-select.con-palettes .btn-selection-choice.uk-active').each(function(){
+    // $('#m-con-steps .btn-selection-choice').each(function(e) {
+    //     if ($(this).hasClass('palette-pattern')) {
+    //         $(this).closest('.con-select.con-palettes').find('.modal-edit-palette-pattern').show();
+    //     }
+    //     else
+    //         $(this).closest('.con-select.con-palettes').find('.modal-edit-palette-pattern').hide();
+    // });
+    // END EDIT PATTERN COLOR BUTTON
+
+
+});
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Richardson</title>
+    <!-- UIkit CSS -->
+
+
+    <link rel="stylesheet" href="css/jquery.steps.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.css" />
+    <link rel="stylesheet" href="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jqueryui.min.css" />
+    <link rel="stylesheet" href="https://rawgit.com/simeydotme/jQuery-ui-Slider-Pips/master/dist/jquery-ui-slider-pips.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.steps.min.js"></script>
+    <script src="js/jquery.steps.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://rawgit.com/simeydotme/jQuery-ui-Slider-Pips/master/src/js/jquery-ui-slider-pips.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+
+<section class="uk-section">
+    <div class="uk-container uk-container-large">
+        <div class="uk-grid-collapse" uk-grid>
+            <div id="con-preview-pane" class="uk-width-1-1 uk-width-1-2@m uk-width-2-3@l ">
+            </div>
+            <div id="con-steps-sidebar" class="uk-width-1-1 uk-width-1-2@m uk-width-1-3@l">
+                <div class="uk-padding-small bgc-light wer">
+                    <div class=" uk-text-right">
+                        <a class="uk-link-reset uk-text-uppercase" href="">Select new style</a>
+                    </div>
+                    <h5 class="uk-text-uppercase uk-text-bold uk-margin-remove">Pts 20</h5>
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-expand">
+                            <h4 class="uk-text-uppercase uk-text-bold uk-margin-remove uk-text-truncate abrade-ultra-italic">Pts Pro select 3000-8</h4>
+                            <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-remove fc-red abrade-ultra">Sublimated</h6>
+                        </div>
+                        <div class="" uk-switcher="connect: .bt-0" uk-grid>
+                            <div class="">
+                                <a href="" class="uk-button uk-button-small padding-tiny-vertical uk-text-bold bgc-red fc-light uk-text-uppercase bdr-thin bdr-dark btn-bt-0 uk-flex uk-flex-middle ">
+                                    <span class="icon icon icon-edit"></span>
+                                    <span class="uk-visible@s uk-margin-small-left abrade-black">Change fabric</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-grid-collapse" uk-grid>
+                    <!-- Number Navigation -->
+                    <div class="uk-width-1-1 uk-width-auto@s left-nav">
+                        <div class="uk-flex-center uk-grid-collapse uk-child-width-auto uk-text-right@m active-bgc-red active-bdr-red uk-text-bold" uk-switcher="connect: .con-customizer" uk-grid>
+                            <div class="uk-active">
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Fabric; pos: top-right">1</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Fabric; pos: left; ">1</a>
+                            </div>
+                            <div class="">
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Base Color; pos: top-right">2</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Base Color; pos: left; ">2</a>
+                            </div>
+                            <div class="">
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Inserts; pos: top-right">3</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Inserts; pos: left; ">3</a>
+                            </div>
+                            <div class="">
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Pipings; pos: top-right">4</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Pipings; pos: left">4</a>
+                            </div>
+                            <div class="">
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Decoration Letters; pos: top">5</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Decoration Letters; pos: left">5</a>
+                            </div>
+                            <div class="">
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Decoration Numbers; pos: top">6</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Decoration Numbers; pos: left">6</a>
+                            </div>
+                            <div class="">
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Decorations; pos: top">7</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Decorations; pos: left">7</a>
+                            </div>
+                            <div class="">
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-hidden@s" uk-tooltip="title: Richardson Logo; pos: top">8</a>
+                                <a href="" class="uk-icon-button bdrr-none bdr-thin bdr-light uk-link-reset uk-visible@s" uk-tooltip="title: Richardson Logo; pos: left">8</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Number Navigation -->
+                    <div class="uk-width-1-1 uk-width-expand@s">
+                        <ul id="m-con-steps" class="uk-switcher con-customizer bt-0">
+                            <!-- Fabric Selection: Step 1 -->
+                            <li>
+                                <div id="m-fabric-selection" class=" uk-height-max-large uk-overflow-auto"></div>
+                                <div class="uk-padding-small bgc-light">
+
+                                    <div class=" uk-grid-collapse uk-text-center" uk-grid>
+                                        <a class="uk-link-reset uk-width-1-2 ">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
+                                                    <span class="fc-red icon-left-arrow"></span>
+                                                </div>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" uk-switcher-item="next" class="uk-link-reset uk-width-1-2 ">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
+                                                    <span class="fc-red icon-right-arrow"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="uk-width-1-1">
+                                            <a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1 uk-text-capitalize abrade-ultra-italic">Finish / View &nbsp;Summary</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-grid-small uk-text-bold fc-red abrade-ultra-italic" uk-grid>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a href="#" class="uk-link-reset fc-red abrade-ultra-italic">User Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="bdr-darker uk-margin-remove">
+                            </li>
+                            <!-- End Fabric Selection: Step 1 -->
+
+                            <!-- Base Color Selection Step 2 -->
+                            <li>
+                                <ul id="m-base-color-selection" class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
+                                </ul>
+                                <div class="uk-padding-small bgc-light">
+                                    <div class=" uk-grid-collapse uk-text-center" uk-grid>
+                                        <a href="#"class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
+                                                    <span class="fc-red icon-left-arrow"></span>
+                                                </div>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
+                                            </div>
+                                        </a>
+                                        <a href="#"class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
+                                                    <span class="fc-red icon-right-arrow"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="uk-width-1-1">
+                                            <a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1 uk-text-capitalize abrade-ultra-italic">Finish / View &nbsp;Summary</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-grid-small uk-text-bold fc-red abrade-ultra-italic" uk-grid>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a href="#" class="uk-link-reset fc-red abrade-ultra-italic">User Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="bdr-darker uk-margin-remove">
+                            </li>
+                            <!-- End Base Color Selection Step 2 -->
+
+                            <!-- Sleeve Inserts: Step 3 -->
+                            <li>
+                                <ul id="m-sleeve-inserts" class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
+                                </ul>
+                                <div class="uk-padding-small bgc-light">
+                                    <div class=" uk-grid-collapse uk-text-center" uk-grid>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
+                                                    <span class="fc-red icon-left-arrow"></span>
+                                                </div>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
+                                                    <span class="fc-red icon-right-arrow"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="uk-width-1-1">
+                                            <a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1 uk-text-capitalize abrade-ultra-italic">Finish / View &nbsp;Summary</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-grid-small uk-text-bold fc-red abrade-ultra-italic" uk-grid>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a href="#" class="uk-link-reset fc-red abrade-ultra-italic">User Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="bdr-darker uk-margin-remove">
+                            </li>
+                            <!-- End Sleeve Inserts: Step 3 -->
+
+                            <!-- Pipings: Step 4 -->
+                            <li>
+                                <div id="m-pipings"></div>
+                                <div class="uk-padding-small bgc-light">
+                                    <div class=" uk-grid-collapse uk-text-center" uk-grid>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
+                                                    <span class="fc-red icon-left-arrow"></span>
+                                                </div>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
+                                                    <span class="fc-red icon-right-arrow"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="uk-width-1-1">
+                                            <a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1 uk-text-capitalize abrade-ultra-italic">Finish / View &nbsp;Summary</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-grid-small uk-text-bold fc-red abrade-ultra-italic" uk-grid>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a href="#" class="uk-link-reset fc-red abrade-ultra-italic">User Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="bdr-darker uk-margin-remove">
+                            </li>
+                            <!-- End Pipings: Step 4 -->
+
+                            <!-- Step 5: Decorations / Letters -->
+                            <li>
+                                <ul id="m-decorations-letters" class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
+                                </ul>
+                                <div class="uk-padding-small bgc-light">
+                                    <div class=" uk-grid-collapse uk-text-center" uk-grid>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
+                                                    <span class="fc-red icon-left-arrow"></span>
+                                                </div>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-expand uk-padding -small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
+                                                    <span class="fc-red icon-right-arrow"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="uk-width-1-1">
+                                            <a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1 uk-text-capitalize abrade-ultra-italic">Finish / View &nbsp;Summary</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-grid-small uk-text-bold fc-red abrade-ultra-italic" uk-grid>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a href="#" class="uk-link-reset fc-red abrade-ultra-italic">User Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="bdr-darker uk-margin-remove">
+                            </li>
+                            <!-- End Step 5: Decorations / Letters -->
+
+                            <!-- Step 6: Decorations / Numbers -->
+                            <li>
+                                <ul id="m-decorations-numbers" class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
+                                </ul>
+                                <div class="uk-padding-small bgc-light">
+                                    <div class=" uk-grid-collapse uk-text-center" uk-grid>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
+                                                    <span class="fc-red icon-left-arrow"></span>
+                                                </div>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-expand uk-padding -small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
+                                                    <span class="fc-red icon-right-arrow"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="uk-width-1-1">
+                                            <a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1 uk-text-capitalize abrade-ultra-italic">Finish / View &nbsp;Summary</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-grid-small uk-text-bold fc-red abrade-ultra-italic" uk-grid>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a href="#" class="uk-link-reset fc-red abrade-ultra-italic">User Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="bdr-darker uk-margin-remove">
+                            </li>
+                            <!-- End Step 6: Decorations / Numbers -->
+
+                            <!-- Step 7: Decoration / Mascots -->
+                            <li>
+                                <ul id="m-decorations-mascots" class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
+                                </ul>
+                                <div class="uk-padding-small bgc-light">
+                                    <div class=" uk-grid-collapse uk-text-center" uk-grid>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
+                                                    <span class="fc-red icon-left-arrow"></span>
+                                                </div>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 "uk-switcher-item="next">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-expand uk-padding -small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
+                                                    <span class="fc-red icon-right-arrow"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="uk-width-1-1">
+                                            <a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1 uk-text-capitalize abrade-ultra-italic">Finish / View &nbsp;Summary</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-grid-small uk-text-bold fc-red abrade-ultra-italic" uk-grid>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a href="#" class="uk-link-reset fc-red abrade-ultra-italic">User Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="bdr-darker uk-margin-remove">
+                            </li>
+                            <!-- End Step 7: Decoration / Mascots -->
+
+                            <!-- Step 8: Richardson Logo -->
+                            <li>
+                                <div id="m-richardson-logo" class="uk-padding-small uk-margin-remove">
+                                </div>
+                                <div class="uk-padding-small bgc-light">
+                                    <div class=" uk-grid-collapse uk-text-center" uk-grid>
+                                        <a href="#" class="uk-link-reset uk-width-1-2 " uk-switcher-item="previous">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark bdr-remove-right">
+                                                    <span class="fc-red icon-left-arrow"></span>
+                                                </div>
+                                                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Previous</div>
+                                            </div>
+                                        </a>
+                                        <a class="uk-link-reset uk-width-1-2">
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <div class="uk-width-expand uk-padding -small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase bdr-remove-right">Next</div>
+                                                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">
+                                                    <span class="fc-red icon-right-arrow"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="uk-width-1-1">
+                                            <a href="#" class="uk-button bgc-dark fc-light uk-text-bold uk-width-1-1 uk-text-capitalize abrade-ultra-italic uk-text-capitalize abrade-ultra-italic">Finish / View &nbsp;Summary</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-grid-small uk-text-bold fc-red abrade-ultra-italic" uk-grid>
+                                        <div class="uk-width-expand con-legend">
+                                            <p><span class="bdr-red bdr-thin box uk-display-inline-block uk-margin-small-right"></span>= Incomplete Step</p>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a href="#" class="uk-link-reset fc-red abrade-ultra-italic">User Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="bdr-darker uk-margin-remove">
+                            </li>
+                            <!-- End Step 8: Richardson Logo -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Decoration Letters</h5>
+    <div class="con-add-application hidden">
+        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark abrade-black">Choose location</h6>
+        <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-2 uk-text-center con-select active-bgc-dark" uk-grid>
+            <div class="">
+                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice toggle-hide uk-active">Front body</button>
+            </div>
+            <div class="">
+                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Back body</button>
+            </div>
+            <div class="">
+                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Left sleeve</button>
+            </div>
+            <div class="">
+                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Right sleeve</button>
+            </div>
+        </div>
+        <h6 uk-margin class="uk-margin-small uk-margin-remove-horizontal uk-text-bold uk-text-uppercase fc-dark abrade-black">Choose perspective</h6>
+        <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-3 uk-text-center con-select active-bgc-dark uk-margin-medium-bottom" uk-grid>
+            <div class="">
+                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice toggle-hide uk-active">Front number</button>
+            </div>
+            <div class="">
+                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Back number</button>
+            </div>
+            <div class="">
+                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Sleeve number</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center con-select con-toggle" uk-grid>
+        <div class="uk-width-1-2 ">
+            <button class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize uk-text-capitalize btn-selection-choice toggle-show">
+                <span class="uk-margin-small-right icon-add"></span>Add application
+            </button>
+        </div>
+        <div class="uk-width-1-2 ">
+            <button class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize uk-text-capitalize btn-selection-choice toggle-hide" type="button" uk-toggle="target: #modal-all-application">
+                <span class="uk-margin-small-right icon-view"></span>View all application
+            </button>
+        </div>
+    </div>
+</li>
+
+<li>
+    <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold fc-darker"><span class=" uk-text-uppercase abrade-ultra-italic">Team name</span> (front view) #1</h5>
+    <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center con-select con-toggle active-bgc-dark" uk-grid>
+        <div class="uk-width-1-2 ">
+            <button class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">View</button>
+        </div>
+        <div class="uk-width-1-2 ">
+            <button class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice toggle-hide uk-active">Hide</button>
+        </div>
+    </div>
+
+    <div class="con-input-object">
+        <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Input team name</h6>
+        <div class="">
+            <input class="uk-input bgc-light bdr-lightGray" type="text" placeholder="Your team name">
+        </div>
+    </div>
+
+    <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Team name font</h6>
+    <div class="uk-grid-collapse uk-grid-match uk-text-center" uk-grid>
+        <div class="uk-width-auto ">
+            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">
+                <span class="fc-red icon-left-arrow"></span>
+            </a>
+        </div>
+        <div class="uk-width-expand ">
+            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-bold fc-dark">Full Block</a>
+        </div>
+        <div class="uk-width-auto ">
+            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">
+                <span class="fc-red icon-right-arrow"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="uk-padding-small uk-padding-remove-vertical">
+        <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom"><span class="uk-margin-small-right icon-font-size"></span>Font Size</h6>
+        <div class="uk-padding uk-padding-remove-vertical">
+            <div class="slider-range  range-small-large"></div>
+        </div>
+        <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-bottom"><span class="uk-margin-small-right icon-move"></span>Position</h6>
+        <div class="uk-padding uk-padding-remove-vertical">
+            <div class="slider-range range-left-right"></div>
+            <div class="slider-range range-up-down uk-margin-medium-top"></div>
+        </div>
+
+        <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-bottom"><span class="uk-margin-small-right icon-rotate"></span>Rotate</h6>
+        <div class="uk-flex-center" uk-grid>
+            <div class="">
+                <div class="slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose font Accent</h6>
+    <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-5 uk-child-width-1-6@s uk-child-width-1-5@m con-select con-palettes m-accents" uk-grid>
+    </div>
+
+    <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose font color</h6>
+    <div>
+        <ul class="uk-subnav uk-grid-collapse uk-text-center uk-padding-remove uk-child-width-expand bottom-arrow arrow-outward bac-dark active-bgc-dark active-bdr-dark " uk-switcher uk-grid>
+            <li class="uk-padding-remove"><a href="#" class="uk-width-1-1 padding-tiny-vertical uk-button-default uk-text-capitalize">Main&nbsp;Color</a></li>
+            <li class="uk-padding-remove"><a href="#" class="uk-width-1-1 padding-tiny-vertical uk-button-default uk-text-capitalize">Outline&nbsp;Color</a></li>
+        </ul>
+        <ul class="uk-switcher uk-margin uk-padding-remove">
+            <li>
+                <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center con-select con-palettes m-palette-color" uk-grid></div>
+            </li>
+            <li>
+                <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center con-select con-palettes m-palette-color" uk-grid></div>
+            </li>
+        </ul>
+    </div>
+
+    <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose Layout</h6>
+    <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-2@m con-select con-palettes m-layouts" uk-grid>
+    </div>
+</li>
+
+<li>
+    <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold fc-darker"><span class=" uk-text-uppercase abrade abrade-ultra-italic">Player name</span> (Back view) #2</h5>
+    <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center con-select con-toggle active-bgc-dark" uk-grid>
+        <div class="uk-width-1-2 ">
+            <button class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">View</button>
+        </div>
+        <div class="uk-width-1-2 ">
+            <button class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice toggle-hide uk-active">Hide</button>
+        </div>
+    </div>
+
+    <div class="con-input-object">
+        <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Input player name</h6>
+        <div class="">
+            <input class="uk-input bgc-light bdr-lightGray" type="text" placeholder="Your name">
+        </div>
+    </div>
+
+    <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Team name font</h6>
+    <div class="uk-grid-collapse uk-grid-match uk-text-center" uk-grid>
+        <div class="uk-width-auto ">
+            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">
+                <span class="fc-red icon-left-arrow"></span>
+            </a>
+        </div>
+        <div class="uk-width-expand ">
+            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-bold fc-dark">Full Block</a>
+        </div>
+        <div class="uk-width-auto ">
+            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default">
+                <span class="fc-red icon-right-arrow"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="uk-padding-small uk-padding-remove-vertical">
+        <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom"><span class="uk-margin-small-right icon-font-size"></span>Font Size</h6>
+        <div class="uk-padding uk-padding-remove-vertical">
+            <div class="slider-range  range-small-large"></div>
+        </div>
+        <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-bottom"><span class="uk-margin-small-right icon-move"></span>Position</h6>
+        <div class="uk-padding uk-padding-remove-vertical">
+            <div class="slider-range range-left-right"></div>
+            <div class="slider-range range-up-down uk-margin-medium-top"></div>
+        </div>
+
+        <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-small-bottom"><span class="uk-margin-small-right icon-rotate"></span>Rotate</h6>
+        <div class="uk-flex-center" uk-grid>
+            <div class="">
+                <div class="slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose font Accent</h6>
+    <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-5 uk-child-width-1-6@s uk-child-width-1-5@m con-select con-palettes m-accents" uk-grid>
+    </div>
+
+    <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose font color</h6>
+    <div>
+        <ul class="uk-subnav uk-grid-collapse uk-text-center uk-padding-remove uk-child-width-expand bottom-arrow arrow-outward bac-dark active-bgc-dark active-bdr-dark " uk-switcher uk-grid>
+            <li class="uk-padding-remove"><a href="#" class="uk-width-1-1 padding-tiny-vertical uk-button-default uk-text-capitalize">Main&nbsp;Color</a></li>
+            <li class="uk-padding-remove"><a href="#" class="uk-width-1-1 padding-tiny-vertical uk-button-default uk-text-capitalize">Outline&nbsp;Color</a></li>
+        </ul>
+        <ul class="uk-switcher uk-margin uk-padding-remove">
+            <li>
+                <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center con-select con-palettes m-palette-color" uk-grid></div>
+            </li>
+            <li>
+                <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center con-select con-palettes m-palette-color" uk-grid></div>
+            </li>
+        </ul>
+    </div>
+
+    <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose Layout</h6>
+    <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-2@m con-select con-palettes m-layouts" uk-grid>
+    </div>
+</li>

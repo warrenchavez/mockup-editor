@@ -1,5 +1,20 @@
 jQuery(function($) {
 
+    function fabrics (){
+
+        var data =
+            {fabrics: [
+                    {fabric: './img/fabric-texture.jpg'},
+                    {fabric: './img/fabric-texture-2.jpg'},
+                    {fabric: './img/fabric-texture-3.jpg'},
+                    {fabric: './img/fabric-texture-4.jpg'}
+                ]};
+
+        var template = $('#fabrics').html();
+        var markup = Mustache.render(template, data);
+        $('#m-fabrics').html(markup);
+    };
+
     function preview (){
 
         var data =
@@ -17,10 +32,6 @@ jQuery(function($) {
         var template = $('#preview').html();
         var markup = Mustache.render(template, data);
         $('#m-preview').html(markup);
-        $('.con-select .btn-selection-choice').click(function () {
-            $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
-            $(this).addClass('uk-active');
-        });
     };
 
     function singleSelect (){
@@ -221,10 +232,107 @@ jQuery(function($) {
         $('.m-palette-pattern').html(markup);
     };
 
+    function pipings (){
+        var data =
+            {
+                Titles: [
+                    {titleName: 'Neck Piping'},
+                    {titleName: 'Yoke Piping'},
+                    {titleName: 'Set-In Piping'},
+                    {titleName: 'Sleeve Piping 1" Up'},
+                    {titleName: 'End of Sleeve Piping'}
+                ]
+            };
+
+        var template = $('#pipings').html();
+        var markup = Mustache.render(template, data);
+        $('#m-pipings-list').html(markup);
+    };
+
+
     $('.btn-bt-0').click(function() {
         $(this).closest('div').removeClass('uk-active');
         $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
     });
+
+    function accents (){
+        var data =
+            {
+                accents: [
+                    {accent: 'http://customizer.prolook.com/images/sidebar/no-accent.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/outlined.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/single_outline_with_shadow.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/drop_shadow.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/no-accent.png'}
+                ]
+            };
+
+        var template = ''+
+            '{{#accents}}\n' +
+            '<div>\n' +
+            '<button class="uk-inline bgc-transparent box-palette btn-selection-choice">\n' +
+            '<div class=" bdr-thin bdr-gray">\n' +
+            '<img src="{{accent}}" uk-img>\n' +
+            '</div>\n' +
+            '<div class="uk-position-cover choice-icon bdr-lightGray">\n' +
+            '<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>\n' +
+            '</div>\n' +
+            '</button>\n' +
+            '</div>\n' +
+            '{{/accents}}'
+        var markup = Mustache.render(template, data);
+        $('.m-accents').html(markup);
+    };
+
+    function layouts (){
+        var data =
+            {
+                layouts: [
+                    {layout: './img/font-layout-plain.png'},
+                    {layout: './img/font-layout-arc.png'}
+                ]
+            };
+
+        var template = ''+
+            '{{#layouts}}\n' +
+            '<div>\n' +
+            '<button class="uk-inline bgc-transparent box-palette btn-selection-choice">\n' +
+            '<div class=" bdr-thin bdr-gray">\n' +
+            '<img src="{{layout}}" uk-img>\n' +
+            '</div>\n' +
+            '<div class="uk-position-cover choice-icon selected bdr-lightGray">\n' +
+            '<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>\n' +
+            '</div>\n' +
+            '</button>\n' +
+            '</div>\n' +
+            '{{/layouts}}'
+        var markup = Mustache.render(template, data);
+        $('.m-layouts').html(markup);
+    };
+
+    $('.btn-bt-0').click(function() {
+        $(this).closest('div').removeClass('uk-active');
+        $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
+    });
+
+    function previewLogo (){
+
+        var data =
+            {previewLogo: [
+                    {logo: './img/branding-right-chest.jpg'},
+                    {logo: './img/branding-left-sleeve.jpg'},
+                    {logo: './img/branding-back.jpg'}
+                ]};
+
+        var template = $('#preview-logo').html();
+        var markup = Mustache.render(template, data);
+        $('#m-preview-logo').html(markup);
+    };
+
+
+
+
+
 
 
 
@@ -234,6 +342,7 @@ jQuery(function($) {
     });
     $( "#m-fabric-selection" ).load( "m-fabric-selection.html" ,function() {
         singleSelect();
+        fabrics();
     });
 
     $( "#m-base-color-selection" ).load( "m-base-color-selection.html",function(){
@@ -252,6 +361,7 @@ jQuery(function($) {
 
     $( "#m-pipings" ).load( "m-pipings.html",function(){
         singleSelect();
+        pipings();
         toggleConChooseNumbersColors();
     });
 
@@ -260,6 +370,9 @@ jQuery(function($) {
         toggleConInputObject();
         toggleConAddApplication();
         sliders();
+        accents();
+        paletteColor();
+        layouts();
     });
 
     $( "#m-decorations-numbers" ).load( "m-decorations-numbers.html",function(){
@@ -267,37 +380,18 @@ jQuery(function($) {
         toggleConInputObject();
         toggleConAddApplication();
         sliders();
+        accents();
+        paletteColor();
     });
 
     $( "#m-decorations-mascots" ).load( "m-decorations-mascots.html",function(){
         singleSelect();
         toggleConAddApplication();
         sliders();
+        paletteColor();
     });
 
-    $( "#m-richardson-logo" ).load( "m-richardson-logo.html" );
-
-
-    // EDIT PATTERN COLOR BUTTON
-
-    // $('.con-select.con-palettes .btn-selection-choice').click(function() {
-    // $('#m-con-steps').on('click','.btn-selection-choice',function(e) {
-    //         $(this).addClass('uk-active');
-    //     if ($(this).hasClass('palette-pattern')) {
-    //         $(this).closest('.con-select.con-palettes').find('.modal-edit-palette-pattern').show();
-    //     }
-    //     else
-    //         $(this).closest('.con-select.con-palettes').find('.modal-edit-palette-pattern').hide();
-    // });
-    // $('.con-select.con-palettes .btn-selection-choice.uk-active').each(function(){
-    // $('#m-con-steps .btn-selection-choice').each(function(e) {
-    //     if ($(this).hasClass('palette-pattern')) {
-    //         $(this).closest('.con-select.con-palettes').find('.modal-edit-palette-pattern').show();
-    //     }
-    //     else
-    //         $(this).closest('.con-select.con-palettes').find('.modal-edit-palette-pattern').hide();
-    // });
-    // END EDIT PATTERN COLOR BUTTON
-
-
+    $( "#m-richardson-logo" ).load( "m-richardson-logo.html",function(){
+        previewLogo();
+    });
 });
