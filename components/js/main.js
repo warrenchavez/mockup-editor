@@ -24,9 +24,11 @@ jQuery(function($) {
     };
 
     function singleSelect (){
+            alert('labas');
         $('.con-select .btn-selection-choice').click(function () {
             $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
             $(this).addClass('uk-active');
+            alert('click uyyy!');
         });
     };
 
@@ -221,6 +223,78 @@ jQuery(function($) {
         $('.m-palette-pattern').html(markup);
     };
 
+    function pipings (){
+        var data =
+            {
+                Titles: [
+                    {titleName: 'Neck Piping'},
+                    {titleName: 'Yoke Piping'},
+                    {titleName: 'Set-In Piping'},
+                    {titleName: 'Sleeve Piping 1" Up'},
+                    {titleName: 'End of Sleeve Piping'}
+                ]
+            };
+
+        var template = $('#pipings').html();
+        var markup = Mustache.render(template, data);
+        $('#m-pipings-list').html(markup);
+    };
+
+    function accents (){
+        var data =
+            {
+                accents: [
+                    {accent: 'http://customizer.prolook.com/images/sidebar/no-accent.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/outlined.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/single_outline_with_shadow.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/drop_shadow.png'},
+                    {accent: 'http://customizer.prolook.com/images/sidebar/no-accent.png'}
+                ]
+            };
+
+        var template = ''+
+            '{{#accents}}\n' +
+            '<div>\n' +
+            '<button class="uk-inline bgc-transparent box-palette btn-selection-choice">\n' +
+            '<div class=" bdr-thin bdr-gray">\n' +
+            '<img src="{{accent}}" uk-img>\n' +
+            '</div>\n' +
+            '<div class="uk-position-cover choice-icon bdr-lightGray">\n' +
+            '<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>\n' +
+            '</div>\n' +
+            '</button>\n' +
+            '</div>\n' +
+            '{{/accents}}'
+        var markup = Mustache.render(template, data);
+        $('.m-accents').html(markup);
+    };
+
+    function layouts (){
+        var data =
+            {
+                layouts: [
+                    {layout: './img/font-layout-plain.png'},
+                    {layout: './img/font-layout-arc.png'}
+                ]
+            };
+
+        var template = ''+
+            '{{#layouts}}\n' +
+            '<div>\n' +
+            '<button class="uk-inline bgc-transparent box-palette btn-selection-choice">\n' +
+            '<div class=" bdr-thin bdr-gray">\n' +
+            '<img src="{{layout}}" uk-img>\n' +
+            '</div>\n' +
+            '<div class="uk-position-cover choice-icon selected bdr-lightGray">\n' +
+            '<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>\n' +
+            '</div>\n' +
+            '</button>\n' +
+            '</div>\n' +
+            '{{/layouts}}'
+        var markup = Mustache.render(template, data);
+        $('.m-layouts').html(markup);
+    };
+
     $('.btn-bt-0').click(function() {
         $(this).closest('div').removeClass('uk-active');
         $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
@@ -237,21 +311,22 @@ jQuery(function($) {
     });
 
     $( "#m-base-color-selection" ).load( "m-base-color-selection.html",function(){
-        paletteColor();
-        palettePattern();
         singleSelect();
+        palettePattern();
+        paletteColor();
         toggleBtnEditPattenColor();
     });
 
     $( "#m-sleeve-inserts" ).load( "m-sleeve-inserts.html",function(){
-        paletteColor();
         palettePattern();
+        paletteColor();
         singleSelect();
         toggleBtnEditPattenColor();
     });
 
     $( "#m-pipings" ).load( "m-pipings.html",function(){
         singleSelect();
+        pipings();
         toggleConChooseNumbersColors();
     });
 
@@ -260,6 +335,9 @@ jQuery(function($) {
         toggleConInputObject();
         toggleConAddApplication();
         sliders();
+        accents();
+        paletteColor();
+        layouts();
     });
 
     $( "#m-decorations-numbers" ).load( "m-decorations-numbers.html",function(){
@@ -267,12 +345,15 @@ jQuery(function($) {
         toggleConInputObject();
         toggleConAddApplication();
         sliders();
+        accents();
+        paletteColor();
     });
 
     $( "#m-decorations-mascots" ).load( "m-decorations-mascots.html",function(){
         singleSelect();
         toggleConAddApplication();
         sliders();
+        paletteColor();
     });
 
     $( "#m-richardson-logo" ).load( "m-richardson-logo.html" );
