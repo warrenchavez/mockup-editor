@@ -1,5 +1,20 @@
 jQuery(function($) {
 
+    // function applications (){
+    //
+    //     var data =
+    //         {applications: [
+    //                 {app: '#2 Letters - Player Name'},
+    //                 {app: '#3 Front Numbers'},
+    //                 {app: '#1 Letters - Team Name'},
+    //                 {app: '#5 Custom Logo - Bear'}
+    //             ]};
+    //
+    //     var template = $('#fabrics').html();
+    //     var markup = Mustache.render(template, data);
+    //     $('#m-fabrics').html(markup);
+    // };
+
     function fabrics (){
 
         var data =
@@ -43,7 +58,7 @@ jQuery(function($) {
 
     function toggleBtnEditPattenColor (){
 
-        $('.con-select.con-palettes .btn-selection-choice').click(function() {
+        $('.con-select.con-palettes.w-btn-toggle .btn-selection-choice').click(function() {
             $(this).addClass('uk-active');
             if ($(this).hasClass('palette-pattern')) {
                 $(this).closest('.con-select.con-palettes ').find('.modal-edit-palette-pattern').show();
@@ -51,8 +66,8 @@ jQuery(function($) {
             else
                 $(this).closest('.con-select.con-palettes ').find('.modal-edit-palette-pattern').hide();
         });
-        $('.con-select.con-palettes .btn-selection-choice.uk-active').each(function(){
-            if ($(this).hasClass('palette-pattern')) {
+        $('.con-select.con-palettes.w-btn-toggle .btn-selection-choice.palette-pattern').each(function(){
+            if ($(this).hasClass('uk-active')) {
                 $(this).closest('.con-select.con-palettes ').find('.modal-edit-palette-pattern').show();
             }
             else
@@ -249,12 +264,6 @@ jQuery(function($) {
         $('#m-pipings-list').html(markup);
     };
 
-
-    $('.btn-bt-0').click(function() {
-        $(this).closest('div').removeClass('uk-active');
-        $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
-    });
-
     function accents (){
         var data =
             {
@@ -310,11 +319,6 @@ jQuery(function($) {
         $('.m-layouts').html(markup);
     };
 
-    $('.btn-bt-0').click(function() {
-        $(this).closest('div').removeClass('uk-active');
-        $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
-    });
-
     function previewLogo (){
 
         var data =
@@ -336,6 +340,10 @@ jQuery(function($) {
 
 
 
+    $('.btn-bt-0').click(function() {
+        $(this).closest('div').removeClass('uk-active');
+        $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
+    });
 
     $( "#con-preview-pane" ).load( "preview-pane.html"  ,function() {
         preview();
@@ -366,29 +374,32 @@ jQuery(function($) {
     });
 
     $( "#m-decorations-letters" ).load( "m-decorations-letters.html",function(){
+        paletteColor();
+        toggleBtnEditPattenColor();
         singleSelect();
         toggleConInputObject();
         toggleConAddApplication();
         sliders();
         accents();
-        paletteColor();
         layouts();
     });
 
     $( "#m-decorations-numbers" ).load( "m-decorations-numbers.html",function(){
+        paletteColor();
+        toggleBtnEditPattenColor();
         singleSelect();
         toggleConInputObject();
         toggleConAddApplication();
         sliders();
         accents();
-        paletteColor();
     });
 
     $( "#m-decorations-mascots" ).load( "m-decorations-mascots.html",function(){
+        paletteColor();
+        toggleBtnEditPattenColor();
         singleSelect();
         toggleConAddApplication();
         sliders();
-        paletteColor();
     });
 
     $( "#m-richardson-logo" ).load( "m-richardson-logo.html",function(){
