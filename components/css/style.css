@@ -11,7 +11,7 @@
   background-color: #e32139 !important; }
 
 .bgc-transparent {
-  background-color: transparent; }
+  background-color: transparent !important; }
 
 .bgc-light {
   background-color: #eee !important; }
@@ -233,7 +233,7 @@
   color: #dedede !important; }
 
 .fc-gray {
-  color: #aaa !important !important; }
+  color: #aaa !important; }
 
 .fc-dark {
   color: #343434 !important; }
@@ -506,7 +506,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   background-color: #343434 !important; }
 
 .active-fc-red .uk-active a {
-  color: #e32139 !important !important; }
+  color: #e32139 !important; }
 
 .active-bgc-red .uk-active a {
   color: #eee !important;

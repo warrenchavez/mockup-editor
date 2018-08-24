@@ -1,5 +1,146 @@
 jQuery(function($) {
 
+    // function productItems (){
+
+        var data =
+            {
+                all: [
+                    {
+                        name: '3000-1',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-2',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-3',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-4',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-5',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-6',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-7',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-8',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+                        price: '86.00'
+                    }
+                ],
+                twoButtons: [
+                    {
+                        name: '3000-1',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-2',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-3',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-4',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-5',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-6',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-7',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-8',
+                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+                        price: '86.00'
+                    }
+                ],
+                vNeck: [
+                    {
+                        name: '3000-1',
+                        img: '',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-2',
+                        img: '',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-3',
+                        img: '',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-4',
+                        img: '',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-5',
+                        img: '',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-6',
+                        img: '',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-7',
+                        img: '',
+                        price: '86.00'
+                    },
+                    {
+                        name: '3000-8',
+                        img: '',
+                        price: '86.00'
+                    }
+                ],
+            };
+
+        var template = $('#all-products').html();
+        var markup = Mustache.render(template, data);
+        $('#m-all-products').html(markup);
+
+        var template = $('#2-button').html();
+        var markup = Mustache.render(template, data);
+        $('#m-2-button').html(markup);
+    // };
+
         var data =
             {
                 logoActive: [
@@ -445,6 +586,7 @@ jQuery(function($) {
     $( "#con-preview-pane" ).load( "preview-pane.html"  ,function() {
         preview();
     });
+
     $( "#m-fabric-selection" ).load( "m-fabric-selection.html" ,function() {
         singleSelect();
         fabrics();

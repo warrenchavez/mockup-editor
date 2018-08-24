@@ -5,7 +5,7 @@
   background-color: #e32139 !important; }
 
 .bgc-transparent {
-  background-color: transparent; }
+  background-color: transparent !important; }
 
 .bgc-light {
   background-color: #eee !important; }
@@ -227,7 +227,7 @@
   color: #dedede !important; }
 
 .fc-gray {
-  color: #aaa !important !important; }
+  color: #aaa !important; }
 
 .fc-dark {
   color: #343434 !important; }
