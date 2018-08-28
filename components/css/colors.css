@@ -19,8 +19,14 @@
 .bgc-dark {
   background-color: #343434 !important; }
 
+.bgc-darkGray {
+  background-color: #6c6c6c !important; }
+
 .bgc-darker {
   background-color: #242424 !important; }
+
+.bgc-darkerGray {
+  background-color: #606060 !important; }
 
 .bgc-brickred {
   background-color: #AD0000 !important; }
@@ -229,11 +235,17 @@
 .fc-gray {
   color: #aaa !important; }
 
+.fc-darkGray {
+  color: #6c6c6c !important; }
+
 .fc-dark {
   color: #343434 !important; }
 
 .fc-darker {
   color: #242424 !important; }
+
+.fc-darkerGray {
+  color: #606060 !important; }
 
 .bdr-red {
   border-color: #e32139 !important; }

@@ -256,8 +256,8 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 }
 
 .con-legend .box {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
 }
 
 
@@ -270,6 +270,9 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   font-size: 18px;
 }
 
+.uk-tooltip>* {
+  right: 200px !important;
+}
 .uk-tooltip {
   font-weight: bolder;
   padding: 16px 8px;
@@ -278,9 +281,12 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   display: block !important;
   background-color: $color-dark;
   text-transform: uppercase;
-
+  margin-right: -14.9px !important;
+  //z-index: 1000 !important;
+  //position: relative;
 
   &:after {
+  z-index: 1000 !important;
     content: " ";
     width: 0;
     height: 0;
@@ -296,7 +302,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   &:after {
     margin-right: -14.9px !important;
     top: 50% !important;
-    right: 0;
+    right: -10px;
     border-bottom: 16px solid transparent;
     border-top: 16px solid transparent;
     border-left: 10px solid $color-dark;

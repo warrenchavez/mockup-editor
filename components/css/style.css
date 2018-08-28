@@ -25,8 +25,14 @@
 .bgc-dark {
   background-color: #343434 !important; }
 
+.bgc-darkGray {
+  background-color: #6c6c6c !important; }
+
 .bgc-darker {
   background-color: #242424 !important; }
+
+.bgc-darkerGray {
+  background-color: #606060 !important; }
 
 .bgc-brickred {
   background-color: #AD0000 !important; }
@@ -235,11 +241,17 @@
 .fc-gray {
   color: #aaa !important; }
 
+.fc-darkGray {
+  color: #6c6c6c !important; }
+
 .fc-dark {
   color: #343434 !important; }
 
 .fc-darker {
   color: #242424 !important; }
+
+.fc-darkerGray {
+  color: #606060 !important; }
 
 .bdr-red {
   border-color: #e32139 !important; }
@@ -652,8 +664,8 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   display: none; }
 
 .con-legend .box {
-  width: 12px;
-  height: 12px; }
+  width: 20px;
+  height: 20px; }
 
 #modal-all-application .uk-list > li:nth-child(n+2) {
   margin-top: 0;
@@ -662,6 +674,9 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .icon {
   font-size: 18px; }
 
+.uk-tooltip > * {
+  right: 200px !important; }
+
 .uk-tooltip {
   font-weight: bolder;
   padding: 16px 8px;
@@ -669,8 +684,10 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   line-height: 0px;
   display: block !important;
   background-color: #343434 !important;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-right: -14.9px !important; }
   .uk-tooltip:after {
+    z-index: 1000 !important;
     content: " ";
     width: 0;
     height: 0;
@@ -683,7 +700,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .uk-tooltip.uk-tooltip-left-center:after {
   margin-right: -14.9px !important;
   top: 50% !important;
-  right: 0;
+  right: -10px;
   border-bottom: 16px solid transparent;
   border-top: 16px solid transparent;
   border-left: 10px solid #343434 !important; }

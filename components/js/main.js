@@ -1,6 +1,6 @@
 jQuery(function($) {
 
-    // function productItems (){
+    function productItems (){
 
         var data =
             {
@@ -87,49 +87,7 @@ jQuery(function($) {
                         img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
                         price: '86.00'
                     }
-                ],
-                vNeck: [
-                    {
-                        name: '3000-1',
-                        img: '',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-2',
-                        img: '',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-3',
-                        img: '',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-4',
-                        img: '',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-5',
-                        img: '',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-6',
-                        img: '',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-7',
-                        img: '',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-8',
-                        img: '',
-                        price: '86.00'
-                    }
-                ],
+                ]
             };
 
         var template = $('#all-products').html();
@@ -139,67 +97,68 @@ jQuery(function($) {
         var template = $('#2-button').html();
         var markup = Mustache.render(template, data);
         $('#m-2-button').html(markup);
-    // };
+    };
 
+    function logo () {
         var data =
             {
                 logoActive: [
                     {
-                        name:"136: Beavers_2",
+                        name: "136: Beavers_2",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_2/00585c46c4acd535948bae93.png'
                     },
                     {
-                        name:"160: Bess_13",
+                        name: "160: Bess_13",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_13/29d9294061ff1b3a9c94db30.png'
                     },
                     {
-                        name:"156: Bees_9",
+                        name: "156: Bees_9",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_9/fb64165e078cb5a51cdecbec.png'
                     },
                     {
-                        name:"162: Bees_15",
+                        name: "162: Bees_15",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_15/183ef20c4c605d3a47a6cb6d.png'
                     },
                     {
-                        name:"148: Bees_1",
+                        name: "148: Bees_1",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_1/826a848d3281e1e5cb962608.png'
                     },
                     {
-                        name:"247: Duck_1",
+                        name: "247: Duck_1",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_1/04eb4d8010cc0a209a667143.png'
                     },
                     {
-                        name:"248: Duck_2",
+                        name: "248: Duck_2",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_2/209b3e397aeeabc71a120314.png'
                     },
                     {
-                        name:"249: Duck_3",
+                        name: "249: Duck_3",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_3/399326009fe075c211d8abea.png'
                     }
                 ],
                 logoArchive: [
                     {
-                        name:"137: Beavers_3",
+                        name: "137: Beavers_3",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_3/ddb5886e0ba6d61aa108bc44.png'
                     },
                     {
-                        name:"189: Bulldog_9",
+                        name: "189: Bulldog_9",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_9/10811cf29ca6cd7665c8ac72.png'
                     },
                     {
-                        name:"182: Bulldog_2",
+                        name: "182: Bulldog_2",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_2/59cc873d2f8f47bf1898846c.png'
                     },
                     {
-                        name:"191: Cardinal_2",
+                        name: "191: Cardinal_2",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_2/e3d436933b8246f95735cfd5.png'
                     },
                     {
-                        name:"192: Cardinal_3",
+                        name: "192: Cardinal_3",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_3/a025c5d2fcd2197302ec5cff.png'
                     },
                     {
-                        name:"193: Cardinal_4",
+                        name: "193: Cardinal_4",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_4/a0d89abc2ac4b164adcab046.png'
                     }
                 ],
@@ -212,7 +171,9 @@ jQuery(function($) {
         var template = $('#logo-archive').html();
         var markup = Mustache.render(template, data);
         $('#m-logo-archive').html(markup);
+    };
 
+    function applications () {
         var data =
             {applications: [
                     {app: '#2 Letters - Player Name'},
@@ -224,6 +185,7 @@ jQuery(function($) {
         var template = $('#applications').html();
         var markup = Mustache.render(template, data);
         $('#m-applications').html(markup);
+    }
 
     function fabrics (){
 
@@ -574,14 +536,20 @@ jQuery(function($) {
 
 
 
-
-
-
-
-    $('.btn-bt-0').click(function() {
-        $(this).closest('div').removeClass('uk-active');
-        $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
+    $( "customizer-mustache.html" ).ready(function() {
+        logo();
+        applications();
     });
+
+    $( "sublimated-fabric.html" ).ready(function() {
+        productItems();
+    });
+
+    //CHANGE FABRIC BUTTON
+    // $('.btn-bt-0').click(function() {
+    //     $(this).closest('div').removeClass('uk-active');
+    //     $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
+    // });
 
     $( "#con-preview-pane" ).load( "preview-pane.html"  ,function() {
         preview();
