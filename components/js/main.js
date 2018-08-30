@@ -1,191 +1,191 @@
 jQuery(function($) {
 
-    function productItems (){
-
-        var data =
-            {
-                all: [
-                    {
-                        name: '3000-1',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-2',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-3',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-4',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-5',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-6',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-7',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-8',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
-                        price: '86.00'
-                    }
-                ],
-                twoButtons: [
-                    {
-                        name: '3000-1',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-2',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-3',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-4',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-5',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-6',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-7',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
-                        price: '86.00'
-                    },
-                    {
-                        name: '3000-8',
-                        img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
-                        price: '86.00'
-                    }
-                ]
-            };
-
-        var template = $('#all-products').html();
-        var markup = Mustache.render(template, data);
-        $('#m-all-products').html(markup);
-
-        var template = $('#2-button').html();
-        var markup = Mustache.render(template, data);
-        $('#m-2-button').html(markup);
-    };
-
-    function logo () {
-        var data =
-            {
-                logoActive: [
-                    {
-                        name: "136: Beavers_2",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_2/00585c46c4acd535948bae93.png'
-                    },
-                    {
-                        name: "160: Bess_13",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_13/29d9294061ff1b3a9c94db30.png'
-                    },
-                    {
-                        name: "156: Bees_9",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_9/fb64165e078cb5a51cdecbec.png'
-                    },
-                    {
-                        name: "162: Bees_15",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_15/183ef20c4c605d3a47a6cb6d.png'
-                    },
-                    {
-                        name: "148: Bees_1",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_1/826a848d3281e1e5cb962608.png'
-                    },
-                    {
-                        name: "247: Duck_1",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_1/04eb4d8010cc0a209a667143.png'
-                    },
-                    {
-                        name: "248: Duck_2",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_2/209b3e397aeeabc71a120314.png'
-                    },
-                    {
-                        name: "249: Duck_3",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_3/399326009fe075c211d8abea.png'
-                    }
-                ],
-                logoArchive: [
-                    {
-                        name: "137: Beavers_3",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_3/ddb5886e0ba6d61aa108bc44.png'
-                    },
-                    {
-                        name: "189: Bulldog_9",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_9/10811cf29ca6cd7665c8ac72.png'
-                    },
-                    {
-                        name: "182: Bulldog_2",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_2/59cc873d2f8f47bf1898846c.png'
-                    },
-                    {
-                        name: "191: Cardinal_2",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_2/e3d436933b8246f95735cfd5.png'
-                    },
-                    {
-                        name: "192: Cardinal_3",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_3/a025c5d2fcd2197302ec5cff.png'
-                    },
-                    {
-                        name: "193: Cardinal_4",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_4/a0d89abc2ac4b164adcab046.png'
-                    }
-                ],
-            };
-
-        var template = $('#logo-active').html();
-        var markup = Mustache.render(template, data);
-        $('#m-logo-active').html(markup);
-
-        var template = $('#logo-archive').html();
-        var markup = Mustache.render(template, data);
-        $('#m-logo-archive').html(markup);
-    };
-
-    function applications () {
-        var data =
-            {applications: [
-                    {app: '#2 Letters - Player Name'},
-                    {app: '#3 Front Numbers'},
-                    {app: '#1 Letters - Team Name'},
-                    {app: '#5 Custom Logo - Bear'}
-                ]};
-
-        var template = $('#applications').html();
-        var markup = Mustache.render(template, data);
-        $('#m-applications').html(markup);
-    }
+    // function productItems (){
+    //
+    //     var data =
+    //         {
+    //             all: [
+    //                 {
+    //                     name: '3000-1',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-2',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-3',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-4',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-5',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-6',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-7',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-8',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png',
+    //                     price: '86.00'
+    //                 }
+    //             ],
+    //             twoButtons: [
+    //                 {
+    //                     name: '3000-1',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-2',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-3',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-4',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-5',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-6',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-7',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+    //                     price: '86.00'
+    //                 },
+    //                 {
+    //                     name: '3000-8',
+    //                     img: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/e2d11662bd4a544a557e21893da67277.png',
+    //                     price: '86.00'
+    //                 }
+    //             ]
+    //         };
+    //
+    //     var template = $('#all-products').html();
+    //     var markup = Mustache.render(template, data);
+    //     $('#m-all-products').html(markup);
+    //
+    //     var template = $('#2-button').html();
+    //     var markup = Mustache.render(template, data);
+    //     $('#m-2-button').html(markup);
+    // };
+    //
+    // function logo () {
+    //     var data =
+    //         {
+    //             logoActive: [
+    //                 {
+    //                     name: "136: Beavers_2",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_2/00585c46c4acd535948bae93.png'
+    //                 },
+    //                 {
+    //                     name: "160: Bess_13",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_13/29d9294061ff1b3a9c94db30.png'
+    //                 },
+    //                 {
+    //                     name: "156: Bees_9",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_9/fb64165e078cb5a51cdecbec.png'
+    //                 },
+    //                 {
+    //                     name: "162: Bees_15",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_15/183ef20c4c605d3a47a6cb6d.png'
+    //                 },
+    //                 {
+    //                     name: "148: Bees_1",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_1/826a848d3281e1e5cb962608.png'
+    //                 },
+    //                 {
+    //                     name: "247: Duck_1",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_1/04eb4d8010cc0a209a667143.png'
+    //                 },
+    //                 {
+    //                     name: "248: Duck_2",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_2/209b3e397aeeabc71a120314.png'
+    //                 },
+    //                 {
+    //                     name: "249: Duck_3",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_3/399326009fe075c211d8abea.png'
+    //                 }
+    //             ],
+    //             logoArchive: [
+    //                 {
+    //                     name: "137: Beavers_3",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_3/ddb5886e0ba6d61aa108bc44.png'
+    //                 },
+    //                 {
+    //                     name: "189: Bulldog_9",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_9/10811cf29ca6cd7665c8ac72.png'
+    //                 },
+    //                 {
+    //                     name: "182: Bulldog_2",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_2/59cc873d2f8f47bf1898846c.png'
+    //                 },
+    //                 {
+    //                     name: "191: Cardinal_2",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_2/e3d436933b8246f95735cfd5.png'
+    //                 },
+    //                 {
+    //                     name: "192: Cardinal_3",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_3/a025c5d2fcd2197302ec5cff.png'
+    //                 },
+    //                 {
+    //                     name: "193: Cardinal_4",
+    //                     logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_4/a0d89abc2ac4b164adcab046.png'
+    //                 }
+    //             ],
+    //         };
+    //
+    //     var template = $('#logo-active').html();
+    //     var markup = Mustache.render(template, data);
+    //     $('#m-logo-active').html(markup);
+    //
+    //     var template = $('#logo-archive').html();
+    //     var markup = Mustache.render(template, data);
+    //     $('#m-logo-archive').html(markup);
+    // };
+    //
+    // function applications () {
+    //     var data =
+    //         {applications: [
+    //                 {app: '#2 Letters - Player Name'},
+    //                 {app: '#3 Front Numbers'},
+    //                 {app: '#1 Letters - Team Name'},
+    //                 {app: '#5 Custom Logo - Bear'}
+    //             ]};
+    //
+    //     var template = $('#applications').html();
+    //     var markup = Mustache.render(template, data);
+    //     $('#m-applications').html(markup);
+    // }
 
     function fabrics (){
 
@@ -404,7 +404,22 @@ jQuery(function($) {
             '{{/paletteColor}}';
         var markup = Mustache.render(template, data);
         $('.m-palette-color').html(markup);
+        
+        $( "#color-palette-list .m-palette-color" ).append('<div><button class="uk-inline box-palette btn-selection-choice btn-no-color palette-color"><div class="palette palette-gradient-4"></div><div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray"><span class="icon icon-check uk-text-bold uk-position-center"></span></div></button></div>');
+        $("#color-palette-list .btn-selection-choice").click(function () {
+
+            $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
+            $(this).addClass('uk-active');
+            var ctr = $(".btn-no-color:not(.uk-active)").length;
+            if (ctr < 2) {
+                $(this).closest("#color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").hide();
+            }
+            else if (ctr > 1) {
+                $(this).closest("#color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").show();
+            }
+        });
     };
+
 
     function palettePattern (){
         var data =
@@ -534,7 +549,20 @@ jQuery(function($) {
     };
 
 
-
+    // function previewLogo () {
+    //     $(".btn-selection-choice").click(function () {
+    //
+    //         var ctr = $(".btn-selection-choice:not(.active)").length;
+    //
+    //         alert(ctr);
+    //         if (ctr < 2) {
+    //             $(this).closest("#color-palette-list").find(".btn-selection-choice:not(.active)").closest("div").hide();
+    //         }
+    //         else if (ctr > 1) {
+    //             $(this).closest("#color-palette-list").find(".btn-selection-choice:not(.active)").closest("div").show();
+    //         }
+    //     });
+    // };
 
 
     //CHANGE FABRIC BUTTON
@@ -544,15 +572,14 @@ jQuery(function($) {
     // });
 
 
-
-    $( "customizer-mustache.html" ).ready(function() {
-        logo();
-        applications();
-    });
-
-    $( "sublimated-fabric.html" ).ready(function() {
-        productItems();
-    });
+    // $( "customizer-mustache.html" ).ready(function() {
+    //     logo();
+    //     applications();
+    // });
+    //
+    // $( "sublimated-fabric.html" ).ready(function() {
+    //     productItems();
+    // });
 
 
     $( "#con-preview-pane" ).load( "preview-pane.html"  ,function() {
@@ -616,4 +643,9 @@ jQuery(function($) {
     $( "#m-richardson-logo" ).load( "m-richardson-logo.html",function(){
         previewLogo();
     });
+
+    // $( "#color-palette-list .con-palettes div" ).append("<div>Appended text</div>");
+        // .addClass("bgc-red");
+        // .append('<div><button class="uk-inline box-palette btn-selection-choice palette-color"><div class="palette palette-gradient-4"></div><div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray"><span class="icon icon-check uk-text-bold uk-position-center"></span></div></button></div>');
+
 });
