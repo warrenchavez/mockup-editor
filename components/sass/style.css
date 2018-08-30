@@ -680,18 +680,15 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .icon {
   font-size: 18px; }
 
-.uk-tooltip > * {
-  right: 200px !important; }
-
 .uk-tooltip {
   font-weight: bolder;
-  padding: 16px 8px;
+  padding: 18px 10px;
   border-radius: 0px;
   line-height: 0px;
   display: block !important;
-  background-color: #343434 !important;
+  background-color: #606060 !important;
   text-transform: uppercase;
-  margin-right: -14.9px !important; }
+  font-family: Abrade-Ultra-Italic; }
   .uk-tooltip:after {
     z-index: 1000 !important;
     content: " ";
@@ -699,17 +696,42 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
     height: 0;
     display: block;
     position: absolute;
-    transform: translate(-50%, -50%) !important;
     clear: both;
     border: 0px; }
 
-.uk-tooltip.uk-tooltip-left-center:after {
+.uk-tooltip.uk-transform-origin-center-right:after {
   margin-right: -14.9px !important;
   top: 50% !important;
-  right: -10px;
-  border-bottom: 16px solid transparent;
-  border-top: 16px solid transparent;
-  border-left: 10px solid #343434 !important; }
+  right: 0px;
+  border-bottom: 18px solid transparent;
+  border-top: 18px solid transparent;
+  border-left: 10px solid #606060 !important;
+  transform: translate(-50%, -50%) !important; }
+
+.uk-tooltip.uk-transform-origin-center-left:after {
+  margin-left: -5px !important;
+  top: 50% !important;
+  left: 0px;
+  border-bottom: 18px solid transparent;
+  border-top: 18px solid transparent;
+  border-right: 10px solid #606060 !important;
+  transform: translate(-50%, -50%) !important; }
+
+.uk-tooltip.uk-transform-origin-bottom-right:after {
+  margin-bottom: -10px !important;
+  bottom: 0px;
+  right: 0px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 10px solid #606060 !important; }
+
+.uk-tooltip.uk-transform-origin-bottom-left:after {
+  margin-bottom: -10px !important;
+  bottom: 0px;
+  left: 0px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 10px solid #606060 !important; }
 
 .line-divider > :nth-child(n+3):not(.uk-first-column)::before {
   content: "";
@@ -755,9 +777,17 @@ nav.main-menu ul li.sd {
 .hov-red:hover {
   background-color: #e32139 !important; }
 
+.box {
+  height: 37px; }
+
 @media screen and (min-width: 640px) {
   .left-nav {
     max-width: 36px; }
+
+  .box {
+    width: 100% !important;
+    flex-basis: auto;
+    flex: none; }
 
   .con-preview-pane-thumb-nav {
     max-width: 80px; }

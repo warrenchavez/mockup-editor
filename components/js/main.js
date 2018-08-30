@@ -536,6 +536,15 @@ jQuery(function($) {
 
 
 
+
+    //CHANGE FABRIC BUTTON
+    // $('.btn-bt-0').click(function() {
+    //     $(this).closest('div').removeClass('uk-active');
+    //     $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
+    // });
+
+
+
     $( "customizer-mustache.html" ).ready(function() {
         logo();
         applications();
@@ -545,11 +554,6 @@ jQuery(function($) {
         productItems();
     });
 
-    //CHANGE FABRIC BUTTON
-    // $('.btn-bt-0').click(function() {
-    //     $(this).closest('div').removeClass('uk-active');
-    //     $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
-    // });
 
     $( "#con-preview-pane" ).load( "preview-pane.html"  ,function() {
         preview();
