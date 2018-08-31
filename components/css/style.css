@@ -331,6 +331,10 @@
 .palette-c-neonPink {
   background-color: #ff4689 !important; }
 
+.palette-blank {
+  background-image: url("../img/palettes/palette-blank.png");
+  background-size: cover; }
+
 .palette-camo {
   background-image: url("../img/palettes/palette-camo.png"); }
 
@@ -771,14 +775,14 @@ nav.main-menu ul li.sd {
 .hov-red:hover {
   background-color: #e32139 !important; }
 
-.box {
+.left-nav .box {
   height: 37px; }
 
 @media screen and (min-width: 640px) {
   .left-nav {
     max-width: 36px; }
 
-  .box {
+  .left-nav .box {
     width: 100% !important;
     flex-basis: auto;
     flex: none; }
@@ -788,5 +792,8 @@ nav.main-menu ul li.sd {
 
   .wer {
     margin-left: 36px; } }
+@media screen and (max-width: 374px) {
+  .hidden-xxs {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

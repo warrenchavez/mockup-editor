@@ -395,7 +395,7 @@ nav.main-menu ul li.sd {
   }
 }
 
-.box {
+.left-nav .box {
   height: 37px;
 }
 
@@ -406,7 +406,7 @@ nav.main-menu ul li.sd {
     max-width: 36px;
   }
 
-  .box {
+  .left-nav .box {
     width: 100% !important;
     flex-basis: auto;
     flex: none;
@@ -421,15 +421,8 @@ nav.main-menu ul li.sd {
   }
 }
 
-
-//San-serif - FREE
-//Verdana - FREE
-//Archivo Black - FREE (Google fonts)
-//Dancing Script - FREE (Google fonts)
-//Oswald - FREE (Google fonts)
-//
-//Abrade Brook
-//Abrade Medium
-//Abrade Ultra
-//Abrade Ultra Italic
-
+@media screen and (max-width: 374px) {
+  .hidden-xxs {
+    display:none;
+  }
+}
