@@ -566,9 +566,9 @@ jQuery(function($) {
     //     $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
     // });
 
-    $( "sublimated-fabric.html" ).ready(function() {
-        productItems();
-    });
+    // $( "sublimated-fabric.html" ).ready(function() {
+    //     productItems();
+    // });
 
 
     $( "#con-preview-pane" ).load( "preview-pane.html"  ,function() {
@@ -580,14 +580,14 @@ jQuery(function($) {
         fabrics();
     });
 
-    $( "#m-base-color-selection" ).load( "m-base-color-selection.html",function(){
+    $( "#m-sleeve-inserts" ).load( "m-sleeve-inserts.html",function(){
         paletteColor();
         palettePattern();
         singleSelect();
         toggleBtnEditPattenColor();
     });
 
-    $( "#m-sleeve-inserts" ).load( "m-sleeve-inserts.html",function(){
+    $( "#m-base-color-selection" ).load( "m-base-color-selection.html",function(){
         paletteColor();
         palettePattern();
         singleSelect();
@@ -598,6 +598,12 @@ jQuery(function($) {
         singleSelect();
         pipings();
         toggleConChooseNumbersColors();
+
+
+        // $(".con-choose-numbers-colors .btn-selection-choice").click(function () {
+        //     var ctr = $(this).closest('div').index();
+        //     alert(ctr);
+        // });
     });
 
     $( "#m-decorations-letters" ).load( "m-decorations-letters.html",function(){
@@ -636,5 +642,11 @@ jQuery(function($) {
     $( "#modal-all-application" ).load( "m-modal-all-application.html",function(){
         applications();
         singleSelect();
+    });
+
+    $( "#modal-edit-palette-pattern" ).load( "m-modal-palette-pattern.html",function(){
+        paletteColor();
+        singleSelect();
+        toggleBtnEditPattenColor();
     });
 });
