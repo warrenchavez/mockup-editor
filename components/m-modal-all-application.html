@@ -1,0 +1,37 @@
+
+<div class="uk-modal-dialog uk-margin-auto-vertical">
+    <h4 class="bgc-light fc-dark uk-padding-small uk-text-center uk-margin-remove">All Application(s)</h4>
+    <div class="uk-padding-small">
+        <ul id="m-applications" class="uk-list uk-list-divider con-select active-bgc-red uk-margin-remove" uk-sortable="handle: .item-sort" >
+        </ul>
+    </div>
+    <hr class="bdr-lightGray uk-margin-remove">
+    <div class="uk-padding-small">
+        <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center" uk-grid>
+            <div class="uk-width-2-3 uk-width-1-2@s">
+                <button class="uk-button uk-button-default uk-padding-remove-horizontal uk-width-1-1 uk-text-capitalize" type="button">Show location markers</button>
+            </div>
+            <div class="uk-width-1-3 uk-width-1-2@s">
+                <button class="uk-button uk-button-default uk-padding-remove-horizontal uk-width-1-1 uk-text-capitalize uk-modal-close" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type='mustache/x-tmpl' id='applications'>
+{{#applications}}
+<li class="item-sort">
+<div class=" uk-grid-collapse btn-selection-choice uk-padding-small uk-flex-middle" uk-grid>
+<div class="uk-width-expand uk-grid-collapse uk-margin-small-right uk-drag" uk-grid>
+<a class="uk-link-reset uk-width-1-1 uk-text-truncate">#{{appNumber}} &nbsp;{{appName}}</a>
+</div>
+<div class="uk-width-auto">
+<a href="#modal-confirmation" class="uk-link-reset uk-width-1-1" uk-toggle>
+<span class="icon-delete"></span>
+</a>
+</div>
+</div>
+</li>
+{{/applications}}
+</script>

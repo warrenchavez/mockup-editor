@@ -270,6 +270,7 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   font-size: 18px;
 }
 
+
 .uk-tooltip {
   font-weight: bolder;
   padding: 18px 10px;
@@ -280,6 +281,10 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   text-transform: uppercase;
   font-family: Abrade-Ultra-Italic;
 
+  &:hover{
+    display: block !important;
+  }
+
   &:after {
     z-index: 1000 !important;
     content: " ";
@@ -289,6 +294,10 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
     position: absolute;
     clear: both;
     border: 0px;
+  }
+
+  &:after:hover {
+    display: block !important;
   }
 }
 

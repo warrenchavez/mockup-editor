@@ -176,10 +176,22 @@ jQuery(function($) {
     function applications () {
         var data =
             {applications: [
-                    {app: '#2 Letters - Player Name'},
-                    {app: '#3 Front Numbers'},
-                    {app: '#1 Letters - Team Name'},
-                    {app: '#5 Custom Logo - Bear'}
+                    {
+                        appNumber:'2',
+                        appName: 'Letters - Player Name'
+                    },
+                    {
+                        appNumber:'3',
+                        appName: 'Front Numbers'
+                    },
+                    {
+                        appNumber:'1',
+                        appName: 'Letters - Team Name'
+                    },
+                    {
+                        appNumber:'5',
+                        appName: 'Custom Logo - Bear'
+                    },
                 ]};
 
         var template = $('#applications').html();
@@ -428,7 +440,7 @@ jQuery(function($) {
                     {pattern: 'check'},
                     {pattern: 'diamonds'},
                     {pattern: 'digital-camo'},
-                    {pattern: 'distresser'},
+                    {pattern: 'distressed'},
                     {pattern: 'fiber'},
                     {pattern: 'lockdown'},
                     {pattern: 'pixel-fade-body'},
@@ -554,12 +566,6 @@ jQuery(function($) {
     //     $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
     // });
 
-
-    $( "customizer-mustache.html" ).ready(function() {
-        logo();
-        applications();
-    });
-
     $( "sublimated-fabric.html" ).ready(function() {
         productItems();
     });
@@ -625,5 +631,10 @@ jQuery(function($) {
 
     $( "#m-richardson-logo" ).load( "m-richardson-logo.html",function(){
         previewLogo();
+    });
+
+    $( "#modal-all-application" ).load( "m-modal-all-application.html",function(){
+        applications();
+        singleSelect();
     });
 });
