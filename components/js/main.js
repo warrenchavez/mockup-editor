@@ -599,10 +599,10 @@ jQuery(function($) {
         pipings();
         toggleConChooseNumbersColors();
 
-
+        //
         // $(".con-choose-numbers-colors .btn-selection-choice").click(function () {
-        //     var ctr = $(this).closest('div').index();
-        //     alert(ctr);
+        //     var ctr = 1 + $(this).closest('div').index();
+        //
         // });
     });
 
@@ -645,6 +645,12 @@ jQuery(function($) {
     });
 
     $( "#modal-edit-palette-pattern" ).load( "m-modal-palette-pattern.html",function(){
+        paletteColor();
+        singleSelect();
+        toggleBtnEditPattenColor();
+    });
+
+    $( "#modal-edit-palette-color" ).load( "m-modal-palette-color.html",function(){
         paletteColor();
         singleSelect();
         toggleBtnEditPattenColor();
