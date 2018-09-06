@@ -598,12 +598,6 @@ jQuery(function($) {
         singleSelect();
         pipings();
         toggleConChooseNumbersColors();
-
-        //
-        // $(".con-choose-numbers-colors .btn-selection-choice").click(function () {
-        //     var ctr = 1 + $(this).closest('div').index();
-        //
-        // });
     });
 
     $( "#m-decorations-letters" ).load( "m-decorations-letters.html",function(){
@@ -654,5 +648,10 @@ jQuery(function($) {
         paletteColor();
         singleSelect();
         toggleBtnEditPattenColor();
+    });
+
+    $( "#modal-select-mascot" ).load( "m-modal-select-mascot.html",function(){
+        logo();
+        singleSelect();
     });
 });

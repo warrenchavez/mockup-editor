@@ -255,6 +255,10 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   display: none;
 }
 
+.show {
+  display: block;
+}
+
 .con-legend .box {
   width: 20px;
   height: 20px;
