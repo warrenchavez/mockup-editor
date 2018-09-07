@@ -304,6 +304,39 @@ jQuery(function($) {
         });
     };
 
+    function pipingNumberSelection () {
+        $(".btn-piping-modal").click(function () {
+            UIkit.switcher("#color-palette-nav-list").show("0");
+            var ctr = 1 + $(this).siblings(".choose-numbers-colors").find(".btn-selection-choice.uk-active").parent().index();
+            $('li', '#modal-edit-palette-color #color-palette-nav-list').slice(0, ctr).each(function() {
+                $(this).addClass("show").removeClass("hidden");
+            });
+            $('li', '#modal-edit-palette-color #color-palette-nav-list').slice(ctr).each(function() {
+                $(this).addClass("hidden").removeClass("show");
+            });
+
+            $('li', '#modal-edit-palette-color #color-palette-list').slice(0, ctr).each(function() {
+                $(this).addClass("show").removeClass("hidden");
+            });
+            $('li', '#modal-edit-palette-color #color-palette-list').slice(ctr).each(function() {
+                $(this).addClass("hidden").removeClass("show");
+            });
+
+            var ctrpla = $("#modal-edit-palette-color #color-palette-list li.show").length;
+            // var ctrpa = $("#modal-edit-palette-color #color-palette-list li.show").find(".btn-no-color:not(.uk-active)").length;
+            // alert("ctrpa "+ctrpa+" and ctrpla"+ctrpla);
+
+            if (ctrpla < 2) {
+                // alert("wla na finish na");
+                $("#modal-edit-palette-color #color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").hide();
+            }
+            else if (ctrpla> 1) {
+                // alert("cge lng");
+                $("#modal-edit-palette-color #color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").show();
+            }
+        });
+    };
+
     function toggleConAddApplication (){
         $('.con-select.con-toggle .btn-selection-choice').click(function() {
             if ($(this).hasClass('toggle-show')) {
@@ -416,17 +449,27 @@ jQuery(function($) {
             '{{/paletteColor}}';
         var markup = Mustache.render(template, data);
         $('.m-palette-color').html(markup);
-        
-        $("#color-palette-list .m-palette-color").prepend('<div><button class="uk-inline box-palette btn-selection-choice btn-no-color palette-color"><div class="palette palette-blank"></div><div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray"><span class="icon icon-check uk-text-bold uk-position-center"></span></div></button></div>');
-        $("#color-palette-list .btn-selection-choice").click(function () {
 
+        $("#modal-edit-palette-color #color-palette-list .m-palette-color").prepend('<div><button class="uk-inline box-palette btn-selection-choice btn-no-color palette-color"><div class="palette palette-blank"></div><div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray"><span class="icon icon-check uk-text-bold uk-position-center"></span></div></button></div>');
+
+
+
+
+
+        $("#modal-edit-palette-color #color-palette-list .btn-selection-choice").click(function () {
             $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
             $(this).addClass('uk-active');
-            var ctr = $(".btn-no-color:not(.uk-active)").length;
-            if (ctr < 2) {
+            // singleSelect();
+            // var ctrpla = $("#modal-edit-palette-color #color-palette-list li.show").length;
+            var ctrpa = $("#modal-edit-palette-color #color-palette-list li.show").find(".btn-no-color:not(.uk-active)").length;
+            // alert("ctrpa "+ctrpa+" and ctrpla"+ctrpla);
+
+            if (ctrpa < 2) {
+                // alert("wla na finish na");
                 $(this).closest("#color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").hide();
             }
-            else if (ctr > 1) {
+            else if (ctrpa> 1) {
+                // alert("cge lng");
                 $(this).closest("#color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").show();
             }
         });
@@ -598,6 +641,7 @@ jQuery(function($) {
         singleSelect();
         pipings();
         toggleConChooseNumbersColors();
+        pipingNumberSelection();
     });
 
     $( "#m-decorations-letters" ).load( "m-decorations-letters.html",function(){
