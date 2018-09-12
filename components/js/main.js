@@ -1,4 +1,5 @@
 jQuery(function($) {
+    var ctrg="asdd"
 
     function productItems (){
 
@@ -306,6 +307,7 @@ jQuery(function($) {
 
     function pipingNumberSelection () {
         $(".btn-piping-modal").click(function () {
+
             UIkit.switcher("#color-palette-nav-list").show("0");
             var ctr = 1 + $(this).siblings(".choose-numbers-colors").find(".btn-selection-choice.uk-active").parent().index();
             $('li', '#modal-edit-palette-color #color-palette-nav-list').slice(0, ctr).each(function() {
@@ -322,18 +324,34 @@ jQuery(function($) {
                 $(this).addClass("hidden").removeClass("show");
             });
 
-            var ctrpla = $("#modal-edit-palette-color #color-palette-list li.show").length;
-            // var ctrpa = $("#modal-edit-palette-color #color-palette-list li.show").find(".btn-no-color:not(.uk-active)").length;
-            // alert("ctrpa "+ctrpa+" and ctrpla"+ctrpla);
+            var lishow = $("#modal-edit-palette-color #color-palette-list li.show");
+            var ctrpa = lishow.find(".btn-no-color:not(.uk-active)").length;
 
-            if (ctrpla < 2) {
-                // alert("wla na finish na");
-                $("#modal-edit-palette-color #color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").hide();
+            ctrg = ctrpa;
+            // $("#title-test").text(ctrg);
+            if (ctrg < 2) {
+                lishow.eq(0).find(".btn-no-color").removeClass("uk-active").parent().hide();
             }
-            else if (ctrpla> 1) {
-                // alert("cge lng");
-                $("#modal-edit-palette-color #color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").show();
+            else if (ctrg > 1) {
+                lishow.find(".btn-no-color").parent().show();
             }
+
+
+            $("#modal-edit-palette-color #color-palette-list .btn-selection-choice").click(function () {
+                $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
+                $(this).addClass('uk-active');
+
+                var ctrpa = $("#modal-edit-palette-color #color-palette-list li.show .btn-no-color:not(.uk-active)").length;
+                ctrg = ctrpa;
+                // $("#title-test").text(ctrg);
+                if (ctrg < 2) {
+                    $("#modal-edit-palette-color #color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").hide();
+                }
+                else if (ctrg > 1) {
+                    $("#modal-edit-palette-color #color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").show();
+                }
+            });
+
         });
     };
 
@@ -451,28 +469,6 @@ jQuery(function($) {
         $('.m-palette-color').html(markup);
 
         $("#modal-edit-palette-color #color-palette-list .m-palette-color").prepend('<div><button class="uk-inline box-palette btn-selection-choice btn-no-color palette-color"><div class="palette palette-blank"></div><div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray"><span class="icon icon-check uk-text-bold uk-position-center"></span></div></button></div>');
-
-
-
-
-
-        $("#modal-edit-palette-color #color-palette-list .btn-selection-choice").click(function () {
-            $(this).closest('.con-select').find('.btn-selection-choice').removeClass('uk-active');
-            $(this).addClass('uk-active');
-            // singleSelect();
-            // var ctrpla = $("#modal-edit-palette-color #color-palette-list li.show").length;
-            var ctrpa = $("#modal-edit-palette-color #color-palette-list li.show").find(".btn-no-color:not(.uk-active)").length;
-            // alert("ctrpa "+ctrpa+" and ctrpla"+ctrpla);
-
-            if (ctrpa < 2) {
-                // alert("wla na finish na");
-                $(this).closest("#color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").hide();
-            }
-            else if (ctrpa> 1) {
-                // alert("cge lng");
-                $(this).closest("#color-palette-list").find(".btn-no-color:not(.uk-active)").closest("div").show();
-            }
-        });
     };
 
     function palettePattern (){
@@ -609,9 +605,9 @@ jQuery(function($) {
     //     $('.left-nav div div').removeClass('uk-active').first().addClass('uk-active');
     // });
 
-    // $( "sublimated-fabric.html" ).ready(function() {
-    //     productItems();
-    // });
+    $( "sublimated-fabric.html" ).ready(function() {
+        productItems();
+    });
 
 
     $( "#con-preview-pane" ).load( "preview-pane.html"  ,function() {
@@ -690,8 +686,10 @@ jQuery(function($) {
 
     $( "#modal-edit-palette-color" ).load( "m-modal-palette-color.html",function(){
         paletteColor();
-        singleSelect();
         toggleBtnEditPattenColor();
+        $("#modal-edit-palette-color #color-palette-list li").each(function() {
+            $(this).find(".btn-selection-choice").eq(1).addClass("uk-active");
+        });
     });
 
     $( "#modal-select-mascot" ).load( "m-modal-select-mascot.html",function(){
