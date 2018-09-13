@@ -1,5 +1,5 @@
 jQuery(function($) {
-    var ctrg="asdd"
+    var ctrg="";
 
     function productItems (){
 
@@ -371,17 +371,17 @@ jQuery(function($) {
     function toggleConInputObject (){
         $('.con-select.con-toggle .btn-selection-choice').click(function() {
             if ($(this).hasClass('toggle-hide')) {
-                $(this).closest('li').find('.con-input-object').hide();
+                $(this).closest('li').find('.toggle-me').hide();
             }
             else
-                $(this).closest('li').find('.con-input-object').show();
+                $(this).closest('li').find('.toggle-me').show();
         });
         $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
             if ($(this).hasClass('uk-active')) {
-                $(this).closest('li').find('.con-input-object').hide();
+                $(this).closest('li').find('.toggle-me').hide();
             }
             else
-                $(this).closest('li').find('.con-input-object').show();
+                $(this).closest('li').find('.toggle-me').show();
         });
     };
 
