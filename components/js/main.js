@@ -662,6 +662,7 @@ jQuery(function($) {
     });
 
     $( "#m-decorations-mascots" ).load( "m-decorations-mascots.html",function(){
+        toggleConInputObject();
         paletteColor();
         toggleBtnEditPattenColor();
         singleSelect();
