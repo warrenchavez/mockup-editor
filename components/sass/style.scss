@@ -412,6 +412,14 @@ nav.main-menu ul li.sd {
   height: 37px;
 }
 
+img.custom-logo-upload-preview {
+  border: 1.5px dashed #aaa !important;
+  max-width: 336px;
+}
+
+//#con-upload-logo .uk-transition-toggle:focus {
+//  opacity: 0 !important;
+//}
 @media screen and (min-width: 640px) {
 
   .left-nav {
