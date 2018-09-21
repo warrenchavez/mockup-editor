@@ -386,9 +386,6 @@ jQuery(function($) {
     };
 
     function sliders (){
-        $('.btn-archive').click(function() {
-            $(this).closest('.mascot-item').remove();
-        });
 
         $(".slider").roundSlider({
             radius: 70,
@@ -598,6 +595,17 @@ jQuery(function($) {
         $('#m-preview-logo').html(markup);
     };
 
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.custom-logo-upload-preview').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
 
     //CHANGE FABRIC BUTTON
     // $('.btn-bt-0').click(function() {
@@ -696,20 +704,37 @@ jQuery(function($) {
     $( "#modal-select-mascot" ).load( "m-modal-select-mascot.html",function(){
         logo();
         singleSelect();
+        $(this).find(".btn-selection-choice").eq(1).addClass("uk-active");
+        $('#modal-select-mascot .con-select .btn-selection-choice').click(function() {
+            if ($(this).hasClass('uk-active')) {
+                var pel = $(this).find('img').attr('src');
+                console.log(pel);
+            }
+            // else
+            $('#preview-existing-logo').attr('src', pel);
+        });
+        $('#modal-select-mascot .con-select .btn-selection-choice').each(function() {
+            if ($(this).hasClass('uk-active')) {
+                var pel = $(this).find('img').attr('src');
+                console.log(pel);
+            }
+            // else
+            $('#preview-existing-logo').attr('src', pel);
+        });
+
+        $('.btn-archive').click(function() {
+            $(this).closest('.mascot-item').remove();
+        });
+
+
         $("#imgInp").change(function(){
             readURL(this);
         });
+
+    // ').find('img').attr('src')
+        // $('.mimg').click(function() {
+        //     var id = $('img', this).attr('src');
+        //     console.log(id);
+        // });
     });
-
-    function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-                $('.custom-logo-upload-preview').attr('src', e.target.result);
-            }
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-
 });
