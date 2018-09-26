@@ -704,11 +704,9 @@ jQuery(function($) {
     $( "#modal-select-mascot" ).load( "m-modal-select-mascot.html",function(){
         logo();
         singleSelect();
-        $(this).find(".btn-selection-choice").eq(1).addClass("uk-active");
         $('#modal-select-mascot .con-select .btn-selection-choice').click(function() {
             if ($(this).hasClass('uk-active')) {
                 var pel = $(this).find('img').attr('src');
-                console.log(pel);
             }
             // else
             $('#preview-existing-logo').attr('src', pel);
@@ -716,7 +714,6 @@ jQuery(function($) {
         $('#modal-select-mascot .con-select .btn-selection-choice').each(function() {
             if ($(this).hasClass('uk-active')) {
                 var pel = $(this).find('img').attr('src');
-                console.log(pel);
             }
             // else
             $('#preview-existing-logo').attr('src', pel);
@@ -725,16 +722,8 @@ jQuery(function($) {
         $('.btn-archive').click(function() {
             $(this).closest('.mascot-item').remove();
         });
-
-
         $("#imgInp").change(function(){
             readURL(this);
         });
-
-    // ').find('img').attr('src')
-        // $('.mimg').click(function() {
-        //     var id = $('img', this).attr('src');
-        //     console.log(id);
-        // });
     });
 });
