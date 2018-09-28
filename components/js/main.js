@@ -720,7 +720,10 @@ jQuery(function($) {
         });
 
         $('.btn-archive').click(function() {
-            $(this).closest('.mascot-item').remove();
+            // $(this).closest('.mascot-item').remove();
+            // $('#modal-confirmation a').attr('href',"#modal-select-mascot");
+            $('#modal-confirmation a').attr('href',"#modal-select-mascot");
+
         });
         $("#imgInp").change(function(){
             readURL(this);

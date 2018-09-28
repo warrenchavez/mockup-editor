@@ -202,8 +202,16 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .con-palettes .btn-selection-choice.uk-active .choice-icon {
   display: block !important; }
 
-.con-mascot-act-arch .btn-selection-choice.uk-active h6 {
-  background-color: $color-red;
+.con-mascot-act-arch .btn-selection-choice {
+  &.uk-active > div {
+    background-color: $color-lightGray;
+  }
+  &.uk-active h6 {
+    background-color: $color-red;
+  }
+  & button {
+    line-height: 0px;
+  }
 }
 
 .slider .rs-path-color {

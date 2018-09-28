@@ -379,7 +379,9 @@ header .uk-grid-divider > :not(.uk-first-column)::before { border-left: solid 1.
 
 .con-palettes .btn-selection-choice.uk-active .choice-icon { display: block !important; }
 
+.con-mascot-act-arch .btn-selection-choice.uk-active > div { background-color: #dedede !important; }
 .con-mascot-act-arch .btn-selection-choice.uk-active h6 { background-color: #e32139 !important; }
+.con-mascot-act-arch .btn-selection-choice button { line-height: 0px; }
 
 .slider .rs-path-color { background-color: #aaaaaa !important; }
 
