@@ -119,7 +119,37 @@ jQuery(function($) {
                     {
                         name: "162: Bees_15",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_15/183ef20c4c605d3a47a6cb6d.png'
+                    }
+                ],
+                logoArchive: [
+                    {
+                        name: "137: Beavers_3",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_3/ddb5886e0ba6d61aa108bc44.png'
                     },
+                    {
+                        name: "189: Bulldog_9",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_9/10811cf29ca6cd7665c8ac72.png'
+                    },
+                    {
+                        name: "182: Bulldog_2",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_2/59cc873d2f8f47bf1898846c.png'
+                    }
+                ],
+            };
+
+        var template = $('.logo-active').html();
+        var markup = Mustache.render(template, data);
+        $('.m-logo-active').html(markup);
+
+        var template = $('.logo-archive').html();
+        var markup = Mustache.render(template, data);
+        $('.m-logo-archive').html(markup);
+    };
+
+    function mascot () {
+        var data =
+            {
+                mascotActive: [
                     {
                         name: "148: Bees_1",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_1/826a848d3281e1e5cb962608.png'
@@ -137,19 +167,8 @@ jQuery(function($) {
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_3/399326009fe075c211d8abea.png'
                     }
                 ],
-                logoArchive: [
-                    {
-                        name: "137: Beavers_3",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_3/ddb5886e0ba6d61aa108bc44.png'
-                    },
-                    {
-                        name: "189: Bulldog_9",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_9/10811cf29ca6cd7665c8ac72.png'
-                    },
-                    {
-                        name: "182: Bulldog_2",
-                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_2/59cc873d2f8f47bf1898846c.png'
-                    },
+                mascotArchive: [
+
                     {
                         name: "191: Cardinal_2",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_2/e3d436933b8246f95735cfd5.png'
@@ -165,13 +184,13 @@ jQuery(function($) {
                 ],
             };
 
-        var template = $('#logo-active').html();
+        var template = $('.logo-active').html();
         var markup = Mustache.render(template, data);
-        $('#m-logo-active').html(markup);
+        $('.m-logo-active').html(markup);
 
-        var template = $('#logo-archive').html();
+        var template = $('.logo-archive').html();
         var markup = Mustache.render(template, data);
-        $('#m-logo-archive').html(markup);
+        $('.m-logo-archive').html(markup);
     };
 
     function applications () {
@@ -383,6 +402,27 @@ jQuery(function($) {
             else
                 $(this).closest('li').find('.toggle-me').show();
         });
+    };
+
+    function enDisableMe (){
+        $('.con-select.con-toggle .btn-selection-choice').click(function() {
+            if ($(this).hasClass('toggle-hide')) {
+                $(this).closest('li').find('.con-en-disable-me .en-disable-me').addClass("uk-disabled");
+            }
+            else {
+                $(this).closest('li').find('.con-en-disable-me .en-disable-me').removeClass("uk-disabled");
+            }
+        });
+        // $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
+        //     if ($(this).hasClass('uk-active')) {
+        //         alert('dis');
+        //         $(this).closest('li').find('.con-en-disable-me').css("background-color","blue");
+        //     }
+        //     else {
+        //         alert('en');
+        //         $(this).closest('li').find('.con-en-disable-me').css("background-color","red");
+        //     }
+        // });
     };
 
     function sliders (){
@@ -617,7 +657,6 @@ jQuery(function($) {
         productItems();
     });
 
-
     $( "#con-preview-pane" ).load( "preview-pane.html"  ,function() {
         preview();
     });
@@ -649,9 +688,9 @@ jQuery(function($) {
     });
 
     $( "#m-decorations-letters" ).load( "m-decorations-letters.html",function(){
+        singleSelect();
         paletteColor();
         toggleBtnEditPattenColor();
-        singleSelect();
         toggleConInputObject();
         toggleConAddApplication();
         sliders();
@@ -660,9 +699,9 @@ jQuery(function($) {
     });
 
     $( "#m-decorations-numbers" ).load( "m-decorations-numbers.html",function(){
+        singleSelect();
         paletteColor();
         toggleBtnEditPattenColor();
-        singleSelect();
         toggleConInputObject();
         toggleConAddApplication();
         sliders();
@@ -670,12 +709,13 @@ jQuery(function($) {
     });
 
     $( "#m-decorations-mascots" ).load( "m-decorations-mascots.html",function(){
-        toggleConInputObject();
+        singleSelect();
         paletteColor();
         toggleBtnEditPattenColor();
-        singleSelect();
+        toggleConInputObject();
         toggleConAddApplication();
         sliders();
+        enDisableMe();
     });
 
     $( "#m-richardson-logo" ).load( "m-richardson-logo.html",function(){
@@ -702,31 +742,47 @@ jQuery(function($) {
     });
 
     $( "#modal-select-mascot" ).load( "m-modal-select-mascot.html",function(){
-        logo();
         singleSelect();
-        $('#modal-select-mascot .con-select .btn-selection-choice').click(function() {
-            if ($(this).hasClass('uk-active')) {
-                var pel = $(this).find('img').attr('src');
-            }
-            // else
-            $('#preview-existing-logo').attr('src', pel);
-        });
-        $('#modal-select-mascot .con-select .btn-selection-choice').each(function() {
-            if ($(this).hasClass('uk-active')) {
-                var pel = $(this).find('img').attr('src');
-            }
-            // else
-            $('#preview-existing-logo').attr('src', pel);
-        });
-
-        $('.btn-archive').click(function() {
-            // $(this).closest('.mascot-item').remove();
-            // $('#modal-confirmation a').attr('href',"#modal-select-mascot");
-            $('#modal-confirmation a').attr('href',"#modal-select-mascot");
-
-        });
+        mascot();
         $("#imgInp").change(function(){
             readURL(this);
         });
+
+        // $('#abc').click(function() {
+        //     logo();
+        // });
+
+        $('#modal-select-mascot .con-select .btn-selection-choice').click(function() {
+            if ($(this).hasClass('uk-active')) {
+                var pel = $(this).find('img').attr('src');
+                $('#btn-add-to-uniform').removeClass("uk-disabled");
+                $('.con-preview').show();
+            }
+            else {
+                $('#btn-add-to-uniform').addClass("uk-disabled");
+                $('.con-preview').hide();
+            }
+            $('#preview-existing-logo').attr('src', pel);
+        });
+
+        $('#modal-select-mascot .con-select .btn-selection-choice').each(function() {
+            if ($(this).hasClass('uk-active')) {
+                var pel = $(this).find('img').attr('src');
+                $('.con-preview').show();
+                $('#btn-add-to-uniform').removeClass("uk-disabled");
+            }
+            else {
+                $('#btn-add-to-uniform').addClass("uk-disabled");
+                $('.con-preview').hide();
+                var pel = "./img/no-preview.png";
+            }
+            $('#preview-existing-logo').attr('src', pel);
+        });
     });
+
+
+
+    // $('.btn-archive').click(function() {
+    //     $('#modal-confirmation a').attr('href',"#modal-select-mascot");
+    // });
 });

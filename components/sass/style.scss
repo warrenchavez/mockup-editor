@@ -428,6 +428,17 @@ img.custom-logo-upload-preview {
 .link-reset {
   text-decoration: none !important;
 }
+
+.uk-disabled {
+  &.con-img-added-mascot-logo {
+    background-color: $color-light;
+    & img {
+      -webkit-filter: grayscale(100%) opacity(70%); /* Safari */
+      filter: grayscale(100%) opacity(70%);
+    }
+  }
+}
+
 @media screen and (min-width: 640px) {
 
   .left-nav {
