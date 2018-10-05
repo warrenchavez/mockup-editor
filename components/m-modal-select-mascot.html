@@ -1,7 +1,7 @@
 <div class="uk-modal-dialog uk-modal-body">
     <button class="uk-modal-close-default" type="button" uk-close></button>
-    <h5 class="uk-padding-small fc-darkGray bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin uk-margin-remove-horizontal abrade-ultra-italic">Decoration Custom Logo</h5>
-    <ul class="uk-subnav uk-subnav-pill uk-flex-center active-bgc-dark" uk-switcher>
+    <h5 class="modal-title uk-padding-small fc-darkGray bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin uk-margin-remove-horizontal abrade-ultra-italic"></h5>
+    <ul class="modal-menu-mascot uk-subnav uk-subnav-pill uk-flex-center active-bgc-dark" uk-switcher>
         <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize"><span class="uk-margin-small-right uk-hidden@s" uk-icon="icon: list"></span>Select <span class="uk-visible@s">from existing design</span></a></li>
         <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize"><span class="uk-margin-small-right uk-hidden@s" uk-icon="icon: plus-circle"></span>Create <span class="uk-visible@s">a custom logo</span></a></li>
         <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize"><span class="uk-margin-small-right uk-hidden@s" uk-icon="icon: cloud-upload"></span>Upload <span class="uk-visible@s">your own logo file</span></a></li>
@@ -11,7 +11,7 @@
         <li>
             <div class="uk-grid-collapse uk-flex uk-flex-middle" uk-grid>
                 <div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-2@l">
-                    <div class="con-preview">
+                    <div class="con-preview-mascot">
                         <h4 class="uk-text-bold uk-text-center uk-text-uppercase uk-margin-remove fc-darkGray abrade-ultra-italic">Bear</h4>
                         <p class="uk-text-center uk-margin-remove-top">
                             <a href="#" class="uk-button uk-button-text uk-text-capitalize">Fullsize Preview</a>
@@ -31,9 +31,10 @@
                     <nav class="uk-navbar-container uk-navbar-transparent uk-margin-top" uk-navbar>
 
                         <div class="nav-overlay uk-navbar-left uk-padding-small uk-padding-remove-horizontal">
-                            <ul class="uk-subnav uk-margin-remove uk-grid-small grid-tiny active-bgc-dark" uk-switcher="connect: .con-mascot-act-arch" uk-grid>
+                            <ul class="menu-tab-mascot uk-subnav uk-margin-remove uk-grid-small grid-tiny active-bgc-dark" uk-switcher="connect: .con-mascot-act-arch" uk-grid>
                                 <li><a href="#" class="uk-button uk-button-small uk-button-default padding-tiny-vertical uk-text-capitalize">Active <span>(8)</span></a></li>
                                 <li><a href="#" class="uk-button uk-button-small uk-button-default padding-tiny-vertical uk-text-capitalize">Archive <span>(0)</span></a></li>
+                                <li><a href="#" class="uk-button uk-button-small uk-button-default padding-tiny-vertical uk-text-capitalize">uploaded <span>(0)</span></a></li>
                             </ul>
 
                         </div>
@@ -76,6 +77,13 @@
                                 </div>
                             </div>
                         </li>
+                        <li>
+                            uploaded list
+                            <!--<div class="uk-margin-top uk-padding-small bdr-thin bdr-gray bgc-light uk-height-max-medium uk-overflow-auto">-->
+                                <!--<div class="m-logo-archive uk-grid-small uk-grid-match uk-child-width-1-2 uk-child-width-1-4@m con-palettes" uk-grid>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -102,72 +110,9 @@
     </ul>
 </div>
 
-<script>
-    var bar = document.getElementById('js-progressbar');
-
-    UIkit.upload('.js-upload', {
-        'url': '',
-        'multiple': true,
-        beforeSend: function() {
-            console.log('beforeSend', arguments);
-        },
-        beforeAll: function() {
-            console.log('beforeAll', arguments);
-        },
-        load: function() {
-            console.log('load', arguments);
-        },
-        error: function() {
-            console.log('error', arguments);
-        },
-        complete: function() {
-            console.log('complete', arguments);
-        },
-
-        loadStart: function(e) {
-            console.log('loadStart', arguments);
-
-            bar.removeAttribute('hidden');
-            bar.max = e.total;
-            bar.value = e.loaded;
-        },
-
-        progress: function(e) {
-            console.log('progress', arguments);
-
-            bar.max = e.total;
-            bar.value = e.loaded;
-        },
-
-        loadEnd: function(e) {
-            console.log('loadEnd', arguments);
-
-            bar.max = e.total;
-            bar.value = e.loaded;
-            setTimeout(function() {
-                bar.setAttribute('hidden', 'hidden');
-                // alert('Upload Completed');
-            }, 1000);
-        },
-
-        completeAll: function(HttpRequest) {
-                console.log('completeAll', arguments);
-
-
-            console.log('Upload Completed');
-            console.log('Response', HttpRequest.response);
-
-            // if (bar.value >= bar.max) {
-            //     alert('Upload Completed');
-            // }
-        }
-
-    });
-</script>
-
 
 <script type='mustache/x-tmpl' class='logo-active'>
-{{#logoActive}}
+{{#mascotLogoActive}}
 <div class="mascot-item">
 <a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
 <div class="bgc-white uk-text-right">
@@ -181,19 +126,19 @@
 <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
 </div>
 </div>
-<button class="uk-button uk-margin-small-right btn-archive bgc-transparent uk-padding-remove bdr-none" type="button" uk-toggle="target: #modal-confirmation" uk-tooltip="title: Archive; pos: left">
+<button class="uk-button uk-margin-small-right btn-delete btn-archive bgc-transparent uk-padding-remove bdr-none" type="button" uk-toggle="target: #modal-confirmation" uk-tooltip="title:Move to Archive; pos: left">
 <span class="icon-archive"></span>
 </button>
 </div>
 </a>
 </div>
-{{/logoActive}}
+{{/mascotLogoActive}}
 </script>
 
 <script type='mustache/x-tmpl' class='logo-archive'>
-{{#logoArchive}}
+{{#mascotLogoArchive}}
 <div class="mascot-item">
-<a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+<a class="box-palette uk-link-reset btn-delete btn-active btn-selection-choice uk-text-center">
 <div class="bgc-white uk-text-right">
 <h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">{{name}}</h6>
 <div class="uk-inline">
@@ -205,11 +150,11 @@
 <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
 </div>
 </div>
-<button class="uk-button uk-margin-small-right btn-archive bgc-transparent uk-padding-remove bdr-none" uk-tooltip="title: Archive; pos: left">
+<button class="uk-button uk-margin-small-right btn-archive bgc-transparent uk-padding-remove bdr-none" type="button" uk-toggle="target: #modal-confirmation" uk-tooltip="title:Set as Active; pos: left">
 <span class="icon-archive"></span>
 </button>
 </div>
 </a>
 </div>
-{{/logoArchive}}
+{{/mascotLogoArchive}}
 </script>

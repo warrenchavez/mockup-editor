@@ -1,5 +1,8 @@
 jQuery(function($) {
     var ctrg="";
+    var confRedirect="";
+    var confQuestion="";
+    var confAction="";
 
     function productItems (){
 
@@ -103,7 +106,7 @@ jQuery(function($) {
     function logo () {
         var data =
             {
-                logoActive: [
+                mascotLogoActive: [
                     {
                         name: "136: Beavers_2",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_2/00585c46c4acd535948bae93.png'
@@ -121,7 +124,7 @@ jQuery(function($) {
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_15/183ef20c4c605d3a47a6cb6d.png'
                     }
                 ],
-                logoArchive: [
+                mascotLogoArchive: [
                     {
                         name: "137: Beavers_3",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_3/ddb5886e0ba6d61aa108bc44.png'
@@ -149,7 +152,7 @@ jQuery(function($) {
     function mascot () {
         var data =
             {
-                mascotActive: [
+                mascotLogoActive: [
                     {
                         name: "148: Bees_1",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_1/826a848d3281e1e5cb962608.png'
@@ -167,8 +170,7 @@ jQuery(function($) {
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Duck_3/399326009fe075c211d8abea.png'
                     }
                 ],
-                mascotArchive: [
-
+                mascotLogoArchive: [
                     {
                         name: "191: Cardinal_2",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Cardinal_2/e3d436933b8246f95735cfd5.png'
@@ -413,16 +415,14 @@ jQuery(function($) {
                 $(this).closest('li').find('.con-en-disable-me .en-disable-me').removeClass("uk-disabled");
             }
         });
-        // $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
-        //     if ($(this).hasClass('uk-active')) {
-        //         alert('dis');
-        //         $(this).closest('li').find('.con-en-disable-me').css("background-color","blue");
-        //     }
-        //     else {
-        //         alert('en');
-        //         $(this).closest('li').find('.con-en-disable-me').css("background-color","red");
-        //     }
-        // });
+        $('.con-select.con-toggle .btn-selection-choice.toggle-hide').each(function(){
+            if ($(this).hasClass('uk-active')) {
+                $(this).closest('li').find('.con-en-disable-me .en-disable-me').addClass("uk-disabled");
+            }
+            else {
+                $(this).closest('li').find('.con-en-disable-me .en-disable-me').removeClass("uk-disabled");
+            }
+        });
     };
 
     function sliders (){
@@ -644,6 +644,63 @@ jQuery(function($) {
             }
             reader.readAsDataURL(input.files[0]);
         }
+    };
+
+    function mascotLogo () {
+        singleSelect();
+
+        $("#imgInp").change(function(){
+            readURL(this);
+        });
+        $('#modal-select-mascot .con-select .btn-selection-choice').click(function() {
+            if ($(this).hasClass('uk-active')) {
+                var pel = $(this).find('img').attr('src');
+                $('#btn-add-to-uniform').removeClass("uk-disabled");
+                $('.con-preview-mascot').show();
+            }
+            else {
+                $('#btn-add-to-uniform').addClass("uk-disabled");
+                $('.con-preview-mascot').hide();
+            }
+            $('#preview-existing-logo').attr('src', pel);
+        });
+
+        $('#modal-select-mascot .con-select .btn-selection-choice').each(function() {
+            if ($(this).hasClass('uk-active')) {
+                var pel = $(this).find('img').attr('src');
+                $('.con-preview-mascot').show();
+                $('#btn-add-to-uniform').removeClass("uk-disabled");
+            }
+            else {
+                $('#btn-add-to-uniform').addClass("uk-disabled");
+                $('.con-preview-mascot').hide();
+                var pel = "./img/no-preview.png";
+            }
+            $('#preview-existing-logo').attr('src', pel);
+        });
+
+
+        $('.btn-delete.btn-archive').click(function() {
+            confRedirect = "#modal-select-mascot";
+            confQuestion = ("move this to archive");
+            confAction = ("Do It");
+            confirmation();
+        });
+        $('.btn-delete.btn-active').click(function() {
+            confRedirect = "#modal-select-mascot";
+            confQuestion = ("set this to active");
+            confAction = ("Do It");
+            confirmation();
+        });
+    };
+
+    function confirmation () {
+        $( "#modal-confirmation" ).load( "m-modal-confirmation.html",function(){
+            $('.btn-confirm-yes').attr("uk-toggle", confRedirect);
+            $('.btn-confirm-no').attr("uk-toggle", confRedirect);
+            $('.text-confirmation-question').text(confQuestion);
+            $('.text-confirmation-action').text(confAction);
+        });
     }
 
 
@@ -725,6 +782,12 @@ jQuery(function($) {
     $( "#modal-all-application" ).load( "m-modal-all-application.html",function(){
         applications();
         singleSelect();
+        $('.btn-delete').click(function() {
+            confRedirect = "#modal-all-application";
+            confQuestion = ("delete this application");
+            confAction = ("Delete It");
+            confirmation();
+        });
     });
 
     $( "#modal-edit-palette-pattern" ).load( "m-modal-palette-pattern.html",function(){
@@ -742,47 +805,20 @@ jQuery(function($) {
     });
 
     $( "#modal-select-mascot" ).load( "m-modal-select-mascot.html",function(){
-        singleSelect();
-        mascot();
-        $("#imgInp").change(function(){
-            readURL(this);
+        $('.btn-open-modal-mascot').click(function() {
+            mascot();
+            mascotLogo();
+            $('#modal-select-mascot .modal-title').text("Decoration stock mascot");
+            $('#modal-select-mascot .modal-menu-mascot li:first-child * span:last-child').text("from stock mascot");
+            $('#modal-select-mascot .menu-tab-mascot li').eq(2).hide();
         });
 
-        // $('#abc').click(function() {
-        //     logo();
-        // });
-
-        $('#modal-select-mascot .con-select .btn-selection-choice').click(function() {
-            if ($(this).hasClass('uk-active')) {
-                var pel = $(this).find('img').attr('src');
-                $('#btn-add-to-uniform').removeClass("uk-disabled");
-                $('.con-preview').show();
-            }
-            else {
-                $('#btn-add-to-uniform').addClass("uk-disabled");
-                $('.con-preview').hide();
-            }
-            $('#preview-existing-logo').attr('src', pel);
-        });
-
-        $('#modal-select-mascot .con-select .btn-selection-choice').each(function() {
-            if ($(this).hasClass('uk-active')) {
-                var pel = $(this).find('img').attr('src');
-                $('.con-preview').show();
-                $('#btn-add-to-uniform').removeClass("uk-disabled");
-            }
-            else {
-                $('#btn-add-to-uniform').addClass("uk-disabled");
-                $('.con-preview').hide();
-                var pel = "./img/no-preview.png";
-            }
-            $('#preview-existing-logo').attr('src', pel);
+        $('.btn-open-modal-logo').click(function() {
+            logo();
+            mascotLogo();
+            $('#modal-select-mascot .modal-title').text("Decoration Custom logo");
+            $('#modal-select-mascot .modal-menu-mascot li:first-child * span:last-child').text("from existing design");
+            $('#modal-select-mascot .menu-tab-mascot li').eq(2).show();
         });
     });
-
-
-
-    // $('.btn-archive').click(function() {
-    //     $('#modal-confirmation a').attr('href',"#modal-select-mascot");
-    // });
 });
