@@ -506,6 +506,12 @@ jQuery(function($) {
         $('.m-palette-color').html(markup);
 
         $("#modal-edit-palette-color #color-palette-list .m-palette-color").prepend('<div><button class="uk-inline box-palette btn-selection-choice btn-no-color palette-color"><div class="palette palette-blank"></div><div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray"><span class="icon icon-check uk-text-bold uk-position-center"></span></div></button></div>');
+        singleSelect();
+
+        // autoselect
+        $(".m-palette-color.conAutoSelect").each(function() {
+            $(this).find(".btn-selection-choice").eq(0).addClass("uk-active");
+        });
     };
 
     function palettePattern (){
@@ -721,6 +727,10 @@ jQuery(function($) {
     $( "#m-fabric-selection" ).load( "m-fabric-selection.html" ,function() {
         singleSelect();
         fabrics();
+        // autoselect
+        $(this).each(function() {
+            $(this).find(".btn-selection-choice").eq(0).addClass("uk-active");
+        });
     });
 
     $( "#m-sleeve-inserts" ).load( "m-sleeve-inserts.html",function(){
@@ -733,7 +743,6 @@ jQuery(function($) {
     $( "#m-base-color-selection" ).load( "m-base-color-selection.html",function(){
         paletteColor();
         palettePattern();
-        singleSelect();
         toggleBtnEditPattenColor();
     });
 
@@ -750,6 +759,7 @@ jQuery(function($) {
         toggleBtnEditPattenColor();
         toggleConInputObject();
         toggleConAddApplication();
+        enDisableMe();
         sliders();
         accents();
         layouts();
@@ -761,6 +771,7 @@ jQuery(function($) {
         toggleBtnEditPattenColor();
         toggleConInputObject();
         toggleConAddApplication();
+        enDisableMe();
         sliders();
         accents();
     });
@@ -771,8 +782,8 @@ jQuery(function($) {
         toggleBtnEditPattenColor();
         toggleConInputObject();
         toggleConAddApplication();
-        sliders();
         enDisableMe();
+        sliders();
     });
 
     $( "#m-richardson-logo" ).load( "m-richardson-logo.html",function(){
@@ -799,6 +810,7 @@ jQuery(function($) {
     $( "#modal-edit-palette-color" ).load( "m-modal-palette-color.html",function(){
         paletteColor();
         toggleBtnEditPattenColor();
+
         $("#modal-edit-palette-color #color-palette-list li").each(function() {
             $(this).find(".btn-selection-choice").eq(1).addClass("uk-active");
         });
