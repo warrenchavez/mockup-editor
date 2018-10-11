@@ -803,6 +803,12 @@ img.custom-logo-upload-preview {
     /* Safari */
     filter: grayscale(100%) opacity(70%); }
 
+.con-add-view-application .con-add-application.uk-active {
+  display: none; }
+.con-add-view-application .con-toggle .toggle-show.uk-active {
+  background-color: #242424 !important;
+  color: #eee !important; }
+
 @media screen and (min-width: 640px) {
   .left-nav {
     max-width: 36px; }

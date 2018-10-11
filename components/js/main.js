@@ -3,6 +3,7 @@ jQuery(function($) {
     var confRedirect="";
     var confQuestion="";
     var confAction="";
+    var wtToggle="";
 
     function productItems (){
 
@@ -376,16 +377,11 @@ jQuery(function($) {
         });
     };
 
+
     function toggleConAddApplication (){
-        $('.con-select.con-toggle .btn-selection-choice').click(function() {
-            if ($(this).hasClass('toggle-show')) {
-                $(this).toggleClass('bgc-dark').toggleClass('fc-light');
-                $(this).closest('li').find('.con-add-application').toggle();
-            }
-            else if ($(this).hasClass('toggle-hide')) {
-                $(this).closest('li').find('.con-add-application').hide();
-                $(this).closest('.con-select.con-toggle').find('.btn-selection-choice').removeClass('bgc-dark').removeClass('fc-light').addClass('bdr-light');
-            }
+        $('.btn-selection-choice.toggle-hide').click(function() {
+            $(this).closest('li').find('.con-add-application').addClass("uk-active");
+            $(this).closest('.con-toggle').find('.toggle-show').removeClass("uk-active");
         });
     };
 
@@ -758,11 +754,12 @@ jQuery(function($) {
         paletteColor();
         toggleBtnEditPattenColor();
         toggleConInputObject();
-        toggleConAddApplication();
         enDisableMe();
         sliders();
         accents();
         layouts();
+        toggleConAddApplication();
+
     });
 
     $( "#m-decorations-numbers" ).load( "m-decorations-numbers.html",function(){
@@ -770,10 +767,10 @@ jQuery(function($) {
         paletteColor();
         toggleBtnEditPattenColor();
         toggleConInputObject();
-        toggleConAddApplication();
         enDisableMe();
         sliders();
         accents();
+        toggleConAddApplication();
     });
 
     $( "#m-decorations-mascots" ).load( "m-decorations-mascots.html",function(){

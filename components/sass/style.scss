@@ -439,6 +439,22 @@ img.custom-logo-upload-preview {
   }
 }
 
+.con-add-view-application {
+  & .con-add-application {
+    &.uk-active {
+      display: none;
+    }
+  }
+
+  & .con-toggle {
+    & .toggle-show.uk-active {
+      background-color: $color-darker;
+      color: $color-light;
+    }
+  }
+}
+
+
 @media screen and (min-width: 640px) {
 
   .left-nav {
