@@ -414,7 +414,7 @@ jQuery(function($) {
             singleSelect();
 
             // Default selected palette
-            $(this).each(function() {
+            $("#m-fabric-selection").each(function() {
                 $(this).find(".btn-selection-choice").eq(0).addClass("uk-active");
             });
         });
@@ -690,6 +690,12 @@ jQuery(function($) {
             var markup = Mustache.render(template, data);
             $('#m-applications').html(markup);
             singleSelect();
+            $('.btn-delete').click(function() {
+                confRedirect = "#modal-all-application";
+                confQuestion = ("delete this application");
+                confAction = ("Delete It");
+                confirmation();
+            });
         });
     }
 
@@ -786,12 +792,6 @@ jQuery(function($) {
     $( "#modal-all-application" ).load( "m-modal-all-application.html",function(){
         applications();
         singleSelect();
-        $('.btn-delete').click(function() {
-            confRedirect = "#modal-all-application";
-            confQuestion = ("delete this application");
-            confAction = ("Delete It");
-            confirmation();
-        });
     });
 
     $( "#modal-edit-palette-pattern" ).load( "m-modal-palette-pattern.html",function(){
