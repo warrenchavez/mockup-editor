@@ -1,8 +1,6 @@
-
-
 <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Richardson Logo</h5>
 <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-dark">Choose location</h6>
-<ul class="uk-grid-small grid-tiny uk-margin-bottom bac-dark active-bgc-dark active-bdr-dark" uk-switcher="connect: .brand-location" uk-grid>
+<ul class="uk-grid-small grid-tiny uk-margin-bottom bac-dark active-bgc-dark active-bdr-dark" uk-switcher="connect: .brand-location; animation: uk-animation-fade" uk-grid>
     <li class="uk-width-expand ">
         <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize">Right Chest</a>
     </li>
@@ -14,22 +12,4 @@
     </li>
 </ul>
 
-<ul id="m-preview-logo" class="uk-switcher brand-location">
-
-</ul>
-
-
-
-<script type='mustache/x-tmpl' id='preview-logo'>
-{{#previewLogo}}
-<li>
-<div class="uk-grid-small uk-flex-center" uk-grid>
-<div class="uk-width-1-1 uk-width-2-3@s">
-<div class="bdr-reg bdr-gray">
-<img src="{{logo}}" uk-img>
-</div>
-</div>
-</div>
-</li>
-{{/previewLogo}}
-</script>
+<ul id="m-preview-logo" class="uk-switcher brand-location"></ul>

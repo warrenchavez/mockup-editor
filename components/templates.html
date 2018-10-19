@@ -1,0 +1,233 @@
+
+
+<script type='mustache/x-tmpl' id='preview'>
+{{#previewLinks}}
+<li>
+<div class="uk-inline">
+<img src="{{links}}" alt="" width="1000" height="1100" uk-img>
+<a href="#" class="uk-position-center-left-out uk-visible@s uk-link-reset" uk-icon="icon: chevron-left; ratio: 2" uk-switcher-item="previous"></a>
+<a href="#" class="uk-position-center-right-out uk-visible@s uk-link-reset" uk-icon="icon: chevron-right; ratio: 2" uk-switcher-item="next"></a>
+</div>
+</li>
+{{/previewLinks}}
+</script>
+
+<script type='mustache/x-tmpl' id='preview-pane-thumb-nav'>
+{{#previewLinks}}
+	<div class="uk-width-auto uk-width-1-1@s uk-width-auto@m uk-width-1-1@l">
+	<a href="" class="thumbnail-small bdrr-none uk-link-reset bdr-reg bdr-gray" uk-icon=" ratio: 2">
+	<img src="{{links}}" alt="" width="380" height="629" uk-img>
+	</a>
+	</div>
+{{/previewLinks}}
+</script>
+
+<script type='mustache/x-tmpl' id='fabrics'>
+{{#fabrics}}
+<li>
+<div class="box-palette uk-link-reset btn-selection-choice">
+<div class="uk-grid-small uk-flex uk-text-left" uk-grid>
+<div class="uk-width-1-4">
+<div class="uk-inline">
+<div class="bgc-white padding-tiny-vertical">
+<img src="{{fabric}}" uk-img>
+</div>
+<div class="uk-position-cover choice-icon bdr-lightGray">
+<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+</div>
+</div>
+</div>
+<div class="uk-width-3-4">
+<div class="">
+<p class="uk-text-bold uk-text-uppercase uk-margin-remove fc-dark">{{name}}
+</p>
+<ul class="uk-list uk-padding-remove">
+<li class="uk-text-small">- {{description}}</li>
+<li class="uk-text-small">- {{description2}}</li>
+<li class="uk-text-small">- {{description3}}</li>
+<li class="uk-text-small">- {{description4}}</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+{{/fabrics}}
+</script>
+
+<script type='mustache/x-tmpl' id='paletteColor'>
+{{#paletteColor}}
+<div>
+<button class="uk-inline box-palette btn-selection-choice palette-color">
+<div class="palette palette-c-{{color}}"></div>
+<div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+<span class="icon icon-check uk-text-bold uk-position-center"></span>
+</div>
+</button>
+</div>
+{{/paletteColor}}
+</script>
+
+<script type='mustache/x-tmpl' id='palettePattern'>
+{{#palettePattern}}
+<div>
+<button class="uk-inline box-palette btn-selection-choice palette-pattern">
+<div class="palette palette-{{pattern}}"></div>
+<div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+<span class="icon icon-check uk-text-bold uk-position-center"></span>
+</div>
+</button>
+</div>
+{{/palettePattern}}
+</script>
+
+<script type='mustache/x-tmpl' id='pipings'>
+{{#Titles}}
+<li>
+    <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">{{titleName}}</h5>
+    <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose size</h6>
+    <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center con-select con-toggle active-bgc-dark" uk-grid>
+        <div class="uk-width-auto uk-width-expand@s">
+            <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default btn-selection-choice toggle-hide uk-active">None</button>
+        </div>
+        <div class="uk-width-auto uk-width-expand@s">
+            <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default btn-selection-choice">1/8</button>
+        </div>
+        <div class="uk-width-auto uk-width-expand@s">
+            <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default btn-selection-choice">1/4</button>
+        </div>
+        <div class="uk-width-auto uk-width-expand@s">
+            <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default btn-selection-choice">1/2</button>
+        </div>
+    </div>
+    <div class="con-choose-numbers-colors">
+        <h6 uk-margin class="uk-margin-small-top uk-margin-small-bottom uk-text-bold uk-text-uppercase">Choose Number of Colors</h6>
+        <div class="choose-numbers-colors uk-grid-small grid-tiny uk-grid-match uk-text-center con-select active-bgc-dark" uk-grid>
+            <div class="uk-width-expand">
+                <button href="#" class="uk-button uk-button-small uk-button-default btn-selection-choice uk-active">1</button>
+            </div>
+            <div class="uk-width-expand">
+                <button href="#" class="uk-button uk-button-small uk-button-default btn-selection-choice">2</button>
+            </div>
+            <div class="uk-width-expand">
+                <button href="#" class="uk-button uk-button-small uk-button-default btn-selection-choice">3</button>
+            </div>
+        </div>
+        <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize btn-piping-modal" href="#modal-edit-palette-color" uk-toggle>
+            <div class=" uk-flex uk-flex-middle">
+                <span class="uk-margin-small-right icon icon-edit"></span><span>Edit color</span>
+            </div>
+        </a>
+    </div>
+</li>
+{{/Titles}}
+</script>
+
+<script type='mustache/x-tmpl' id='accents'>
+{{#accents}}
+<div>
+<button class="uk-inline bgc-transparent box-palette btn-selection-choice">
+<div class=" bdr-thin bdr-gray">
+<img src="{{accent}}" uk-img>
+</div>
+<div class="uk-position-cover choice-icon bdr-lightGray">
+<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>
+</div>
+</button>
+</div>
+{{/accents}}
+</script>
+
+<script type='mustache/x-tmpl' id='layouts'>
+{{#layouts}}
+<div>
+<button class="uk-inline bgc-transparent box-palette btn-selection-choice">
+<div class=" bdr-thin bdr-gray">
+<img src="{{layout}}" uk-img>
+</div>
+<div class="uk-position-cover choice-icon selected bdr-lightGray">
+<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+</div>
+</button>
+</div>
+{{/layouts}}
+</script>
+
+<script type='mustache/x-tmpl' id='applications'>
+{{#applications}}
+<li class="item-sort">
+<div class=" uk-grid-collapse btn-selection-choice uk-padding-small uk-flex-middle" uk-grid>
+<div class="uk-width-expand uk-grid-collapse uk-margin-small-right uk-drag" uk-grid>
+<a class="uk-link-reset uk-width-1-1 uk-text-truncate">#{{appNumber}} &nbsp;{{appName}}</a>
+</div>
+<div class="uk-width-auto">
+<a href="#modal-confirmation" class="btn-delete uk-link-reset uk-width-1-1" uk-toggle>
+<span class="icon-delete"></span>
+</a>
+</div>
+</div>
+</li>
+{{/applications}}
+</script>
+
+<script type='mustache/x-tmpl' id='preview-logo'>
+{{#previewLogo}}
+<li>
+<div class="uk-grid-small uk-flex-center" uk-grid>
+<div class="uk-width-1-1 uk-width-2-3@s">
+<div class="bdr-reg bdr-gray">
+<img src="{{logo}}" uk-img>
+</div>
+</div>
+</div>
+</li>
+{{/previewLogo}}
+</script>
+
+<script type='mustache/x-tmpl' class='logo-active'>
+{{#mascotLogoActive}}
+<div class="mascot-item">
+<a class="box-palette uk-link-reset btn-selection-choice uk-text-center">
+<div class="bgc-white uk-text-right">
+<h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">{{name}}</h6>
+<div class="uk-inline">
+<div class="uk-padding-small uk-padding-remove-bottom">
+<img src="{{logo}}" uk-img>
+</div>
+
+<div class="uk-position-cover choice-icon bdr-lightGray">
+<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+</div>
+</div>
+<button class="uk-button uk-margin-small-right btn-delete btn-archive bgc-transparent uk-padding-remove bdr-none" type="button" uk-toggle="target: #modal-confirmation" uk-tooltip="title:Move to Archive; pos: left">
+<span class="icon-archive"></span>
+</button>
+</div>
+</a>
+</div>
+{{/mascotLogoActive}}
+</script>
+
+<script type='mustache/x-tmpl' class='logo-archive'>
+{{#mascotLogoArchive}}
+<div class="mascot-item">
+<a class="box-palette uk-link-reset btn-delete btn-active btn-selection-choice uk-text-center">
+<div class="bgc-white uk-text-right">
+<h6 class="bgc-dark fc-light uk-text-center uk-margin-remove padding-tiny-vertical">{{name}}</h6>
+<div class="uk-inline">
+<div class="uk-padding-small uk-padding-remove-bottom">
+<img src="{{logo}}" uk-img>
+</div>
+
+<div class="uk-position-cover choice-icon bdr-lightGray">
+<span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary"></span>
+</div>
+</div>
+<button class="uk-button uk-margin-small-right btn-archive bgc-transparent uk-padding-remove bdr-none" type="button" uk-toggle="target: #modal-confirmation" uk-tooltip="title:Set as Active; pos: left">
+<span class="icon-archive"></span>
+</button>
+</div>
+</a>
+</div>
+{{/mascotLogoArchive}}
+</script>
