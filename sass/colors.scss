@@ -21,8 +21,14 @@
 .bgc-dark {
   background-color:$color-dark;
 }
+.bgc-darkGray {
+  background-color:$color-darkGray;
+}
 .bgc-darker {
   background-color:$color-darker;
+}
+.bgc-darkerGray {
+  background-color:$color-darkerGray;
 }
 
 
@@ -255,13 +261,19 @@
   color: $color-lightGray;
 }
 .fc-gray {
-  color:$color-gray !important;
+  color:$color-gray;
+}
+.fc-darkGray {
+  color:$color-darkGray;
 }
 .fc-dark {
   color:$color-dark;
 }
 .fc-darker {
   color:$color-darker;
+}
+.fc-darkerGray {
+  color:$color-darkerGray;
 }
 
 .bdr-red {

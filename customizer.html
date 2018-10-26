@@ -197,7 +197,7 @@
             <div class="uk-width-1-1 uk-width-1-2@m uk-width-1-3@l">
                 <div class="uk-padding-small bgc-light wer">
                     <div class=" uk-text-right">
-                        <a class="uk-link-reset uk-text-uppercase uk-text-small" href="">Select new style</a>
+                        <a class="uk-link-reset uk-text-uppercase" href="">Select new style</a>
                     </div>
                     <h5 class="uk-text-uppercase uk-text-bold uk-margin-remove">Pts 20</h5>
                     <div class="uk-grid-small" uk-grid>
@@ -258,13 +258,13 @@
                     <div class="uk-width-1-1 uk-width-expand@s">
                         <ul id="m-con-steps" class="uk-switcher con-customizer bt-0">
                             <!-- Fabric Selection: Step 1 -->
-                            <li>
-                                <div id="m-fabric-selection" class=" uk-height-max-large uk-overflow-auto">
+                            <li id="m-fabric-selection">
+                                <div class=" uk-height-max-large uk-overflow-auto">
                                     <ul class="uk-list uk-margin-remove-vertical uk-padding-small con-select con-palettes">
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Fabric</h5>
                                         <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose base fabric</h6>
                                         <li>
-                                            <div class="box-palette uk-link-reset btn-selection-choice uk-active">
+                                            <div class="box-palette uk-link-reset btn-selection-choice">
                                                 <div class="uk-grid-small uk-flex uk-text-left" uk-grid>
                                                     <div class="uk-width-1-4">
                                                         <div class="uk-inline">
@@ -411,370 +411,11 @@
                             <!-- End Fabric Selection: Step 1 -->
 
                             <!-- Base Color Selection Step 2 -->
-                            <li>
-                                <ul id="m-base-color-selection" class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
+                            <li id="m-base-color-selection">
+                                <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
-                                    <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Base Color</h5>
-                                    <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern</h6>
-                                    <div class="con-select con-palettes">
-                                        <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Color</h6>
-                                        <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-r-cp-2-black2">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-r-cp-2-lightblue">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-charcoalgray">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
-                                                    <div class="palette bgc-maroon">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-r-cp-2-8">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-gold">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-grey">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-silvergray">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-r-cp-2-1">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-r-cp-2-2">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-r-cp-2-darkblue ">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-orange">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-purple">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-cardinal">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-r-cp-2-cornblue">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-seminol">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-r-cp-2-9">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-white">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-color">
-                                                    <div class="palette bgc-neonpink">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Pattern</h6>
-                                        <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-camo">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-check">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-diamonds">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-digital-camo">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-distressed">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-fiber">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-lockdown">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-pixel-fade-body">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-pixel-fade-sleeve">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-quake">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-score">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-thick-stripe">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-thin-stripes">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-trips-arrow">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-upper-stripes">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-upper-stripes-body">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-wave-stripe">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-wave-stripes">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                    <div class="palette palette-gradient-2">
-                                                    </div>
-                                                    <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
-                                                        <span class="icon icon-check uk-text-bold uk-position-center"></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                            <div class=" uk-flex uk-flex-middle">
-                                                <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                    <li>
-                                        <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Sleeve Color</h5>
-                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern</h6>
+                                        <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Base Color</h5>
+                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern / Gradient</h6>
                                         <div class="con-select con-palettes">
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Color</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
@@ -806,7 +447,7 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
                                                         <div class="palette bgc-maroon">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -953,7 +594,7 @@
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Pattern</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern uk-active">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
                                                         <div class="palette palette-camo">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -1114,9 +755,461 @@
                                                         </div>
                                                     </button>
                                                 </div>
+                                            </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
+                                            <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
+                                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-1">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-2">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-3">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-4">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-5">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-6">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-7">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-8">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-9">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-10">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-11">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-12">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Sleeve Color</h5>
+                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern / Gradient</h6>
+                                        <div class="con-select con-palettes">
+                                            <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Color</h6>
+                                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-r-cp-2-black2">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-r-cp-2-lightblue">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-charcoalgray">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                        <div class="palette bgc-maroon">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-r-cp-2-8">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-gold">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-grey">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-silvergray">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-r-cp-2-1">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-r-cp-2-2">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-r-cp-2-darkblue ">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-orange">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-purple">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-cardinal">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-r-cp-2-cornblue">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-seminol">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-r-cp-2-9">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-white">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette bgc-neonpink">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Pattern</h6>
+                                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
                                                     <button class="uk-inline box-palette btn-selection-choice palette-pattern">
-                                                        <div class="palette palette-gradient-2">
+                                                        <div class="palette palette-camo">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-check">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-diamonds">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-digital-camo">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-distressed">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-fiber">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-lockdown">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-pixel-fade-body">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-pixel-fade-sleeve">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-quake">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-score">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-thick-stripe">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-thin-stripes">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-trips-arrow">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-upper-stripes">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-upper-stripes-body">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-wave-stripe">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                        <div class="palette palette-wave-stripes">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
                                                             <span class="icon icon-check uk-text-bold uk-position-center"></span>
@@ -1129,16 +1222,127 @@
                                                     <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
                                                 </div>
                                             </a>
+                                            <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
+                                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-1">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-2">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-3">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-4">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-5">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-6">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-7">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-8">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-9">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-10">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-11">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-12">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </li>
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Back Body Color</h5>
-                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern</h6>
+                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern / Gradient</h6>
                                         <div class="con-select con-palettes">
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Color</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                         <div class="palette bgc-r-cp-2-black2">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -1165,7 +1369,7 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
                                                         <div class="palette bgc-maroon">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -1473,8 +1677,25 @@
                                                         </div>
                                                     </button>
                                                 </div>
+                                            </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
+                                            <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
+                                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-1">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                         <div class="palette palette-gradient-2">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -1482,12 +1703,97 @@
                                                         </div>
                                                     </button>
                                                 </div>
-                                            </div>
-                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                                <div class=" uk-flex uk-flex-middle">
-                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-3">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
                                                 </div>
-                                            </a>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-4">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-5">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-6">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-7">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-8">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-9">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-10">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-11">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-12">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1528,16 +1834,16 @@
                             <!-- End Base Color Selection Step 2 -->
 
                             <!-- Sleeve Inserts: Step 3 -->
-                            <li>
-                                <ul id="m-sleeve-inserts" class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
+                            <li id="m-sleeve-inserts">
+                                <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Sleeve Inserts</h5>
-                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern</h6>
+                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern / Gradient</h6>
                                         <div class="con-select con-palettes">
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Color</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                         <div class="palette bgc-r-cp-2-black2">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -1564,7 +1870,7 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
                                                         <div class="palette bgc-maroon">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -1872,8 +2178,25 @@
                                                         </div>
                                                     </button>
                                                 </div>
+                                            </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
+                                            <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
+                                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-1">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                         <div class="palette palette-gradient-2">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -1881,22 +2204,107 @@
                                                         </div>
                                                     </button>
                                                 </div>
-                                            </div>
-                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                                <div class=" uk-flex uk-flex-middle">
-                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-3">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
                                                 </div>
-                                            </a>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-4">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-5">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-6">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-7">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-8">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-9">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-10">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-11">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-12">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </li>
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Insert Color 1</h5>
-                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern</h6>
+                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern / Gradient</h6>
                                         <div class="con-select con-palettes">
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Color</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                         <div class="palette bgc-r-cp-2-black2">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -1923,7 +2331,7 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
                                                         <div class="palette bgc-maroon">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -2231,8 +2639,25 @@
                                                         </div>
                                                     </button>
                                                 </div>
+                                            </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
+                                            <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
+                                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-1">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                         <div class="palette palette-gradient-2">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -2240,22 +2665,107 @@
                                                         </div>
                                                     </button>
                                                 </div>
-                                            </div>
-                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                                <div class=" uk-flex uk-flex-middle">
-                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-3">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
                                                 </div>
-                                            </a>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-4">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-5">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-6">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-7">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-8">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-9">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-10">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-11">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-12">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </li>
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-vertical uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Insert Color 2</h5>
-                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern</h6>
+                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Choose color / Pattern / Gradient</h6>
                                         <div class="con-select con-palettes">
                                             <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Color</h6>
                                             <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                         <div class="palette bgc-r-cp-2-black2">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -2282,7 +2792,7 @@
                                                     </button>
                                                 </div>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
                                                         <div class="palette bgc-maroon">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -2590,8 +3100,25 @@
                                                         </div>
                                                     </button>
                                                 </div>
+                                            </div>
+                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                </div>
+                                            </a>
+                                            <h6 class="uk-margin-small uk-margin-remove-horizontal uk-text-uppercase">Gradient</h6>
+                                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-auto uk-text-center" uk-grid>
                                                 <div>
-                                                    <button class="uk-inline box-palette btn-selection-choice palette-pattern">
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-1">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                         <div class="palette palette-gradient-2">
                                                         </div>
                                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -2599,12 +3126,97 @@
                                                         </div>
                                                     </button>
                                                 </div>
-                                            </div>
-                                            <a class="uk-button uk-button-default uk-margin-small-top uk-text-capitalize modal-edit-palette-pattern" href="#modal-edit-palette-pattern" uk-toggle>
-                                                <div class=" uk-flex uk-flex-middle">
-                                                    <span class="uk-margin-small-right icon icon-edit"></span><span>Edit pattern color</span>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-3">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
                                                 </div>
-                                            </a>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-4">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-5">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-6">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-7">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-8">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-9">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-10">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-11">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
+                                                        <div class="palette palette-gradient-12">
+                                                        </div>
+                                                        <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                                                            <span class="icon icon-check uk-text-bold uk-position-center"></span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -2870,8 +3482,8 @@
                             <!-- End Pipings: Step 4 -->
 
                             <!-- Step 5: Decorations / Letters -->
-                            <li>
-                                <ul id="m-decorations-letters" class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
+                            <li id="m-decorations-letters">
+                                <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Decoration Letters</h5>
                                         <div class="con-add-application hidden">
@@ -2974,7 +3586,7 @@
                                         <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose font Accent</h6>
                                         <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-5 uk-child-width-1-6@s uk-child-width-1-5@m con-select con-palettes" uk-grid>
                                             <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice uk-active">
+                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
                                                     <div class=" bdr-thin bdr-gray">
                                                         <img src="http://customizer.prolook.com/images/sidebar/no-accent.png" uk-img>
                                                     </div>
@@ -3062,7 +3674,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                            <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                                 <div class="palette bgc-maroon">
                                                                 </div>
                                                                 <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -3291,7 +3903,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                            <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                                 <div class="palette bgc-r-cp-2-2">
                                                                 </div>
                                                                 <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -3388,7 +4000,7 @@
                                         <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose Layout</h6>
                                         <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-2@m con-select con-palettes" uk-grid>
                                             <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice uk-active">
+                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
                                                     <div class=" bdr-thin bdr-gray">
                                                         <img src="./img/font-layout-plain.png" uk-img>
                                                     </div>
@@ -3466,7 +4078,7 @@
                                         <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose font Accent</h6>
                                         <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-5 uk-child-width-1-6@s uk-child-width-1-5@m con-select con-palettes" uk-grid>
                                             <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice uk-active">
+                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
                                                     <div class=" bdr-thin bdr-gray">
                                                         <img src="http://customizer.prolook.com/images/sidebar/no-accent.png" uk-img>
                                                     </div>
@@ -3479,36 +4091,6 @@
                                                 <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
                                                     <div class=" bdr-thin bdr-gray">
                                                         <img src="http://customizer.prolook.com/images/sidebar/outlined.png" uk-img>
-                                                    </div>
-                                                    <div class="uk-position-cover choice-icon bdr-lightGray">
-                                                        <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
-                                                    <div class=" bdr-thin bdr-gray">
-                                                        <img src="http://customizer.prolook.com/images/sidebar/single_outline_with_shadow.png" uk-img>
-                                                    </div>
-                                                    <div class="uk-position-cover choice-icon bdr-lightGray">
-                                                        <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
-                                                    <div class=" bdr-thin bdr-gray">
-                                                        <img src="http://customizer.prolook.com/images/sidebar/drop_shadow.png" uk-img>
-                                                    </div>
-                                                    <div class="uk-position-cover choice-icon bdr-lightGray">
-                                                        <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
-                                                    <div class=" bdr-thin bdr-gray">
-                                                        <img src="http://customizer.prolook.com/images/sidebar/no-accent.png" uk-img>
                                                     </div>
                                                     <div class="uk-position-cover choice-icon bdr-lightGray">
                                                         <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>
@@ -3554,7 +4136,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                            <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                                 <div class="palette bgc-maroon">
                                                                 </div>
                                                                 <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -3783,7 +4365,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                            <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                                 <div class="palette bgc-r-cp-2-2">
                                                                 </div>
                                                                 <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -3880,7 +4462,7 @@
                                         <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose Layout</h6>
                                         <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-2@m con-select con-palettes" uk-grid>
                                             <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice uk-active">
+                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
                                                     <div class=" bdr-thin bdr-gray">
                                                         <img src="./img/font-layout-plain.png" uk-img>
                                                     </div>
@@ -3940,51 +4522,52 @@
 
                             <!-- Step 6: Decorations / Numbers -->
                             <li id="m-decorations-numbers">
-                                <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove"><li>
-                                    <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Decoration Numbers</h5>
-                                    <div class="con-add-application hidden">
-                                        <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark abrade-black">Choose location</h6>
-                                        <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-2 uk-text-center con-select active-bgc-dark" uk-grid>
-                                            <div class="">
-                                                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice toggle-hide uk-active">Front body</button>
+                                <ul class="uk-list uk-list-large uk-list-divider uk-height-max-large uk-overflow-auto uk-padding-small uk-margin-remove">
+                                    <li>
+                                        <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Decoration Numbers</h5>
+                                        <div class="con-add-application hidden">
+                                            <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark abrade-black">Choose location</h6>
+                                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-2 uk-text-center con-select active-bgc-dark" uk-grid>
+                                                <div class="">
+                                                    <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice toggle-hide uk-active">Front body</button>
+                                                </div>
+                                                <div class="">
+                                                    <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Back body</button>
+                                                </div>
+                                                <div class="">
+                                                    <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Left sleeve</button>
+                                                </div>
+                                                <div class="">
+                                                    <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Right sleeve</button>
+                                                </div>
                                             </div>
-                                            <div class="">
-                                                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Back body</button>
-                                            </div>
-                                            <div class="">
-                                                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Left sleeve</button>
-                                            </div>
-                                            <div class="">
-                                                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Right sleeve</button>
+                                            <h6 uk-margin class="uk-margin-small uk-margin-remove-horizontal uk-text-bold uk-text-uppercase fc-dark abrade-black">Choose perspective</h6>
+                                            <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-3 uk-text-center con-select active-bgc-dark uk-margin-medium-bottom" uk-grid>
+                                                <div class="">
+                                                    <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice toggle-hide uk-active">Front number</button>
+                                                </div>
+                                                <div class="">
+                                                    <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Back number</button>
+                                                </div>
+                                                <div class="">
+                                                    <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Sleeve number</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <h6 uk-margin class="uk-margin-small uk-margin-remove-horizontal uk-text-bold uk-text-uppercase fc-dark abrade-black">Choose perspective</h6>
-                                        <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-3 uk-text-center con-select active-bgc-dark uk-margin-medium-bottom" uk-grid>
-                                            <div class="">
-                                                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice toggle-hide uk-active">Front number</button>
-                                            </div>
-                                            <div class="">
-                                                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Back number</button>
-                                            </div>
-                                            <div class="">
-                                                <button href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize btn-selection-choice">Sleeve number</button>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center con-select con-toggle" uk-grid>
-                                        <div class="uk-width-1-2 ">
-                                            <button class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize uk-text-capitalize btn-selection-choice toggle-show">
-                                                <span class="uk-margin-small-right icon-add"></span>Add application
-                                            </button>
+                                        <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center con-select con-toggle" uk-grid>
+                                            <div class="uk-width-1-2 ">
+                                                <button class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize uk-text-capitalize btn-selection-choice toggle-show">
+                                                    <span class="uk-margin-small-right icon-add"></span>Add application
+                                                </button>
+                                            </div>
+                                            <div class="uk-width-1-2 ">
+                                                <button class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize uk-text-capitalize btn-selection-choice toggle-hide" type="button" uk-toggle="target: #modal-all-application">
+                                                    <span class="uk-margin-small-right icon-view"></span>View all application
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="uk-width-1-2 ">
-                                            <button class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize uk-text-capitalize btn-selection-choice toggle-hide" type="button" uk-toggle="target: #modal-all-application">
-                                                <span class="uk-margin-small-right icon-view"></span>View all application
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
+                                    </li>
                                     <li>
                                         <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold fc-darker abrade-ultra-italic"><span class=" uk-text-uppercase">Front number</span> (front view) #3</h5>
                                         <div class="uk-grid-small grid-tiny uk-grid-match uk-text-center con-select con-toggle active-bgc-dark" uk-grid>
@@ -4042,7 +4625,7 @@
                                         <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose font number Accent</h6>
                                         <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-5 uk-child-width-1-6@s uk-child-width-1-5@m con-select con-palettes" uk-grid>
                                             <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice uk-active">
+                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
                                                     <div class=" bdr-thin bdr-gray">
                                                         <img src="http://customizer.prolook.com/images/sidebar/no-accent.png" uk-img>
                                                     </div>
@@ -4130,7 +4713,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                            <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                                 <div class="palette bgc-maroon">
                                                                 </div>
                                                                 <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -4359,7 +4942,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                            <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                                 <div class="palette bgc-r-cp-2-2">
                                                                 </div>
                                                                 <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -4510,7 +5093,7 @@
                                         <h6 class="uk-text-small uk-text-uppercase uk-text-bold uk-margin-top uk-margin-small-bottom abrade-black">Choose back number Accent</h6>
                                         <div class="uk-grid-small grid-tiny uk-grid-match uk-child-width-1-5 uk-child-width-1-6@s uk-child-width-1-5@m con-select con-palettes" uk-grid>
                                             <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice uk-active">
+                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
                                                     <div class=" bdr-thin bdr-gray">
                                                         <img src="http://customizer.prolook.com/images/sidebar/no-accent.png" uk-img>
                                                     </div>
@@ -4523,36 +5106,6 @@
                                                 <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
                                                     <div class=" bdr-thin bdr-gray">
                                                         <img src="http://customizer.prolook.com/images/sidebar/outlined.png" uk-img>
-                                                    </div>
-                                                    <div class="uk-position-cover choice-icon bdr-lightGray">
-                                                        <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
-                                                    <div class=" bdr-thin bdr-gray">
-                                                        <img src="http://customizer.prolook.com/images/sidebar/single_outline_with_shadow.png" uk-img>
-                                                    </div>
-                                                    <div class="uk-position-cover choice-icon bdr-lightGray">
-                                                        <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
-                                                    <div class=" bdr-thin bdr-gray">
-                                                        <img src="http://customizer.prolook.com/images/sidebar/drop_shadow.png" uk-img>
-                                                    </div>
-                                                    <div class="uk-position-cover choice-icon bdr-lightGray">
-                                                        <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>
-                                                    </div>
-                                                </button>
-                                            </div>
-                                            <div>
-                                                <button class="uk-inline bgc-transparent box-palette btn-selection-choice">
-                                                    <div class=" bdr-thin bdr-gray">
-                                                        <img src="http://customizer.prolook.com/images/sidebar/no-accent.png" uk-img>
                                                     </div>
                                                     <div class="uk-position-cover choice-icon bdr-lightGray">
                                                         <span uk-icon="icon: check; ratio: 1.5" class="uk-text-bold uk-position-center uk-overlay-primary "></span>
@@ -4598,7 +5151,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                            <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                                 <div class="palette bgc-maroon">
                                                                 </div>
                                                                 <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -4827,7 +5380,7 @@
                                                             </button>
                                                         </div>
                                                         <div>
-                                                            <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                                            <button class="uk-inline box-palette btn-selection-choice palette-color">
                                                                 <div class="palette bgc-r-cp-2-2">
                                                                 </div>
                                                                 <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -5520,8 +6073,8 @@
                             <!-- End Step 7: Decoration / Mascots -->
 
                             <!-- Step 8: Richardson Logo -->
-                            <li>
-                                <div id="m-richardson-logo" class="uk-padding-small uk-margin-remove">
+                            <li id="m-richardson-logo">
+                                <div class="uk-padding-small uk-margin-remove">
 
                                     <h5 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-darker abrade-ultra-italic">Richardson Logo</h5>
                                     <h6 uk-margin class="uk-margin-remove-top uk-margin-small-bottom uk-text-uppercase uk-text-bold fc-dark">Choose location</h6>
@@ -5539,27 +6092,27 @@
 
                                     <ul class="uk-switcher brand-location">
                                         <li>
-                                            <div class="uk-grid-small uk-flex-center" uk-grid>
+                                            <div class="uk-grid-small uk-grid-match uk-flex-center" uk-grid>
                                                 <div class="uk-width-1-1 uk-width-2-3@s">
-                                                    <div class="bdr-reg bdr-gray">
+                                                    <div class="bdr-thin bdr-gray">
                                                         <img src="./img/branding-right-chest.jpg" uk-img>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="uk-grid-small uk-flex-center" uk-grid>
+                                            <div class="uk-grid-small uk-grid-match uk-flex-center" uk-grid>
                                                 <div class="uk-width-1-1 uk-width-2-3@s">
-                                                    <div class="bdr-reg bdr-gray">
+                                                    <div class="bdr-thin bdr-gray">
                                                         <img src="./img/branding-left-sleeve.jpg" uk-img>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="uk-grid-small uk-flex-center" uk-grid>
+                                            <div class="uk-grid-small uk-grid-match uk-flex-center" uk-grid>
                                                 <div class="uk-width-1-1 uk-width-2-3@s">
-                                                    <div class="bdr-reg bdr-gray">
+                                                    <div class="bdr-thin bdr-gray">
                                                         <img src="./img/branding-back.jpg" uk-img>
                                                     </div>
                                                 </div>
@@ -5714,7 +6267,7 @@
 </div>
 <div id="modal-edit-palette-color" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-        <h6 class="uk-padding-small bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin-bottom">Pipings Color</h6>
+        <h6 class="uk-padding-small bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin-bottom">Palette Color</h6>
         <div class="uk-grid-medium uk-flex-center" uk-grid>
             <div class="uk-width-auto uk-width-1-3@m">
                 <div class="bdr-thin bdr-gray">
@@ -5759,7 +6312,7 @@
                                     </button>
                                 </div>
                                 <div>
-                                    <button class="uk-inline box-palette btn-selection-choice palette-color uk-active">
+                                    <button class="uk-inline box-palette btn-selection-choice palette-color">
                                         <div class="palette bgc-maroon">
                                         </div>
                                         <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
@@ -7114,5 +7667,23 @@
         </div>
     </div>
 </div>
+
+<!-- Base Color Selection -->
+<script type="text/mustache" id="m-richardson-base-color-selection">
+
+        @{{#color_set}}
+        <div>
+            <button class="uk-inline box-palette btn-selection-choice palette-color">
+                <div class="palette bgc-r-cp-2-@{{color}}">
+                </div>
+                <div class="uk-overlay-primary uk-position-cover choice-icon bdr-lightGray">
+                    <span class="icon icon-check uk-position-center"></span>
+                </div>
+            </button>
+        </div>
+        @{{/color_set}}
+
+
+    </script>
 </body>
 </html>
