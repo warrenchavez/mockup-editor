@@ -87,17 +87,32 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .bac-dark > *.uk-active:after {
   background-color: #343434 !important; }
 
-.active-fc-red .uk-active a {
+
+.btn {
+  &.uk-active {
+    color: $color-light;
+    background-color: $color-red;
+    background-color: $color-lightGray;
+  }
+  &.btn-enabled {
+    color: $color-red;
+    border-color: $color-red;
+  }
+}
+
+
+.active-fc-red .uk-active > * {
   color: $color-red;}
 
-.active-bgc-red .uk-active a {
+.active-bgc-red .uk-active > * ,
+.btn-active-bgc-red {
   color: $color-light;
   background-color: $color-red; }
 
-.active-bdr-red .uk-active a {
+.active-bdr-red .uk-active > * {
   border-color: $color-red; }
 
-.active-bgc-dark .uk-active a {
+.active-bgc-dark .uk-active > * {
   color: $color-light;
   background-color: $color-dark; }
 
@@ -133,26 +148,6 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   border: none; }
 .con-news-letter .form-input:focus {
   background-color: #343434 !important; }
-
-//.con-news-letter .form-input-left-icon {
-//  padding: 9px;
-//  display: inline-block;
-//  margin-right: -5px;
-//  border-right: solid 1px white; }
-//
-//.con-news-letter .form-input-btn-right {
-//  line-height: 0;
-//  color: #343434 !important;
-//  padding: 1px 0 1px 30px;
-//  margin-left: -4px;
-//  border: solid 1px #eeeeee !important; }
-//  .con-news-letter .form-input-btn-right:hover {
-//    background-color: #eeeeee !important; }
-//
-//.con-news-letter .form-input-btn-right-icon {
-//  padding: 9px;
-//  margin-left: 30px;
-//  border-left: solid 1px; }
 
 .con-load-design .uk-input:focus {
   color: #eeeeee !important;
@@ -190,8 +185,8 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   border-radius: 0px;
 }
 .palette {
-  height: 35px;
-  width: 35px;
+  height: 28px;
+  width: 28px;
   display: block;
   border: 1px solid #aaaaaa !important;
 }

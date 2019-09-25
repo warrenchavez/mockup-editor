@@ -577,6 +577,46 @@ jQuery(function($) {
                     {
                         name: "162: Bees_15",
                         logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_15/183ef20c4c605d3a47a6cb6d.png'
+                    },
+                    {
+                        name: "137: Beavers_3",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_3/ddb5886e0ba6d61aa108bc44.png'
+                    },
+                    {
+                        name: "189: Bulldog_9",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_9/10811cf29ca6cd7665c8ac72.png'
+                    },
+                    {
+                        name: "182: Bulldog_2",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_2/59cc873d2f8f47bf1898846c.png'
+                    },
+                    {
+                        name: "136: Beavers_2",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_2/00585c46c4acd535948bae93.png'
+                    },
+                    {
+                        name: "160: Bess_13",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_13/29d9294061ff1b3a9c94db30.png'
+                    },
+                    {
+                        name: "156: Bees_9",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_9/fb64165e078cb5a51cdecbec.png'
+                    },
+                    {
+                        name: "162: Bees_15",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bees_15/183ef20c4c605d3a47a6cb6d.png'
+                    },
+                    {
+                        name: "137: Beavers_3",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Beavers_3/ddb5886e0ba6d61aa108bc44.png'
+                    },
+                    {
+                        name: "189: Bulldog_9",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_9/10811cf29ca6cd7665c8ac72.png'
+                    },
+                    {
+                        name: "182: Bulldog_2",
+                        logo: 'https://s3-us-west-2.amazonaws.com/uniformbuilder/materials/staging/Bulldog_2/59cc873d2f8f47bf1898846c.png'
                     }
                 ],
                 mascotLogoArchive: [

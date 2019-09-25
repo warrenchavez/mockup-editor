@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$color-r-cp-2-black2".
-        on line 2 of C:\xampp\htdocs\mockup-editor\components\sass\palette.scss
+        on line 2 of C:\xampp\htdocs\mockup-editor\sass\palette.scss
 
 1: .palette-c-black {
 2:   background-color: $color-r-cp-2-black2;
@@ -11,7 +11,7 @@ Error: Undefined variable: "$color-r-cp-2-black2".
 7: }
 
 Backtrace:
-C:\xampp\htdocs\mockup-editor\components\sass\palette.scss:2
+C:\xampp\htdocs\mockup-editor\sass\palette.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -58,4 +58,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-r-cp-2-black2\".\A         on line 2 of C:\xampp\htdocs\mockup-editor\components\sass\palette.scss\A \A 1: .palette-c-black {\A 2:   background-color: $color-r-cp-2-black2;\A 3: }\A 4: \A 5: .palette-c-lightBlue {\A 6:   background-color: $color-r-cp-2-lightblue;\A 7: }"; }
+  content: "Error: Undefined variable: \"$color-r-cp-2-black2\".\A         on line 2 of C:\xampp\htdocs\mockup-editor\sass\palette.scss\A \A 1: .palette-c-black {\A 2:   background-color: $color-r-cp-2-black2;\A 3: }\A 4: \A 5: .palette-c-lightBlue {\A 6:   background-color: $color-r-cp-2-lightblue;\A 7: }"; }

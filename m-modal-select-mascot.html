@@ -1,111 +1,145 @@
+
 <div class="uk-modal-dialog uk-modal-body">
     <button class="uk-modal-close-default" type="button" uk-close></button>
     <h5 class="modal-title uk-padding-small fc-darkGray bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin uk-margin-remove-horizontal abrade-ultra-italic"></h5>
-    <ul class="modal-menu-mascot uk-subnav uk-subnav-pill uk-flex-center active-bgc-dark" uk-switcher>
-        <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize"><span class="uk-margin-small-right uk-hidden@s" uk-icon="icon: list"></span>Select <span class="uk-visible@s">from existing design</span></a></li>
-        <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize"><span class="uk-margin-small-right uk-hidden@s" uk-icon="icon: plus-circle"></span>Create <span class="uk-visible@s">a custom logo</span></a></li>
-        <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize"><span class="uk-margin-small-right uk-hidden@s" uk-icon="icon: cloud-upload"></span>Upload <span class="uk-visible@s">your own logo file</span></a></li>
-    </ul>
-    <hr>
-    <ul class="uk-switcher uk-margin">
-        <li>
-            <div class="uk-grid-collapse uk-flex uk-flex-middle" uk-grid>
-                <div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-2@l">
-                    <div class="con-preview-mascot">
-                        <h4 class="uk-text-bold uk-text-center uk-text-uppercase uk-margin-remove fc-darkGray abrade-ultra-italic">Bear</h4>
-                        <p class="uk-text-center uk-margin-remove-top">
-                            <a href="#" class="uk-button uk-button-text uk-text-capitalize">Fullsize Preview</a>
-                        </p>
-                    </div>
-                    <div class="uk-grid-collapse uk-flex-center" uk-grid>
-                        <div class="uk-width-1-1 uk-width-2-3@s uk-text-center">
-                            <div>
-                                <img id="preview-existing-logo" src="" uk-img>
-                            </div>
+    <div class="uk-grid-collapse uk-flex uk-flex-middle" uk-grid>
+<!--        <div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-2@l">-->
+<!--            <div class="con-preview-mascot">-->
+<!--                <h4 class="uk-text-bold uk-text-center uk-text-uppercase uk-margin-remove fc-darkGray abrade-ultra-italic">Bear</h4>-->
+<!--                <p class="uk-text-center uk-margin-remove-top">-->
+<!--                    <a href="#" class="uk-button uk-button-text uk-text-capitalize">Fullsize Preview</a>-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="uk-grid-collapse uk-flex-center" uk-grid>-->
+<!--                <div class="uk-width-1-1 uk-width-2-3@s uk-text-center">-->
+<!--                    <div>-->
+<!--                        <img id="preview-existing-logo" src="" uk-img>-->
+<!--                    </div>-->
 
-                            <a href="" id="btn-add-to-uniform" class="uk-button uk-button-secondary uk-margin-top">Add to uniform</a>
-                        </div>
-                    </div>
+<!--                    <a href="" id="btn-add-to-uniform" class="uk-button uk-button-secondary uk-margin-top">Add to uniform</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="uk-width-1-2@s uk-width-2-3@m uk-width-1-2@l uk-flex-first@s">
+            <div class="uk-margin-top uk-padding-small bdr-thin bdr-gray bgc-light uk-height-max-medium uk-overflow-auto">
+                <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-4">asd</div>
+                    <div class="uk-width-3-4">123</div>
                 </div>
-                <div class="uk-width-1-2@s uk-width-2-3@m uk-width-1-2@l uk-flex-first@s">
-                    <nav class="uk-navbar-container uk-navbar-transparent uk-margin-top" uk-navbar>
-
-                        <div class="nav-overlay uk-navbar-left uk-padding-small uk-padding-remove-horizontal">
-                            <ul class="menu-tab-mascot uk-subnav uk-margin-remove uk-grid-small grid-tiny active-bgc-dark" uk-switcher="connect: .con-mascot-act-arch" uk-grid>
-                                <li><a href="#" class="uk-button uk-button-small uk-button-default padding-tiny-vertical uk-text-capitalize">Active <span>(8)</span></a></li>
-                                <li><a href="#" class="uk-button uk-button-small uk-button-default padding-tiny-vertical uk-text-capitalize">Archive <span>(0)</span></a></li>
-                                <li><a href="#" class="uk-button uk-button-small uk-button-default padding-tiny-vertical uk-text-capitalize">uploaded <span>(0)</span></a></li>
-                            </ul>
-
-                        </div>
-
-                        <div class="uk-navbar-right uk-padding-small uk-padding-remove-left uk-visible@m">
-                            <form class="uk-search uk-search-default"> 
-                                <input class="uk-search-input" type="search" placeholder="Search...">
-                            </form>
-                            <span class="uk-margin-small-left icon-search"></span>
-                        </div>
-                        <div class="nav-overlay uk-navbar-right uk-padding-small uk-padding-remove-left uk-hidden@m">
-
-                            <a class="" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
-
-                        </div>
-
-                        <div class="nav-overlay uk-navbar-left uk-flex-1 uk-padding-small" hidden>
-
-                            <div class="uk-width-expand">
-                                <form class="uk-search uk-search-navbar uk-width-1-1">
-                                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
-                                </form>
-                            </div>
-
-                            <a class="" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
-
-                        </div>
-
-                    </nav>
-                    <ul class="uk-switcher con-mascot-act-arch con-select">
-                        <li>
-                            <div class="uk-margin-top uk-padding-small bdr-thin bdr-gray bgc-light uk-height-max-medium uk-overflow-auto">
-                                <div class="m-logo-active uk-grid-small uk-grid-match uk-child-width-1-2 uk-child-width-1-4@m con-palettes" uk-grid>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-margin-top uk-padding-small bdr-thin bdr-gray bgc-light uk-height-max-medium uk-overflow-auto">
-                                <div class="m-logo-archive uk-grid-small uk-grid-match uk-child-width-1-2 uk-child-width-1-4@m con-palettes" uk-grid>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            uploaded list
-                            <!--<div class="uk-margin-top uk-padding-small bdr-thin bdr-gray bgc-light uk-height-max-medium uk-overflow-auto">-->
-                                <!--<div class="m-logo-archive uk-grid-small uk-grid-match uk-child-width-1-2 uk-child-width-1-4@m con-palettes" uk-grid>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        </li>
-                    </ul>
-                </div>
+<!--                <div class="m-logo-active uk-grid-small uk-grid-match uk-child-width-1-2 uk-child-width-1-4@m con-palettes" uk-grid></div>-->
             </div>
-        </li>
-        <li>Hello again!</li>
-        <li id="con-upload-logo" class="uk-text-center">
-            <h5 class="uk-text-uppercase uk-text-bold fc-dark abrade-ultra">Upload logo here</h5>
-            <div class="uk-inline-clip uk-transition-toggle" tabindex="0" uk-form-custom="target: .custom-logo-upload-text">
-                <input id="imgInp" type="file">
-                <img class="custom-logo-upload-preview uk-padding-small bgc-light" src="./img/placeholder.png" alt="upload your image" />
-                <div class=" uk-transition-fade uk-position-cover uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                    <div>
-                        <div class="uk-width-2-3 uk-width-1-2@s uk-align-center uk-margin-remove-bottom">
-                            <img class="uk-padding-small uk-padding-remove-vertical" src="./img/logo-upload.png" alt=""/>
-                            <!--<span class="uk-margin-small-right fc-light" uk-icon="icon: cloud-upload; ratio: 6"></span>-->
-                        </div>
-                        <h5 class="uk-margin-remove abrade-ultra fc-light">Click me to upload</h5>
-                    </div>
-                </div>
-            </div>
-            <p class="uk-text-small uk-margin-small-top uk-margin-bottom custom-logo-upload-text abrade-ultra"></p>
-            <button class="uk-button uk-button-secondary uk-width-auto uk-width-1-3@s uk-width-1-4@m">Save</button>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
+<!--<div class="uk-modal-dialog uk-modal-body">-->
+<!--    <button class="uk-modal-close-default" type="button" uk-close></button>-->
+<!--    <h5 class="modal-title uk-padding-small fc-darkGray bgc-light uk-text-bold uk-text-center uk-text-uppercase uk-margin uk-margin-remove-horizontal abrade-ultra-italic"></h5>-->
+<!--    <ul class="modal-menu-mascot uk-subnav uk-subnav-pill uk-flex-center active-bgc-dark" uk-switcher>-->
+<!--        <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize"><span class="uk-margin-small-right uk-hidden@s" uk-icon="icon: list"></span>Select <span class="uk-visible@s">from existing design</span></a></li>-->
+<!--        <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize"><span class="uk-margin-small-right uk-hidden@s" uk-icon="icon: plus-circle"></span>Create <span class="uk-visible@s">a custom logo</span></a></li>-->
+<!--        <li><a href="#" class="uk-button uk-button-small uk-button-default uk-text-capitalize"><span class="uk-margin-small-right uk-hidden@s" uk-icon="icon: cloud-upload"></span>Upload <span class="uk-visible@s">your own logo file</span></a></li>-->
+<!--    </ul>-->
+<!--    <hr>-->
+<!--    <ul class="uk-switcher uk-margin">-->
+<!--        <li>-->
+<!--            <div class="uk-grid-collapse uk-flex uk-flex-middle" uk-grid>-->
+<!--                <div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-2@l">-->
+<!--                    <div class="con-preview-mascot">-->
+<!--                        <h4 class="uk-text-bold uk-text-center uk-text-uppercase uk-margin-remove fc-darkGray abrade-ultra-italic">Bear</h4>-->
+<!--                        <p class="uk-text-center uk-margin-remove-top">-->
+<!--                            <a href="#" class="uk-button uk-button-text uk-text-capitalize">Fullsize Preview</a>-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="uk-grid-collapse uk-flex-center" uk-grid>-->
+<!--                        <div class="uk-width-1-1 uk-width-2-3@s uk-text-center">-->
+<!--                            <div>-->
+<!--                                <img id="preview-existing-logo" src="" uk-img>-->
+<!--                            </div>-->
+
+<!--                            <a href="" id="btn-add-to-uniform" class="uk-button uk-button-secondary uk-margin-top">Add to uniform</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="uk-width-1-2@s uk-width-2-3@m uk-width-1-2@l uk-flex-first@s">-->
+<!--                    <nav class="uk-navbar-container uk-navbar-transparent uk-margin-top" uk-navbar>-->
+
+<!--                        <div class="nav-overlay uk-navbar-left uk-padding-small uk-padding-remove-horizontal">-->
+<!--                            <ul class="menu-tab-mascot uk-subnav uk-margin-remove uk-grid-small grid-tiny active-bgc-dark" uk-switcher="connect: .con-mascot-act-arch" uk-grid>-->
+<!--                                <li><a href="#" class="uk-button uk-button-small uk-button-default padding-tiny-vertical uk-text-capitalize">Active <span>(8)</span></a></li>-->
+<!--                                <li><a href="#" class="uk-button uk-button-small uk-button-default padding-tiny-vertical uk-text-capitalize">Archive <span>(0)</span></a></li>-->
+<!--                                <li><a href="#" class="uk-button uk-button-small uk-button-default padding-tiny-vertical uk-text-capitalize">uploaded <span>(0)</span></a></li>-->
+<!--                            </ul>-->
+
+<!--                        </div>-->
+
+<!--                        <div class="uk-navbar-right uk-padding-small uk-padding-remove-left uk-visible@m">-->
+<!--                            <form class="uk-search uk-search-default"> -->
+<!--                                <input class="uk-search-input" type="search" placeholder="Search...">-->
+<!--                            </form>-->
+<!--                            <span class="uk-margin-small-left icon-search"></span>-->
+<!--                        </div>-->
+<!--                        <div class="nav-overlay uk-navbar-right uk-padding-small uk-padding-remove-left uk-hidden@m">-->
+
+<!--                            <a class="" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>-->
+
+<!--                        </div>-->
+
+<!--                        <div class="nav-overlay uk-navbar-left uk-flex-1 uk-padding-small" hidden>-->
+
+<!--                            <div class="uk-width-expand">-->
+<!--                                <form class="uk-search uk-search-navbar uk-width-1-1">-->
+<!--                                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>-->
+<!--                                </form>-->
+<!--                            </div>-->
+
+<!--                            <a class="" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>-->
+
+<!--                        </div>-->
+
+<!--                    </nav>-->
+<!--                    <ul class="uk-switcher con-mascot-act-arch con-select">-->
+<!--                        <li>-->
+<!--                            <div class="uk-margin-top uk-padding-small bdr-thin bdr-gray bgc-light uk-height-max-medium uk-overflow-auto">-->
+<!--                                <div class="m-logo-active uk-grid-small uk-grid-match uk-child-width-1-2 uk-child-width-1-4@m con-palettes" uk-grid>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div class="uk-margin-top uk-padding-small bdr-thin bdr-gray bgc-light uk-height-max-medium uk-overflow-auto">-->
+<!--                                <div class="m-logo-archive uk-grid-small uk-grid-match uk-child-width-1-2 uk-child-width-1-4@m con-palettes" uk-grid>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            uploaded list-->
+<!--                            &lt;!&ndash;<div class="uk-margin-top uk-padding-small bdr-thin bdr-gray bgc-light uk-height-max-medium uk-overflow-auto">&ndash;&gt;-->
+<!--                                &lt;!&ndash;<div class="m-logo-archive uk-grid-small uk-grid-match uk-child-width-1-2 uk-child-width-1-4@m con-palettes" uk-grid>&ndash;&gt;-->
+<!--                                &lt;!&ndash;</div>&ndash;&gt;-->
+<!--                            &lt;!&ndash;</div>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </li>-->
+<!--        <li>Hello again!</li>-->
+<!--        <li id="con-upload-logo" class="uk-text-center">-->
+<!--            <h5 class="uk-text-uppercase uk-text-bold fc-dark abrade-ultra">Upload logo here</h5>-->
+<!--            <div class="uk-inline-clip uk-transition-toggle" tabindex="0" uk-form-custom="target: .custom-logo-upload-text">-->
+<!--                <input id="imgInp" type="file">-->
+<!--                <img class="custom-logo-upload-preview uk-padding-small bgc-light" src="./img/placeholder.png" alt="upload your image" />-->
+<!--                <div class=" uk-transition-fade uk-position-cover uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">-->
+<!--                    <div>-->
+<!--                        <div class="uk-width-2-3 uk-width-1-2@s uk-align-center uk-margin-remove-bottom">-->
+<!--                            <img class="uk-padding-small uk-padding-remove-vertical" src="./img/logo-upload.png" alt=""/>-->
+<!--                            &lt;!&ndash;<span class="uk-margin-small-right fc-light" uk-icon="icon: cloud-upload; ratio: 6"></span>&ndash;&gt;-->
+<!--                        </div>-->
+<!--                        <h5 class="uk-margin-remove abrade-ultra fc-light">Click me to upload</h5>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <p class="uk-text-small uk-margin-small-top uk-margin-bottom custom-logo-upload-text abrade-ultra"></p>-->
+<!--            <button class="uk-button uk-button-secondary uk-width-auto uk-width-1-3@s uk-width-1-4@m">Save</button>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--</div>-->

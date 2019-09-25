@@ -521,17 +521,26 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
 .bac-dark > *.uk-active:after {
   background-color: #343434 !important; }
 
-.active-fc-red .uk-active a {
+.btn.uk-active {
+  color: #eee !important;
+  background-color: #e32139 !important;
+  background-color: #dedede !important; }
+.btn.btn-enabled {
+  color: #e32139 !important;
+  border-color: #e32139 !important; }
+
+.active-fc-red .uk-active > * {
   color: #e32139 !important; }
 
-.active-bgc-red .uk-active a {
+.active-bgc-red .uk-active > *,
+.btn-active-bgc-red {
   color: #eee !important;
   background-color: #e32139 !important; }
 
-.active-bdr-red .uk-active a {
+.active-bdr-red .uk-active > * {
   border-color: #e32139 !important; }
 
-.active-bgc-dark .uk-active a {
+.active-bgc-dark .uk-active > * {
   color: #eee !important;
   background-color: #343434 !important; }
 
@@ -606,8 +615,8 @@ header .uk-grid-divider > :not(.uk-first-column)::before {
   border-radius: 0px; }
 
 .palette {
-  height: 35px;
-  width: 35px;
+  height: 28px;
+  width: 28px;
   display: block;
   border: 1px solid #aaaaaa !important; }
 
