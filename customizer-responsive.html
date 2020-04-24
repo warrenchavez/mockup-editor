@@ -29,37 +29,1674 @@
 </head>
 <body>
 
-<div class="uk-padding-small bgc-light">
-    <div class=" uk-grid-collapse uk-text-center" uk-grid uk-height-match="target: > div > a">
-        <div class="uk-width-auto uk-width-expand@m">
-            <a class="uk-button uk-padding-remove uk-grid-collapse fc-dark" uk-grid>
-                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark ">
-                    <span class="fc-red icon-left-arrow"></span>
+<div class="uk-container uk-container-large padding-remove@m">
+    <div class="uk-grid-collapse" uk-grid>
+
+        <div class="uk-width-1-1 uk-width-expand@s stick-me-top@xs bgc-white">
+<!--            Preview / Canvas-->
+            <div class="uk-inline uk-width-1-1">
+                <div class="uk-width-1-1">
+                    <div class="uk-grid-small uk-flex" uk-grid>
+                        <div class="uk-width-expand">
+                            <div class="uk-width-1-1 canvas-wrapper">
+                                <canvas class="height-canvas uk-background-muted"></canvas>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1 uk-width-small@l uk-flex-first@l uk-visible@s">
+<!--                            Wrapper-->
+                            <div class="uk-flex uk-flex-center">
+<!--                                Thumbnail Navigation-->
+                                <div class="uk-grid-small grid-tiny uk-child-width-1-4 uk-child-width-1-1@l uk-width-medium@s uk-width-medium@m uk-width-1-2@l" uk-grid>
+                                    <div>
+                                        <button class="uk-button uk-button-default padding-tiny btn-outline">
+                                            <img src="https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/984010a0a226dc207ee5430a1e00a1b7.png" alt="F" uk-img>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default padding-tiny btn-outline">
+                                            <img src="https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/ff11e98804c31eace338c140fc3b4e2f.png" alt="F" uk-img>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default padding-tiny btn-outline">
+                                            <img src="https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/decdfb5513247463255f68634de2bcfb.png" alt="F" uk-img>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default padding-tiny btn-outline">
+                                            <img src="https://s3-us-west-2.amazonaws.com/uniformbuilder/uploads/staging/801f4aaa30cc9cb9f960d7c04ece745c.png" alt="F" uk-img>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase uk-visible@m abrade-medium">Previous</div>
-            </a>
-        </div>
-        <div class="uk-width-expand uk-hidden@m">
-            <a class="uk-button uk-padding-remove uk-width-1-1 fc-dark">
-                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark">Title</div>
-            </a>
-        </div>
-        <div class="uk-width-auto uk-width-expand@m">
-            <a class="uk-button uk-padding-remove uk-grid-collapse fc-dark" uk-grid>
-                <div class="uk-width-expand uk-padding-small padding-tiny-vertical bdr-thin bdr-dark uk-text-uppercase uk-visible@m abrade-medium">Next</div>
-                <div class="uk-width-auto uk-padding-small padding-tiny-vertical bdr-thin bdr-dark ">
-                    <span class="fc-red icon-right-arrow"></span>
+
+<!--                Left/Right Navigation-->
+                <a href="#" class="uk-position-small uk-position-center-left uk-hidden@s" uk-icon="icon: chevron-left; ratio:1.75" ></a>
+                <a href="#" class="uk-position-small uk-position-center-right uk-hidden@s" uk-icon="icon: chevron-right; ratio:1.75" ></a>
+
+<!--            Side Panel Header for mobile-->
+                <div class="uk-position-bottom uk-padding-small uk-hidden@s">
+                    <h6 class="uk-margin-remove text-mini">PTS Signature Jersey</h6>
+                    <h6 class="uk-margin-remove text-mini">Color dyed PTS Signature  2-Button Jersey Design 04</h6>
+                    <h6 class="uk-margin-remove text-mini">Style No. PTS9012CU-T04</h6>
                 </div>
-            </a>
+            </div>
+
+            <hr class="uk-margin-remove uk-hidden@s">
+            <h6 class="uk-margin-remove uk-padding-small uk-padding-remove-vertical uk-text-uppercase uk-text-bold uk-text-small uk-hidden@s padding-mini">Roster And Application</h6>
         </div>
-        <div class="uk-width-1-1">
-            <a class="uk-display-block uk-text-small link-reset uk-width-1-1 uk-padding-small uk-padding-remove-horizontal padding-tiny-vertical uk-text-bold uk-text-capitalize bgc-darkerGray bdr-thin bdr-dark fc-light abrade-ultra-italic">Finish / View &nbsp;Summary</a>
+
+        <div class="uk-width-1-1 uk-width-large@s">
+
+<!--            Side Panel Header for Web-->
+            <div class="uk-padding-small uk-visible@s bgc-light">
+                <div class="header-text uk-text-right">
+                    <a class="uk-link-reset uk-text-uppercase uk-text-small select-new-style" href="#">Select new style</a>
+                </div>
+                <h6 class="uk-text-uppercase uk-text-bold uk-margin-remove">PTS Signature Jersey</h6>
+                <h5 class="uk-text-uppercase uk-text-bold uk-margin-remove abrade-ultra-italic uk-text-truncate uniform-name">color dyed PTS Signature  2-Button Jersey Design 04</h5>
+                <h6 class="uk-text-small uk-text-uppercase uk-margin-remove fc-red">Style No. PTS9012CU-T04</h6>
+            </div>
+
+<!--            Side Panel Container-->
+            <div class="uk-inline uk-width-1-1">
+<!--                Side Panel Number Navigation-->
+                <div class="side-panel-navigation-numbers uk-visible@s">
+                    <div class="uk-grid-collapse uk-grid-match uk-child-width-1-1 active-bgc-red active-bdr-red uk-text-bold" uk-grid>
+                        <div>
+                            <a href="#" class="uk-button uk-padding-remove bgc-light bdrr-none bdr-thin bdr-lightGray fc-darkGray link-reset abrade-ultra" uk-tooltip="title: Fabric; pos: left; offset: 0;">1</a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-button uk-padding-remove bgc-light bdrr-none bdr-thin bdr-lightGray fc-darkGray link-reset abrade-ultra" uk-tooltip="title: Base Color; pos: left; offset: 0;">2</a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-button uk-padding-remove bgc-light bdrr-none bdr-thin bdr-lightGray fc-darkGray link-reset abrade-ultra" uk-tooltip="title: Inserts; pos: left; offset: 0;">3</a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-button uk-padding-remove bgc-light bdrr-none bdr-thin bdr-lightGray fc-darkGray link-reset abrade-ultra" uk-tooltip="title: Pipings; pos: left; offset: 0;">4</a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-button uk-padding-remove bgc-light bdrr-none bdr-thin bdr-lightGray fc-darkGray link-reset abrade-ultra" uk-tooltip="title: Decoration Letters; pos: left; offset: 0;">5</a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-button uk-padding-remove bgc-light bdrr-none bdr-thin bdr-lightGray fc-darkGray link-reset abrade-ultra" uk-tooltip="title: Decoration Numbers; pos: left; offset: 0;">6</a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-button uk-padding-remove bgc-light bdrr-none bdr-thin bdr-lightGray fc-darkGray link-reset abrade-ultra" uk-tooltip="title: Decorations; pos: left; offset: 0;">7</a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-button uk-padding-remove bgc-light bdrr-none bdr-thin bdr-lightGray fc-darkGray link-reset abrade-ultra" uk-tooltip="title: Richardson Logo; pos: left; offset: 0;">8</a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-button uk-padding-remove bgc-light bdrr-none bdr-thin bdr-lightGray fc-darkGray link-reset abrade-ultra" uk-tooltip="title: Roster & App Sizes; pos: left; offset: 0;">9</a>
+                        </div>
+                    </div>
+                </div>
+
+<!--                    SidePanelContent-->
+                <div class="padding-tiny padding-mini@s uk-padding-small bdr-thin bdr-lightGray bgc-white overflow@xs">
+<!--                        Panel Step Title-->
+                    <div class="uk-grid-small uk-flex uk-flex-between uk-flex-middle uk-margin-small-bottom uk-visible@s" uk-grid>
+                        <div>
+                            <h6 class="uk-text-uppercase uk-text-bold uk-text-small uk-margin-remove">Roster And Application</h6>
+                        </div>
+                        <div class="uk-visible@l">
+                            <a href="#richardson-team-roster" class="uk-text-italic uk-text-bold uk-text-small link-reset fc-red" uk-toggle>Open in Modal</a>
+                        </div>
+                    </div>
+
+<!--                        Roster Tab-->
+                    <div class="uk-grid-small uk-width-child-auto uk-margin-remove-top grid-tiny active-bgc-red" uk-grid uk-switcher>
+                        <div>
+                            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize link-reset">Team Roster</a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-button uk-button-small uk-width-1-1 uk-button-default uk-text-capitalize link-reset">Application Sizes</a>
+                        </div>
+                    </div>
+                    <hr>
+
+<!--                        Roster Tab Content-->
+                    <div class="uk-switcher">
+                        <div>
+<!--                                Team Roster-->
+                            <a href="#select-size-player-number" class="uk-button uk-button-small uk-width-auto uk-button-default uk-text-capitalize link-reset" uk-toggle>Add Roster</a>
+                            <ul class="active-bdr-red" uk-tab>
+                                <li><a href="#">Edit Roster</a></li>
+                                <li><a href="#">Summary</a></li>
+                            </ul>
+                            <div class="uk-switcher">
+<!--                                Edit Roster-->
+                                <div>
+<!--                                    Roster List Header-->
+                                    <div class="uk-grid-collapse uk-flex-middle uk-padding-remove-vertical uk-text-uppercase padding-tiny padding-mini@s text-mini" uk-grid>
+                                        <div class="uk-width-auto uk-padding-remove-vertical padding-tiny">Size</div>
+                                        <div class="width-mini">Tag ID</div>
+                                        <div class="uk-width-expand"><span class="uk-visible@s">Player </span>Name</div>
+                                        <div class="width-mini">No.</div>
+                                        <div class="width-mini">Qty</div>
+                                        <div class="width-micro"></div>
+                                    </div>
+
+<!--                                    Roster List-->
+                                    <ul class="uk-list">
+                                        <li>
+                                            <div class="bdr-light bdr-thin padding-tiny padding-mini@s" uk-toggle="target: > > > .btn-close; mode: hover">
+                                                <div class="uk-grid-collapse uk-flex-middle text-mini" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny">3XL</span>
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="ID">
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-width-1-1 uk-inline">
+                                                            <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                            <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="Player Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="No.">
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="Qty">
+                                                    </div>
+                                                    <div class="width-micro">
+                                                        <a href="#" uk-icon="icon: close; ratio:.75 " class="uk-link-reset btn-close" hidden></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bdr-light bdr-thin padding-tiny padding-mini@s" uk-toggle="target: > > > .btn-close; mode: hover">
+                                                <div class="uk-grid-collapse uk-flex-middle text-mini" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny">3XL</span>
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="ID">
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-width-1-1 uk-inline">
+                                                             <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                            <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="Player Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="No.">
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="Qty">
+                                                    </div>
+                                                    <div class="width-micro">
+                                                        <a href="#" uk-icon="icon: close; ratio:.75 " class="uk-link-reset btn-close" hidden></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bdr-light bdr-thin padding-tiny padding-mini@s" uk-toggle="target: > > > .btn-close; mode: hover">
+                                                <div class="uk-grid-collapse uk-flex-middle text-mini" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny">3XL</span>
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="ID">
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-width-1-1 uk-inline">
+                                                             <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                            <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="Player Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="No.">
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="Qty">
+                                                    </div>
+                                                    <div class="width-micro">
+                                                        <a href="#" uk-icon="icon: close; ratio:.75 " class="uk-link-reset btn-close" hidden></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bdr-light bdr-thin padding-tiny padding-mini@s" uk-toggle="target: > > > .btn-close; mode: hover">
+                                                <div class="uk-grid-collapse uk-flex-middle text-mini" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny">3XL</span>
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="ID">
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-width-1-1 uk-inline">
+                                                             <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                            <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="Player Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="No.">
+                                                    </div>
+                                                    <div class="width-mini">
+                                                        <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="Qty">
+                                                    </div>
+                                                    <div class="width-micro">
+                                                        <a href="#" uk-icon="icon: close; ratio:.75 " class="uk-link-reset btn-close" hidden></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+<!--                                Summary-->
+                                <div>
+<!--                                    Summary List-->
+                                    <ul class="uk-list uk-list-divider uk-list-large">
+                                        <li>
+                                            <div class="uk-grid-small uk-flex-between" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase text-mini fc-darkerGray">Size <span>3XL (Adult)</span></h6>
+                                                </div>
+                                                <div class="uk-width-auto">
+                                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase text-mini fc-red">Total <span>3XL</span></h6>
+                                                </div>
+                                                <div class="uk-width-1-1">
+                                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase text-mini fc-darkerGray">Player Numbers</h6>
+
+                                                    <div class="uk-grid-small grid-tiny text-mini fc-darkGray" uk-grid>
+                                                        <div>23</div>
+                                                        <div>04</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>64</div>
+                                                        <div>98</div>
+                                                        <div>78</div>
+                                                        <div>10</div>
+                                                        <div>50</div>
+                                                        <div>23</div>
+                                                        <div>04</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>23</div>
+                                                        <div>04</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>64</div>
+                                                        <div>98</div>
+                                                        <div>78</div>
+                                                        <div>10</div>
+                                                        <div>50</div>
+                                                        <div>66</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-grid-small uk-flex-between" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase text-mini fc-darkerGray">Size <span>3XL (Adult)</span></h6>
+                                                </div>
+                                                <div class="uk-width-auto">
+                                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase text-mini fc-red">Total <span>3XL</span></h6>
+                                                </div>
+                                                <div class="uk-width-1-1">
+                                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase text-mini fc-darkerGray">Player Numbers</h6>
+
+                                                    <div class="uk-grid-small grid-tiny text-mini fc-darkGray" uk-grid>
+                                                        <div>23</div>
+                                                        <div>04</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>64</div>
+                                                        <div>98</div>
+                                                        <div>78</div>
+                                                        <div>10</div>
+                                                        <div>50</div>
+                                                        <div>23</div>
+                                                        <div>04</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>23</div>
+                                                        <div>04</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>64</div>
+                                                        <div>98</div>
+                                                        <div>78</div>
+                                                        <div>10</div>
+                                                        <div>50</div>
+                                                        <div>66</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-grid-small uk-flex-between" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase text-mini fc-darkerGray">Size <span>3XL (Adult)</span></h6>
+                                                </div>
+                                                <div class="uk-width-auto">
+                                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase text-mini fc-red">Total <span>3XL</span></h6>
+                                                </div>
+                                                <div class="uk-width-1-1">
+                                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase text-mini fc-darkerGray">Player Numbers</h6>
+
+                                                    <div class="uk-grid-small grid-tiny text-mini fc-darkGray" uk-grid>
+                                                        <div>23</div>
+                                                        <div>04</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>64</div>
+                                                        <div>98</div>
+                                                        <div>78</div>
+                                                        <div>10</div>
+                                                        <div>50</div>
+                                                        <div>23</div>
+                                                        <div>04</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>23</div>
+                                                        <div>04</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>09</div>
+                                                        <div>56</div>
+                                                        <div>64</div>
+                                                        <div>98</div>
+                                                        <div>78</div>
+                                                        <div>10</div>
+                                                        <div>50</div>
+                                                        <div>66</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+<!--                                Application Sizes-->
+                            <ul class="uk-list uk-list-divider uk-list-large">
+                                <li>
+                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase uk-text-small text-mini fc-darkerGray">Team Name</h6>
+                                    <div class="uk-margin-bottom">
+                                        <div class="uk-grid-small uk-grid" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img src="/images/sidebar/double_outline.png" width="80" height="80">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <ul class="uk-list uk-text-small text-mini">
+                                                    <li class="uk-margin-remove">Accent:<span> Three Color</span></li>
+                                                    <li class="uk-margin-remove">Font:<span> Tiffany BSB </span></li>
+                                                    <li class="uk-margin-remove">Layout:<span> None</span></li>
+                                                    <li class="uk-margin-remove">Text:<span> RICHARDSON</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin-bottom">
+                                        <h6 class="uk-margin-remove uk-text-capitalize text-mini fc-darkerGray">Select Youth Sizes:</h6>
+                                        <div class="uk-margin-small-bottom" uk-form-custom="target: > * > span:first-child">
+                                            <select>
+                                                <option value="">As Shown</option>
+                                                <option value="1">1"</option>
+                                                <option value="2">2"</option>
+                                                <option value="3">3"</option>
+                                                <option value="4">4"</option>
+                                            </select>
+                                            <button class="uk-button uk-button-default uk-button-small uk-width-small uk-text-right" type="button" tabindex="-1">
+                                                <span class="text-mini uk-text-capitalize uk-align-left uk-margin-remove"></span>
+                                                <span uk-icon="icon: chevron-down"></span>
+                                            </button>
+                                        </div>
+                                        <div class="uk-grid-small uk-child-width-auto uk-grid text-mini">
+                                            <label><input class="uk-radio" type="radio" name="radio-adult1" checked> Tall</label>
+                                            <label><input class="uk-radio" type="radio" name="radio-adult1"> Wide</label>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin-bottom">
+                                        <h6 class="uk-margin-remove uk-text-capitalize text-mini fc-darkerGray">Colors:</h6>
+                                        <div class="uk-grid-small uk-grid-divider uk-text-small text-mini" uk-grid>
+                                            <div>Navy</div>
+                                            <div>White</div>
+                                            <div>Orange</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin-bottom">
+                                        <h6 class="uk-margin-remove uk-text-capitalize text-mini fc-darkerGray">Notes:</h6>
+                                        <textarea class="uk-textarea uk-width-1-1" rows="2" placeholder="Write notes for this application." style="resize: none !important"></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase uk-text-small text-mini fc-darkerGray">Team Name</h6>
+                                    <div class="uk-margin-bottom">
+                                        <div class="uk-grid-small uk-grid" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img src="/images/sidebar/double_outline.png" width="80" height="80">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <ul class="uk-list uk-text-small text-mini">
+                                                    <li class="uk-margin-remove">Accent:<span> Three Color</span></li>
+                                                    <li class="uk-margin-remove">Font:<span> Tiffany BSB </span></li>
+                                                    <li class="uk-margin-remove">Layout:<span> None</span></li>
+                                                    <li class="uk-margin-remove">Text:<span> RICHARDSON</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin-bottom">
+                                        <h6 class="uk-margin-remove uk-text-capitalize text-mini fc-darkerGray">Select Youth Sizes:</h6>
+                                        <div class="uk-margin-small-bottom" uk-form-custom="target: > * > span:first-child">
+                                            <select>
+                                                <option value="">As Shown</option>
+                                                <option value="1">1"</option>
+                                                <option value="2">2"</option>
+                                                <option value="3">3"</option>
+                                                <option value="4">4"</option>
+                                            </select>
+                                            <button class="uk-button uk-button-default uk-button-small uk-width-small uk-text-right" type="button" tabindex="-1">
+                                                <span class="text-mini uk-text-capitalize uk-align-left uk-margin-remove"></span>
+                                                <span uk-icon="icon: chevron-down"></span>
+                                            </button>
+                                        </div>
+                                        <div class="uk-grid-small uk-child-width-auto uk-grid text-mini">
+                                            <label><input class="uk-radio" type="radio" name="radio-adult1" checked> Tall</label>
+                                            <label><input class="uk-radio" type="radio" name="radio-adult1"> Wide</label>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin-bottom">
+                                        <h6 class="uk-margin-remove uk-text-capitalize text-mini fc-darkerGray">Colors:</h6>
+                                        <div class="uk-grid-small uk-grid-divider uk-text-small text-mini" uk-grid>
+                                            <div>Navy</div>
+                                            <div>White</div>
+                                            <div>Orange</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin-bottom">
+                                        <h6 class="uk-margin-remove uk-text-capitalize text-mini fc-darkerGray">Notes:</h6>
+                                        <textarea class="uk-textarea uk-width-1-1" rows="2" placeholder="Write notes for this application." style="resize: none !important"></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Side Panel Footer-->
+            <div class="uk-grid-collapse uk-text-center uk-padding-small bgc-light padding-remove@s stick-me-bottom@xs boundary-align" uk-grid uk-height-match="target: a > div">
+
+                <!--        Prev Button-->
+                <a class="uk-width-auto uk-width-expand@s uk-padding-remove uk-button uk-grid-collapse" uk-grid>
+                    <div class="uk-width-auto uk-padding-small uk-padding-remove-vertical uk-inline bdr-thin bdr-dark">
+                        <span class="uk-position-center fc-red icon-left-arrow"></span>
+                    </div>
+
+                    <div class="uk-width-expand uk-visible@s uk-text-bold uk-text-uppercase bdr-thin bdr-dark fc-dark">Previous</div>
+                </a>
+
+                <!--        Side Panel Steps Navigation Button-->
+                <a class="uk-width-expand uk-hidden@s uk-button uk-padding-remove uk-grid-collapse" uk-grid>
+                    <div class="uk-width-expand uk-padding-remove-vertical uk-text-bold uk-text-uppercase uk-text-truncate padding-mini bdr-thin bdr-dark fc-dark">Step 9 : Team Roster & App Sizing</div>
+                </a>
+<!--                Steps Navigation in Footer-->
+                <div uk-dropdown="pos: top-justify; boundary: .boundary-align; boundary-align: true; mode: click">
+                    <ul class="uk-nav uk-dropdown-nav uk-text-uppercase uk-text-left">
+                        <li class="uk-nav-header uk-text-bold fc-darkGray">Customizing Steps</li>
+                        <li><a href="#">Step 1 : Fabrics</a></li>
+                        <li><a href="#">Step 2 : Colors</a></li>
+                        <li><a href="#">Step 3 : Pipings</a></li>
+                        <li><a href="#">Step 4 : Team Name</a></li>
+                        <li><a href="#">Step 5 : Player Number</a></li>
+                        <li><a href="#">Step 6 : Player Name</a></li>
+                        <li><a href="#">Step 7 : Logos</a></li>
+                        <li><a href="#">Step 8 : Brand</a></li>
+                        <li class="uk-active"><a href="#">Step 9 : Team Roster & App Sizing</a></li>
+                    </ul>
+                </div>
+
+
+                <!--        Next Button-->
+                <a class="uk-width-auto uk-width-expand@s uk-padding-remove uk-button uk-grid-collapse" uk-grid>
+                    <div class="uk-width-expand uk-visible@s uk-text-bold uk-text-uppercase bdr-thin bdr-dark fc-dark">Next</div>
+
+                    <div class="uk-width-auto uk-padding-small uk-padding-remove-vertical uk-inline bdr-thin bdr-dark">
+                        <span class="uk-position-center fc-red icon-right-arrow"></span>
+                    </div>
+                </a>
+
+                <a href="#richardson-team-roster" class="uk-display-block uk-width-1-1 uk-padding-small uk-padding-remove-horizontal uk-text-small uk-text-bold uk-text-capitalize padding-tiny-vertical bgc-dark bdr-thin bdr-dark fc-light link-reset" uk-toggle>Manage Roster</a>
+                <a href="#" class="uk-display-block uk-width-1-1 uk-padding-small uk-padding-remove-horizontal uk-text-small uk-text-bold uk-text-capitalize padding-tiny-vertical bgc-red bdr-thin bdr-dark fc-light link-reset">Finish / View &nbsp;Summary</a>
+            </div>
         </div>
+
     </div>
-    <h6 class="uk-margin-small-top uk-margin-remove-bottom uk-text-right fc-red">
-        <a href="#" class="uk-link-reset abrade-ultra-italic uk-text-small"><span></span>User Login</a>
-    </h6>
 </div>
 
+<!--Select Player Size and Number-->
+<div id="select-size-player-number" class="padding-remove@s" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-width-1-1 uk-width-large@s uk-width-xxlarge@m padding-mini@mini">
+
+        <h6 class="uk-margin-remove-top uk-margin-bottom uk-text-bold uk-text-uppercase uk-text-center padding-mini bgc-darkerGray fc-white">Select Player Size and Number</h6>
+
+        <div class="uk-grid uk-flex-center" uk-grid>
+            <!--                Player Size-->
+            <div class="uk-width-1-1 uk-width-5-6@s uk-width-medium@m">
+                <h6 class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Select Sizes</h6>
+                <h6 class="uk-margin-small uk-text-uppercase uk-text-bold text-mini fc-darkGray">adult Sizes</h6>
+                <div class="uk-grid-small grid-tiny uk-margin-small" uk-grid>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">s</button>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill selected">m</button>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill selected">l</button>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">xl</button>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">2xl</button>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">3xl</button>
+                    </div>
+                </div>
+
+                <h6 class="uk-margin-small uk-text-uppercase uk-text-bold text-mini fc-darkGray">Youth Sizes</h6>
+                <div class="uk-grid-small grid-tiny uk-margin-small" uk-grid>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">yxs</button>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">ys</button>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill selected">ym</button>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill active">yl</button>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">yxl</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--                Player Number-->
+            <div class="uk-width-1-1 uk-width-5-6@s uk-width-auto@m">
+                <h6 class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Select Player Number</h6>
+                <h6 class="uk-margin-small uk-text-uppercase uk-text-bold text-mini fc-darkGray">Preview: <span class="fc-red">No. 2, L, 1 PCS, ASDASD</span></h6>
+                <div style="max-width: 314px;">
+                    <div class="uk-grid-small grid-tiny" uk-grid>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-select-none active" uk-tooltip="title: No Number;pos: top"><hr class="uk-margin-remove"></button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">1</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">2</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">3</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">4</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">5</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">6</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">7</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">8</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">9</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">10</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">11</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">12</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">13</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">14</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">15</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">16</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">17</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">18</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">19</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">20</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">21</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">22</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">23</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">24</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">25</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">26</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">27</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">28</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">29</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">30</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">31</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">32</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">33</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">34</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">35</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">36</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">37</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">38</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">39</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">40</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">41</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">42</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">43</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">44</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">45</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">46</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">47</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">48</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">49</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">50</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">51</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">52</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">53</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">54</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">55</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">56</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">57</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">58</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">59</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">60</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">61</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">62</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">63</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">64</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">65</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">66</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">67</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">68</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">69</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">70</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">71</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">72</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">73</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">74</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">75</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">76</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">77</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">78</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">79</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">80</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">81</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">82</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">83</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">84</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">85</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">86</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">87</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">88</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">89</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">90</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">91</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">92</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">93</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">94</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">95</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">96</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">97</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">98</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">99</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">0</button>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">00</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="uk-text-center">
+            <a href="#" class="uk-button uk-button-secondary uk-text-bold">Save Roster</a>
+            <a href="#" class="uk-button uk-button-secondary uk-text-bold uk-modal-close">Cancel</a>
+        </div>
+    </div>
+</div>
+
+<!--Richardson Team Roster Modal-->
+<div id="richardson-team-roster" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-width-1-1 uk-width-3-4@m uk-width-1-1@l">
+        <button class="uk-modal-close-default uk-visible@l" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-expand uk-margin-bottom active-bgc-dark uk-visible@l" uk-grid uk-switcher>
+            <div>
+                <a href="#" class="uk-button uk-button-default uk-width-1-1 uk-text-bold">Team Roster</a>
+            </div>
+            <div>
+                <a href="#" class="uk-button uk-button-default uk-width-1-1 uk-text-bold">Applications Sizing</a>
+            </div>
+        </div>
+        <div class="uk-switcher uk-visible@l">
+<!--            Team Roster-->
+            <div>
+                <div class="uk-grid" uk-grid>
+    <!--                Select Player Size and Number-->
+                    <div class="uk-width-1-1 uk-width-large@xl">
+                        <!--            Roster-->
+
+                        <div class="uk-grid" uk-grid>
+                            <!--                Player Size-->
+                            <div class="uk-width-1-4 uk-width-1-1@xl">
+                                <h6 class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Select Sizes</h6>
+                                <h6 class="uk-margin-small uk-text-uppercase uk-text-bold text-mini fc-darkGray">adult Sizes</h6>
+                                <div class="uk-grid-small grid-tiny uk-margin-small" uk-grid>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">s</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill selected">m</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill selected">l</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">xl</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">2xl</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">3xl</button>
+                                    </div>
+                                </div>
+
+                                <h6 class="uk-margin-small uk-text-uppercase uk-text-bold text-mini fc-darkGray">Youth Sizes</h6>
+                                <div class="uk-grid-small grid-tiny uk-margin-small" uk-grid>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">yxs</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">ys</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill selected">ym</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill active">yl</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold uk-text-small thumb-mini fc-darkGray btn-fill">yxl</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--                Player Number-->
+                            <div class="uk-width-3-4 uk-width-5-6@xl">
+                                <h6 class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Select Player Number</h6>
+                                <h6 class="uk-margin-small uk-text-uppercase uk-text-bold text-mini fc-darkGray">Preview: <span class="fc-red">No. 2, L, 1 PCS, ASDASD</span></h6>
+                                <div class="uk-grid-small grid-tiny" uk-grid>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-select-none active" uk-tooltip="title: No Number;pos: top"><hr class="uk-margin-remove"></button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">1</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">2</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">3</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">4</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">5</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">6</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">7</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">8</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">9</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">10</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">11</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">12</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">13</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">14</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">15</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">16</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">17</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">18</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">19</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">20</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">21</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">22</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">23</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">24</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">25</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">26</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">27</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">28</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">29</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">30</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">31</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">32</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">33</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">34</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">35</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">36</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">37</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">38</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">39</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">40</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">41</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">42</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">43</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">44</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">45</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">46</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">47</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">48</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">49</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">50</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">51</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">52</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">53</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">54</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">55</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">56</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">57</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">58</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">59</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">60</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">61</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">62</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">63</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">64</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">65</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">66</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">67</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">68</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">69</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">70</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">71</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">72</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">73</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">74</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">75</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">76</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">77</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">78</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">79</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">80</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">81</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">82</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">83</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">84</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill active">85</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">86</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">87</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">88</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">89</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">90</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">91</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">92</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">93</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">94</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">95</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">96</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">97</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">98</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">99</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">0</button>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-micro fc-darkGray btn-fill">00</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <!--                Roster-->
+                    <div class="uk-width-expand">
+                        <h6 class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Edit Roster</h6>
+                        <div class="uk-grid-collapse uk-flex-middle uk-padding-remove-vertical uk-text-uppercase uk-text-bold padding-mini text-mini fc-darkGray" uk-grid>
+                            <div class="width-mini uk-padding-remove-vertical padding-tiny">Size</div>
+                            <div class="width-xsmall">Tag ID</div>
+                            <div class="uk-width-expand">Player Name</div>
+                            <div class="width-mini">No.</div>
+                            <div class="width-mini">Qty</div>
+                            <div class="width-tiny"></div>
+                        </div>
+                        <ul class="uk-list uk-list-large uk-height-large uk-overflow-auto">
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini" uk-toggle="target: > > > .btn-close; mode: hover">
+                                    <div class="uk-grid-collapse uk-flex-middle uk-text-small" uk-grid>
+                                        <div class="width-mini">
+                                            <div class="uk-text-small uk-padding-remove-vertical uk-text-bold padding-tiny fc-darkGray">3XL</div>
+                                        </div>
+                                        <div class="width-xsmall">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="ID">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-width-1-1 uk-inline">
+                                                 <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="Player Name">
+                                            </div>
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="No.">
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="Qty">
+                                        </div>
+                                        <div class="width-tiny uk-text-center">
+                                            <a href="#" uk-icon="icon: close; ratio:.75 " class="uk-link-reset btn-close" uk-tooltip="Hello World" hidden></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini" uk-toggle="target: > > > .btn-close; mode: hover">
+                                    <div class="uk-grid-collapse uk-flex-middle uk-text-small" uk-grid>
+                                        <div class="width-mini">
+                                            <div class="uk-text-small uk-padding-remove-vertical uk-text-bold padding-tiny fc-darkGray">3XL</div>
+                                        </div>
+                                        <div class="width-xsmall">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="ID">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-width-1-1 uk-inline">
+                                                 <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="Player Name">
+                                            </div>
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="No.">
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="Qty">
+                                        </div>
+                                        <div class="width-tiny uk-text-center">
+                                            <a href="#" uk-icon="icon: close; ratio:.75 " class="uk-link-reset btn-close" uk-tooltip="Hello World" hidden></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini" uk-toggle="target: > > > .btn-close; mode: hover">
+                                    <div class="uk-grid-collapse uk-flex-middle uk-text-small" uk-grid>
+                                        <div class="width-mini">
+                                            <div class="uk-text-small uk-padding-remove-vertical uk-text-bold padding-tiny fc-darkGray">3XL</div>
+                                        </div>
+                                        <div class="width-xsmall">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="ID">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-width-1-1 uk-inline">
+                                                 <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="Player Name">
+                                            </div>
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="No.">
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="Qty">
+                                        </div>
+                                        <div class="width-tiny uk-text-center">
+                                            <a href="#" uk-icon="icon: close; ratio:.75 " class="uk-link-reset btn-close" uk-tooltip="Hello World" hidden></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini" uk-toggle="target: > > > .btn-close; mode: hover">
+                                    <div class="uk-grid-collapse uk-flex-middle uk-text-small" uk-grid>
+                                        <div class="width-mini">
+                                            <div class="uk-text-small uk-padding-remove-vertical uk-text-bold padding-tiny fc-darkGray">3XL</div>
+                                        </div>
+                                        <div class="width-xsmall">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="ID">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-width-1-1 uk-inline">
+                                                 <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="Player Name">
+                                            </div>
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="No.">
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="Qty">
+                                        </div>
+                                        <div class="width-tiny uk-text-center">
+                                            <a href="#" uk-icon="icon: close; ratio:.75 " class="uk-link-reset btn-close" uk-tooltip="Hello World" hidden></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini" uk-toggle="target: > > > .btn-close; mode: hover">
+                                    <div class="uk-grid-collapse uk-flex-middle uk-text-small" uk-grid>
+                                        <div class="width-mini">
+                                            <div class="uk-text-small uk-padding-remove-vertical uk-text-bold padding-tiny fc-darkGray">3XL</div>
+                                        </div>
+                                        <div class="width-xsmall">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="ID">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-width-1-1 uk-inline">
+                                                 <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="Player Name">
+                                            </div>
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="No.">
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="Qty">
+                                        </div>
+                                        <div class="width-tiny uk-text-center">
+                                            <a href="#" uk-icon="icon: close; ratio:.75 " class="uk-link-reset btn-close" uk-tooltip="Hello World" hidden></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini" uk-toggle="target: > > > .btn-close; mode: hover">
+                                    <div class="uk-grid-collapse uk-flex-middle uk-text-small" uk-grid>
+                                        <div class="width-mini">
+                                            <div class="uk-text-small uk-padding-remove-vertical uk-text-bold padding-tiny fc-darkGray">3XL</div>
+                                        </div>
+                                        <div class="width-xsmall">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="ID">
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="uk-width-1-1 uk-inline">
+                                                 <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                <input class="uk-input uk-form-blank uk-text-small" type="text" placeholder="Player Name">
+                                            </div>
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="No.">
+                                        </div>
+                                        <div class="width-mini">
+                                            <input class="uk-input uk-form-blank uk-text-small" type="number" placeholder="Qty">
+                                        </div>
+                                        <div class="width-tiny uk-text-center">
+                                            <a href="#" uk-icon="icon: close; ratio:.75 " class="uk-link-reset btn-close" uk-tooltip="Hello World" hidden></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+    <!--                Summary-->
+                    <div class="uk-width-1-2 uk-width-1-3@xl">
+    <!--                    Summary-->
+                        <h6 class="uk-margin-remove-top uk-margin-small-bottom uk-text-bold uk-text-uppercase fc-dark">Summary</h6>
+
+                        <div class="uk-grid-small uk-padding-remove-vertical uk-text-uppercase uk-text-bold padding-mini text-mini fc-darkGray" uk-grid>
+                            <div class="width-small">Size</div>
+                            <div class="uk-width-expand">Player Number(s)</div>
+                            <div class="width-tiny uk-text-right">Total</div>
+                        </div>
+                        <ul class="uk-list uk-list-large uk-height-large uk-overflow-auto">
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini">
+                                    <div class="uk-grid-small uk-text-uppercase uk-text-small" uk-grid>
+                                        <div class="width-small uk-text-bold fc-darkGray">3XL (Adult)</div>
+                                        <div class="uk-width-expand fc-darkGray">
+                                            <div class="uk-grid-small" uk-grid>
+                                                <div>23</div>
+                                                <div>04</div>
+                                                <div>09</div>
+                                                <div>56</div>
+                                                <div>64</div>
+                                                <div>98</div>
+                                                <div>78</div>
+                                                <div>10</div>
+                                                <div>50</div>
+                                                <div>66</div>
+                                            </div>
+                                        </div>
+                                        <div class="width-tiny uk-text-bold uk-text-right fc-darkGray">1</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini">
+                                    <div class="uk-grid-small uk-text-uppercase uk-text-small" uk-grid>
+                                        <div class="width-small uk-text-bold fc-darkGray">3XL (Adult)</div>
+                                        <div class="uk-width-expand fc-darkGray">
+                                            <div class="uk-grid-small" uk-grid>
+                                                <div>23</div>
+                                                <div>04</div>
+                                                <div>09</div>
+                                                <div>56</div>
+                                                <div>64</div>
+                                                <div>98</div>
+                                                <div>78</div>
+                                                <div>10</div>
+                                                <div>50</div>
+                                                <div>66</div>
+                                            </div>
+                                        </div>
+                                        <div class="width-tiny uk-text-bold uk-text-right fc-darkGray">1</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini">
+                                    <div class="uk-grid-small uk-text-uppercase uk-text-small" uk-grid>
+                                        <div class="width-small uk-text-bold fc-darkGray">3XL (Adult)</div>
+                                        <div class="uk-width-expand fc-darkGray">
+                                            <div class="uk-grid-small" uk-grid>
+                                                <div>23</div>
+                                                <div>04</div>
+                                                <div>09</div>
+                                                <div>56</div>
+                                                <div>64</div>
+                                                <div>98</div>
+                                                <div>78</div>
+                                                <div>10</div>
+                                                <div>50</div>
+                                                <div>66</div>
+                                            </div>
+                                        </div>
+                                        <div class="width-tiny uk-text-bold uk-text-right fc-darkGray">1</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini">
+                                    <div class="uk-grid-small uk-text-uppercase uk-text-small" uk-grid>
+                                        <div class="width-small uk-text-bold fc-darkGray">3XL (Adult)</div>
+                                        <div class="uk-width-expand fc-darkGray">
+                                            <div class="uk-grid-small" uk-grid>
+                                                <div>23</div>
+                                                <div>04</div>
+                                                <div>09</div>
+                                                <div>56</div>
+                                                <div>64</div>
+                                                <div>98</div>
+                                                <div>78</div>
+                                                <div>10</div>
+                                                <div>50</div>
+                                                <div>66</div>
+                                            </div>
+                                        </div>
+                                        <div class="width-tiny uk-text-bold uk-text-right fc-darkGray">1</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini">
+                                    <div class="uk-grid-small uk-text-uppercase uk-text-small" uk-grid>
+                                        <div class="width-small uk-text-bold fc-darkGray">3XL (Adult)</div>
+                                        <div class="uk-width-expand fc-darkGray">
+                                            <div class="uk-grid-small" uk-grid>
+                                                <div>23</div>
+                                                <div>04</div>
+                                                <div>09</div>
+                                                <div>56</div>
+                                                <div>64</div>
+                                                <div>98</div>
+                                                <div>78</div>
+                                                <div>10</div>
+                                                <div>50</div>
+                                                <div>66</div>
+                                            </div>
+                                        </div>
+                                        <div class="width-tiny uk-text-bold uk-text-right fc-darkGray">1</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-box-shadow-hover-small bdr-light bdr-thin padding-mini">
+                                    <div class="uk-grid-small uk-text-uppercase uk-text-small" uk-grid>
+                                        <div class="width-small uk-text-bold fc-darkGray">3XL (Adult)</div>
+                                        <div class="uk-width-expand fc-darkGray">
+                                            <div class="uk-grid-small" uk-grid>
+                                                <div>23</div>
+                                                <div>04</div>
+                                                <div>09</div>
+                                                <div>56</div>
+                                                <div>64</div>
+                                                <div>98</div>
+                                                <div>78</div>
+                                                <div>10</div>
+                                                <div>50</div>
+                                                <div>66</div>
+                                            </div>
+                                        </div>
+                                        <div class="width-tiny uk-text-bold uk-text-right fc-darkGray">1</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="uk-text-center">
+                    <a href="#" class="uk-button uk-button-secondary uk-text-bold uk-modal-close">Save Roster</a>
+                    <a href="#" class="uk-button uk-button-secondary uk-text-bold" uk-switcher-item="next">Next</a>
+                </div>
+            </div>
+<!--            Application Sizes-->
+            <div>
+                <div>
+                    Application Sizing Table Here ...
+                </div>
+                <hr>
+                <div class="uk-text-center">
+                    <a href="#" class="uk-button uk-button-secondary uk-text-bold">Save Application Sizes</a>
+                </div>
+            </div>
+        </div>
+
+<!--        Too Large! Modal Warning-->
+        <div class="uk-hidden@l">
+            <div class="uk-text-center uk-margin-bottom">
+                <span class="uk-text-warning uk-text-lead" uk-icon="icon: warning; ratio: 8"></span>
+                <h3 class="uk-text-bold uk-margin-small uk-margin-remove-horizontal">Oops, too large for this screen!</h3>
+                <p class="uk-margin-remove-top uk-margin-small-bottom uk-text-small">Expand your browser / turn to landscape your device to see the content of this modal.
+                    <br>You can close this and use <a href="#" class="uk-text-uppercase fc-red uk-modal-close">side panel</a> or open <a href="#select-size-player-number" class="uk-text-uppercase fc-red" uk-toggle>Add Roster Modal</a> instead </p>
+            </div>
+            <div class="uk-text-center">
+                <a href="#select-size-player-number" class="uk-button uk-button-secondary uk-padding-small-horizontal uk-text-capitalize" uk-toggle>Open <span class="uk-visible@s">Add Roster</span> modal</a>
+                <a href="#" class="uk-button uk-button-default uk-padding-small-horizontal uk-text-capitalize uk-modal-close">Close</a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
