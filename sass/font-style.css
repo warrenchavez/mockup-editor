@@ -22,3 +22,10 @@
 @font-face {
   font-family: "Abrade-Ultra-Italic";
   src: url("../fonts/Jason-Vandenberg-Abrade-Ultra-Italic.otf") format("opentype"); }
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("../fonts/GothamBook.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
