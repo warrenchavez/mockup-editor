@@ -170,38 +170,92 @@
                             </ul>
                             <div class="uk-switcher">
 <!--                                Edit Roster-->
-                                <div>
+                                <div class="container-side-panel-roster-list">
 <!--                                    Roster List Header-->
-                                    <div class="uk-grid-collapse uk-flex-middle uk-padding-remove-vertical uk-text-uppercase padding-tiny padding-mini@s text-mini" uk-grid>
-                                        <div class="uk-width-auto uk-padding-remove-vertical padding-tiny">Size</div>
-                                        <div class="width-mini">Tag ID</div>
-                                        <div class="uk-width-expand"><span class="uk-visible@s">Player </span>Name</div>
-                                        <div class="width-mini">No.</div>
-                                        <div class="width-mini">Qty</div>
+                                    <div class="uk-grid-collapse uk-flex-top uk-padding-remove-vertical padding-tiny padding-mini@s" uk-grid>
+                                        <div class="width-mini">
+                                            <h6 class="uk-margin-remove uk-text-uppercase text-mini">Size</h6>
+                                            <a class="link-reset fc-red text-tiny" href="#">ALL<span uk-icon="icon: chevron-down; ratio: .75;"></span></a>
+                                            <div uk-drop="mode: click; pos: top-justify; boundary: .container-side-panel-roster-list; boundary-align: true; offset: -15">
+                                                <div class="uk-padding-small uk-box-shadow-small bgc-white">
+                                                    <h6 class="uk-margin-remove uk-text-bold uk-text-uppercase text-mini">Filter by:</h6>
+                                                    <div class="uk-grid-small grid-tiny" uk-grid>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill active" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">All</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">s</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">m</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">l</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">xl</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">2xl</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">3xl</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">yxs</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">ys</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">ym</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">yl</button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="uk-button uk-button-default uk-icon-button uk-padding-remove uk-border-circle uk-text-uppercase uk-text-bold text-mini thumb-mini fc-darkGray btn-fill" uk-toggle="target: .container-side-panel-roster-list .uk-drop.uk-open; cls: uk-open">yxl</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="width-tiny">
+                                            <h6 class="uk-margin-remove uk-text-uppercase text-mini">Tag</h6>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <h6 class="uk-margin-remove uk-text-uppercase text-mini"><span class="uk-visible@s">Player </span>Name</h6>
+                                        </div>
+                                        <div class="width-mini-tiny">
+                                            <h6 class="uk-margin-remove uk-text-uppercase text-mini">No.</h6>
+                                        </div>
+                                        <div class="width-mini-tiny">
+                                            <h6 class="uk-margin-remove uk-text-uppercase text-mini">Qty</h6>
+                                        </div>
                                         <div class="width-micro"></div>
                                     </div>
 
 <!--                                    Roster List-->
-                                    <ul class="uk-list">
+                                    <ul class="uk-list uk-margin-small-top">
                                         <li>
                                             <div class="bdr-light bdr-thin padding-tiny padding-mini@s" uk-toggle="target: > > > .btn-close; mode: hover">
                                                 <div class="uk-grid-collapse uk-flex-middle text-mini" uk-grid>
-                                                    <div class="uk-width-auto">
-                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny">3XL</span>
-                                                    </div>
                                                     <div class="width-mini">
+                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny text-mini">YL</span>
+                                                    </div>
+                                                    <div class="width-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="ID">
                                                     </div>
                                                     <div class="uk-width-expand">
                                                         <div class="uk-width-1-1 uk-inline">
-                                                            <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
+                                                             <a href="#" class="uk-form-icon uk-form-icon-flip" uk-tooltip="title:case sensitive.; pos: top-left" uk-icon="icon: info; ratio: .75"></a>
                                                             <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="Player Name">
                                                         </div>
                                                     </div>
-                                                    <div class="width-mini">
+                                                    <div class="width-mini-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="No.">
                                                     </div>
-                                                    <div class="width-mini">
+                                                    <div class="width-mini-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="Qty">
                                                     </div>
                                                     <div class="width-micro">
@@ -213,10 +267,10 @@
                                         <li>
                                             <div class="bdr-light bdr-thin padding-tiny padding-mini@s" uk-toggle="target: > > > .btn-close; mode: hover">
                                                 <div class="uk-grid-collapse uk-flex-middle text-mini" uk-grid>
-                                                    <div class="uk-width-auto">
-                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny">3XL</span>
-                                                    </div>
                                                     <div class="width-mini">
+                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny text-mini">YXS</span>
+                                                    </div>
+                                                    <div class="width-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="ID">
                                                     </div>
                                                     <div class="uk-width-expand">
@@ -225,10 +279,10 @@
                                                             <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="Player Name">
                                                         </div>
                                                     </div>
-                                                    <div class="width-mini">
+                                                    <div class="width-mini-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="No.">
                                                     </div>
-                                                    <div class="width-mini">
+                                                    <div class="width-mini-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="Qty">
                                                     </div>
                                                     <div class="width-micro">
@@ -240,10 +294,10 @@
                                         <li>
                                             <div class="bdr-light bdr-thin padding-tiny padding-mini@s" uk-toggle="target: > > > .btn-close; mode: hover">
                                                 <div class="uk-grid-collapse uk-flex-middle text-mini" uk-grid>
-                                                    <div class="uk-width-auto">
-                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny">3XL</span>
-                                                    </div>
                                                     <div class="width-mini">
+                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny text-mini">3XL</span>
+                                                    </div>
+                                                    <div class="width-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="ID">
                                                     </div>
                                                     <div class="uk-width-expand">
@@ -252,10 +306,10 @@
                                                             <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="Player Name">
                                                         </div>
                                                     </div>
-                                                    <div class="width-mini">
+                                                    <div class="width-mini-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="No.">
                                                     </div>
-                                                    <div class="width-mini">
+                                                    <div class="width-mini-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="Qty">
                                                     </div>
                                                     <div class="width-micro">
@@ -267,10 +321,10 @@
                                         <li>
                                             <div class="bdr-light bdr-thin padding-tiny padding-mini@s" uk-toggle="target: > > > .btn-close; mode: hover">
                                                 <div class="uk-grid-collapse uk-flex-middle text-mini" uk-grid>
-                                                    <div class="uk-width-auto">
-                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny">3XL</span>
-                                                    </div>
                                                     <div class="width-mini">
+                                                        <span class="uk-text-small uk-padding-remove-vertical padding-tiny text-mini">3XL</span>
+                                                    </div>
+                                                    <div class="width-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="ID">
                                                     </div>
                                                     <div class="uk-width-expand">
@@ -279,10 +333,10 @@
                                                             <input class="uk-input uk-form-blank uk-form-small" type="text" placeholder="Player Name">
                                                         </div>
                                                     </div>
-                                                    <div class="width-mini">
+                                                    <div class="width-mini-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="No.">
                                                     </div>
-                                                    <div class="width-mini">
+                                                    <div class="width-mini-tiny">
                                                         <input class="uk-input uk-form-blank uk-form-small" type="number" placeholder="Qty">
                                                     </div>
                                                     <div class="width-micro">
@@ -586,7 +640,7 @@
 
 <!--Select Player Size and Number-->
 <div id="select-size-player-number" class="padding-remove@s" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body uk-width-1-1 uk-width-large@s uk-width-xxlarge@m padding-mini@mini">
+    <div class="uk-modal-dialog uk-modal-body uk-width-1-1 uk-width-large@s uk-width-xxlarge@m padding-mini">
 
         <h6 class="uk-margin-remove-top uk-margin-bottom uk-text-bold uk-text-uppercase uk-text-center padding-mini bgc-darkerGray fc-white">Select Player Size and Number</h6>
 
